@@ -1,0 +1,1283 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{eurosym}
+\usepackage{hyperref}
+
+\title{\Huge \textbf{Microéconomie Fondamentale} \\ \vspace{0.5cm} \Large Cours Complet et Méthodes}
+\author{Révisions}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\chapter{Chapitre 1 : Négociation}
+
+Ce chapitre explore les situations d'échange bilatéral où un acheteur et un vendeur interagissent de manière isolée pour échanger un bien. L'enjeu est de comprendre sous quelles conditions l'échange a lieu, et comment les gains liés à cet échange sont répartis.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 1.1 : Échange d'un bien}
+
+\textbf{1. Idée centrale}
+L'objectif est de modéliser la situation d'échange la plus élémentaire : un acheteur potentiel (Anne) et un vendeur (Vincent) négocient l'échange d'une unité indivisible d'un bien contre de la monnaie. Cela sert à introduire les concepts fondamentaux de surplus individuel, de bien-être social (Welfare) et d'efficacité de l'échange. Le sens logique profond est de démontrer que l'existence d'un échange dépend uniquement de l'efficacité (la valeur dépasse le coût), tandis que le prix ne sert qu'à répartir le gâteau.
+
+\textbf{2. Intuition / vulgarisation}
+Si j'accorde une valeur de 100\texteuro{} à un vélo et que cela te coûte 40\texteuro{} de t'en séparer, nous avons tout intérêt à faire affaire. N'importe quel prix entre 40\texteuro{} et 100\texteuro{} nous rendra tous les deux plus heureux que si nous ne faisions rien. L'échange crée de la valeur, le prix décide simplement qui en profite le plus.
+
+\textbf{3. Définition / résultat formel}
+En information complète (les valuations $v$ et coûts $c$ sont connus de tous), l'échange a lieu si et seulement s'il est \textbf{efficace}, c'est-à-dire si et seulement si $v \ge c$. Le prix $p \in [c, v]$ est a priori indéterminé par ce simple modèle. 
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Surplus de l'acheteur ($U_A$) :} $U_A = v - p$ (si échange), 0 sinon. *Différence entre disposition à payer et prix payé.*
+\par \textbullet\ \textbf{Profit du vendeur ($U_V$) :} $U_V = p - c$ (si échange), 0 sinon. *Différence entre prix reçu et coût d'opportunité.*
+\par \textbullet\ \textbf{Surplus Total / Welfare ($W$) :} $W = U_A + U_V = v - c$. *Mesure du gain global généré par l'échange dans l'économie.*
+
+\textbf{5. Moyen mnémotechnique}
+La règle du \textbf{V-P-C} : Pour qu'il y ait échange, il faut que la \textbf{V}aleur soit supérieure au \textbf{P}rix, lui-même supérieur au \textbf{C}oût ($v \ge p \ge c$).
+
+\textbf{6. Résumé ultra condensé}
+Un échange volontaire d'un bien contre de la monnaie est créateur de valeur si $v \ge c$. Le prix $p$ n'influence pas la taille du surplus total ($v-c$), il ne fait que définir le partage de ce surplus entre l'acheteur et le vendeur, illustrant la différence entre efficacité (taille du gâteau) et équité (part des parts).
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confusion entre prix et coût :} Penser que le vendeur perd $p$ ; il perd $c$ (son coût d'opportunité) et gagne $p$.
+\par \textbullet\ \textbf{Confusion efficacité / équité :} Penser qu'un prix de $p = v$ est "inefficace". Il est parfaitement efficace (l'échange a lieu), mais il est très inéquitable (l'acheteur a un surplus nul).
+
+\textbf{8. Lien avec les exercices}
+Cette sous-partie est conceptuelle et sert de fondation théorique pour la modélisation des utilités quasi-linéaires. Elle est le point de départ de l'exercice 2 du TD 1 sur la Négociation de Nash (Bargaining), où la question est de déterminer mathématiquement ce fameux prix indéterminé.
+
+\textbf{9. Méthode de résolution associée}
+Pour évaluer un échange :
+\par \textbf{1.} Identifier la valuation de l'acheteur ($v$) et le coût du vendeur ($c$).
+\par \textbf{2.} Vérifier la condition d'efficacité : $v \ge c$.
+\par \textbf{3.} Déduire l'intervalle des prix possibles : $[c, v]$.
+\par \textbf{4.} Calculer le Welfare ($v - c$) pour prouver la création de valeur.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien vérifié que $v \ge c$ avant de valider l'échange ?
+\par \textbullet\ [ ] Le prix proposé est-il bien compris dans l'intervalle $[c, v]$ ?
+\par \textbullet\ [ ] La somme des surplus de l'acheteur et du vendeur retombe-t-elle bien sur $v-c$ ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 1.2 : Offre et demande concurrentielles}
+
+\textbf{1. Idée centrale}
+L'objectif est d'utiliser les outils classiques de l'offre et de la demande, mais appliqués à un marché composé d'un seul acheteur et d'un seul vendeur. Cela sert à montrer que même dans ce cadre hyper-réduit, le modèle de l'équilibre concurrentiel prédit correctement que l'échange aura lieu (intersection des courbes). 
+
+\textbf{2. Intuition / vulgarisation}
+Si on demande à l'acheteur "combien tu en veux à ce prix ?" et au vendeur "combien tu en vends à ce prix ?", on peut tracer deux droites (en forme d'escalier). L'endroit où elles se croisent nous donne l'équilibre du marché, sans même que les deux agents n'aient eu à discuter directement.
+
+\textbf{3. Définition / résultat formel}
+Pour un prix $p$ donné (considéré comme exogène par les agents) :
+\par \textbullet\ L'\textbf{offre concurrentielle} $O(p)$ vaut $1$ si $p \ge c$, et $0$ sinon.
+\par \textbullet\ La \textbf{demande concurrentielle} $D(p)$ vaut $1$ si $p \le v$, et $0$ sinon.
+L'équilibre concurrentiel se situe à l'intersection de ces deux courbes, soit pour la quantité $q=1$ et n'importe quel prix $p \in [c, v]$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Condition d'équilibre :} $O(p) = D(p)$. *Le prix s'ajuste pour que la quantité offerte égale la quantité demandée.*
+
+\textbf{5. Moyen mnémotechnique}
+"La demande descend (du plafond $v$), l'offre monte (du plancher $c$)". Le croisement forme un segment vertical représentant tous les prix possibles.
+
+\textbf{6. Résumé ultra condensé}
+Les courbes d'offre et de demande concurrentielles pour un agent unique sont des fonctions "en escalier" (valant 0 ou 1). Leur intersection confirme que l'échange s'opère de manière efficace ($q=1$), mais maintient l'indétermination du prix dans l'intervalle $[c, v]$.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Tracer des droites diagonales :} Avec un seul bien indivisible et un seul agent de chaque côté, la demande et l'offre ne sont pas continues ni strictement décroissantes/croissantes, ce sont des fonctions constantes par morceaux (0 ou 1).
+
+\textbf{8. Lien avec les exercices}
+Cette logique d'intersection est la matrice de toute la suite du cours (A-compétition et V-compétition) et prépare aux analyses d'équilibres avec demande continue vus dans le TD 2 (Surplus et Ristournes).
+
+\textbf{9. Méthode de résolution associée}
+Si on demande de tracer l'équilibre :
+\par \textbf{1.} Placer le prix en ordonnée et la quantité (0 ou 1) en abscisse.
+\par \textbf{2.} Tracer la demande : trait horizontal à la hauteur $v$ jusqu'à $q=1$, puis plonge à 0.
+\par \textbf{3.} Tracer l'offre : trait horizontal à la hauteur $c$ à partir de $q=1$.
+\par \textbf{4.} Hachurer le segment vertical entre $c$ et $v$ pour $q=1$ : c'est l'ensemble des équilibres possibles.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien mis le Prix en ordonnée (axe des y) et la Quantité en abscisse (axe des x) comme l'exige la tradition ?
+\par \textbullet\ [ ] Mes courbes sont-elles bien des paliers (0 ou 1) ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 1.3 : Ultimatum Game}
+
+\textbf{1. Idée centrale}
+Ce concept étudie ce qui se passe si l'un des agents détient le pouvoir absolu de faire une offre "à prendre ou à laisser". Il sert à introduire les concepts de la théorie des jeux (Équilibre de Nash, Équilibre parfait en sous-jeux) et à montrer comment la rationalité pure influence le partage du surplus.
+
+\textbf{2. Intuition / vulgarisation}
+J'ai 100\texteuro{}. Je te propose de t'en donner 1\texteuro{}. Si tu dis oui, tu as 1\texteuro{} et moi 99\texteuro{}. Si tu dis non, on a tous les deux 0\texteuro{}. Tu pourrais être vexé et dire non par fierté, mais un agent purement "rationnel" préférera toujours 1\texteuro{} à 0\texteuro{}. Donc, sachant cela, je ne te proposerai jamais plus de 1\texteuro{}.
+
+\textbf{3. Définition / résultat formel}
+Dans le Jeu de l'Ultimatum pour un surplus de 100 :
+\par \textbullet\ Le Joueur 1 fait une offre $x \in \{0,...,100\}$ pour lui-même (et $100-x$ pour le Joueur 2).
+\par \textbullet\ Il existe un \textbf{unique équilibre de Nash parfait en sous-jeux} : $x^* = 100$ (le joueur 1 garde tout, le joueur 2 accepte tout gain $\ge 0$).
+\par \textbullet\ Il existe une \textbf{multiplicité d'équilibres de Nash} basés sur des menaces non-crédibles (ex: J2 menace de refuser tout ce qui lui donne moins de 50).
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Paiement si acceptation :} $(x, 100-x)$.
+\par \textbullet\ \textbf{Paiement si rejet :} $(0, 0)$ (Statu quo).
+
+\textbf{5. Moyen mnémotechnique}
+"L'Ultimatum donne tout à l'offreur". Celui qui parle en premier rafle la mise (s'il face à un agent rationnel).
+
+\textbf{6. Résumé ultra condensé}
+Le jeu de l'ultimatum modélise une négociation extrême. La résolution par anticipation (rationalité parfaite) prédit que le joueur 1 accapare l'intégralité du surplus. Cependant, il existe de nombreux équilibres de Nash si le joueur 2 formule des menaces (bien que non crédibles).
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Ignorer les menaces non-crédibles :} Penser qu'il n'y a qu'un seul équilibre de Nash. Non, il y a une infinité d'équilibres de Nash, mais un seul est *parfait en sous-jeux* (celui qui élimine les menaces absurdes).
+\par \textbullet\ \textbf{Oublier la réalité empirique :} Confondre la prédiction mathématique ($x^* = 100$) avec le comportement humain réel (les offres $\ge 70$ pour le J1 sont souvent rejetées en laboratoire).
+
+\textbf{8. Lien avec les exercices}
+Ce concept prépare mentalement au modèle de monopole (Chapitre 2), où le vendeur aura la capacité de fixer un prix unique "à prendre ou à laisser", s'accaparant ainsi une large part du surplus s'il connaît les valuations.
+
+\textbf{9. Méthode de résolution associée}
+Pour résoudre ce type de jeu séquentiel :
+\par \textbf{1.} Commencer par la fin du jeu (backward induction) : que fait J2 face à une offre $x$ ? Il accepte si $100-x \ge 0$.
+\par \textbf{2.} Remonter à J1 : sachant que J2 accepte tout $x \le 100$, J1 maximise son profit en choisissant $x=100$.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien distingué l'équilibre *parfait en sous-jeux* des *équilibres de Nash* ordinaires ?
+\par \textbullet\ [ ] Ai-je identifié correctement la menace non-crédible ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 1.4 : Modèle de négociation de Nash}
+
+\textbf{1. Idée centrale}
+L'objectif est de proposer une résolution axiomatique et mathématique pour déterminer *exactement* où le prix va se fixer dans l'intervalle $[c, v]$. Ce modèle sert à formaliser comment le pouvoir de négociation ($\alpha$) et les "options de sortie" (statu quo / point de désaccord) de chaque agent influencent le partage final du gâteau. 
+
+\textbf{2. Intuition / vulgarisation}
+Au lieu de se battre à l'aveugle, Anne et Bernard font deux choses : 1) ils se mettent d'accord pour créer le plus grand gâteau possible (efficacité). 2) Ils coupent ce gâteau en fonction du "pouvoir" de chacun ($\alpha$) et de ce que chacun aurait eu si la négociation avait échoué (leur filet de sécurité). 
+
+\textbf{3. Définition / résultat formel}
+Le problème de "Bargaining" de Nash est défini par un ensemble de choix $X$, un point de désaccord $d = (d_1, d_2)$ et des préférences. La solution s'obtient en maximisant le produit des gains nets d'utilité pondérés par le pouvoir de marché $\alpha \in$ du joueur 1 :
+$$ \max_{x \in X} (u_1(x) - d_1)^\alpha (u_2(x) - d_2)^{1-\alpha} $$
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Programme de Nash (avec utilité et transfert $t$) :} $\max_{x, t} (u(x) - t - u_0)^\alpha (v(x) + t - v_0)^{1-\alpha}$.
+\par \textbullet\ \textbf{Règle de séparation (Maximiser le gâteau puis partager) :} 
+\par \textbf{1.} Trouver $x^*$ qui maximise le gâteau total $W = u(x) + v(x)$.
+\par \textbf{2.} Utilité finale Anne : $U_A = u_0 + \alpha(W - W_0)$.
+\par \textbf{3.} Utilité finale Bernard : $U_B = v_0 + (1-\alpha)(W - W_0)$.
+    *(Avec $W_0 = u_0 + v_0$ la somme des utilités de statu quo).*
+
+\textbf{5. Moyen mnémotechnique}
+"On grossit le gâteau ensemble, on partage l'excédent selon $\alpha$."
+
+\textbf{6. Résumé ultra condensé}
+Le modèle de Nash résout l'indétermination du prix. Par la maximisation d'un objectif conjoint (le produit des surplus nets), il prouve que la négociation conduit toujours à maximiser le surplus total (efficacité). Le transfert monétaire permet ensuite de distribuer cette richesse additionnelle selon le pouvoir de négociation de chacun et leurs utilités de réserve.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Oublier le Statu Quo :} Calculer le partage sur la valeur totale $W$ au lieu de le faire sur la *valeur nette* générée par l'accord ($W - W_0$).
+\par \textbullet\ \textbf{S'empêtrer dans les dérivées :} Essayer de dériver la fonction avec les puissances $\alpha$ et $1-\alpha$ directement. C'est un enfer algébrique. Il faut utiliser une transformation logarithmique.
+
+\textbf{8. Lien avec les exercices}
+C'est le cœur de l'\textbf{Exercice 2 du TD 1 (Nash bargaining avec transfert et Hold-up)}. L'exercice démontre la mécanique de séparation (optimisation conjointe de la quantité $x$, puis calcul du transfert $t$). Il applique ensuite cela au problème de "Hold-up" où un agent doit investir *avant* la négociation, causant un sous-investissement car le coût n'est pas partagé.
+
+\textbf{9. Méthode de résolution associée}
+Pour résoudre un programme de Nash avec transfert (cf. Correction TD1 Ex2) :
+\par \textbf{1.} \textbf{Passer au Logarithme :} Poser $\phi(t) = \ln(f(t)) = \alpha \ln(u - t - u_0) + (1-\alpha)\ln(v + t - v_0)$.
+\par \textbf{2.} \textbf{Trouver le transfert :} Dériver $\phi(t)$ par rapport à $t$, égaliser à 0 pour isoler $t^*$ en fonction de $x$.
+\par \textbf{3.} \textbf{Trouver la variable économique :} Réinjecter $t^*$ dans l'objectif, montrer que cela revient simplement à $\max_x (u(x) + v(x))$. Dériver pour trouver $x^*$.
+\par \textbf{4.} \textbf{Calculer les gains finaux :} Utiliser les formules directes de partage des utilités avec $\alpha$.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien pris le logarithme de la fonction objectif avant de dériver par rapport à $t$ ?
+\par \textbullet\ [ ] Ai-je bien soustrait les utilités de désaccord ($d_1, d_2$ ou $u_0, v_0$) dans les parenthèses initiales ?
+\par \textbullet\ [ ] Dans le cas d'un problème de "Hold-up" (investissement ex-ante par un joueur), ai-je bien identifié que le joueur ne récupère qu'une fraction de la valeur marginale de son investissement lors de la négociation ?
+\newpage
+\chapter{Chapitre 2 : A-compétition}
+
+Ce chapitre étudie les marchés où la concurrence se situe du côté des acheteurs ("A-compétition"). Il explore comment cette concurrence influence la formation des prix, d'abord dans un cadre discret et stratégique, puis dans le cadre continu du modèle canonique du monopole. Enfin, il formalise les outils de mesure du bien-être (Surplus et Welfare) pour évaluer l'efficacité de ces marchés.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 2.1 : Plus de demande que d'offre}
+
+\textbf{1. Idée centrale}
+L'objectif est d'étudier comment l'introduction de la concurrence du côté des acheteurs (plusieurs acheteuses face à un vendeur d'un bien unique) modifie le rapport de force. Ce concept sert à démontrer que le vendeur n'a pas besoin d'un "pouvoir de négociation" intrinsèque pour s'accaparer le surplus : c'est la structure même du marché (la rivalité entre acheteuses) qui fait monter les prix et détermine la répartition des gains.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez que vous vendez une voiture d'occasion. Si une seule personne la veut, vous devez négocier pied à pied pour fixer un prix. Mais si deux personnes veulent ardemment la même voiture, vous n'avez plus rien à faire : elles vont surenchérir l'une sur l'autre (comme dans une vente aux enchères). Le prix montera naturellement jusqu'à ce que l'acheteur le moins motivé abandonne. La concurrence entre les autres travaille pour vous.
+
+\textbf{3. Définition / résultat formel}
+En présence d'un vendeur (coût $c$) et de deux acheteuses (valuations $v_1$ et $v_2$, avec $v_1 \ge v_2$) :
+\par \textbullet\ \textbf{Cas symétrique ($v_1 = v_2 = v$)} : L'échange est efficace si $v \ge c$. Le prix s'établit exactement à $p = v$. Le vendeur accapare 100\% du surplus total.
+\par \textbullet\ \textbf{Cas asymétrique ($v_1 > v_2$)} : L'échange est efficace si $v_1 \ge c$. Le prix est propulsé par la concurrence au moins jusqu'à $v_2$. Il s'établit dans l'intervalle $p \in [\max(c, v_2), v_1]$. L'accaparation du surplus par le vendeur est donc limitée par l'hétérogénéité des acheteuses.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Condition d'équilibre concurrentiel :} $D(p) = O(p)$. *Le prix est tel que la somme des demandes individuelles (en escalier) égale l'offre globale.*
+\par \textbullet\ \textbf{Prix en enchère asymétrique :} $p = v_2$ (en supposant une sous-cotation marginale $\epsilon$ négligeable). *Le prix d'arrêt correspond à la disposition à payer du premier acheteur éliminé.*
+
+\textbf{5. Moyen mnémotechnique}
+"La compétition élimine le plus faible et fixe le prix plancher au niveau du perdant" ($p \ge v_2$).
+
+\textbf{6. Résumé ultra condensé}
+Lorsqu'il y a plus de demande que d'offre, la concurrence entre les acheteurs pousse le prix vers le haut, transférant le surplus vers le vendeur. Si les acheteurs sont identiques, le vendeur rafle tout. S'ils sont hétérogènes, le prix grimpe jusqu'à la valuation du deuxième acheteur le plus intéressé, adoucissant ainsi la concurrence.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confondre pouvoir de marché et effet de la concurrence :} Croire que le vendeur obtient $p=v$ parce qu'il fixe lui-même les règles. Non, même dans une enchère ascendante (où ce sont les acheteurs qui parlent), le résultat sera $p=v$.
+\par \textbullet\ \textbf{Ignorer les asymétries :} Conclure aveuglément que "le vendeur gagne tout". Dès que $v_1 > v_2$, l'acheteuse 1 obtiendra un surplus positif ($v_1 - v_2$).
+
+\textbf{8. Lien avec les exercices}
+Cette logique sous-tend l'analyse de l'\textbf{Exercice 1 du TD 4 (Concurrence à la Bertrand avec asymétries)}. Bien que le TD 4 traite de V-compétition (vendeurs en concurrence), la mécanique d'accaparation de surplus basée sur l'asymétrie des acteurs ($w_1 > w_2$) utilise exactement la même matrice logique que celle décrite ici. 
+
+\textbf{9. Méthode de résolution associée}
+Pour analyser l'issue d'une vente en situation d'A-compétition :
+\par \textbf{1.} Identifier le coût de réserve du vendeur ($c$).
+\par \textbf{2.} Trier les valuations des acheteurs par ordre décroissant ($v_1 > v_2 > ...$).
+\par \textbf{3.} Fixer le prix généré par la concurrence à la valuation du premier acheteur exclu (ici $v_2$).
+\par \textbf{4.} Vérifier que la transaction s'effectue bien entre l'acheteur 1 et le vendeur.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien repéré qui a la plus forte valuation ($v_1$) et qui a la seconde ($v_2$) ?
+\par \textbullet\ [ ] Ai-je vérifié que le prix d'équilibre permet un surplus $\ge 0$ pour l'acheteur gagnant ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 2.2 : Modèle du monopole}
+
+\textbf{1. Idée centrale}
+Ce modèle décrit le comportement d'une firme unique face à un continuum de consommateurs hétérogènes. L'objectif est de montrer comment le monopole, qui fixe librement un prix unique pour tous, arbitre entre "vendre cher à peu de monde" et "vendre bon marché à beaucoup de monde" pour maximiser son profit. Le sens profond est que l'information incomplète (ne pas connaître le type $v$ exact de chaque client) empêche la discrimination et crée un prix de marché supérieur au coût marginal.
+
+\textbf{2. Intuition / vulgarisation}
+Si Apple vendait ses iPhone à prix coûtant, ils en vendraient des millions mais ne feraient aucun bénéfice. S'ils les vendaient 10 000 \texteuro{}, ils feraient une marge immense par téléphone, mais n'en vendraient presque aucun. Le monopole cherche le prix exact qui équilibre cette bascule : là où augmenter le prix fait fuir juste assez de clients pour que le gain sur ceux qui restent compense la perte de ceux qui partent.
+
+\textbf{3. Définition / résultat formel}
+Soit un continuum d'acheteurs de masse $N$ dont les valuations $v$ suivent une fonction de répartition $F(v)$ et une densité $f(v)$. 
+Le monopole maximise $\Pi(p) = (p-c) \times N(1-F(p))$.
+Sous l'hypothèse de croissance du taux de hasard $\frac{f(p)}{1-F(p)}$, la Condition du Premier Ordre (CPO) caractérise le prix de monopole optimal $p^m$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Demande continue :} $D(p) = N(1 - F(p))$. *Masse des agents dont la valuation $v$ est supérieure au prix.*
+\par \textbullet\ \textbf{Maximisation (CPO) :} $p = c + \frac{1 - F(p)}{f(p)}$. *Le prix de monopole est égal au coût marginal plus une marge.*
+\par \textbullet\ \textbf{Indice de Lerner :} $\frac{p - c}{p} = \frac{1}{\epsilon}$ avec l'élasticité-prix $\epsilon = -\frac{D'(p)p}{D(p)}$. *Mesure le pouvoir de marché : la marge relative est inversement proportionnelle à l'élasticité de la demande.*
+
+\textbf{5. Moyen mnémotechnique}
+"L'élasticité dicte la marge". Si les clients sont très élastiques (sensibles au prix, $\epsilon$ grand), le pouvoir de marché se réduit et le prix s'écrase vers $c$. 
+
+\textbf{6. Résumé ultra condensé}
+Le monopole, protégé de la concurrence, fixe un prix $p^m > c$ pour maximiser son profit. Ce prix s'obtient en égalisant le revenu marginal au coût marginal. La capacité du monopole à imposer une forte marge dépend de la rigidité de la demande (Indice de Lerner) : moins la demande est élastique, plus le monopole peut extraire de la valeur.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Ne regarder que la FOC (Condition du Premier Ordre) :} Il faut toujours vérifier la pertinence de la solution (bornes). Si $c$ est faible, il arrive que le monopole serve tout le marché en posant un prix bas (solution en coin $p^m = v_{min}$).
+\par \textbullet\ \textbf{Confondre profit et revenu :} Ne pas oublier de soustraire le coût unitaire $c$ lors de l'écriture du programme $\max_p (p-c)D(p)$.
+
+\textbf{8. Lien avec les exercices}
+C'est la base absolue du \textbf{TD 3 (Monopole)}. L'exercice 1 étudie le monopole avec une distribution uniforme de $v$. L'exercice 3 modélise un monopole face à deux populations, illustrant la difficulté de choisir un prix unique quand la demande globale présente des "coudes" (kinks) et qu'il faut choisir entre servir tout le monde ou exclure une population.
+
+\textbf{9. Méthode de résolution associée}
+Pour trouver le prix de monopole :
+\par \textbf{1.} Construire la fonction de demande $D(p)$ à partir de la fonction de répartition $F(p)$ de la population.
+\par \textbf{2.} Poser la fonction de profit $\Pi(p) = (p-c)D(p)$.
+\par \textbf{3.} Dériver par rapport au prix : $\Pi'(p)$.
+\par \textbf{4.} Égaliser à zéro (CPO) et isoler $p$ pour trouver le candidat $p^m$.
+\par \textbf{5.} Vérifier que $p^m$ a un sens économique (ex: appartient à l'intervalle des valuations possibles).
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien écrit $(1-F(p))$ et non $F(p)$ pour la demande ?
+\par \textbullet\ [ ] Ma dérivée de $\Pi(p)$ intègre-t-elle bien la règle du produit $(uv)' = u'v + uv'$ ?
+\par \textbullet\ [ ] Mon prix final $p^m$ est-il bien strictement supérieur à $c$ ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 2.3 : Surplus des consommateurs}
+
+\textbf{1. Idée centrale}
+L'objectif est de quantifier monétairement le "bonheur" ou l'avantage net que les consommateurs retirent de l'existence d'un marché à un prix donné. Il sert d'indicateur principal pour juger si une politique (taxe, subvention, régulation) aide ou lèse les consommateurs. Le sens logique est que toute personne qui achète un bien le fait car sa valuation dépasse le prix payé, dégageant ainsi un bénéfice invisible mais réel.
+
+\textbf{2. Intuition / vulgarisation}
+Si vous êtes prêt à mettre 50\texteuro{} pour un concert mais que le billet ne coûte que 30\texteuro{}, vous avez fait une "bonne affaire" de 20\texteuro{}. Le surplus des consommateurs, c'est simplement la somme des bonnes affaires de tous les spectateurs qui ont acheté un billet. Si le prix baisse, le surplus gonfle.
+
+\textbf{3. Définition / résultat formel}
+Pour une fonction de demande $D(p)$ issue d'une population, le surplus agrégé des consommateurs $S(p)$ est l'intégrale des différences $(v-p)$ pour tous les types $v \ge p$.
+Grâce au théorème de Jules Dupuit, il correspond à l'aire sous la courbe de demande et au-dessus de la ligne du prix de marché.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Surplus par intégrale de Dupuit :} $S(p) = \int_p^\infty D(v) dv$. *Intégrale de la demande depuis le prix d'achat $p$ jusqu'à l'infini (ou la valuation maximale).*
+\par \textbullet\ \textbf{Théorème de l'enveloppe sur le surplus :} $S'(p) = -D(p)$. *La variation du surplus induite par une variation du prix est exactement égale à l'opposé de la quantité demandée.*
+
+\textbf{5. Moyen mnémotechnique}
+"La variation de mon bonheur, c'est moins la quantité que je consomme" ($S' = -D$). L'aire d'un triangle : Base (Quantité) $\times$ Hauteur (Disparité de prix) $/ 2$.
+
+\textbf{6. Résumé ultra condensé}
+Le surplus des consommateurs mesure le bien-être côté acheteurs. Il se calcule visuellement comme l'aire située entre la courbe de demande et le prix. Analytiquement, il est l'intégrale de la demande. Sa dérivée par rapport au prix est strictement négative : quand le prix monte, le surplus chute proportionnellement au volume acheté.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Se tromper de bornes d'intégration :} Intégrer de $0$ à $p$ au lieu de $p$ à $+\infty$.
+\par \textbullet\ \textbf{Ne pas tenir compte du rationnement :} Si le marché n'est pas à l'équilibre et qu'il y a pénurie, l'intégrale simple $\int_p^\infty D(v) dv$ est fausse car tous ceux qui ont $v>p$ ne réussissent pas à acheter ! (Voir TD2 Ex 2).
+
+\textbf{8. Lien avec les exercices}
+C'est le thème central du \textbf{TD 2 (Surplus, Welfare, Taxes)}. L'exercice 2 du TD 2 modélise avec une extrême rigueur la forme du surplus lorsque le prix s'éloigne de l'équilibre et que le rationnement intervient, en forçant à ajuster l'intégrale de surplus : $\int_{p(p)}^\infty D(w)dw + (p(p)-p)O(p)$.
+
+\textbf{9. Méthode de résolution associée}
+Pour calculer le surplus :
+\par \textbullet\ *Cas linéaire ($D(p) = a - bp$) :* Faire un dessin. Calculer l'aire du triangle dont la base est $D(p)$ et la hauteur est $(p_{max} - p)$ où $p_{max} = a/b$.
+\par \textbullet\ *Cas général :* Poser l'intégrale $\int_p^{v_{max}} D(x) dx$ et chercher la primitive de la fonction de demande.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien dessiné le prix en ordonnée et la quantité en abscisse pour repérer mon aire ?
+\par \textbullet\ [ ] Si la demande est non-linéaire, ai-je bien primitivé la fonction $D(p)$ pour résoudre l'intégrale ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 2.4 : Welfare}
+
+\textbf{1. Idée centrale}
+Le Welfare (ou Bien-Être Social) est la mesure agrégée ultime de l'efficacité d'un marché. Son objectif est d'additionner sans jugement de valeur les gains des consommateurs (surplus) et ceux des producteurs (profits). Son sens profond est d'établir qu'un marché concurrentiel est économiquement efficace, car il maximise la "taille du gâteau", tandis qu'un monopole crée un gaspillage, un gâteau plus petit, pour prendre une part plus grosse.
+
+\textbf{2. Intuition / vulgarisation}
+Le Welfare, c'est la richesse totale créée par le fait qu'un marché existe. Si le gouvernement s'en mêle via un monopole ou des taxes, il modifie la taille du gâteau. La "perte sèche" (Dead-weight loss), c'est la part du gâteau qui tombe par terre et que personne ne mange : des transactions qui auraient rendu un acheteur et un vendeur heureux mais qui n'ont pas lieu à cause du prix trop élevé.
+
+\textbf{3. Définition / résultat formel}
+Le Welfare s'écrit $W(p) = S(p) + \Pi(p) = \int_p^\infty D(v) dv + (p-c)D(p)$.
+Il atteint son maximum global lorsque $p = c$ (l'équilibre concurrentiel).
+Si une tarification non-concurrentielle (monopole $p_m$) induit une quantité $q_m < q_c$, cela génère une \textbf{perte sèche sociale} (Dead-weight loss) mesurée par $W(c) - W(p_m)$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Welfare :} $W(p) = S(p) + \Pi(p)$
+\par \textbullet\ \textbf{Dérivée du Welfare :} $W'(p) = (p-c)D'(p)$. *(Obtenu en sommant $S'=-D$ et $\Pi' = D + (p-c)D'$).*
+\par \textbullet\ \textbf{Perte sèche (Triangle de Harberger) :} $DWL = W_{max} - W_{monopole}$. 
+
+\textbf{5. Moyen mnémotechnique}
+"La dérivée du bien-être, c'est la marge fois la pente de la demande" ($W' = (p-c)D'$). Si $p=c$, la dérivée s'annule, on est au sommet de la montagne du Welfare.
+
+\textbf{6. Résumé ultra condensé}
+Le surplus total (Welfare) est maximisé lorsque le prix égale le coût marginal (tarification concurrentielle). La présence d'un monopole engendre généralement un prix plus élevé, ce qui ampute les quantités échangées. Cette chute des volumes détruit définitivement de la valeur, créant une perte sèche pour la société.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Associer systématiquement Monopole et Perte Sèche :} La perte sèche existe *si et seulement si* $q_m < q_c$. Si le monopole trouve rentable de baisser le prix jusqu'à ce que tout le monde achète (par exemple si $c$ est très faible et le prix minimal $v$ est bloqué), $q_m = q_c$ et la perte sèche est nulle ! C'est juste un énorme transfert de richesse vers le vendeur sans destruction d'efficacité.
+\par \textbullet\ \textbf{Oublier les dépenses de l'État :} Si l'exercice inclut des subventions ou taxes, le Welfare devient $W(p) = S(p) + \Pi(p) \pm \text{Gouvernement}$.
+
+\textbf{8. Lien avec les exercices}
+Absolument décisif pour l'\textbf{Exercice 3 du TD 2 (Ristourne à la pompe)} et les \textbf{QCM d'annales (MIP 2021 et 2022)}. Ces exercices demandent d'analyser la fonction $W(p)$ lorsqu'on introduit une taxe $\tau$ (le prix endogène devient fonction de la taxe). L'État maximise alors le Welfare en pondérant parfois les consommateurs (Welfare pondéré $W_\beta = \beta S + \Pi - T$). Également le cœur du \textbf{TD 3 Ex 2 (Régulation Ramsey-Boiteux)}, où le régulateur maximise le Welfare public sous contrainte budgétaire.
+
+\textbf{9. Méthode de résolution associée}
+Pour démontrer que le monopole crée une inefficacité ou optimiser une taxe :
+\par \textbf{1.} Calculer le $p^c = c$ concurrentiel et $q^c$.
+\par \textbf{2.} Calculer le $p^m$ du monopole et $q^m$.
+\par \textbf{3.} Si $q^m < q^c$, justifier l'inefficacité.
+\par \textbf{4.} Calculer le DWL via l'aire du triangle hachuré entre $D(p)$, $p=c$ et $q^m$ sur le graphique : Base $(p^m - c) \times$ Hauteur $(q^c - q^m) / 2$. 
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien additionné les trois composantes si l'État intervient (Conso + Producteurs + État) ?
+\par \textbullet\ [ ] La quantité d'équilibre de mon monopole est-elle bien inférieure à ma quantité concurrentielle avant de déclarer l'existence d'un DWL ?
+\newpage
+\chapter{Chapitre 3 : V-compétition}
+
+Ce chapitre est l'image miroir parfait du chapitre précédent. Il étudie les marchés où la concurrence se situe du côté des vendeurs ("V-compétition"). Il explore comment la rivalité entre les producteurs influence la formation des prix face à une acheteuse unique. Il passe d'abord par un modèle stratégique discret, puis par le modèle continu du monopsone, et formalise enfin le surplus des producteurs et l'évaluation du Bien-Être Social (Welfare) dans ce cadre.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 3.1 : Plus d'offre que de demande}
+
+\textbf{1. Idée centrale}
+L'objectif est de démontrer comment l'introduction de la concurrence du côté des vendeurs modifie radicalement le rapport de force en faveur de l'acheteuse. Ce concept sert à prouver que l'acheteuse n'a pas besoin d'un talent de négociation particulier pour s'accaparer le surplus : la simple rivalité entre les vendeurs fait mécaniquement chuter les prix jusqu'à leur coût de production.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez que vous êtes le seul habitant d'un village à vouloir faire tondre sa pelouse, et que deux voisins équipés d'une tondeuse cherchent du travail. Vous n'avez pas besoin de négocier durement. Si l'un propose 20\texteuro{}, l'autre proposera 15\texteuro{} pour obtenir le travail, et ainsi de suite. Comme dans une enchère inversée, le prix baissera tout seul jusqu'à ce que le voisin avec le coût de fonctionnement le plus élevé abandonne.
+
+\textbf{3. Définition / résultat formel}
+En présence d'une acheteuse (valuation $v$) et de deux vendeurs (coûts $c_1$ et $c_2$, avec $c_1 \le c_2$) :
+\par \textbullet\ \textbf{Cas symétrique ($c_1 = c_2 = c$)} : L'échange est efficace si $v \ge c$. Le prix s'établit exactement à $p = c$. L'acheteuse accapare 100\% du surplus total.
+\par \textbullet\ \textbf{Cas asymétrique ($c_1 < c_2$)} : L'échange est efficace si $v \ge c_1$. Le prix est tiré vers le bas par la concurrence jusqu'à $c_2$. Il s'établit dans l'intervalle $p \in [c_1, \min(c_2, v)]$. L'accaparation du surplus par l'acheteuse est donc freinée par l'hétérogénéité des vendeurs (le vendeur le plus efficace garde une rente).
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Condition d'équilibre concurrentiel :} $D(p) = O(p)$. *L'intersection entre la demande unitaire et l'offre en escalier.*
+\par \textbullet\ \textbf{Prix en enchère asymétrique :} $p = c_2$ (en négligeant la sous-cotation $\epsilon$). *Le prix plafond correspond au coût d'opportunité du premier vendeur éliminé de la course.*
+
+\textbf{5. Moyen mnémotechnique}
+"La V-compétition fait chuter le prix jusqu'au coût du premier perdant" ($p \le c_2$). 
+
+\textbf{6. Résumé ultra condensé}
+Lorsqu'il y a plus d'offre que de demande, la concurrence entre les vendeurs fait baisser le prix, transférant la quasi-totalité du surplus vers l'acheteuse. Si les vendeurs sont identiques, l'acheteuse rafle tout. S'ils sont hétérogènes, le prix chute jusqu'au coût de production du deuxième vendeur le plus compétitif, laissant une rente d'efficacité au vendeur gagnant.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confondre le pouvoir de monopsone et la force de la concurrence :} Penser que l'acheteuse impose $p=c$ parce qu'elle a un "pouvoir de négociation". Non, même dans une enchère descendante où ce sont les vendeurs qui annoncent les prix, le prix chutera à $c$ par la seule force de leur rivalité.
+\par \textbullet\ \textbf{Croire au "Paradoxe de Bertrand" parfait en cas d'asymétrie :} Oublier que si $c_1 < c_2$, le vendeur 1 n'a pas besoin de baisser son prix jusqu'à $c_1$. Il s'arrête juste en dessous de $c_2$ et dégage un profit strict.
+
+\textbf{8. Lien avec les exercices}
+C'est le fondement de l'\textbf{Exercice 1 du TD 4 (Concurrence à la Bertrand avec asymétries)}. L'exercice formalise exactement cette situation avec des coûts marginaux différents ($c_1 < c_2$) et démontre que le vendeur le plus efficace remporte le marché au prix $c_2$, accaparant un surplus positif ($c_2 - c_1$).
+
+\textbf{9. Méthode de résolution associée}
+Pour analyser l'issue d'un marché en situation de V-compétition asymétrique :
+\par \textbf{1.} Identifier la valuation de l'acheteuse ($v$).
+\par \textbf{2.} Trier les coûts des vendeurs par ordre croissant ($c_1 < c_2 < ...$).
+\par \textbf{3.} Vérifier la condition d'efficacité $v \ge c_1$.
+\par \textbf{4.} Fixer le prix généré par la concurrence au niveau du premier vendeur exclu (ici $c_2$).
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien identifié le vendeur avec le coût le *plus faible* ($c_1$) comme étant le gagnant ?
+\par \textbullet\ [ ] Ai-je bien utilisé le coût du *second* vendeur ($c_2$) pour déterminer le prix d'arrêt ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 3.2 : Modèle du monopsone}
+
+\textbf{1. Idée centrale}
+Ce modèle décrit une acheteuse unique (un monopsone) face à un continuum de vendeurs hétérogènes. L'objectif est de montrer comment le monopsone, qui a le pouvoir de fixer un prix d'achat unique, arbitre entre "acheter bas à peu de producteurs" et "acheter plus cher à beaucoup de producteurs". Le sens profond est de démontrer que le pouvoir de marché côté demande conduit à une réduction des prix d'achat et des quantités échangées.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez un grand supermarché qui est le seul à acheter les cerises des agriculteurs d'une région. S'il propose d'acheter les cerises à 10\texteuro{} le kilo, tous les agriculteurs vendront. S'il propose 2\texteuro{} le kilo, seuls ceux qui ont des coûts extrêmement bas survivront. Le supermarché cherche le prix optimal : baisser le prix lui fait économiser de l'argent sur chaque kilo acheté, mais cela décourage certains agriculteurs. Il s'arrête de baisser le prix quand l'économie réalisée compense tout juste la perte liée aux kilos non achetés.
+
+\textbf{3. Définition / résultat formel}
+Soit un continuum de vendeurs de masse $N$ dont les coûts $c$ suivent une fonction de répartition $G(c)$ et une densité $g(c)$. 
+L'acheteuse maximise son utilité $U(p) = (v-p) \times N G(p)$.
+Sous l'hypothèse de croissance du taux de hasard $\frac{g(p)}{G(p)}$, le prix optimal de monopsone $p^m$ est caractérisé par la Condition du Premier Ordre (CPO).
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Offre continue :} $O(p) = N \times G(p)$. *Masse des vendeurs dont le coût $c$ est inférieur ou égal au prix proposé.*
+\par \textbullet\ \textbf{Maximisation (CPO) :} $p = v - \frac{G(p)}{g(p)}$. *Le prix de monopsone est inférieur à la valuation de l'acheteuse, amputé d'une "marge".*
+\par \textbullet\ \textbf{Indice de Lerner au monopsone :} $\frac{v - p}{p} = \frac{1}{\varepsilon_O}$ avec l'élasticité de l'offre $\varepsilon_O = \frac{O'(p)p}{O(p)}$. *La capacité à faire baisser le prix est inversement proportionnelle à la sensibilité des producteurs au prix.*
+
+\textbf{5. Moyen mnémotechnique}
+"Le Monopsone Solde la valuation". Le prix est tiré vers le bas : $p = v - \text{Marge}$. (C'est l'inverse parfait du monopole où $p = c + \text{Marge}$).
+
+\textbf{6. Résumé ultra condensé}
+Le monopsone, isolé de la concurrence côté demande, fixe un prix d'achat $p^m < v$ pour maximiser son profit. Ce prix s'obtient en équilibrant le gain marginal lié à la baisse du prix et la perte marginale liée à la réduction des volumes. Son pouvoir dépend de l'élasticité de l'offre : si les vendeurs sont très réactifs au prix, le monopsone ne peut pas imposer une forte démarque.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Écrire l'offre avec $1-G(p)$ :} Contrairement à la demande ($1-F(p)$ car on achète si $v>p$), l'offre est simplement $G(p)$ car un vendeur vend si son coût est *inférieur* au prix ($c \le p$).
+\par \textbullet\ \textbf{Oublier les solutions en coin :} Si la valuation $v$ est très élevée par rapport à la distribution des coûts, le monopsone peut avoir intérêt à acheter à *tous* les producteurs en fixant un prix $p^m = c_{max}$. Il ne restreint alors pas sa demande.
+
+\textbf{8. Lien avec les exercices}
+Bien que moins fréquent en exercice pur que le monopole, ce modèle est l'ossature pour comprendre les politiques de fixation des salaires (voir question de compréhension "Monopsone et salaire minimum"). Il se résout exactement comme le TD 3 (Monopole), mais en inversant la logique des fonctions de répartition.
+
+\textbf{9. Méthode de résolution associée}
+Pour trouver le prix de monopsone :
+\par \textbf{1.} Construire la fonction d'offre $O(p)$ à partir de la fonction de répartition $G(p)$.
+\par \textbf{2.} Poser la fonction de profit/utilité de l'acheteur $U(p) = (v-p)O(p)$.
+\par \textbf{3.} Dériver par rapport au prix : $U'(p)$.
+\par \textbf{4.} Égaliser à zéro (CPO) et isoler $p$ pour trouver le candidat $p^m$.
+\par \textbf{5.} Vérifier que $p^m < v$ et qu'il appartient au domaine des coûts possibles.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Mon offre est-elle bien basée sur $G(p)$ et non sur $1-G(p)$ ?
+\par \textbullet\ [ ] Ai-je bien soustrait $p$ de $v$ dans l'objectif de maximisation $(v-p)$ ?
+\par \textbullet\ [ ] Mon prix final $p^m$ est-il bien strictement inférieur à $v$ ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 3.3 : Surplus (profits) des producteurs}
+
+\textbf{1. Idée centrale}
+L'objectif est de quantifier monétairement les gains nets (profits agrégés) que l'ensemble des vendeurs retirent d'un marché pour un prix donné. Cela sert de pendant parfait au surplus des consommateurs et permet de mesurer l'impact d'un changement de prix sur le bien-être des producteurs. Le concept repose sur le fait que tout vendeur ayant un coût inférieur au prix du marché dégage une rente (une "marge").
+
+\textbf{2. Intuition / vulgarisation}
+Si vous êtes prêt à travailler (votre coût d'opportunité) pour 10\texteuro{} de l'heure, et que le marché paie 15\texteuro{}, vous dégagez une "rente" de 5\texteuro{}. Le surplus des producteurs, c'est simplement l'addition des rentes de tous les vendeurs actifs sur le marché. Plus le prix monte, plus ce surplus global s'élargit.
+
+\textbf{3. Définition / résultat formel}
+Pour une fonction d'offre $O(p)$ générée par une population hétérogène de vendeurs, le surplus agrégé des producteurs $S_p(p)$ (ou $\Pi(p)$) est l'intégrale des différences $(p-c)$ pour tous les types $c \le p$.
+Selon le théorème de Dupuit, cela correspond à l'aire située entre la courbe d'offre et la ligne horizontale du prix de marché.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Surplus par intégrale :} $S_p(p) = \int_0^p O(c) dc$. *C'est l'intégrale de la fonction d'offre depuis 0 (ou le coût minimum) jusqu'au prix de marché $p$.*
+\par \textbullet\ \textbf{Théorème de l'enveloppe sur le profit :} $S_p'(p) = O(p)$. *La variation du surplus des vendeurs induite par une hausse infinitésimale du prix est exactement égale au volume de la quantité offerte.*
+
+\textbf{5. Moyen mnémotechnique}
+"L'aire sous le prix, à gauche de l'offre". Dérivée du profit = l'Offre ($S_p' = O$).
+
+\textbf{6. Résumé ultra condensé}
+Le surplus (ou profit global) des producteurs mesure le bien-être du côté des vendeurs. Il se calcule visuellement comme la zone située au-dessus de la courbe d'offre et en dessous du prix. Analytiquement, il est la primitive de la fonction d'offre. Logiquement, sa dérivée est strictement positive : une hausse du prix augmente directement le bien-être proportionnellement à la quantité vendue.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confondre avec le calcul du consommateur :} Intégrer de $p$ à $+\infty$. Pour les vendeurs, on intègre depuis l'origine $0$ jusqu'au prix d'achat $p$.
+\par \textbullet\ \textbf{Rationnement du côté de l'offre :} Si l'acheteuse rationne les quantités (le prix est trop élevé par rapport à la demande), la formule intégrale simple est fausse car tous les producteurs avec $c < p$ ne parviennent pas forcément à vendre ! (Ce piège est symétrique à celui du TD 2 Ex 2).
+
+\textbf{8. Lien avec les exercices}
+C'est un élément fondamental pour le \textbf{TD 2 (Welfare, Taxes, Ristournes)}. Dans l'Exercice 2 et l'Exercice 3, on demande systématiquement de formuler le profit des entreprises (surplus des producteurs) $\Pi(p) = \int_0^{p(p)} O(w)dw$ pour évaluer l'impact des politiques publiques ou du rationnement.
+
+\textbf{9. Méthode de résolution associée}
+Pour calculer le surplus des producteurs :
+\par \textbullet\ *Cas linéaire ($O(p) = \alpha p$) :* Faire un dessin. Calculer l'aire du triangle dont la base est la quantité $O(p)$ et la hauteur est $(p - c_{min})$.
+\par \textbullet\ *Cas général :* Poser l'intégrale $\int_0^p O(x) dx$ et chercher la primitive de la fonction d'offre.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Mes bornes d'intégration sont-elles bien de $0$ (ou $c_{min}$) jusqu'à $p$ ?
+\par \textbullet\ [ ] Ai-je bien vérifié qu'il n'y a pas de rationnement de l'offre avant d'appliquer la formule directe ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 3.4 : Welfare}
+
+\textbf{1. Idée centrale}
+Le Welfare (Surplus Total) évalue l'efficacité globale du marché. Son but est de sommer les gains de l'acheteuse (monopsone) et les profits des producteurs. Il sert à démontrer que la tarification imposée par un monopsone est socialement inefficace car la restriction des quantités détruit des échanges qui auraient été mutuellement profitables (création d'une perte sèche).
+
+\textbf{2. Intuition / vulgarisation}
+Le Welfare, c'est la taille globale du gâteau. En situation concurrentielle, le gâteau est maximal. Le monopsone, pour obtenir une plus grosse part du gâteau (acheter moins cher), va délibérément en réduire la taille globale en décourageant des producteurs efficaces de produire. La part de gâteau qui s'évapore est la "perte sèche".
+
+\textbf{3. Définition / résultat formel}
+Le Welfare s'écrit $W(p) = S_p(p) + U_A(p) = \int_0^p O(c) dc + (v-p)O(p)$.
+Il atteint son maximum global à l'équilibre concurrentiel, c'est-à-dire lorsque le prix imposé égale la valuation : $p = v$.
+Le fait que le monopsone choisisse un prix $p^m < v$ engendre généralement une quantité échangée trop faible $q^m < q^c$, créant un \textbf{Dead-weight loss} (Perte sèche) valant $W(v) - W(p^m)$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Welfare :} $W(p) = S_p(p) + U_A(p)$
+\par \textbullet\ \textbf{Dérivée du Welfare :} $W'(p) = (v-p)O'(p)$. *(Obtenu en sommant $S_p' = O$ et $U_A' = -O + (v-p)O'$).*
+\par \textbullet\ \textbf{Condition de perte sèche :} $DWL > 0 \iff q^m < q^c$.
+
+\textbf{5. Moyen mnémotechnique}
+"Le sommet de la montagne du Welfare s'atteint quand le prix égale la valuation ($v-p = 0$)". L'écart des volumes génère le triangle d'inefficacité.
+
+\textbf{6. Résumé ultra condensé}
+L'efficacité d'un marché (Welfare) est maximale quand le prix reflète la valeur réelle du bien ($p=v$). En fixant un prix artificiellement bas, le monopsone restreint l'offre. Cette baisse des volumes détruit de la valeur pour la société, matérialisée par la perte sèche (Dead-weight loss), car des producteurs ayant un coût inférieur à $v$ (mais supérieur à $p^m$) sont exclus du marché.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Perte sèche automatique ?} Non. Comme au chapitre 2, si le monopsone choisit un prix (même très bas) mais qui est suffisant pour que *tous* les producteurs vendent (solution en coin $p^m = c_{max}$), alors $q^m = q^c$. Dans ce cas spécifique, le monopsone rackette les vendeurs, mais ne détruit aucune efficacité. La perte sèche est nulle !
+
+\textbf{8. Lien avec les exercices}
+Sert de miroir direct aux questions d'analyse du Welfare du \textbf{TD 2 (Welfare en fonction du prix)}. Le raisonnement est identique pour prouver que le Welfare global culmine à l'équilibre concurrentiel $p^*$, en montrant que la dérivée du Welfare s'annule exactement à ce point. 
+
+\textbf{9. Méthode de résolution associée}
+Pour démontrer l'inefficacité d'un monopsone :
+\par \textbf{1.} Calculer le $p^c = v$ concurrentiel et l'offre associée $q^c$.
+\par \textbf{2.} Résoudre le problème du monopsone pour trouver $p^m$ et $q^m$.
+\par \textbf{3.} Comparer : si $q^m < q^c$, justifier qu'il y a inefficacité et perte sèche.
+\par \textbf{4.} Calculer la DWL (souvent l'aire d'un triangle) : $\frac{(v - p^m) \times (q^c - q^m)}{2}$ dans un cadre linéaire.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien vérifié que la dérivée de mon Welfare s'annule pour $p=v$ (et non $p=c$) ?
+\par \textbullet\ [ ] Ma quantité d'équilibre de monopsone ($q^m$) est-elle bien strictement inférieure à ma quantité concurrentielle ($q^c$) avant de déclarer l'existence d'une perte sèche ?
+\newpage
+\chapter{Chapitre 4 : Concurrence imparfaite}
+
+Ce chapitre fait la transition entre le modèle du monopole isolé et la concurrence parfaite. Il analyse les marchés oligopolistiques où un petit nombre d'entreprises rivalisent. Dans ce cadre, chaque firme a conscience que ses décisions influencent le marché et celles de ses concurrentes (interactions stratégiques). Le choix de la variable d'action — les quantités (Cournot) ou les prix (Bertrand) — modifie radicalement l'issue de cette concurrence.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 4.1 : Choix de prix ou de quantités}
+
+\textbf{1. Idée centrale}
+L'objectif est de montrer que la manière de modéliser l'action d'une entreprise (choisir le prix auquel elle vend ou choisir la quantité qu'elle produit) est neutre pour un monopole, mais devient déterminante dès qu'il y a des concurrents. Cela sert à introduire les deux grands paradigmes de la concurrence imparfaite et à poser les bases du calcul de maximisation en quantités (avec la fonction inverse de demande).
+
+\textbf{2. Intuition / vulgarisation}
+Si vous êtes le seul vendeur de glaces sur une plage (monopole), afficher un prix de 3\texteuro{} fixe automatiquement le nombre de glaces que vous vendrez. Inversement, décider de préparer exactement 100 glaces dicte le prix auquel vous devrez les vendre pour tout écouler. Mais si vous avez un concurrent, choisir de fabriquer 100 glaces laisse le prix final dépendre de ce que l'autre va produire. Fixer ou produire, le choix change les règles du jeu.
+
+\textbf{3. Définition / résultat formel}
+Le profit d'un monopole s'écrit de manière équivalente en prix : $\Pi(p) = (p-c)D(p)$, ou en quantité : $\Pi(q) = (P(q)-c)q$, où $P(q) = D^{-1}(q)$ est la fonction inverse de demande. 
+La maximisation en quantité s'obtient en égalisant le Revenu Marginal (MR) au Coût Marginal (c). 
+En revanche, en duopole, l'écriture du profit en quantités $\Pi_i(q_1, q_2) = (P(q_1+q_2)-c_i)q_i$ suppose un prix de marché unique, ce qui diffère fondamentalement de l'approche en prix où chaque firme fixe son propre prix.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Revenu Marginal :} $MR(q) = P(q) + qP'(q)$. *C'est la recette supplémentaire liée à la vente d'une unité de plus (prix $P(q)$), diminuée de la perte de revenus sur toutes les unités précédentes due à la baisse du prix ($qP'(q)$).*
+\par \textbullet\ \textbf{Condition du Premier Ordre (CPO) du monopole en quantité :} $MR(q) = c$. 
+
+\textbf{5. Moyen mnémotechnique}
+"Monopole : Prix ou Quantité, c'est la même monnaie. Duopole : Prix ou Quantité, les règles sont changées."
+
+\textbf{6. Résumé ultra condensé}
+Le monopole peut maximiser son profit indistinctement en choisissant son prix ou sa quantité. En quantité, l'optimum est atteint lorsque le revenu marginal égalise le coût marginal. En situation d'oligopole, en revanche, l'écriture du profit dépend fondamentalement du choix de la variable stratégique (prix vs quantités), conduisant à deux modèles distincts : Cournot et Bertrand.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confondre Demande et Demande inverse :} En maximisant par rapport aux quantités, il faut impérativement utiliser $P(q)$ (qui est le prix en fonction de la quantité) et non $D(p)$.
+\par \textbullet\ \textbf{Oublier le terme de dépréciation dans le revenu marginal :} Le revenu marginal n'est pas égal au prix. Parce que la demande est décroissante ($P'(q)<0$), le revenu marginal est toujours strictement inférieur au prix : $P(q) + qP'(q) < P(q)$.
+
+\textbf{8. Lien avec les exercices}
+Cette introduction est le préalable conceptuel à l'\textbf{Exercice 2 du TD 4}, où l'on manipule une famille de fonctions inverses de demande $P(q;\alpha)$ pour ensuite modéliser la concurrence en quantités. Le monopole sert de "point de repère" ($n=1$) pour évaluer l'impact de la concurrence.
+
+\textbf{9. Méthode de résolution associée}
+Pour maximiser un profit en quantité :
+\par \textbf{1.} Prendre la fonction de demande $q = D(p)$ et l'inverser pour isoler $p$ : $p = P(q)$.
+\par \textbf{2.} Écrire le revenu $R(q) = P(q) \times q$ et le dériver pour obtenir le $MR(q)$.
+\par \textbf{3.} Égaliser $MR(q)$ au coût marginal $c$ pour trouver la quantité optimale $q^*$.
+\par \textbf{4.} Réinjecter $q^*$ dans $P(q)$ pour trouver le prix d'équilibre $p^*$.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien inversé la fonction de demande avant de multiplier par $q$ ?
+\par \textbullet\ [ ] Ai-je bien appliqué la règle de dérivation du produit $(uv)' = u'v + uv'$ pour trouver mon revenu marginal ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 4.2 : Concurrence à la Cournot}
+
+\textbf{1. Idée centrale}
+Le modèle d'Antoine Augustin Cournot illustre la concurrence par les quantités entre $n$ entreprises produisant un bien homogène. Il sert à démontrer que l'oligopole constitue un état intermédiaire entre le monopole et la concurrence parfaite : la présence de concurrents pousse le prix à la baisse, mais l'interaction stratégique fait que le prix reste supérieur au coût marginal. Le sens logique profond est qu'une entreprise "s'adapte" à la production des autres (meilleure réponse) pour fixer son propre volume.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez des agriculteurs décidant du nombre de tonnes de tomates à récolter. Ils prennent cette décision avant d'arriver au marché. Une fois sur le marché, le prix s'ajuste automatiquement selon l'abondance totale de tomates. Plus les autres en produisent, plus le prix va s'effondrer. Chaque agriculteur doit donc deviner ce que les autres vont produire pour calibrer sa récolte sans détruire le prix du marché.
+
+\textbf{3. Définition / résultat formel}
+Dans un jeu de Cournot-Nash à $n$ entreprises avec des coûts marginaux constants $c_i$, la firme $i$ choisit $q_i$ pour maximiser $\Pi_i = (P(Q) - c_i)q_i$, où $Q = \sum q_j$.
+La quantité totale d'équilibre $Q^C$ est déterminée par la somme des $n$ conditions du premier ordre. L'équilibre possède trois caractéristiques : $Q^C$ ne dépend que de la moyenne des coûts $\bar{c}$ ; l'équilibre est sous-optimal (quantité globale trop faible) ; l'allocation de la production est inefficace car les firmes les moins rentables produisent encore au lieu de laisser les plus rentables tout faire.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{CPO individuelle :} $P(Q) + P'(Q)q_i = c_i$.
+\par \textbullet\ \textbf{Équation d'agrégation (à savoir refaire) :} $nP(Q) + P'(Q)Q = n\bar{c}$ (avec $\bar{c} = \frac{\sum c_i}{n}$). *Permet de trouver la quantité totale $Q^C$.*
+\par \textbullet\ \textbf{Quantité individuelle :} $q_i^C = \frac{Q^C}{n} + \frac{\bar{c} - c_i}{-P'(Q^C)}$. *La production est la moyenne, corrigée par l'avantage de coût de la firme.*
+\par \textbullet\ \textbf{Profit d'équilibre :} $\Pi_i^C = -P'(Q^C)(q_i^C)^2$. *Le profit est proportionnel au carré de la part de marché ou de la quantité.*
+\par \textbullet\ \textbf{Welfare :} $W^C = \int_0^{Q^C} (P(x) - c)dx + \frac{n\text{Var}(c)}{-P'(Q^C)}$. *Le bien-être dépend d'une composante moyenne et d'un bonus dû à l'hétérogénéité des firmes (la variance des coûts).*
+
+\textbf{5. Moyen mnémotechnique}
+La "Méthode de la Somme" : À Cournot, on ne résout pas, on Somme les CPO ! Et "Celui qui a le Coût le plus Court, produit la part la plus Courte... pardon, la plus grande" (Effet d'hétérogénéité : si $c_i < \bar{c}$, alors $q_i$ est plus grand que la moyenne).
+
+\textbf{6. Résumé ultra condensé}
+Dans le modèle de Cournot, les firmes choisissent des quantités. Pour trouver l'équilibre avec $n$ firmes hétérogènes, il faut sommer les Conditions du Premier Ordre individuelles. La production totale dépend du coût marginal moyen. À l'équilibre, le prix est supérieur au coût concurrentiel, mais il s'en rapproche lorsque $n$ tend vers l'infini. Une firme produit d'autant plus, et fait d'autant plus de profit, que son coût marginal est faible par rapport à celui de ses concurrents.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Substituer les fonctions de meilleure réponse :} Essayer d'exprimer $q_1$ en fonction de $q_2$, puis $q_2$ en fonction de $q_3$, etc. C'est le mur algébrique assuré dès que $n>2$. Il faut *additionner* les équations.
+\par \textbullet\ \textbf{Ignorer la viabilité des firmes :} Les formules s'appliquent si et seulement si toutes les entreprises produisent une quantité positive ($q_i > 0$). Si une firme a un coût $c_i$ beaucoup trop élevé par rapport aux autres, la formule lui donnera un $q_i$ négatif. Il faut alors l'exclure du marché et refaire les calculs avec $n-1$.
+
+\textbf{8. Lien avec les exercices}
+Méthode cœur de l'\textbf{Exercice 2 du TD 4}. Il applique la démarche d'agrégation de Cournot sur une famille générique de fonctions de demande $P(Q;\alpha)$. Les questions demandent explicitement d'écrire la CPO, de déduire la quantité totale $Q^*$, puis la quantité individuelle, et enfin d'étudier la statique comparative lorsque $n \to \infty$ (convergence vers la concurrence parfaite).
+
+\textbf{9. Méthode de résolution associée}
+Pour résoudre un équilibre de Cournot à $n$ firmes asymétriques :
+\par \textbf{1.} Poser $Q = \sum q_j$.
+\par \textbf{2.} Écrire le profit de la firme $i$ : $\Pi_i = (P(Q) - c_i)q_i$.
+\par \textbf{3.} Dériver par rapport à $q_i$ pour obtenir la CPO : $P(Q) + P'(Q)q_i = c_i$.
+\par \textbf{4.} Additionner les $n$ CPO : $nP(Q) + P'(Q)Q = \sum c_i = n\bar{c}$.
+\par \textbf{5.} Résoudre cette équation à une seule inconnue pour trouver $Q^C$.
+\par \textbf{6.} Réinjecter $Q^C$ dans la CPO de l'étape 3 pour isoler $q_i^C$ individuellement.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien sommé les $n$ CPO pour trouver l'équation en $Q$ global ?
+\par \textbullet\ [ ] Mes $q_i$ individuels sont-ils tous positifs avec les coûts marginaux donnés dans l'énoncé ?
+\par \textbullet\ [ ] La somme de mes $q_i^*$ retombe-t-elle bien sur mon $Q^*$ global ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 4.3 : Concurrence à la Bertrand}
+
+\textbf{1. Idée centrale}
+La concurrence de Bertrand modélise un marché où la variable stratégique choisie par les firmes est le prix, les consommateurs achetant systématiquement au moins cher. L'objectif est de démontrer une rupture radicale (le "paradoxe de Bertrand") : l'introduction d'un seul concurrent suffit à faire basculer le marché du monopole à la tarification parfaitement concurrentielle, détruisant toutes les rentes si les produits sont homogènes et les coûts symétriques.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez deux stations-service identiques l'une en face de l'autre. Si l'une affiche 1,50\texteuro{}/L et l'autre 1,51\texteuro{}/L, tous les conducteurs iront chez la première. Pour récupérer les clients, la seconde va baisser à 1,49\texteuro{}, et ainsi de suite. La guerre des prix ne s'arrête que lorsqu'aucune ne peut plus baisser son prix sans vendre à perte (donc quand le prix égale le coût).
+
+\textbf{3. Définition / résultat formel}
+En duopole avec des biens homogènes et des coûts constants et symétriques ($c_1 = c_2 = c$), l'unique équilibre de Nash en prix est $p_1 = p_2 = c$ (tarification au coût marginal). Les profits sont nuls.
+En présence de coûts asymétriques ($c_1 < c_2$), la firme 1, plus efficace, remporte tout le marché en fixant un prix $p_1 = c_2$ (ou marginalement en dessous $c_2 - \epsilon$). Son profit est alors strictement positif et vaut $(c_2 - c_1)D(c_2)$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Fonction de demande discontinue (biens homogènes) :} $D_i(p_i, p_j) = D(p_i)$ si $p_i < p_j$ ; $D(p_i)/2$ si $p_i = p_j$ ; $0$ si $p_i > p_j$.
+\par \textbullet\ \textbf{Prix d'équilibre asymétrique :} $p_1 = c_2$ (ou $c_2 - \epsilon$). *Le prix plafond est dicté par le concurrent le plus féroce éliminé.*
+\par \textbullet\ \textbf{Surplus du consommateur (cas asymétrique $w_1 > w_2$) :} $S = w_2 = v_2 - c_2$.
+
+\textbf{5. Moyen mnémotechnique}
+"L'enchère descendante de Bertrand : Le premier perdant (le moins efficace) dicte le prix final du gagnant". 
+
+\textbf{6. Résumé ultra condensé}
+Dans le modèle de Bertrand, la rivalité en prix est destructrice pour les profits. Avec des coûts symétriques et des produits identiques, le prix chute au coût marginal (Paradoxe de Bertrand). Cependant, ce paradoxe est fragile : si les entreprises ont des coûts asymétriques ou si elles différencient leurs produits (qualité, image), elles restaurent un pouvoir de marché et génèrent des profits strictement positifs.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Appliquer le "profit nul" aveuglément :} Le paradoxe de Bertrand requiert des biens *identiques* ET des coûts *identiques*. Si une firme a un coût plus faible ($c_1 < c_2$), elle fait un profit positif ($p=c_2$, donc $\Pi = c_2-c_1 > 0$).
+\par \textbullet\ \textbf{Chercher des dérivées avec des biens homogènes :} La demande $D_i(p_i, p_j)$ est une fonction en escalier (discontinue). On ne peut pas résoudre ce jeu par des CPO classiques de dérivées nulles, on résout par la logique (sous-cotation marginale).
+
+\textbf{8. Lien avec les exercices}
+Traitement intensif dans le \textbf{TD 4, Exercice 1}. L'exercice force à dépasser le paradoxe de Bertrand en introduisant d'abord l'asymétrie de coûts ($c_1 < c_2$), puis la différenciation par la qualité (surplus $w_i = v_i - c_i$), et enfin l'hétérogénéité des consommateurs qui "lisse" la demande et permet de trouver l'équilibre en croisant des fonctions de meilleure réponse continues $p_1^*(p_2)$ et $p_2^*(p_1)$.
+
+\textbf{9. Méthode de résolution associée}
+\par \textbullet\ *Cas des biens homogènes / Qualités asymétriques :* Raisonner sans dérivation. Calculer le surplus net maximal que chaque firme peut offrir : $w_1 = v_1 - c_1$ et $w_2 = v_2 - c_2$. La firme avec le plus grand $w$ (ex: firme 1) rafle le marché. Le prix est fixé pour que le surplus laissé aux consommateurs égale exactement la meilleure offre de la firme perdante : $v_1 - p_1 = w_2$, soit $p_1 = v_1 - w_2$.
+\par \textbullet\ *Cas de la demande lissée (différenciation des consommateurs) :* Construire les fonctions de demande $D_1(p_1, p_2)$ et $D_2(p_1, p_2)$. Écrire les profits. Dériver $\Pi_i$ par rapport à $p_i$ pour obtenir les fonctions de meilleure réponse. Résoudre le système croisé pour trouver le point d'intersection.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien vérifié si les coûts étaient symétriques avant d'écrire $p_1 = p_2 = c$ ?
+\par \textbullet\ [ ] Dans un cas de différenciation par la qualité, la firme qui l'emporte est-elle bien celle qui a le plus grand "surplus social potentiel" ($v-c$) et non pas juste la plus haute qualité $v$ ?
+\par \textbullet\ [ ] Dans un jeu avec fonctions de meilleure réponse, ai-je vérifié que mon prix d'équilibre n'était pas inférieur au coût marginal (contrainte de participation) ?
+\newpage
+\chapter{Chapitre 5 : Préférences}
+
+Ce chapitre introduit le socle de la théorie du consommateur. Avant même de parler de budget ou de prix, il est indispensable de comprendre comment un agent économique classe et évalue les différentes options (paniers de biens) qui s'offrent à lui. 
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 5.1 : Choisir (Le cœur de la microéconomie)}
+
+\textbf{1. Idée centrale}
+L'objectif est de formaliser la capacité d'un consommateur à comparer et classer différents "paniers de biens" de manière cohérente, sans faire appel à la monnaie. Le sens logique profond est de s'affranchir de l'utilité cardinale (mesurable) pour asseoir toute la théorie microéconomique sur l'utilité ordinale (le simple classement).
+
+\textbf{2. Intuition / vulgarisation}
+Avant de savoir ce que vous pouvez acheter, vous devez savoir ce que vous aimez. Imaginez qu'on vous propose deux caddies de supermarché remplis différemment. Vous n'avez pas besoin de donner une "note sur 10" à chaque caddie pour faire un choix : il vous suffit de dire "je préfère le caddie A au caddie B" ou "les deux me satisfont autant". La microéconomie part de cette capacité basique de classement pour construire tout le reste.
+
+\textbf{3. Définition / résultat formel}
+Un panier de biens est un vecteur $\mathbf{x} = (x_1, ..., x_L) \in \mathbf{X} \subset \mathbb{R}^L_+$.
+La consommatrice est dotée d'une \textbf{relation d'ordre $\succeq$} ("est préféré ou indifférent à") qui satisfait les axiomes suivants :
+\par \textbullet\ \textbf{Complète} : Pour tout $\mathbf{x}, \mathbf{y}$, on a $\mathbf{x} \succeq \mathbf{y}$ ou $\mathbf{y} \succeq \mathbf{x}$.
+\par \textbullet\ \textbf{Réflexive} : Pour tout $\mathbf{x}$, $\mathbf{x} \succeq \mathbf{x}$.
+\par \textbullet\ \textbf{Transitive} : Si $\mathbf{x} \succeq \mathbf{y}$ et $\mathbf{y} \succeq \mathbf{z}$, alors $\mathbf{x} \succeq \mathbf{z}$.
+\par \textbullet\ \textbf{Monotone (stricte)} : Si un panier contient au moins autant de chaque bien et strictement plus d'un bien, il est strictement préféré.
+La \textbf{courbe d'indifférence} de niveau $\mathbf{x_0}$ est l'ensemble des paniers $\mathbf{x}$ tels que le consommateur y est indifférent : $C_{x_0} = \{\mathbf{x} \in \mathbf{X} | \mathbf{x} \sim \mathbf{x_0}\}$. Une hypothèse clé supplémentaire est la \textbf{convexité} des préférences (le goût pour la diversité) : toute combinaison linéaire de deux paniers indifférents est préférée ou indifférente à ces paniers.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Relation d'équivalence (indifférence)} : $\mathbf{x} \sim \mathbf{y} \iff \mathbf{x} \succeq \mathbf{y}$ et $\mathbf{y} \succeq \mathbf{x}$.
+\par \textbullet\ \textbf{Relation stricte} : $\mathbf{x} \succ \mathbf{y} \iff \mathbf{x} \succeq \mathbf{y}$ et non $(\mathbf{y} \succeq \mathbf{x})$.
+\par \textbullet\ \textbf{Convexité} : Si $\mathbf{x} \succeq \mathbf{z}$ et $\mathbf{y} \succeq \mathbf{z}$, alors $\lambda\mathbf{x} + (1-\lambda)\mathbf{y} \succeq \mathbf{z}$ pour $\lambda \in$.
+
+\textbf{5. Moyen mnémotechnique}
+Pour se souvenir des propriétés d'une relation d'ordre rationnelle : le sigle \textbf{CRTM} (Complète, Réflexive, Transitive, Monotone). 
+Pour les courbes d'indifférence : "Elles descendent (Monotonie) et elles sourient (Convexité)".
+
+\textbf{6. Résumé ultra condensé}
+Le consommateur fait des choix basés sur une relation de préférence ordinale, complète et transitive. Ces préférences sont représentées géométriquement par des courbes d'indifférence décroissantes (car les biens sont désirables) et ne se coupant jamais. La convexité des préférences traduit le fait que "les mélanges sont préférés aux extrêmes".
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Faire se croiser deux courbes d'indifférence} : C'est mathématiquement impossible car cela violerait l'axiome de transitivité et de monotonie.
+\par \textbullet\ \textbf{Oublier l'axiome de monotonie} : Si une courbe "remonte", cela signifierait que pour compenser la perte d'un bien, il faut *enlever* de l'autre bien, ce qui implique qu'un des biens est un "mal" (pollution, déchets).
+
+\textbf{8. Lien avec les exercices}
+L'\textbf{Exercice 5.1 du TD 5 (Préférences lexicographiques)} illustre la limite de cette modélisation : il explore des préférences qui ne satisfont pas l'axiome de continuité (acheter toujours plus de bien 1 avant de regarder le bien 2), empêchant ainsi la représentation par une courbe classique.
+
+\textbf{9. Méthode de résolution associée}
+Pour démontrer des propriétés sur les préférences :
+\par \textbf{1.} Tracer un repère $(x_1, x_2)$.
+\par \textbf{2.} Placer les points comparés et tracer le segment qui les relie pour étudier la convexité.
+\par \textbf{3.} Pour prouver que les courbes ne se coupent pas : raisonner par l'absurde en utilisant un point d'intersection et l'axiome de transitivité.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien vérifié que plus loin de l'origine = utilité plus élevée (monotonie) ?
+\par \textbullet\ [ ] Ai-je bien tracé des courbes convexes (tournant le dos à l'origine) pour montrer le goût de la diversité ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 5.2 : Fonctions d'utilité}
+
+\textbf{1. Idée centrale}
+L'objectif est de remplacer la relation d'ordre géométrique (les courbes) par une fonction mathématique continue $U(x)$. Cela sert à rendre les problèmes de choix du consommateur solubles à l'aide d'outils d'optimisation classiques (dérivées, lagrangiens). Le sens profond est que cette fonction est purement *ordinale* : sa valeur absolue n'a aucun sens, seul le fait qu'elle soit plus ou moins élevée importe.
+
+\textbf{2. Intuition / vulgarisation}
+Pensez à l'utilité comme à un classement de championnat. Arriver 1er est mieux qu'arriver 2ème, qui est mieux que 3ème. Si l'on change les points attribués (par exemple 100 points pour le 1er au lieu de 10 points, 50 au lieu de 5 pour le 2ème), l'ordre du podium reste exactement le même. Une fonction d'utilité fait exactement cela : elle attribue une "note" à un panier, mais toute modification mathématique qui conserve le classement (transformation croissante) décrit la même personne.
+
+\textbf{3. Définition / résultat formel}
+Si la relation d'ordre $\succeq$ est complète, réflexive, transitive, monotone et *continue*, il existe une fonction continue $U(.)$ qui représente $\succeq$.
+C'est-à-dire : $\mathbf{x} \succeq \mathbf{y} \iff U(\mathbf{x}) \ge U(\mathbf{y})$.
+\textbf{Absence d'unicité} : Toute fonction $V(\mathbf{x}) = f(U(\mathbf{x}))$ avec $f(.)$ strictement croissante représente exactement les mêmes préférences.
+La convexité des préférences implique la quasi-concavité de la fonction $U(.)$.
+
+\textbf{4. Formules à connaître (Les grandes familles de fonctions)}
+\par \textbullet\ \textbf{Substituts parfaits (Linéaire)} : $U(\mathbf{x}) = \sum \alpha_\ell x_\ell$. Biens perçus comme identiques à un facteur d'échelle près.
+\par \textbullet\ \textbf{Compléments parfaits (Leontief)} : $U(\mathbf{x}) = \min_\ell \{\alpha_\ell x_\ell\}$. Biens consommés dans des proportions fixes strictes (ex: chaussures gauche/droite).
+\par \textbullet\ \textbf{Cobb-Douglas} : $U(\mathbf{x}) = \prod x_\ell^{\alpha_\ell}$. Le consommateur veut toujours un peu de tous les biens, jamais 0.
+\par \textbullet\ \textbf{CES (Constant Elasticity of Substitution)} : $U(\mathbf{x}) = (\sum \alpha_\ell x_\ell^\rho)^{1/\rho}$. Famille générale englobant les autres selon la valeur de $\rho$.
+
+\textbf{5. Moyen mnémotechnique}
+"Linéaire = Parallèles, Leontief = Angle Droit (L), Cobb-Douglas = Courbes douces".
+Règle de la transformation : "Le log ou l'exponentielle ne changent pas la personne".
+
+\textbf{6. Résumé ultra condensé}
+La fonction d'utilité traduit les préférences en une équation mathématique ordinale. Ce qui importe est l'ordre des valeurs, pas leur ampleur. Les quatre fonctions canoniques (Leontief, Linéaire, Cobb-Douglas, CES) modélisent différentes intensités de substituabilité entre les biens. Appliquer une fonction logarithme ou exponentielle à une utilité ne change pas le comportement de l'agent économique.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Additionner les utilités cardinales} : Croire que si $U_A(x) = 100$ et $U_B(x) = 2$, alors l'agent A est "50 fois plus heureux" que B. C'est faux, on ne peut pas comparer cardinalement ni interpersonnellement.
+\par \textbullet\ \textbf{Tenter de dériver une Leontief} : La fonction $\min()$ n'est pas dérivable au "coude" (l'angle droit). Utiliser un Lagrangien sur une Leontief mène droit dans le mur.
+
+\textbf{8. Lien avec les exercices}
+Absolument tout le \textbf{TD 5 (Ex 1)} repose sur l'identification et la manipulation de ces fonctions (tracer les courbes, voir les effets de transformation). Dans le TD 6 sur l'échange, utiliser la transformation logarithmique d'une Cobb-Douglas ($U = x_1^{\alpha_1} x_2^{\alpha_2} \rightarrow \ln(U) = \alpha_1 \ln(x_1) + \alpha_2 \ln(x_2)$) simplifie massivement les calculs de dérivées. 
+
+\textbf{9. Méthode de résolution associée}
+Pour prouver que deux fonctions $U(x)$ et $V(x)$ représentent les mêmes préférences (ex: TD 5 Ex 1) :
+\par \textbf{1.} Trouver la fonction $f$ telle que $V(x) = f(U(x))$. (Souvent $f = \ln$, $f = \exp$, ou $f = ()^2$).
+\par \textbf{2.} Prouver que $f$ est strictement croissante en calculant sa dérivée ($f' > 0$).
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien reconnu la forme fonctionnelle (Cobb-Douglas, Leontief, Linéaire) avant de me lancer dans les calculs ?
+\par \textbullet\ [ ] Ai-je pensé à passer la Cobb-Douglas au logarithme pour éviter un enfer calculatoire avec les puissances ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 5.3 : Taux Marginal de Substitution (TMS)}
+
+\textbf{1. Idée centrale}
+L'objectif du TMS est de mesurer l'intensité de la volonté d'échange d'un consommateur. Il sert à quantifier techniquement la substituabilité locale entre deux biens. Le sens logique profond est d'établir le "taux de change psychologique" de la consommatrice (combien de bien 2 elle exige pour lâcher une unité de bien 1) indépendamment des prix du marché.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez que vous avez 10 cafés et 1 part de gâteau. Si je vous demande un café, vous me le donnerez contre presque rien, car vous en avez plein. Mais si vous n'avez plus que 1 café et 10 gâteaux, vous exigerez peut-être 3 gâteaux en échange de ce dernier café. Le TMS, c'est exactement cette valeur : il varie selon votre stock actuel et reflète la pente de votre courbe d'indifférence à cet instant précis.
+
+\textbf{3. Définition / résultat formel}
+Le Taux Marginal de Substitution du bien $\ell$ par le bien $k$ au point $\mathbf{x}$, noté $TMS_{\ell/k}$, est la valeur absolue de la pente de la courbe d'indifférence en ce point.
+Le long d'une courbe d'indifférence $U(x_1, x_2) = U_0$, on a via le théorème des fonctions implicites :
+$dU = \frac{\partial U}{\partial x_1} dx_1 + \frac{\partial U}{\partial x_2} dx_2 = 0$.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Formule générale du TMS} : $TMS_{\ell/k} = \frac{\partial U / \partial x_\ell}{\partial U / \partial x_k}$.
+\par \textbullet\ \textbf{TMS d'une Cobb-Douglas $U = x_1^{\alpha_1} x_2^{\alpha_2}$} : $TMS_{1/2} = \frac{\alpha_1}{\alpha_2} \times \frac{x_2}{x_1}$.
+\par \textbullet\ \textbf{Équation de substitution} : $dx_2 = - TMS_{1/2} dx_1$.
+
+\textbf{5. Moyen mnémotechnique}
+"Le TMS 1 par rapport à 2, c'est l'utilité marginale du 1 SUR l'utilité marginale du 2" ($\frac{U'_1}{U'_2}$). Attention, sur un graphique $(x_1, x_2)$, la pente est $-TMS_{1/2}$.
+
+\textbf{6. Résumé ultra condensé}
+Le TMS est le ratio des utilités marginales. Il indique la quantité de bien 2 nécessaire pour compenser la perte d'une unité de bien 1 infinitésimale. Il est indépendant de la fonction d'utilité choisie pour représenter les préférences. Pour des préférences convexes, le TMS est décroissant le long de la courbe d'indifférence.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Inverser le ratio} : Écrire $TMS_{1/2} = \frac{\partial U / \partial x_2}{\partial U / \partial x_1}$. Grosse erreur de notation. C'est toujours la dérivée du bien en abscisse sur la dérivée du bien en ordonnée.
+\par \textbullet\ \textbf{Calculer le TMS d'une Leontief} : Une fonction $\min()$ n'étant pas différentiable au coude, le TMS n'y est pas défini. Ne surtout pas essayer d'y appliquer des dérivées partielles.
+\par \textbullet\ \textbf{Croire qu'une transformation croissante modifie le TMS} : Si on prend $V(x) = \ln(U(x))$, le TMS de $V$ est strictement égal au TMS de $U$. C'est un invariant analytique.
+
+\textbf{8. Lien avec les exercices}
+Le calcul du TMS est l'outil principal de la caractérisation des optima de Pareto dans la Boîte d'Edgeworth (Chapitre 6 / Chapitre 7). Par exemple, dans le \textbf{TD 6 (Échange)}, l'égalité des $TMS_A = TMS_B$ est la méthode algébrique systématique utilisée pour trouver l'équation de la Courbe des Contrats pour les Cobb-Douglas et les CES. 
+
+\textbf{9. Méthode de résolution associée}
+Procédure mécanique pour calculer le TMS :
+\par \textbf{1.} Calculer la dérivée partielle par rapport à $x_1$ : $\frac{\partial U}{\partial x_1}$.
+\par \textbf{2.} Calculer la dérivée partielle par rapport à $x_2$ : $\frac{\partial U}{\partial x_2}$.
+\par \textbf{3.} Écrire le ratio des deux.
+\par \textbf{4.} Simplifier au maximum la fraction (les puissances s'annulent souvent proprement dans les Cobb-Douglas) pour l'exprimer en fonction de $\frac{x_2}{x_1}$.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien mis $\frac{\partial U}{\partial x_1}$ au numérateur et non au dénominateur ?
+\par \textbullet\ [ ] Mon TMS est-il bien une valeur positive (la valeur absolue de la pente) ?
+\par \textbullet\ [ ] Si la fonction est Leontief, ai-je bien renoncé à calculer le TMS par des dérivées pour faire un raisonnement graphique ?
+\newpage
+\chapter{Chapitre 6 : Échange}
+
+
+Ce chapitre marque une étape cruciale : nous passons de l'étude d'un agent isolé à l'interaction entre deux agents (Agnès et Bruno) disposant de dotations initiales de deux biens (1 et 2). L'enjeu est de comprendre l'échange pur, sans production et sans monnaie (le troc), pour déterminer quelles sont les allocations efficaces.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 6.1 : Boîte d'Edgeworth}
+
+\textbf{1. Idée centrale}
+L'objectif est de représenter graphiquement l'intégralité d'une économie d'échange pur (deux agents, deux biens) sur un seul schéma. Cet outil sert à visualiser simultanément les dotations initiales, les préférences des deux agents et les contraintes de rareté (la taille de l'économie). Son sens logique profond est de montrer comment des échanges volontaires peuvent améliorer la situation des deux parties jusqu'à épuiser toutes les opportunités de gains mutuels.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez une table avec un nombre fixe de pommes et de bananes. Agnès est assise d'un côté de la table, Bruno de l'autre. Au lieu de dessiner un graphique pour Agnès et un autre pour Bruno, on prend le graphique de Bruno, on le tourne à l'envers (à 180 degrés) et on le pose sur celui d'Agnès. La taille de ce "rectangle" correspond au nombre total de fruits sur la table. N'importe quel point dans cette boîte décrit exactement la répartition des fruits : ce qu'Agnès possède se lit depuis son coin (en bas à gauche), et ce qu'il reste pour Bruno se lit depuis son coin (en haut à droite).
+
+\textbf{3. Définition / résultat formel}
+La Boîte d'Edgeworth est un diagramme rectangulaire de dimensions $\omega_1 \times \omega_2$, où $\omega_1$ et $\omega_2$ sont les quantités totales disponibles des deux biens. 
+Une allocation réalisable est un point dans la boîte représentant les vecteurs de consommation $\mathbf{x_A} = (x_A^1, x_A^2)$ et $\mathbf{x_B} = (x_B^1, x_B^2)$ tels que les marchés sont à l'équilibre : $x_A^1 + x_B^1 = \omega_1$ et $x_A^2 + x_B^2 = \omega_2$.
+L'intersection des courbes d'indifférence initiales d'Agnès et Bruno forme une "lentille" contenant tous les échanges mutuellement profitables. 
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Dotation totale de l'économie} : $\mathbf{\omega} = \mathbf{\omega_A} + \mathbf{\omega_B} = (\omega_A^1 + \omega_B^1, \omega_A^2 + \omega_B^2)$.
+\par \textbullet\ \textbf{Contrainte de faisabilité (sans gaspillage)} : $x_B^1 = \omega_1 - x_A^1$ et $x_B^2 = \omega_2 - x_A^2$. 
+
+\textbf{5. Moyen mnémotechnique}
+"La boîte enferme les ressources, la lentille enferme les accords."
+Agnès lit de bas en haut et de gauche à droite ($\nearrow$). Bruno lit de haut en bas et de droite à gauche ($\swarrow$).
+
+\textbf{6. Résumé ultra condensé}
+La boîte d'Edgeworth superpose les repères de deux consommateurs pour une quantité fixe de deux biens. L'allocation initiale définit les niveaux d'utilité de départ (statu quo). Un échange n'est accepté que s'il se situe dans la zone (la lentille) comprise entre les deux courbes d'indifférence initiales. La courbe des contrats (optima de Pareto) relie toutes les allocations où aucune amélioration mutuelle n'est plus possible.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Inverser les coordonnées de Bruno :} Oublier que le point de vue de Bruno est inversé. Si un point est très proche de l'origine d'Agnès $(0,0)_A$, cela signifie qu'Agnès n'a presque rien, ce qui implique que Bruno possède presque toute la dotation (il est proche de $(\omega_1, \omega_2)_B$).
+\par \textbullet\ \textbf{Confondre faisabilité et efficacité :} Tout point dans la boîte est une allocation *réalisable* (faisable). Mais seuls les points sur la courbe des contrats sont des allocations *efficaces* (Pareto-optimales).
+
+\textbf{8. Lien avec les exercices}
+Tous les exercices du \textbf{TD 6} (Ex 1 à 5) et des \textbf{Annales 2020 et 2022} commencent systématiquement par demander de dessiner la boîte d'Edgeworth, d'y placer la dotation initiale et de tracer les courbes d'indifférence passant par ce point pour justifier si l'allocation est Pareto-optimale ou non.
+
+\textbf{9. Méthode de résolution associée}
+Pour dessiner et analyser la boîte :
+\par \textbf{1.} Calculer les ressources totales $\omega_1$ (abscisse) et $\omega_2$ (ordonnée). Tracer le rectangle.
+\par \textbf{2.} Placer l'origine A en bas à gauche et l'origine B en haut à droite.
+\par \textbf{3.} Placer le point de dotation initiale en lisant les coordonnées d'Agnès depuis son origine (vérifier que ça correspond bien à la dotation de Bruno depuis la sienne).
+\par \textbf{4.} Tracer la courbe d'indifférence de A passant par ce point (convexe vue de A) et celle de B (convexe vue de B, donc creuse vers le haut à droite).
+\par \textbf{5.} Hachurer la lentille d'échange.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien dimensionné la boîte en faisant la *somme* des dotations initiales ($\omega_A + \omega_B$) ?
+\par \textbullet\ [ ] Mes courbes d'indifférences de l'agent B tournent-elles bien le dos à l'origine de B ?
+\par \textbullet\ [ ] Ai-je bien vérifié qu'un échange proposé se trouve à l'intérieur de la lentille avant de déclarer qu'il est mutuellement profitable ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 6.2 : Dites le avec des équations !}
+
+\textbf{1. Idée centrale}
+L'objectif est de traduire l'analyse graphique de l'échange (la tangence des courbes d'indifférence) en une résolution algébrique systématique. Cela sert à trouver l'équation mathématique exacte de la Courbe des Contrats. Le sens logique profond est que l'échange s'arrête exactement lorsque les deux agents attribuent la même valeur relative aux deux biens, c'est-à-dire quand leurs "taux de change psychologiques" (les Taux Marginaux de Substitution) s'égalisent.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez qu'Agnès est prête à donner 3 pommes pour avoir 1 banane. Bruno, lui, se contenterait d'1 pomme pour céder 1 banane. Ils ont un énorme espace pour négocier (Agnès est prête à payer cher, Bruno vend peu cher). Ils vont échanger. Au fur et à mesure de l'échange, Agnès a de moins en moins de pommes (elle les chérit plus) et Bruno a de moins en moins de bananes (il les chérit plus). Leurs envies convergent. L'échange s'arrête net au moment précis où ils exigent tous les deux, par exemple, 2 pommes contre 1 banane. Leurs évaluations marginales sont alors identiques.
+
+\textbf{3. Définition / résultat formel}
+Dans le cas de préférences représentées par des fonctions d'utilité différentiables, l'ensemble des allocations efficaces (la Courbe des Contrats) est caractérisé par la tangence des courbes d'indifférence, ce qui implique l'égalité des Taux Marginaux de Substitution des deux agents, évalués en l'allocation réalisable correspondante :
+$TMS_A(x_A^1, x_A^2) = TMS_B(x_B^1, x_B^2)$
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Égalité des TMS} : $\frac{\partial U_A / \partial x_A^1}{\partial U_A / \partial x_A^2} = \frac{\partial U_B / \partial x_B^1}{\partial U_B / \partial x_B^2}$
+\par \textbullet\ \textbf{Changement de variable (Crucial)} : Pour résoudre l'équation dans l'espace d'Agnès, il faut substituer les consommations de Bruno par la contrainte de rareté :
+    $TMS_A(x_A^1, x_A^2) = TMS_B(\omega_1 - x_A^1, \omega_2 - x_A^2)$
+
+\textbf{5. Moyen mnémotechnique}
+"L'accord est scellé quand les TMS sont nivelés." (TMS A = TMS B). 
+
+\textbf{6. Résumé ultra condensé}
+Pour trouver analytiquement la courbe des contrats, il faut égaliser les TMS des deux consommateurs. Cependant, le TMS de B est fonction de $x_B$ et $y_B$. Il faut impérativement remplacer les quantités de B par le total disponible moins les quantités de A ($\omega - x_A$). On obtient alors une équation à deux inconnues ($x_A^1, x_A^2$) qu'on isole pour trouver l'équation de la courbe. 
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Oublier la substitution :} Poser $TMS_A(x_A, y_A) = TMS_B(x_B, y_B)$ et s'arrêter là, ou essayer de résoudre une équation qui a 4 variables. C'est impossible. Il faut utiliser les dotations totales $\omega_1, \omega_2$ pour exprimer $x_B$ et $y_B$ en fonction de $x_A$ et $y_A$.
+\par \textbullet\ \textbf{Vouloir appliquer le TMS à des fonctions non-dérivables :} Le TMS n'est pas défini pour des utilités de type Leontief $\min(x,y)$. Appliquer l'égalité des TMS sur une Leontief est une erreur fondamentale de raisonnement.
+
+\textbf{8. Lien avec les exercices}
+C'est la mécanique centrale du \textbf{TD 6 (Ex 2 sur la Cobb-Douglas et Ex 5 sur la CES)}. Dans l'exercice 2, l'application de l'égalité des TMS avec $U_A = x_1^\alpha x_2^{1-\alpha}$ et $U_B = x_1^\beta x_2^{1-\beta}$ conduit à une équation du premier degré permettant d'isoler analytiquement $x_2$ en fonction de $x_1$, démontrant la forme (convexe, concave ou linéaire) de la courbe des contrats selon le rapport des paramètres $\alpha$ et $\beta$.
+
+\textbf{9. Méthode de résolution associée}
+Pour trouver l'équation de la courbe des contrats (cas différentiable) :
+\par \textbf{1.} Calculer le $TMS_A$ (en fonction de $x_A^1, x_A^2$).
+\par \textbf{2.} Calculer le $TMS_B$ (en fonction de $x_B^1, x_B^2$).
+\par \textbf{3.} Poser $TMS_A = TMS_B$.
+\par \textbf{4.} Remplacer $x_B^1$ par $\omega_1 - x_A^1$ et $x_B^2$ par $\omega_2 - x_A^2$.
+\par \textbf{5.} Manipuler l'équation algébriquement pour isoler $x_A^2$ d'un côté de l'égalité. L'expression obtenue est l'équation de la courbe des contrats $x_A^2 = C(x_A^1)$.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien calculé mes dérivées partielles sans me tromper dans les exposants ?
+\par \textbullet\ [ ] Ai-je bien effectué le changement de variables pour éliminer les inconnues de l'agent B de mon équation finale ?
+\par \textbullet\ [ ] Ma courbe des contrats relie-t-elle bien l'origine de A $(0,0)$ à l'origine de B $(\omega_1, \omega_2)$ (à vérifier mathématiquement en testant les limites) ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 6.3 : Formellement}
+
+\textbf{1. Idée centrale}
+La méthode de l'égalité des TMS a des limites (notamment pour les solutions en coin ou les fonctions non-différentiables). L'objectif est ici de poser rigoureusement la recherche d'une allocation efficace comme un programme mathématique de maximisation sous contrainte. Le sens logique profond est de dire : "Pour trouver la frontière d'efficacité, fixons l'utilité de Bruno à un niveau arbitraire $u_B$, et cherchons à maximiser l'utilité d'Agnès avec les ressources restantes".
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez qu'un arbitre doit répartir les biens. Pour être sûr de ne pas faire de gaspillage, il va voir Bruno et lui dit : "Je te garantis un niveau de bonheur de 10. Pas plus, pas moins". Ensuite, l'arbitre donne tout le reste à Agnès et l'organise de façon à maximiser son bonheur à elle. L'allocation trouvée est forcément efficace (on ne peut plus améliorer Agnès sans baisser Bruno qui est bloqué à 10). En faisant varier la cible de Bruno (10, 20, 30...), l'arbitre trace petit à petit toute la courbe des contrats.
+
+\textbf{3. Définition / résultat formel}
+La courbe des contrats $(x_1^*(u), x_2^*(u))$ est l'ensemble des solutions paramétrées par $u$ du programme sous contrainte suivant :
+$\max_{\mathbf{x}} U_A(\mathbf{x})$
+sous contrainte $U_B(\mathbf{\omega} - \mathbf{x}) = u$
+pour $u \in [U_B(0), U_B(\mathbf{\omega})]$
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Le Lagrangien du problème} : $\mathcal{L}(x_A^1, x_A^2, \lambda) = U_A(x_A^1, x_A^2) - \lambda [U_B(\omega_1 - x_A^1, \omega_2 - x_A^2) - u]$
+\par \textbullet\ *Note : La résolution de ce Lagrangien pour des solutions intérieures redonne très exactement la condition $TMS_A = TMS_B$.*
+
+\textbf{5. Moyen mnémotechnique}
+"On bloque B, on pousse A au max." (Pour trouver l'optimum de Pareto, on contraint un agent et on maximise l'autre).
+
+\textbf{6. Résumé ultra condensé}
+Formellement, un optimum de Pareto se trouve en maximisant l'utilité d'un agent sous la contrainte que l'autre agent maintienne un niveau d'utilité cible. Cette approche par le Lagrangien valide mathématiquement la règle des TMS, mais elle permet surtout de gérer avec rigueur les cas où l'égalité des TMS échoue, typiquement lors des solutions "en coin" (bords de la boîte) ou pour les biens parfaitement substituables/complémentaires.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Vouloir forcer le Lagrangien sur des fonctions Leontief :} La fonction "Min" n'est pas dérivable à son angle droit. On ne peut pas utiliser la dérivée ni le Lagrangien. Il faut utiliser une résolution logique ou graphique.
+\par \textbullet\ \textbf{Vouloir forcer le Lagrangien sur des substituts parfaits :} Si $U_A = \alpha x + y$, la fonction est linéaire. Les dérivées sont constantes, le Lagrangien ne donnera pas d'égalité. L'optimum se trouve sur les "bords" de la boîte d'Edgeworth.
+
+\textbf{8. Lien avec les exercices}
+C'est indispensable pour résoudre le \textbf{TD 6, Ex 3 (Leontief)} et \textbf{Ex 4 (Substituts parfaits)}, ainsi que l'\textbf{Annale MIP 2020 Ex 1}. Dans ces cas, l'égalité des TMS ne marche pas. 
+Pour l'annale 2020 (Agent B a une fonction Leontief $\min(x,y)$), l'approche formelle ou graphique montre que les optima de Pareto sont contraints par les "coudes" de la fonction Leontief : B refusera de dévier de la ligne $x_B = y_B$, la courbe des contrats est donc exactement cette droite (les sommets des angles droits).
+
+\textbf{9. Méthode de résolution associée}
+Si la fonction n'est pas strictement convexe et différentiable (exit les TMS) :
+\par \textbullet\ \textbf{Cas Leontief $\min(\alpha x, y)$} : Raisonner graphiquement ou logiquement. L'agent Leontief ne veut consommer que dans les proportions $y = \alpha x$. Tout excès de l'un des biens a pour lui une utilité marginale nulle. L'autre agent va donc récupérer tous ces "excès". La courbe des contrats correspond à l'alignement des "coudes" de la fonction Leontief dans la boîte.
+\par \textbullet\ \textbf{Cas Linéaire (Substituts parfaits)} : Comparer les deux TMS qui sont des constantes. Si $TMS_A > TMS_B$, Agnès valorise plus le bien 1 que Bruno. La courbe des contrats sera située sur les bords de la boîte : Agnès récupère tout le bien 1 jusqu'à saturation, puis commence à prendre le bien 2.
+
+\textbf{10. Mini checklist d'examen}
+\par \textbullet\ [ ] Ai-je bien vérifié le type de fonction d'utilité (Cobb-Douglas vs Leontief/Linéaire) avant de me lancer aveuglément dans un calcul de dérivées ou de TMS ?
+\par \textbullet\ [ ] Si je suis face à une fonction Leontief, ai-je bien tracé la droite reliant les coudes (ex: $x_B = y_B$) dans la boîte pour repérer la courbe des contrats ?
+\par \textbullet\ [ ] Dans le cas de substituts parfaits, ai-je bien identifié qui valorise le plus quel bien pour déterminer sur quel "bord" de la boîte se trouve la solution ?
+\newpage
+\chapter{Chapitre 7 : Optimum de Pareto}
+
+Ce chapitre est l'aboutissement de la théorie de l'échange. Après avoir compris comment deux individus troquent dans une boîte d'Edgeworth, nous généralisons l'analyse à toute une économie (plusieurs agents, plusieurs biens) pour définir formellement ce qu'est une allocation "efficace". Le héros de ce chapitre est Vilfredo Pareto.
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 7.1 : Économie d'échange générale}
+
+\textbf{1. Idée centrale}
+L'objectif est de poser le cadre mathématique général d'une économie d'échange pur, en passant de 2 agents/2 biens à $I$ consommateurs et $L$ biens. Cela sert à définir rigoureusement ce qu'est une "allocation" et, surtout, ce qu'est une "allocation réalisable". Le sens logique est de borner le champ des possibles : on ne peut pas distribuer plus de ressources que ce qui existe dans l'économie.
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez un grand banquet. Il y a un certain nombre total de parts de pizza, de verres de jus, etc. (les dotations initiales). Une "allocation", c'est simplement le fait de dire "qui a quoi dans son assiette" à un instant donné. Une allocation est dite "réalisable" si la somme de toutes les parts de pizza dans les assiettes ne dépasse pas le nombre total de parts de pizza disponibles dans la cuisine. C'est la règle anti-magie : on ne crée rien, on ne fait que répartir.
+
+\textbf{3. Définition / résultat formel}
+Soit une économie avec $L$ biens et $I$ consommateurs.
+La dotation totale est le vecteur $\mathbf{\omega} = (\omega_1, ..., \omega_L) \in \mathbb{R}^L_+$.
+Une \textbf{allocation} est une matrice $\mathbf{x} = (\mathbf{x}_1, ..., \mathbf{x}_I)$ représentant les paniers de biens de chaque consommateur.
+Une \textbf{allocation réalisable} est une allocation telle que, pour chaque bien $\ell$, la somme des consommations n'excède pas la ressource totale : $\sum_{i=1}^I x_{i\ell} \le \omega_\ell$. En l'absence de gaspillage, c'est une égalité.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Contrainte de faisabilité} : $\forall \ell \in \{1, ..., L\}, \sum_{i=1}^I x_{i\ell} = \omega_\ell$ (en supposant que les biens sont désirables et donc totalement consommés).
+
+\textbf{5. Moyen mnémotechnique}
+"Rien ne se perd, tout se répartit". Une allocation n'est réalisable que si la somme des parts (les $x$) égale le gâteau total ($\omega$).
+
+\textbf{6. Résumé ultra condensé}
+Dans une économie d'échange générale, on décrit l'état du système par une allocation (la liste des paniers de tous les agents). Pour que cette allocation ait un sens physique, elle doit être réalisable : la quantité consommée de chaque bien par l'ensemble des agents doit être inférieure ou égale à la dotation totale de l'économie.
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Oublier de vérifier la faisabilité :} Proposer ou analyser une solution d'échange où la somme des biens finaux dépasse la dotation initiale. C'est une erreur fatale.
+\par \textbullet\ \textbf{Confondre le panier individuel et l'allocation globale :} $\mathbf{x}_i$ est un vecteur (ce que mange l'individu $i$), tandis que $\mathbf{x}$ est une matrice (le plan de table complet).
+
+\textbf{8. Lien avec les exercices}
+Toutes les annales d'équilibre général commencent par cette contrainte. Dans l'\textbf{Annale MIP 2020 Ex 1} ou \textbf{MIP 2022 Ex 2}, il faut systématiquement écrire $x_A + x_B = \omega_x$ pour relier les consommations des deux agents et construire la boîte d'Edgeworth.
+
+\textbf{9. Méthode de résolution associée}
+Pour vérifier si une allocation est réalisable :
+\par \textbf{1.} Calculer la dotation totale initiale pour le bien 1 : $\omega_1 = \omega_{A1} + \omega_{B1} + ...$
+\par \textbf{2.} Additionner les quantités du bien 1 proposées dans la nouvelle allocation : $X_1 = x_{A1} + x_{B1} + ...$
+\par \textbf{3.} Vérifier que $X_1 \le \omega_1$. Répéter pour tous les biens.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien vérifié que la somme des biens consommés par tous les agents correspond exactement à la dotation totale de l'énoncé ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 7.2 : Optimum (ou efficacité) au sens de Pareto}
+
+\textbf{1. Idée centrale}
+L'objectif est de définir un critère d'efficacité économique absolu qui se passe de jugement moral sur les inégalités. Il sert à identifier les situations où "le gâteau ne peut plus être agrandi ni mieux découpé" sans faire de perdant. Le sens profond est qu'un optimum de Pareto est une situation où toutes les opportunités d'échanges mutuellement avantageux ont été épuisées.
+
+\textbf{2. Intuition / vulgarisation}
+Une situation est optimale au sens de Pareto si la seule façon de rendre quelqu'un plus heureux est de rendre quelqu'un d'autre plus triste. Si vous pouvez encore échanger une pomme contre une banane et que les deux personnes sont plus contentes (ou l'une plus contente et l'autre indifférente), c'est que vous n'étiez pas à l'optimum : vous gâchiez du potentiel de bonheur !
+
+\textbf{3. Définition / résultat formel}
+Une allocation réalisable $\mathbf{x}$ est \textbf{optimale au sens de Pareto} s'il n'existe pas d'autre allocation réalisable $\mathbf{\tilde{x}}$ telle que :
+\par \textbullet\ $\forall i, U_i(\mathbf{\tilde{x}}_i) \ge U_i(\mathbf{x}_i)$ (Personne n'y perd)
+\par \textbullet\ et pour au moins un $j, U_j(\mathbf{\tilde{x}}_j) > U_j(\mathbf{x}_j)$ (Au moins un y gagne strictement).
+*L'ensemble des optima de Pareto dans une économie à deux agents forme la Courbe des contrats.*
+
+\textbf{4. Formules à connaître}
+*Ce concept repose sur une définition logique (inégalités d'utilités) plutôt que sur une formule de calcul directe.*
+
+\textbf{5. Moyen mnémotechnique}
+"Pareto : pas d'amélioration gratuite." Si on veut monter l'utilité d'A, on est obligé de descendre celle de B.
+
+\textbf{6. Résumé ultra condensé}
+L'optimalité de Pareto est le juge de paix de l'efficacité en microéconomie. Une allocation est Pareto-optimale si on ne peut plus améliorer la situation d'un individu sans détériorer celle d'un autre. C'est un concept d'efficacité pure (absence de gaspillage) qui ne dit absolument rien sur l'équité de la répartition (une allocation où un agent possède tout est souvent Pareto-optimale).
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Confondre Pareto-optimal et Équitable :} L'allocation où le dictateur possède tout et les autres n'ont rien est Pareto-optimale ! (Car pour donner aux pauvres, il faudrait prendre au dictateur, ce qui baisse son utilité).
+\par \textbullet\ \textbf{Oublier la condition "réalisable" :} On ne compare une allocation qu'à d'autres allocations *réalisables* (on ne fait pas apparaître des biens magiquement pour rendre tout le monde heureux).
+
+\textbf{8. Lien avec les exercices}
+C'est la question incontournable des annales. Dans l'\textbf{Annale MIP 2022 (Q2, Q3, Q4)}, on demande de prouver si l'allocation donnant tout à B est Pareto-optimale. La réponse est "oui" car B a une utilité strictement monotone : si on prend un peu pour donner à A, B y perd strictement.
+
+\textbf{9. Méthode de résolution associée}
+Pour prouver qu'une allocation N'EST PAS Pareto-optimale :
+\par \textbf{1.} Trouver un petit transfert d'un bien de A vers B, et d'un autre de B vers A.
+\par \textbf{2.} Montrer que ce transfert augmente (ou maintient) l'utilité de A et de B.
+Pour prouver qu'une allocation (aux bords) EST Pareto-optimale :
+\par \textbf{1.} Montrer que la seule réallocation possible implique de prendre un bien à l'agent qui le valorise strictement.
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Ai-je bien compris que "Pareto-optimal" ne veut pas dire "juste" ou "au milieu" de la boîte ?
+\par \textbullet\ [ ] Si on me demande si une allocation est Pareto-optimale, ai-je bien vérifié les "coins" (solutions où l'un n'a rien) ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 7.3 : Caractérisation}
+
+\textbf{1. Idée centrale}
+Comment trouver ces fameux optima mathématiquement ? L'objectif est de transformer la définition philosophique de Pareto en un programme d'optimisation classique (Lagrangien) conduisant à l'égalité des Taux Marginaux de Substitution (TMS). Le sens logique profond est : pour être à la frontière de l'efficacité, il faut que l'échange s'arrête. Et l'échange s'arrête précisément quand tout le monde attribue la même valeur relative aux biens (quand les TMS s'égalisent).
+
+\textbf{2. Intuition / vulgarisation}
+Imaginez un jeu où l'arbitre fige le bonheur de Bob à un niveau précis (disons, "niveau 10 de satisfaction"). L'arbitre donne tout le reste des biens à Alice de la façon la plus intelligente possible pour maximiser le bonheur d'Alice. Le point trouvé est forcément un optimum de Pareto (on ne peut pas améliorer Alice sans que Bob ne chute sous les 10). À ce point précis, l'arbitre remarque que les "taux de change psychologiques" d'Alice et de Bob (leurs TMS) sont parfaitement identiques.
+
+\textbf{3. Définition / résultat formel}
+Pour caractériser analytiquement les optima de Pareto, on résout le programme sous contrainte suivant (pour un agent $i$) :
+$\max_{\mathbf{x}} U_i(\mathbf{x}_i)$ sous contrainte $\forall j \neq i, U_j(\mathbf{x}_j) \ge U_j^0$ et $\mathbf{x}$ réalisable.
+De manière équivalente, on peut maximiser la somme pondérée des utilités $\sum \mu_i U_i(\mathbf{x}_i)$ (avec $\mu_i \ge 0$).
+Ces programmes aboutissent (pour des solutions intérieures avec fonctions différentiables) à la condition fondamentale d'optimalité parétienne : \textbf{l'égalité des TMS entre tout couple de biens pour tous les consommateurs}.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ \textbf{Caractérisation différentiable} : $TMS_{i \ell/k} = TMS_{j \ell/k}$ pour tout agent $i, j$ et tout bien $\ell, k$.
+\par \textbullet\ \textbf{Somme pondérée (artifice mathématique)} : $\max_{\mathbf{x}} \sum_{i=1}^I \mu_i U_i(\mathbf{x}_i)$ sous contrainte de ressources.
+
+\textbf{5. Moyen mnémotechnique}
+"Mêmes TMS, plus de business." Quand les pentes des courbes d'indifférence sont égales (tangence), on est sur la courbe des contrats.
+
+\textbf{6. Résumé ultra condensé}
+Les optima de Pareto se caractérisent mathématiquement par l'égalité des Taux Marginaux de Substitution (TMS) de tous les agents. Cela peut se démontrer en posant un Lagrangien où l'on maximise l'utilité d'un agent sous la contrainte que les autres gardent une utilité fixe. Attention, la méthode de maximisation de la "somme pondérée" des utilités n'est qu'une astuce de calcul et n'a aucune signification sociale (les utilités ordinales ne s'additionnent pas).
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Sommer des utilités comme du Welfare :} Le concept de Pareto repose sur l'utilité ordinale. L'expression $\sum \mu_i U_i$ dans le Lagrangien n'est qu'une astuce mathématique. Elle ne signifie pas qu'on a le droit de dire "le bonheur social global est de 100".
+\par \textbullet\ \textbf{Forcer l'égalité des TMS partout :} Si les fonctions ne sont pas dérivables (ex: Leontief) ou si la solution est en coin (bords de la boîte d'Edgeworth), les TMS ne s'égalisent pas forcément.
+
+\textbf{8. Lien avec les exercices}
+C'est le cœur de la dérivation de l'équation analytique de la Courbe des Contrats, vu dans le \textbf{TD 6}. L'exemple du cours (Section 7.3) montre comment on utilise $\max \mu_1 \ln(xy) + \mu_2(\ln(x)+\ln(y))$ pour retrouver exactement la courbe des contrats (qui ici se révèle être $y_1 = \bar{y} \frac{x_1}{\bar{x}}$ en éliminant les $\mu$).
+
+\textbf{9. Méthode de résolution associée}
+Pour caractériser la courbe des optima de Pareto :
+\par \textbf{1.} Calculer le TMS de chaque agent.
+\par \textbf{2.} Poser $TMS_1 = TMS_2 = ... = TMS_I$.
+\par \textbf{3.} Utiliser les contraintes de faisabilité $\sum x_{i\ell} = \omega_\ell$ pour substituer les variables et isoler l'équation reliant les biens d'un seul agent (l'équation de la courbe).
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Mes fonctions d'utilités sont-elles bien différentiables et strictement convexes avant que j'applique machinalement $TMS_1 = TMS_2$ ?
+\par \textbullet\ [ ] Ai-je bien pensé à intégrer les "poids" $\mu$ si j'utilise la technique de la somme pondérée, puis à les éliminer à la fin par substitution ?
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\section{Sous-partie 7.4 : Frontière}
+
+\textbf{1. Idée centrale}
+L'objectif est de changer de perspective : au lieu de regarder les allocations dans l'espace physique des biens (la boîte d'Edgeworth), on les projette dans l'espace purement abstrait des utilités (le bonheur de A vs le bonheur de B). La "Frontière" de Pareto sert à visualiser l'arbitrage fondamental de l'économie : combien d'utilité on doit sacrifier chez B pour donner une unité d'utilité de plus à A.
+
+\textbf{2. Intuition / vulgarisation}
+Tracez un graphique avec le "Bonheur d'Agnès" en bas (axe des x) et le "Bonheur de Bruno" à gauche (axe des y). Si vous prenez toutes les répartitions de biens possibles dans le monde et que vous les placez sur ce graphique, vous obtiendrez une grosse tache. Le bord extérieur droit et supérieur de cette tache, c'est la Frontière de Pareto. C'est la limite absolue du bonheur qu'ils peuvent atteindre ensemble. Si vous êtes sur cette ligne, pour aller plus à droite (rendre Agnès plus heureuse), vous devez obligatoirement descendre (rendre Bruno moins heureux).
+
+\textbf{3. Définition / résultat formel}
+Soit $\mathcal{U}$ l'ensemble des valeurs possibles pour les utilités à partir d'allocations réalisables.
+La \textbf{Frontière de Pareto} (PF) est l'ensemble des vecteurs d'utilité $\mathbf{u} \in \mathcal{U}$ tels qu'il n'existe aucun autre vecteur $\mathbf{u}' \in \mathcal{U}$ tel que $\forall i, u'_i \ge u_i$ et pour un $j, u'_j > u_j$.
+C'est la projection mathématique de la courbe des contrats dans l'espace des utilités.
+
+\textbf{4. Formules à connaître}
+\par \textbullet\ *Pas de formule générique*. La frontière s'obtient en prenant les équations de la courbe des contrats $(x_1^*(u), x_2^*(u))$ et en les injectant dans les fonctions d'utilité pour obtenir $U_B$ en fonction de $U_A$.
+\par \textbullet\ *Exemple du cours (Symétrique Cobb-Douglas)* : $U_2 = \left(-\sqrt{U_1} + \sqrt{\bar{x}\bar{y}}\right)^2$.
+
+\textbf{5. Moyen mnémotechnique}
+"La boîte d'Edgeworth parle en kilos de pommes, la Frontière de Pareto parle en points de bonheur."
+
+\textbf{6. Résumé ultra condensé}
+La Frontière de Pareto représente géométriquement les optima de Pareto dans l'espace des utilités des agents. Sur cette frontière, la courbe est toujours strictement décroissante, illustrant l'arbitrage inévitable entre le bien-être d'un agent et celui d'un autre lorsqu'on est à l'optimum. 
+
+\textbf{7. Pièges classiques}
+\par \textbullet\ \textbf{Croire que la Frontière de Pareto est invariante :} Contrairement à la Courbe des contrats qui ne bouge pas si on applique une transformation croissante aux utilités (logarithme, carré), la Frontière de Pareto, elle, va changer de forme ! (Le cours le montre : si on prend la racine carrée des utilités, la courbe convexe se transforme en droite stricte $U_2 = \sqrt{\bar{x}\bar{y}} - U_1$). L'utilité étant ordinale, la forme exacte de cette frontière n'a pas d'interprétation cardinale absolue.
+
+\textbf{8. Lien avec les exercices}
+C'est l'objet de la question de compréhension de la fin du chapitre 7 et de l'\textbf{Exercice 7.2 du TD}, où l'on demande de déterminer la Frontière de Pareto dans le plan $(U, \Pi)$ pour l'acheteur et le vendeur canoniques (on trouve une droite de pente -1 représentant $U + \Pi = Welfare$).
+
+\textbf{9. Méthode de résolution associée}
+Pour trouver l'équation de la Frontière de Pareto :
+\par \textbf{1.} Trouver la courbe des contrats dans la boîte (ex: $y_1 = f(x_1)$, $x_2 = \omega_1 - x_1$, $y_2 = \omega_2 - f(x_1)$).
+\par \textbf{2.} Remplacer ces expressions dans les fonctions d'utilités $U_1(x_1, y_1)$ et $U_2(x_2, y_2)$.
+\par \textbf{3.} Exprimer $x_1$ en fonction de $U_1$.
+\par \textbf{4.} Injecter ce $x_1$ dans l'équation de $U_2$ pour obtenir $U_2$ uniquement en fonction de $U_1$ et des dotations initiales. 
+
+\textbf{10. Mini checklist d’examen}
+\par \textbullet\ [ ] Mon graphique de frontière de Pareto a-t-il bien les Utilités ($U_1, U_2$) sur les axes et non les quantités physiques ?
+\par \textbullet\ [ ] La courbe obtenue est-elle bien décroissante (traduisant l'arbitrage fondamental) ?
+\newpage
+Voici une synthèse structurée et exhaustive des méthodes générales de résolution extraites des travaux dirigés (TD) et des annales. 
+
+Chaque type de problème est décortiqué pour fournir une véritable "boîte à outils" algorithmique à destination d'un étudiant.
+
+\textbf{*
+
+\chapter{Méthode 1 : Recherche d'Optima de Pareto (La Boîte d'Edgeworth)}
+*Cette méthode caractérise les allocations efficaces (la "Courbe des Contrats") dans une économie d'échange pur entre deux agents, en l'absence de système de prix.*
+\par \textbullet\ }Nom de la situation\textbf{ : Caractérisation de la Courbe des Contrats dans la Boîte d'Edgeworth.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "2 consommateurs, 2 biens", "Dessiner la boîte d'Edgeworth", "L'allocation est-elle Pareto-optimale ?", "Caractériser la courbe des contrats".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Dimensionner la boîte\textbf{ : Identifier les dotations totales $\omega_x = \omega_{Ax} + \omega_{Bx}$ et $\omega_y = \omega_{Ay} + \omega_{By}$. Placer l'origine de A en bas à gauche $(0,0)$ et celle de B en haut à droite $(\omega_x, \omega_y)$.
+\par \textbf{2.} }Exprimer les contraintes de faisabilité\textbf{ : $x_B = \omega_x - x_A$ et $y_B = \omega_y - y_A$.
+\par \textbf{3.} }Calculer les Taux Marginaux de Substitution (TMS)\textbf{ : Pour chaque agent, calculer $TMS = \frac{\partial U / \partial x}{\partial U / \partial y}$.
+\par \textbf{4.} }Égaliser les TMS (Cas différentiable)\textbf{ : Poser $TMS_A(x_A, y_A) = TMS_B(x_B, y_B)$.
+\par \textbf{5.} }Substituer et isoler\textbf{ : Remplacer $x_B$ et $y_B$ par les contraintes de faisabilité. Isoler $y_A$ en fonction de $x_A$ pour obtenir l'équation de la courbe des contrats $y_A = C(x_A)$.
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Oublier de faire le changement de variable $x_B = \omega_x - x_A$ lors de l'égalisation des TMS, aboutissant à une équation insoluble à 4 inconnues.
+\par \textbullet\ }Variantes fréquentes\textbf{ : 
+\par \textbullet\ *Fonctions Leontief $\min(\alpha x, y)$* : L'égalité des TMS est impossible. Les optima se situent là où les "coudes" des courbes d'indifférence se superposent ou s'alignent (résolution graphique et algébrique en posant l'égalité des arguments du min).
+\par \textbullet\ *Biens parfaits substituts (linéaire)* : Les TMS sont constants. La courbe des contrats longe les bords de la boîte selon que $TMS_A > TMS_B$ ou l'inverse.
+\par \textbullet\ }Chapitres concernés\textbf{ : 6. Échange, 7. Optimum de Pareto.
+\par \textbullet\ }Exercices précis\textbf{ : TD6 (Ex 1 à 5) ; Annales Mi-parcours 2020 (Ex 1) ; Annales Mi-parcours 2022 (Ex 2).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 2 : Détermination de l'Équilibre Concurrentiel et Décentralisation}
+*Complémentaire à la Méthode 1, on introduit ici la monnaie (les prix) pour trouver à quel point exact de la courbe des contrats le marché va aboutir, ou comment atteindre un point spécifique.*
+\par \textbullet\ }Nom de la situation\textbf{ : Calcul de l'Équilibre Walrasien et application du Second Théorème du Bien-Être.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Les agents peuvent échanger à des prix $p_x, p_y$", "Normaliser le prix", "Quelles allocations peut-on décentraliser ?".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Normalisation (Loi de Walras)\textbf{ : Poser $p_x = 1$ et $p_y = p$. Le comportement ne dépend que du prix relatif.
+\par \textbf{2.} }Calcul des revenus\textbf{ : Évaluer la richesse initiale de chaque agent $R_i = 1 \cdot \omega_{ix} + p \cdot \omega_{iy}$.
+\par \textbf{3.} }Maximisation sous contrainte budgétaire\textbf{ : Déterminer les fonctions de demande marshalliennes $x_i(p)$ et $y_i(p)$ en égalisant le TMS au rapport des prix ($TMS = 1/p$) avec saturation du budget.
+\par \textbf{4.} }Équilibre de marché\textbf{ : Sommer les demandes pour un des deux biens (Loi de Walras : un suffit) et égaliser à l'offre totale : $x_A(p) + x_B(p) = \omega_x$. Résoudre pour trouver $p^*$.
+\par \textbf{5.} }Décentralisation (inverser le problème)\textbf{ : Si l'on cible une allocation $(x_A^*, y_A^*)$, on déduit le prix d'équilibre via $p = 1/TMS_A(x_A^*, y_A^*)$, puis on ajuste la dotation initiale pour que la droite de budget passe par ce point.
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Vouloir équilibrer les deux marchés simultanément : cela amène des calculs redondants et augmente le risque d'erreur (Loi de Walras).
+\par \textbullet\ }Variantes fréquentes\textbf{ : L'un des agents a une utilité de type Leontief, sa demande devient alors $x_i(p) = y_i(p) = R_i / (1+p)$.
+\par \textbullet\ }Chapitres concernés\textbf{ : 6. Échange, 7. Optimum de Pareto.
+\par \textbullet\ }Exercices précis\textbf{ : Annales Mi-parcours 2020 (Questions 4 à 8) ; Annales Mi-parcours 2022 (Questions 6 à 9).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 3 : Maximisation en Oligopole de Cournot (Concurrence en Quantités)}
+*Méthode d'agrégation algébrique puissante pour résoudre un marché où $n$ firmes ont des coûts asymétriques et agissent sur les quantités.*
+\par \textbullet\ }Nom de la situation\textbf{ : Résolution d'un équilibre de Cournot-Nash asymétrique.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Concurrence en quantité", "$n$ firmes", "Coûts marginaux $c_i$ constants mais différents", Fonction de demande inverse $P(Q)$.
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Profit individuel\textbf{ : Écrire $\Pi_i = (P(Q) - c_i)q_i$, où $Q = \sum q_j$.
+\par \textbf{2.} }CPO individuelle\textbf{ : Dériver par rapport à $q_i$ pour obtenir $P(Q) + P'(Q)q_i = c_i$.
+\par \textbf{3.} }L'astuce de l'agrégation (Crucial)\textbf{ : Ne surtout pas résoudre le système par substitution. Sommer les $n$ Conditions du Premier Ordre (CPO) : $n P(Q) + P'(Q)Q = \sum c_i$.
+\par \textbf{4.} }Résolution globale\textbf{ : On pose $\bar{c} = \frac{\sum c_i}{n}$. L'équation devient $n P(Q) + P'(Q)Q = n\bar{c}$. Résoudre cette équation à une seule inconnue pour trouver la quantité totale agrégée $Q^*$.
+\par \textbf{5.} }Déduction individuelle\textbf{ : Réinjecter $Q^*$ dans la CPO de l'étape 2 pour isoler $q_i^*$.
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Chercher à calculer les fonctions de meilleure réponse $q_1(q_2, q_3...)$ : ingérable dès que $n > 2$.
+\par \textbullet\ }Variantes fréquentes\textbf{ : Calculer les bornes de viabilité. Une firme ne produit ($q_i > 0$) que si son coût marginal n'est pas trop éloigné de la moyenne des concurrents.
+\par \textbullet\ }Chapitres concernés\textbf{ : 4. Concurrence imparfaite.
+\par \textbullet\ }Exercices précis\textbf{ : TD4 (Ex 2).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 4 : Équilibre en Oligopole de Bertrand (Concurrence en Prix)}
+*Cette méthode contraste formellement avec Cournot. Elle requiert souvent plus de raisonnement logique ou l'établissement de fonctions de meilleures réponses (Reaction Functions) face à des discontinuités.*
+\par \textbullet\ }Nom de la situation\textbf{ : Résolution d'un équilibre de Bertrand-Nash.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Concurrence en prix", "Biens homogènes", "Achat au prix le plus bas", "Biens de qualités différentes ($v_1 \neq v_2$)".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbullet\ }Cas 1 : Biens purs, asymétrie de coûts ($c_1 < c_2$)\textbf{. 
+\par \textbullet\ Raisonner par l'enchère descendante ou la sous-cotation.
+\par \textbullet\ La firme 1 gagne tout le marché en fixant $p_1 = c_2 - \epsilon$ (ou $p_1 = c_2$ selon les hypothèses d'équilibre limite).
+\par \textbullet\ }Cas 2 : Différenciation verticale (Qualité $v_i$)\textbf{.
+\par \textbullet\ Raisonner en "surplus offert au consommateur" : $w_i = v_i - c_i$.
+\par \textbullet\ La firme avec le plus grand $w$ (ex: firme 1) gagne.
+\par \textbullet\ Elle fixe un prix qui annule l'avantage maximal de la firme 2 : $v_1 - p_1 = v_2 - c_2$, soit $p_1 = v_1 - v_2 + c_2$.
+\par \textbullet\ }Cas 3 : Préférences hétérogènes (Demandes lissées)\textbf{.
+\par \textbullet\ Écrire la fonction de demande $D_1(p_1, p_2)$ basée sur la distribution des valuations.
+\par \textbullet\ Écrire les profits et dériver pour obtenir les fonctions de meilleure réponse $p_1^*(p_2)$ et $p_2^*(p_1)$.
+\par \textbullet\ Résoudre le système d'équations linéaires croisé pour trouver l'intersection.
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Appliquer aveuglément le "Paradoxe de Bertrand" ($p=c, \Pi=0$) dès qu'il y a 2 firmes. Si $c_1 \neq c_2$ ou si les biens diffèrent, la firme dominante fait un profit strictement positif.
+\par \textbullet\ }Variantes fréquentes\textbf{ : Analyser les cas limites où la contrainte $p_i \ge c_i$ ou $p_i \le v_i$ devient saturée, ce qui "tord" la fonction de meilleure réponse.
+\par \textbullet\ }Chapitres concernés\textbf{ : 4. Concurrence imparfaite.
+\par \textbullet\ }Exercices précis\textbf{ : TD4 (Ex 1).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 5 : Statique Comparative par Dérivation Implicite et Théorème de l'Enveloppe}
+*Méthode analytique de haut vol pour comprendre l'impact d'un paramètre externe (taxe, subvention, coût) sans avoir à recalculer totalement l'équilibre de A à Z.*
+\par \textbullet\ }Nom de la situation\textbf{ : Chocs de marché et Théorème de l'Enveloppe.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Comment varie $x^*$ avec $p$ ou $w$ ?", "Montrer que $p'(\tau) > 0$", "Taxe unitaire", "Ristourne à la pompe".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Dérivation Implicite (pour la variation des endogènes)\textbf{ : 
+\par \textbullet\ Partir de l'équation caractérisant l'optimum (ex: CPO $f'(x^*) = w/p$ ou équilibre $D(p(\tau) - \tau) = O(p(\tau))$).
+\par \textbullet\ Dériver toute l'équation par rapport au paramètre exogène (ex: $\tau$).
+\par \textbullet\ Factoriser et isoler la dérivée cherchée (ex: $p'(\tau)$).
+\par \textbullet\ Déduire le signe grâce aux hypothèses de concavité/décroissance connues.
+\par \textbf{2.} }Théorème de l'enveloppe (pour la variation de la fonction Valeur/Welfare)\textbf{ :
+\par \textbullet\ Soit $M(w) = \max_x f(x) - wx$.
+\par \textbullet\ Inutile de dériver $x^*(w)$. La dérivée $\frac{\partial M}{\partial w}$ est simplement la dérivée partielle de l'objectif par rapport à $w$, évaluée en $x^*$. (Ex: $-x^*$).
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Tenter d'isoler manuellement $p(\tau)$ avant de dériver. Parfois algébriquement impossible, la dérivation implicite de l'égalité est obligatoire.
+\par \textbullet\ }Variantes fréquentes\textbf{ : Maximisation du Welfare global du gouvernement $W(\tau) = \alpha S(\tau) + \Pi(\tau) - T(\tau)$. On dérive $W$ en fonction de la taxe pour trouver la taxe optimale $\tau^*$.
+\par \textbullet\ }Chapitres concernés\textbf{ : 1. Négociation (Outils mathématiques), 2. A-compétition, 3. V-compétition.
+\par \textbullet\ }Exercices précis\textbf{ : TD1 (Ex 1), TD2 (Ex 3), Annales MIP 2022 (QCM 3).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 6 : Allocation optimale dans l'Incertain et l'Assurance}
+*Méthode spécifique à l'économie du risque, consistant à basculer de l'espace monétaire à l'espace des utilités (Espérance d'Utilité).*
+\par \textbullet\ }Nom de la situation\textbf{ : Modèle de l'Utilité Espérée (Expected Utility) et de l'Assurance.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Loterie", "Richesse initiale", "Aversion pour le risque", "Probabilité de sinistre", "Prime d'assurance".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Indices de risque\textbf{ : Calculer $IA = \frac{-u''(w)}{u'(w)}$ et $IR = w \times IA$.
+\par \textbf{2.} }Équivalent Certain et Prime de risque\textbf{ : 
+\par \textbullet\ Calculer l'espérance mathématique du gain $E(X)$.
+\par \textbullet\ Calculer l'Espérance d'Utilité $EU = \sum p_i u(w_i)$.
+\par \textbullet\ Trouver l'Équivalent Certain ($EC$) en résolvant $u(EC) = EU$.
+\par \textbullet\ Prime de risque = $E(X) - EC$. Le prix maximal pour éviter le risque = Richesse - EC.
+\par \textbf{3.} }Optimisation de la couverture d'assurance\textbf{ :
+\par \textbullet\ Définir la richesse dans chaque état de la nature (ex: Sans sinistre = $W - Prime(R)$ ; Avec sinistre = $W - Sinistre + R - Prime(R)$).
+\par \textbullet\ Écrire la fonction objectif : $\max_R EU(R)$.
+\par \textbullet\ Dériver par rapport au niveau de remboursement $R$.
+\par \textbullet\ Analyser le signe de la prime (si prime actuarielle pure, $R^* = Sinistre$ couverture totale).
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Calculer $u(E(X))$ au lieu de $E(u(X))$. C'est la base de la définition de l'aversion au risque (Inégalité de Jensen).
+\par \textbullet\ }Variantes fréquentes\textbf{ : Étude du seuil $\alpha$ (surcoût de l'assureur) au-delà duquel l'agent préfère une couverture nulle.
+\par \textbullet\ }Chapitres concernés\textbf{ : Temps et Incertitude.
+\par \textbullet\ }Exercices précis\textbf{ : Annales MIP 2021 (Ex 2).
+
+\vspace{1cm}\hrule\vspace{1cm}
+
+\chapter{Méthode 7 : Modélisation de la Demande par les Distributions de Probabilités}
+*Plutôt que de donner une fonction de demande $D(p)$ arbitraire, cette méthode génère la demande à partir des micro-fondements d'une population hétérogène.*
+\par \textbullet\ }Nom de la situation\textbf{ : Construction de la demande et calculs de Surplus avec rationnement.
+\par \textbullet\ }Signaux de reconnaissance\textbf{ : "Les consommateurs ont une utilité $v-p$", "$v$ est distribué selon une fonction de répartition $F(v)$ et une densité $f(v)$", "Welfare en fonction du prix".
+\par \textbullet\ }Étapes générales de résolution\textbf{ :
+\par \textbf{1.} }Déterminer la cible\textbf{ : Un consommateur achète si $v \ge p$.
+\par \textbf{2.} }Agrégation (Loi forte)\textbf{ : La demande pour une masse $M$ est $D(p) = M \times (1 - F(p))$.
+\par \textbf{3.} }Surplus par intégrale\textbf{ : Le surplus des consommateurs se calcule par $\int_p^\infty D(w) dw$ ou $\int_p^{v_{max}} (v-p)f(v)dv$.
+\par \textbf{4.} }Gestion du Rationnement (Cas de déséquilibre)\textbf{ : Si le prix $p$ imposé est sous l'équilibre, on calcule le rationnement efficace. L'intégrale de surplus devient $\int_{p(p)}^\infty D(w) dw + (p(p)-p)O(p)$ où $p(p)$ est le prix virtuel égalisant l'offre.
+\par \textbullet\ }Erreurs classiques à éviter\textbf{ : Confondre la borne d'intégration (qui est le prix de marché $p$) avec la valuation maximale. 
+\par \textbullet\ }Variantes fréquentes\textbf{ : Monopole face à deux populations. On calcule $D_1(p)$ et $D_2(p)$. La demande globale est la somme *horizontale* (définie par morceaux selon les kinks/coudes). Le monopole doit choisir entre un prix élevé ciblant seulement la population à haute valuation, ou un prix faible mass-market.
+\par \textbullet\ }Chapitres concernés\textbf{ : 2. A-compétition, 5. Préférences.
+\par \textbullet\ }Exercices précis** : TD2 (Ex 1, Ex 2), TD3 (Ex 1, Ex 3), TD4 (Ex 3).
+\newpage
+\end{document}

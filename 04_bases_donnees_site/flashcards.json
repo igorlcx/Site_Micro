@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "fc_001",
+    "chapitre_id": "chapitre_01",
+    "recto": "Condition d'efficacité de l'échange bilatéral ?",
+    "verso": "L'échange est efficace et a lieu si la valuation dépasse ou égale le coût ($v \\ge c$).",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_002",
+    "chapitre_id": "chapitre_01",
+    "recto": "Formule du surplus de l'acheteur ?",
+    "verso": "Il s'agit de la différence entre disposition à payer et prix : $U_A = v - p$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_003",
+    "chapitre_id": "chapitre_01",
+    "recto": "Erreur classique sur la perte du vendeur ?",
+    "verso": "Croire que le vendeur perd le prix $p$ ; il perd son coût d'opportunité $c$.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_004",
+    "chapitre_id": "chapitre_01",
+    "recto": "Résultat de l'Ultimatum Game parfait ?",
+    "verso": "Le joueur 1 propose et garde tout le surplus ($x^* = 100$), le joueur 2 accepte.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_005",
+    "chapitre_id": "chapitre_01",
+    "recto": "Formule du programme de Nash avec transfert ?",
+    "verso": "$\\max_{x, t} (u(x) - t - u_0)^\\alpha (v(x) + t - v_0)^{1-\\alpha}$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_006",
+    "chapitre_id": "chapitre_01",
+    "recto": "Piège du calcul de partage de Nash ?",
+    "verso": "Oublier le statu quo et calculer le partage sur la valeur totale au lieu de la valeur nette.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_007",
+    "chapitre_id": "chapitre_01",
+    "recto": "Étapes résolution Nash avec transfert ?",
+    "verso": "Passer au logarithme, dériver pour le transfert, réinjecter pour la variable économique, calculer les gains finaux.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_008",
+    "chapitre_id": "chapitre_01",
+    "recto": "Équilibre d'offre et demande concurrentielles (1 agent) ?",
+    "verso": "L'intersection se situe à la quantité $q=1$ pour tout prix $p \\in [c, v]$.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_009",
+    "chapitre_id": "chapitre_02",
+    "recto": "Prix d'équilibre en enchère asymétrique (A-compétition) ?",
+    "verso": "Le prix s'établit à $p = v_2$, valuation du premier acheteur éliminé.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_010",
+    "chapitre_id": "chapitre_02",
+    "recto": "Erreur sur le pouvoir de marché du vendeur ?",
+    "verso": "Penser que le vendeur fixe $p=v$ par son propre pouvoir, alors que c'est la structure concurrentielle.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_011",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule de l'Indice de Lerner ?",
+    "verso": "$\\frac{p - c}{p} = \\frac{1}{\\epsilon}$, mesurant le pouvoir de marché via l'élasticité-prix.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_012",
+    "chapitre_id": "chapitre_02",
+    "recto": "Règle de maximisation du monopole continu ?",
+    "verso": "Le prix de monopole égalise le revenu marginal au coût marginal : $p = c + \\frac{1 - F(p)}{f(p)}$.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_013",
+    "chapitre_id": "chapitre_02",
+    "recto": "Calcul du surplus des consommateurs (Dupuit) ?",
+    "verso": "L'intégrale de la demande depuis le prix d'achat $p$ jusqu'à l'infini : $S(p) = \\int_p^\\infty D(v) \\, dv$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_014",
+    "chapitre_id": "chapitre_02",
+    "recto": "Piège du calcul de surplus avec rationnement ?",
+    "verso": "Intégrer classiquement alors que le marché n'est pas à l'équilibre et subit une pénurie.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_015",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule de la dérivée du Welfare ?",
+    "verso": "$W'(p) = (p-c)D'(p)$, obtenue en sommant les dérivées du surplus et du profit.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_016",
+    "chapitre_id": "chapitre_02",
+    "recto": "Fausse association Monopole et Perte Sèche ?",
+    "verso": "Croire qu'il y a toujours une perte sèche ; elle n'existe que si $q_m < q_c$.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_017",
+    "chapitre_id": "chapitre_03",
+    "recto": "Prix d'équilibre en V-compétition asymétrique ?",
+    "verso": "Le prix chute jusqu'au coût de production du premier vendeur éliminé : $p = c_2$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_018",
+    "chapitre_id": "chapitre_03",
+    "recto": "Erreur sur le paradoxe de Bertrand asymétrique ?",
+    "verso": "Oublier que si $c_1 < c_2$, le vendeur 1 s'arrête juste sous $c_2$ et dégage un profit positif.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_019",
+    "chapitre_id": "chapitre_03",
+    "recto": "Formule de maximisation du monopsone ?",
+    "verso": "$p = v - \\frac{G(p)}{g(p)}$, le prix est inférieur à la valuation de l'acheteuse.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_020",
+    "chapitre_id": "chapitre_03",
+    "recto": "Piège de la fonction d'offre du monopsone ?",
+    "verso": "Écrire $1-G(p)$ au lieu de $G(p)$ pour modéliser l'offre des vendeurs.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_021",
+    "chapitre_id": "chapitre_03",
+    "recto": "Formule du surplus des producteurs ?",
+    "verso": "L'intégrale de la fonction d'offre depuis 0 jusqu'au prix de marché : $S_p(p) = \\int_0^p O(c) \\, dc$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_022",
+    "chapitre_id": "chapitre_03",
+    "recto": "Théorème de l'enveloppe sur le profit ?",
+    "verso": "$S_p'(p) = O(p)$, la variation du surplus suite à une hausse de prix égale la quantité offerte.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_023",
+    "chapitre_id": "chapitre_03",
+    "recto": "Condition de perte sèche en monopsone ?",
+    "verso": "$DWL > 0 \\iff q^m < q^c$, la quantité échangée doit être strictement inférieure à la quantité concurrentielle.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_024",
+    "chapitre_id": "chapitre_03",
+    "recto": "Exemple de solution en coin du monopsone ?",
+    "verso": "Fixer un prix $p^m = c_{max}$ suffisant pour que tous vendent, sans détruire d'efficacité.",
+    "categorie": "exemple",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_025",
+    "chapitre_id": "chapitre_04",
+    "recto": "Formule du Revenu Marginal (quantités) ?",
+    "verso": "$MR(q) = P(q) + qP'(q)$, recette supplémentaire diminuée de la perte sur les unités précédentes.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_026",
+    "chapitre_id": "chapitre_04",
+    "recto": "Piège de la demande en maximisation (quantités) ?",
+    "verso": "Utiliser $D(p)$ au lieu de la fonction inverse de demande $P(q)$.",
+    "categorie": "piège",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_027",
+    "chapitre_id": "chapitre_04",
+    "recto": "Équation d'agrégation de Cournot ?",
+    "verso": "$nP(Q) + P'(Q)Q = n\\bar{c}$, équation fondamentale permettant de trouver la quantité totale $Q^C$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_028",
+    "chapitre_id": "chapitre_04",
+    "recto": "Erreur de résolution du modèle de Cournot ?",
+    "verso": "Essayer de substituer les fonctions de meilleure réponse au lieu d'additionner les CPO.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_029",
+    "chapitre_id": "chapitre_04",
+    "recto": "Résultat du duopole de Bertrand symétrique ?",
+    "verso": "Tarification au coût marginal ($p_1 = p_2 = c$) et destruction des rentes avec des profits nuls.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_030",
+    "chapitre_id": "chapitre_04",
+    "recto": "Prix en Bertrand asymétrique ($c_1 < c_2$) ?",
+    "verso": "La firme 1 remporte le marché en fixant un prix $p_1 = c_2$ ou $c_2 - \\epsilon$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_031",
+    "chapitre_id": "chapitre_04",
+    "recto": "Méthode Cournot : étape après CPO individuelle ?",
+    "verso": "Additionner les $n$ CPO pour obtenir une équation avec un $Q$ global et un coût moyen $\\bar{c}$.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_032",
+    "chapitre_id": "chapitre_04",
+    "recto": "Piège sur le profit nul de Bertrand ?",
+    "verso": "L'appliquer aveuglément alors qu'une asymétrie de coûts génère un profit strictement positif pour la meilleure firme.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_033",
+    "chapitre_id": "chapitre_05",
+    "recto": "Axiome de monotonie stricte des préférences ?",
+    "verso": "Un panier avec au moins autant de chaque bien et strictement plus d'un bien est strictement préféré.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_034",
+    "chapitre_id": "chapitre_05",
+    "recto": "Erreur sur les courbes d'indifférence ?",
+    "verso": "Faire se croiser deux courbes, ce qui viole mathématiquement l'axiome de transitivité et de monotonie.",
+    "categorie": "piège",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_035",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule utilité Compléments parfaits (Leontief) ?",
+    "verso": "$U(\\mathbf{x}) = \\min_\\ell \\{\\alpha_\\ell x_\\ell\\}$, pour des biens consommés dans des proportions fixes strictes.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_036",
+    "chapitre_id": "chapitre_05",
+    "recto": "Piège de l'utilité cardinale ?",
+    "verso": "Additionner les utilités cardinales pour comparer interpersonnellement la valeur absolue du bonheur.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_037",
+    "chapitre_id": "chapitre_05",
+    "recto": "Définition du Taux Marginal de Substitution ?",
+    "verso": "C'est la valeur absolue de la pente de la courbe d'indifférence, calculée par le ratio des utilités marginales.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_038",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule du TMS pour Cobb-Douglas $x_1^{\\alpha_1} x_2^{\\alpha_2}$ ?",
+    "verso": "$TMS_{1/2} = \\dfrac{\\alpha_1}{\\alpha_2} \times \\dfrac{x_2}{x_1}$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_039",
+    "chapitre_id": "chapitre_05",
+    "recto": "Erreur de calcul du TMS ?",
+    "verso": "Inverser le ratio des dérivées partielles ou tenter d'appliquer des dérivées partielles à une fonction Leontief.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_040",
+    "chapitre_id": "chapitre_05",
+    "recto": "Méthode pour prouver l'équivalence de préférences ?",
+    "verso": "Trouver la fonction $f$ telle que $V(x) = f(U(x))$ et prouver que sa dérivée est strictement croissante ($f' > 0$).",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_041",
+    "chapitre_id": "chapitre_06",
+    "recto": "Définition de la Boîte d'Edgeworth ?",
+    "verso": "Diagramme $\\omega_1 \times \\omega_2$ superposant les repères de deux consommateurs pour visualiser simultanément les ressources et préférences.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_042",
+    "chapitre_id": "chapitre_06",
+    "recto": "Formule de contrainte de faisabilité bilatérale ?",
+    "verso": "$x_B^1 = \\omega_1 - x_A^1$ et $x_B^2 = \\omega_2 - x_A^2$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_043",
+    "chapitre_id": "chapitre_06",
+    "recto": "Piège de lecture pour l'agent B ?",
+    "verso": "Oublier que le point de vue de Bruno est inversé, son origine se trouvant en haut à droite.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_044",
+    "chapitre_id": "chapitre_06",
+    "recto": "Équation définissant la Courbe des Contrats ?",
+    "verso": "L'égalité des Taux Marginaux de Substitution : $TMS_A(x_A^1, x_A^2) = TMS_B(x_B^1, x_B^2)$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_045",
+    "chapitre_id": "chapitre_06",
+    "recto": "Erreur algébrique lors de l'égalisation des TMS ?",
+    "verso": "Oublier de substituer les consommations de B par la contrainte de rareté $\\omega - x_A$.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_046",
+    "chapitre_id": "chapitre_06",
+    "recto": "Lagrangien pour l'optimum de Pareto bilatéral ?",
+    "verso": "$\\mathcal{L} = U_A(x_A^1, x_A^2) - \\lambda [U_B(\\omega_1 - x_A^1, \\omega_2 - x_A^2) - u]$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_047",
+    "chapitre_id": "chapitre_06",
+    "recto": "Piège d'utilisation du Lagrangien pour l'échange ?",
+    "verso": "Vouloir forcer le Lagrangien sur des fonctions non-dérivables (Leontief) ou linéaires (Substituts parfaits).",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_048",
+    "chapitre_id": "chapitre_06",
+    "recto": "Méthode pour courbe des contrats en Leontief ?",
+    "verso": "Raisonner graphiquement ou logiquement en alignant les coudes de la fonction Leontief dans la boîte d'Edgeworth.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_049",
+    "chapitre_id": "chapitre_07",
+    "recto": "Contrainte globale d'allocation réalisable ?",
+    "verso": "La somme des consommations de chaque agent pour chaque bien n'excède pas la ressource totale : $\\sum x_{i\\ell} \\le \\omega_\\ell$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_050",
+    "chapitre_id": "chapitre_07",
+    "recto": "Erreur d'analyse d'une allocation globale ?",
+    "verso": "Confondre le panier individuel $\\mathbf{x}_i$ (un vecteur) avec l'allocation globale $\\mathbf{x}$ (une matrice).",
+    "categorie": "piège",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_051",
+    "chapitre_id": "chapitre_07",
+    "recto": "Définition d'un Optimum de Pareto ?",
+    "verso": "Allocation où l'on ne peut plus améliorer la situation d'un individu sans détériorer celle d'au moins un autre.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_052",
+    "chapitre_id": "chapitre_07",
+    "recto": "Fausse association Pareto-optimal et équité ?",
+    "verso": "Croire qu'une allocation donnant tout à un dictateur n'est pas Pareto-optimale, alors qu'elle l'est parfaitement.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_053",
+    "chapitre_id": "chapitre_07",
+    "recto": "Caractérisation différentiable des optima de Pareto ?",
+    "verso": "L'égalité des Taux Marginaux de Substitution (TMS) entre tout couple de biens pour tous les consommateurs.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_054",
+    "chapitre_id": "chapitre_07",
+    "recto": "Erreur de la somme pondérée des utilités ?",
+    "verso": "Croire que $\\sum \\mu_i U_i$ a une signification sociale cardinale, alors qu'il s'agit d'une simple astuce mathématique.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_055",
+    "chapitre_id": "chapitre_07",
+    "recto": "Définition de la Frontière de Pareto ?",
+    "verso": "C'est la projection mathématique strictement décroissante de la courbe des contrats dans l'espace abstrait des utilités.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_056",
+    "chapitre_id": "chapitre_07",
+    "recto": "Erreur sur l'invariance de la Frontière de Pareto ?",
+    "verso": "Croire qu'elle ne change pas de forme si on applique une transformation croissante aux utilités des agents.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_057",
+    "chapitre_id": "chapitre_08",
+    "recto": "Étape 2 de la caractérisation d'Edgeworth ?",
+    "verso": "Exprimer les contraintes de faisabilité pour substituer : $x_B = \\omega_x - x_A$ et $y_B = \\omega_y - y_A$.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_058",
+    "chapitre_id": "chapitre_08",
+    "recto": "Piège de l'équilibre Walrasien ?",
+    "verso": "Vouloir équilibrer les deux marchés simultanément au lieu d'utiliser la Loi de Walras sur un seul marché.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_059",
+    "chapitre_id": "chapitre_08",
+    "recto": "Méthode pour le duopole de Cournot asymétrique ?",
+    "verso": "L'astuce de l'agrégation : sommer les $n$ CPO individuelles pour créer une équation agrégée en $Q$.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_060",
+    "chapitre_id": "chapitre_08",
+    "recto": "Méthode pour Bertrand avec différenciation verticale ?",
+    "verso": "Raisonner en comparant le surplus offert $w_i = v_i - c_i$ ; la firme avec le plus grand $w$ gagne.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_061",
+    "chapitre_id": "chapitre_08",
+    "recto": "Règle du Théorème de l'enveloppe ?",
+    "verso": "Inutile de dériver $x^*$, on dérive simplement l'objectif directement par rapport au paramètre exogène évalué en $x^*$.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_062",
+    "chapitre_id": "chapitre_08",
+    "recto": "Erreur en statique comparative analytique ?",
+    "verso": "Tenter d'isoler manuellement la variable $p(\tau)$ avant de dériver au lieu d'utiliser la dérivation implicite.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_063",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de l'Équivalent Certain ($EC$) ?",
+    "verso": "Trouver l'Équivalent Certain en résolvant l'équation $u(EC) = EU$, où $EU$ est l'Espérance d'Utilité.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_064",
+    "chapitre_id": "chapitre_08",
+    "recto": "Piège de modélisation de la demande (rationnement) ?",
+    "verso": "Oublier d'ajouter le terme additionnel $(p(p)-p)O(p)$ à l'intégrale de surplus en cas de pénurie ou déséquilibre.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_065",
+    "chapitre_id": "chapitre_01",
+    "recto": "But du modèle de négociation bilatérale ?",
+    "verso": "Modéliser l'échange élémentaire pour introduire les concepts de surplus, Welfare et efficacité de l'échange.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_066",
+    "chapitre_id": "chapitre_01",
+    "recto": "Comment prouver la création de valeur dans un échange ?",
+    "verso": "Il faut vérifier la condition $v \\ge c$ et calculer le Welfare ($v - c$).",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_067",
+    "chapitre_id": "chapitre_01",
+    "recto": "Qu'est-ce que la règle du V-P-C ?",
+    "verso": "Pour échanger, la Valeur doit être supérieure au Prix, lui-même supérieur au Coût ($v \\ge p \\ge c$).",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_068",
+    "chapitre_id": "chapitre_01",
+    "recto": "L'équité d'un prix influence-t-elle son efficacité ?",
+    "verso": "Non, un prix $p=v$ est très inéquitable pour l'acheteur, mais parfaitement efficace car l'échange a lieu.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_069",
+    "chapitre_id": "chapitre_01",
+    "recto": "Forme des courbes d'offre et demande à agent unique ?",
+    "verso": "Ce sont des fonctions en escalier, constantes par morceaux (valant 0 ou 1).",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_070",
+    "chapitre_id": "chapitre_01",
+    "recto": "Méthode de résolution de l'Ultimatum Game parfait ?",
+    "verso": "Raisonner par induction à rebours (backward induction) : J2 accepte tout $\\ge 0$, donc J1 ne propose rien.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_071",
+    "chapitre_id": "chapitre_01",
+    "recto": "Erreur sur les équilibres de l'Ultimatum ?",
+    "verso": "Ignorer les menaces non-crédibles en pensant qu'il n'y a qu'un équilibre de Nash au lieu d'une infinité.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_072",
+    "chapitre_id": "chapitre_01",
+    "recto": "Étape 1 pour résoudre un programme de Nash ?",
+    "verso": "Prendre le logarithme de la fonction objectif $\\phi(t) = \\ln(f(t))$ pour éviter l'enfer algébrique des puissances.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_073",
+    "chapitre_id": "chapitre_02",
+    "recto": "Effet majeur de la A-compétition sur le marché ?",
+    "verso": "La rivalité entre acheteurs fait monter mécaniquement les prix et transfère le surplus vers le vendeur.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_074",
+    "chapitre_id": "chapitre_02",
+    "recto": "Méthode d'issue de vente en A-compétition asymétrique ?",
+    "verso": "Trier les valuations ($v_1 > v_2$) : le prix se fixe au niveau de la valuation du premier exclu ($v_2$).",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_075",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule de la demande continue pour le monopole ?",
+    "verso": "$D(p) = N(1 - F(p))$, représentant la masse des agents dont la valuation est supérieure au prix.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_076",
+    "chapitre_id": "chapitre_02",
+    "recto": "Piège de la maximisation du monopole ?",
+    "verso": "Ne regarder que la dérivée (CPO) et oublier de vérifier les solutions en coin (ex: servir tout le marché).",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_077",
+    "chapitre_id": "chapitre_02",
+    "recto": "Théorème de l'enveloppe sur le surplus consommateur ?",
+    "verso": "$S'(p) = -D(p)$ ; quand le prix monte, le surplus chute proportionnellement au volume acheté.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_078",
+    "chapitre_id": "chapitre_02",
+    "recto": "Qu'est-ce que le Welfare (Bien-Être Social) ?",
+    "verso": "La richesse totale créée par le marché, calculée en sommant les surplus des consommateurs et les profits des producteurs.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_079",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule de la perte sèche (Dead-weight loss) ?",
+    "verso": "$DWL = W_{max} - W_{monopole}$, qui représente la destruction d'efficacité générée par une restriction des volumes ($q_m < q_c$).",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_080",
+    "chapitre_id": "chapitre_02",
+    "recto": "Comment calculer la perte sèche géométriquement ?",
+    "verso": "En calculant l'aire du triangle d'inefficacité : Base $(p^m - c) \times$ Hauteur $(q^c - q^m) / 2$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_081",
+    "chapitre_id": "chapitre_03",
+    "recto": "Quel est l'effet de la V-compétition ?",
+    "verso": "La rivalité fait chuter les prix jusqu'au coût de production, ce qui transfère la quasi-totalité du surplus à l'acheteuse.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_082",
+    "chapitre_id": "chapitre_03",
+    "recto": "Erreur sur l'accaparation du surplus en monopsone ?",
+    "verso": "Croire que l'acheteuse impose $p=c$ par son pouvoir de négociation, alors que seule la rivalité des vendeurs agit.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_083",
+    "chapitre_id": "chapitre_03",
+    "recto": "Formule de l'offre continue pour un monopsone ?",
+    "verso": "$O(p) = N \times G(p)$, représentant la masse des vendeurs ayant un coût inférieur ou égal au prix.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_084",
+    "chapitre_id": "chapitre_03",
+    "recto": "Lien entre pouvoir de monopsone et élasticité ?",
+    "verso": "La capacité du monopsone à faire baisser le prix est inversement proportionnelle à la sensibilité (élasticité) des producteurs.",
+    "categorie": "définition",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_085",
+    "chapitre_id": "chapitre_03",
+    "recto": "Piège des bornes du surplus des producteurs ?",
+    "verso": "Intégrer de $p$ à $+\\infty$ au lieu d'intégrer depuis l'origine $0$ jusqu'au prix d'achat de marché $p$.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_086",
+    "chapitre_id": "chapitre_03",
+    "recto": "Méthode : calculer le surplus producteur cas linéaire ?",
+    "verso": "Calculer l'aire du triangle avec pour base la quantité $O(p)$ et pour hauteur $(p - c_{min})$.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_087",
+    "chapitre_id": "chapitre_03",
+    "recto": "Formule du Welfare global sous monopsone ?",
+    "verso": "$W(p) = S_p(p) + U_A(p) = \\int_0^p O(c) \\, dc + (v-p)O(p)$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_088",
+    "chapitre_id": "chapitre_03",
+    "recto": "Quand la perte sèche d'un monopsone est-elle nulle ?",
+    "verso": "Si le monopsone fixe un prix $p^m = c_{max}$ très bas mais suffisant pour que tous produisent ($q^m = q^c$).",
+    "categorie": "exemple",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_089",
+    "chapitre_id": "chapitre_04",
+    "recto": "Différence Monopole/Duopole sur le choix stratégique ?",
+    "verso": "Fixer prix ou quantité est neutre en monopole, mais détermine l'issue et les règles du jeu en duopole.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_090",
+    "chapitre_id": "chapitre_04",
+    "recto": "Formule du profit du monopole en quantités ?",
+    "verso": "$\\Pi(q) = (P(q)-c)q$, où $P(q)$ représente la fonction inverse de demande.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_091",
+    "chapitre_id": "chapitre_04",
+    "recto": "Piège courant sur le revenu marginal ?",
+    "verso": "Penser que le revenu marginal égale le prix. Il est strictement inférieur à cause de la dépréciation ($qP'(q)$).",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_092",
+    "chapitre_id": "chapitre_04",
+    "recto": "Caractéristique clé de l'équilibre de Cournot ?",
+    "verso": "C'est un état intermédiaire où la quantité totale de l'industrie $Q^C$ ne dépend que de la moyenne des coûts.",
+    "categorie": "définition",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_093",
+    "chapitre_id": "chapitre_04",
+    "recto": "Formule de la quantité individuelle à la Cournot ?",
+    "verso": "$q_i^C = \\frac{Q^C}{n} + \\frac{\\bar{c} - c_i}{-P'(Q^C)}$, la production moyenne corrigée par l'avantage de coût.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_094",
+    "chapitre_id": "chapitre_04",
+    "recto": "Oubli critique dans Cournot asymétrique ?",
+    "verso": "Ne pas vérifier la viabilité ($q_i > 0$). Si un coût est trop élevé, la firme doit être exclue des calculs.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_095",
+    "chapitre_id": "chapitre_04",
+    "recto": "Formule du profit à l'équilibre de Cournot ?",
+    "verso": "Le profit est proportionnel au carré de la quantité de marché : $\\Pi_i^C = -P'(Q^C)(q_i^C)^2$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_096",
+    "chapitre_id": "chapitre_04",
+    "recto": "Résolution d'un Bertrand avec demande lissée ?",
+    "verso": "Dériver les profits pour obtenir les fonctions de meilleure réponse, puis résoudre le système croisé d'équations.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_097",
+    "chapitre_id": "chapitre_05",
+    "recto": "But principal de la théorie des préférences ?",
+    "verso": "Fonder l'économie sur l'utilité ordinale (la capacité de classement) sans faire appel à l'utilité cardinale ni à la monnaie.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_098",
+    "chapitre_id": "chapitre_05",
+    "recto": "Définition formelle de la relation stricte $\\succ$ ?",
+    "verso": "$\\mathbf{x} \\succ \\mathbf{y} \\iff \\mathbf{x} \\succeq \\mathbf{y}$ et non $(\\mathbf{y} \\succeq \\mathbf{x})$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_099",
+    "chapitre_id": "chapitre_05",
+    "recto": "Que traduit la convexité des préférences ?",
+    "verso": "Le goût pour la diversité, signifiant géométriquement que les mélanges sont toujours préférés ou indifférents aux extrêmes.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_100",
+    "chapitre_id": "chapitre_05",
+    "recto": "Quand les courbes d'indifférence ne s'appliquent-elles pas ?",
+    "verso": "Pour des préférences lexicographiques, car elles ne satisfont pas l'axiome de continuité.",
+    "categorie": "exemple",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_101",
+    "chapitre_id": "chapitre_05",
+    "recto": "Prouver que les courbes d'indifférence ne se coupent pas ?",
+    "verso": "Raisonner par l'absurde en utilisant le point d'intersection et en démontrant la violation de l'axiome de transitivité.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_102",
+    "chapitre_id": "chapitre_05",
+    "recto": "Propriété de la fonction d'utilité ordinale ?",
+    "verso": "Toute fonction mathématique transformée par une fonction strictement croissante (ex: logarithme) décrit exactement le même consommateur.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_103",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule de l'utilité des Substituts parfaits ?",
+    "verso": "Modélisation linéaire : $U(\\mathbf{x}) = \\sum \\alpha_\\ell x_\\ell$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_104",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule de l'utilité de type Cobb-Douglas ?",
+    "verso": "$U(\\mathbf{x}) = \\prod x_\\ell^{\\alpha_\\ell}$, décrivant un consommateur voulant toujours un peu de tous les biens.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_105",
+    "chapitre_id": "chapitre_05",
+    "recto": "Piège analytique de la fonction Leontief ?",
+    "verso": "Tenter de la dériver ou d'utiliser un Lagrangien, car la fonction $\\min()$ n'est pas différentiable à son coude.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_106",
+    "chapitre_id": "chapitre_05",
+    "recto": "Astuce pour dériver facilement une fonction Cobb-Douglas ?",
+    "verso": "Appliquer la transformation logarithmique ($\\ln(U)$) pour simplifier les puissances en additions algébriques simples.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_107",
+    "chapitre_id": "chapitre_05",
+    "recto": "Sens profond du Taux Marginal de Substitution (TMS) ?",
+    "verso": "Établir le « taux de change psychologique » d'un agent indépendamment des contraintes de prix du marché.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_108",
+    "chapitre_id": "chapitre_05",
+    "recto": "Équation de substitution avec le TMS ?",
+    "verso": "$dx_2 = - TMS_{1/2} \\, dx_1$, indiquant la compensation infinitésimale requise.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_109",
+    "chapitre_id": "chapitre_06",
+    "recto": "Que représente une allocation réalisable dans Edgeworth ?",
+    "verso": "Un point géométrique dans la boîte où l'égalité $x_A^1 + x_B^1 = \\omega_1$ est parfaitement respectée.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_110",
+    "chapitre_id": "chapitre_06",
+    "recto": "Erreur sémantique dans la boîte d'Edgeworth ?",
+    "verso": "Confondre réalisable et efficace : tout point de la boîte est réalisable, mais seule la courbe des contrats est efficace.",
+    "categorie": "piège",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_111",
+    "chapitre_id": "chapitre_06",
+    "recto": "Méthode pour tracer la boîte d'Edgeworth ?",
+    "verso": "Calculer les ressources totales $\\omega_1, \\omega_2$, tracer le rectangle de ces dimensions, et placer les deux origines opposées.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_112",
+    "chapitre_id": "chapitre_06",
+    "recto": "Que se passe-t-il quand l'échange s'arrête net ?",
+    "verso": "Les deux agents attribuent la même valeur relative marginale aux biens, leurs Taux Marginaux de Substitution s'égalisent.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_113",
+    "chapitre_id": "chapitre_06",
+    "recto": "Erreur d'égalisation des TMS en Substituts Parfaits ?",
+    "verso": "Chercher une tangence, alors que les TMS sont des constantes et l'optimum se trouve sur les bords de la boîte.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_114",
+    "chapitre_id": "chapitre_06",
+    "recto": "Identifier la courbe des contrats pour substituts parfaits ?",
+    "verso": "Comparer les TMS constants : l'agent valorisant le plus un bien s'accapare l'intégralité de la dotation de ce bien.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_115",
+    "chapitre_id": "chapitre_07",
+    "recto": "Qu'est-ce qu'une allocation d'économie générale ?",
+    "verso": "Une matrice $\\mathbf{x} = (\\mathbf{x}_1, ..., \\mathbf{x}_I)$ représentant exhaustivement les paniers de consommation de l'ensemble des agents.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_116",
+    "chapitre_id": "chapitre_07",
+    "recto": "Comment vérifier la faisabilité d'une allocation globale ?",
+    "verso": "Additionner les quantités consommées de chaque bien et vérifier que le total ne dépasse pas la dotation initiale $\\omega$.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_117",
+    "chapitre_id": "chapitre_07",
+    "recto": "Règle fondamentale du jeu de l'Optimum de Pareto ?",
+    "verso": "Aucune amélioration n'est gratuite : à l'optimum, augmenter l'utilité de A requiert strictement de baisser celle de B.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_118",
+    "chapitre_id": "chapitre_07",
+    "recto": "Piège de l'égalité absolue des TMS ?",
+    "verso": "L'appliquer machinalement même si la solution optimale est en coin ou que les fonctions d'utilité ne sont pas dérivables.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_119",
+    "chapitre_id": "chapitre_07",
+    "recto": "Équation de Frontière de Pareto pour Cobb-Douglas symétrique ?",
+    "verso": "$U_2 = \\left(-\\sqrt{U_1} + \\sqrt{\\bar{x}\\bar{y}}\\right)^2$, forme non invariante aux transformations d'utilité.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_120",
+    "chapitre_id": "chapitre_07",
+    "recto": "Méthode : trouver l'équation de la Frontière de Pareto ?",
+    "verso": "Injecter les expressions algébriques de la courbe des contrats dans les fonctions d'utilité $U_A$ et $U_B$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_121",
+    "chapitre_id": "chapitre_08",
+    "recto": "Utilité de la normalisation de Walras ?",
+    "verso": "Poser $p_x = 1$ et $p_y = p$ simplifie les calculs car le marché ne dépend que du prix relatif.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_122",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de calcul de la richesse initiale ?",
+    "verso": "La richesse est évaluée aux prix du marché : $R_i = 1 \\cdot \\omega_{ix} + p \\cdot \\omega_{iy}$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_123",
+    "chapitre_id": "chapitre_08",
+    "recto": "Comment inverser l'équilibre Walrasien (décentralisation) ?",
+    "verso": "Cibler une allocation, en déduire le prix via $p = 1/TMS$, puis ajuster la dotation initiale budgétaire correspondante.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_124",
+    "chapitre_id": "chapitre_08",
+    "recto": "But principal de la dérivation implicite ?",
+    "verso": "Comprendre analytiquement l'impact d'un choc paramétrique externe (ex: taxe) sans devoir recalculer totalement l'équilibre.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_125",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de l'Indice d'Aversion Absolue (IA) ?",
+    "verso": "Mesure la concavité de la fonction d'utilité face au risque : $IA = \\dfrac{-u''(w)}{u'(w)}$.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_126",
+    "chapitre_id": "chapitre_08",
+    "recto": "Piège du calcul d'utilité avec risque ?",
+    "verso": "Calculer l'utilité de l'espérance $u(E(X))$ au lieu de l'Espérance de l'Utilité $E(u(X))$ de la loterie.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_127",
+    "chapitre_id": "chapitre_08",
+    "recto": "Comment déduire algébriquement la prime de risque ?",
+    "verso": "Soustraire l'Équivalent Certain (EC) à l'Espérance mathématique du gain : $E(X) - EC$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_128",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de la richesse après sinistre avec assurance ?",
+    "verso": "Richesse = $W - \text{Sinistre} + R - \text{Prime}(R)$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_129",
+    "chapitre_id": "chapitre_08",
+    "recto": "Couverture optimale avec une prime actuarielle pure ?",
+    "verso": "La couverture choisie est totale, l'agent s'assure complètement contre le risque ($R^* = \text{Sinistre}$).",
+    "categorie": "exemple",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_130",
+    "chapitre_id": "chapitre_08",
+    "recto": "Calcul du surplus global avec rationnement ?",
+    "verso": "Si $p$ est plafonné, intégrer en utilisant le prix virtuel $p(p)$ qui égalise l'offre disponible.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_131",
+    "chapitre_id": "chapitre_08",
+    "recto": "Contraintes du Lagrangien de caractérisation Pareto ?",
+    "verso": "Sous contrainte que $\\forall j \neq i, U_j(\\mathbf{x}_j) \\ge U_j^0$ et que l'allocation $\\mathbf{x}$ soit réalisable.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_132",
+    "chapitre_id": "chapitre_08",
+    "recto": "Quand le Lagrangien donne-t-il l'égalité des TMS ?",
+    "verso": "C'est automatique uniquement pour des solutions intérieures caractérisées par des fonctions d'utilité strictement différentiables.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_133",
+    "chapitre_id": "chapitre_01",
+    "recto": "À quoi sert le modèle de Nash en TD ?",
+    "verso": "À résoudre le problème d'investissement en \"Hold-up\" avec séparation et transfert monétaire optimal.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_134",
+    "chapitre_id": "chapitre_02",
+    "recto": "Pourquoi le monopole crée-t-il un prix $> c$ ?",
+    "verso": "L'information incomplète des types d'acheteurs empêche la discrimination parfaite, justifiant une marge inefficace.",
+    "categorie": "définition",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_135",
+    "chapitre_id": "chapitre_03",
+    "recto": "Indice de Lerner appliqué au monopsone ?",
+    "verso": "$\\frac{v - p}{p} = \\frac{1}{\\varepsilon_O}$, le pouvoir se mesure avec $\\varepsilon_O$, l'élasticité de l'offre.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_136",
+    "chapitre_id": "chapitre_04",
+    "recto": "Étape finale de résolution asymétrique de Cournot ?",
+    "verso": "Réinjecter le $Q^*$ global trouvé dans la CPO individuelle pour déduire la quantité $q_i^*$ de chaque firme.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_137",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule de la famille de fonctions d'utilité CES ?",
+    "verso": "$U(\\mathbf{x}) = \\left(\\sum \\alpha_\\ell x_\\ell^\\rho\\right)^{1/\\rho}$, une forme générale qui englobe les autres familles.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_138",
+    "chapitre_id": "chapitre_06",
+    "recto": "Où hachurer la lentille d'Edgeworth ?",
+    "verso": "C'est la zone d'intersection stricte délimitée par les deux courbes d'indifférence initiales des agents.",
+    "categorie": "méthode",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_139",
+    "chapitre_id": "chapitre_07",
+    "recto": "Différence : Frontière Pareto vs Courbe des Contrats ?",
+    "verso": "La Frontière est dans l'espace abstrait des utilités, la Courbe est dans la boîte physique des biens.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_140",
+    "chapitre_id": "chapitre_08",
+    "recto": "Erreur classique de maximisation avec biens homogènes ?",
+    "verso": "Appliquer une Condition du Premier Ordre (dérivée nulle) sur une fonction de demande en escalier discontinue.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_141",
+    "chapitre_id": "chapitre_01",
+    "recto": "Définition formelle du profit du vendeur ?",
+    "verso": "La différence exacte entre le prix reçu et son coût d'opportunité : $U_V = p - c$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_142",
+    "chapitre_id": "chapitre_01",
+    "recto": "Résultat de l'Ultimatum Game en cas de rejet ?",
+    "verso": "Le paiement est $(0, 0)$ pour les deux joueurs, marquant le retour au statu quo.",
+    "categorie": "exemple",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_143",
+    "chapitre_id": "chapitre_01",
+    "recto": "Règle de séparation dans la négociation de Nash ?",
+    "verso": "1) Maximiser la taille globale du gâteau total $W$, 2) Partager l'excédent net selon le pouvoir $\\alpha$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_144",
+    "chapitre_id": "chapitre_01",
+    "recto": "Formule de l'utilité finale d'Anne (Nash) ?",
+    "verso": "$U_A = u_0 + \\alpha(W - W_0)$, soit son statu quo plus sa part du surplus généré.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_145",
+    "chapitre_id": "chapitre_02",
+    "recto": "Surplus du gagnant en A-compétition asymétrique ?",
+    "verso": "L'acheteuse 1 remporte l'enchère au prix $v_2$ et obtient un surplus strictement positif : $v_1 - v_2$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_146",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule de l'élasticité-prix de la demande $\\epsilon$ ?",
+    "verso": "$\\epsilon = -\\frac{D'(p)p}{D(p)}$, indispensable pour calculer l'Indice de Lerner et le pouvoir de marché.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_147",
+    "chapitre_id": "chapitre_02",
+    "recto": "Impact d'une demande très élastique pour le monopole ?",
+    "verso": "Le pouvoir de marché se réduit drastiquement et le prix de vente s'écrase vers le coût marginal $c$.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_148",
+    "chapitre_id": "chapitre_02",
+    "recto": "Formule du Welfare avec intervention de l'État ?",
+    "verso": "Il faut sommer : $W(p) = S(p) + \\Pi(p) \\pm \text{Gouvernement}$ (taxes prélevées ou subventions versées).",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_149",
+    "chapitre_id": "chapitre_02",
+    "recto": "Qu'est-ce que le Triangle de Harberger ?",
+    "verso": "La représentation géométrique graphique de la perte sèche (Dead-weight loss) détruite par un monopole ou une taxe.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_150",
+    "chapitre_id": "chapitre_03",
+    "recto": "Résultat de la V-compétition parfaitement symétrique ?",
+    "verso": "Le prix s'établit au coût $c$, et l'acheteuse (monopsone) accapare 100% du surplus du marché.",
+    "categorie": "exemple",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_151",
+    "chapitre_id": "chapitre_03",
+    "recto": "Rente du vendeur en V-compétition asymétrique ?",
+    "verso": "Le vendeur le plus efficace gagne et conserve une rente d'efficacité valant $c_2 - c_1$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_152",
+    "chapitre_id": "chapitre_03",
+    "recto": "Fonction d'utilité objective du monopsone ?",
+    "verso": "$U(p) = (v-p) \times N G(p)$, soit la marge unitaire multipliée par la masse d'offre captée.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_153",
+    "chapitre_id": "chapitre_03",
+    "recto": "Piège du surplus producteur en cas de rationnement ?",
+    "verso": "Appliquer l'intégrale simple alors que l'acheteuse rationne : tous les vendeurs ayant $c < p$ ne parviennent pas à vendre.",
+    "categorie": "piège",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_154",
+    "chapitre_id": "chapitre_03",
+    "recto": "Dérivée analytique du Welfare sous monopsone ?",
+    "verso": "$W'(p) = (v-p)O'(p)$, obtenue en sommant les dérivées du surplus des vendeurs et de l'utilité de l'acheteuse.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_155",
+    "chapitre_id": "chapitre_04",
+    "recto": "Lien entre demande directe $D(p)$ et inverse $P(q)$ ?",
+    "verso": "$P(q) = D^{-1}(q)$, fonction indispensable pour maximiser le profit en choisissant les quantités.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_156",
+    "chapitre_id": "chapitre_04",
+    "recto": "Valeur du Welfare à l'équilibre de Cournot asymétrique ?",
+    "verso": "$W^C = \\int_0^{Q^C} (P(x) - c)dx + \\frac{n\text{Var}(c)}{-P'(Q^C)}$, qui inclut un bonus dû à l'hétérogénéité des firmes.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_157",
+    "chapitre_id": "chapitre_04",
+    "recto": "Piège des fonctions de meilleure réponse à Cournot ?",
+    "verso": "Essayer de substituer $q_1$ dans $q_2$ puis $q_3$ : cela crée un mur algébrique impossible dès que $n>2$.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_158",
+    "chapitre_id": "chapitre_04",
+    "recto": "Demande en Bertrand homogène si $p_i = p_j$ ?",
+    "verso": "La demande globale se sépare équitablement entre les entreprises à égalité : $D(p_i)/2$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_159",
+    "chapitre_id": "chapitre_04",
+    "recto": "Vainqueur en Bertrand avec différenciation verticale ?",
+    "verso": "La firme ayant le plus grand surplus social potentiel, calculé par $w_i = v_i - c_i$, remporte le marché.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_160",
+    "chapitre_id": "chapitre_04",
+    "recto": "Formule du prix vainqueur en Bertrand avec qualités ?",
+    "verso": "$p_1 = v_1 - v_2 + c_2$, prix fixé pour annuler exactement la meilleure offre de la firme concurrente.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_161",
+    "chapitre_id": "chapitre_05",
+    "recto": "Définition de l'axiome de transitivité des préférences ?",
+    "verso": "Si un panier $\\mathbf{x} \\succeq \\mathbf{y}$ et que $\\mathbf{y} \\succeq \\mathbf{z}$, alors logiquement $\\mathbf{x} \\succeq \\mathbf{z}$.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_162",
+    "chapitre_id": "chapitre_05",
+    "recto": "Définition de l'axiome de complétude ?",
+    "verso": "L'agent peut toujours comparer : pour tout panier $\\mathbf{x}$ et $\\mathbf{y}$, on a $\\mathbf{x} \\succeq \\mathbf{y}$ ou $\\mathbf{y} \\succeq \\mathbf{x}$.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_163",
+    "chapitre_id": "chapitre_05",
+    "recto": "Erreur d'interprétation d'une courbe d'indifférence qui remonte ?",
+    "verso": "Tracer cela viole la monotonie, car compenser la perte d'un bien en enlevant l'autre implique un bien indésirable.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_164",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule générique de l'utilité CES ?",
+    "verso": "$U(\\mathbf{x}) = \\left(\\sum \\alpha_\\ell x_\\ell^\\rho\\right)^{1/\\rho}$, où le paramètre $\\rho$ dicte l'élasticité de substitution constante.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_165",
+    "chapitre_id": "chapitre_05",
+    "recto": "Formule générale mathématique du TMS ?",
+    "verso": "$TMS_{\\ell/k} = \\dfrac{\\partial U / \\partial x_\\ell}{\\partial U / \\partial x_k}$, le ratio strict des utilités marginales.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_166",
+    "chapitre_id": "chapitre_05",
+    "recto": "Le TMS change-t-il avec un logarithme ?",
+    "verso": "Non, le Taux Marginal de Substitution est un invariant analytique aux transformations strictement croissantes.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_167",
+    "chapitre_id": "chapitre_06",
+    "recto": "Coordonnées de l'origine de Bruno dans Edgeworth ?",
+    "verso": "Son repère est inversé, il se lit depuis le coin en haut à droite aux coordonnées $(\\omega_1, \\omega_2)$.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_168",
+    "chapitre_id": "chapitre_06",
+    "recto": "Aspect visuel des courbes de Bruno dans la boîte ?",
+    "verso": "Puisqu'elles sont convexes par rapport à son origine, elles apparaissent creuses tournées vers le haut à droite.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_169",
+    "chapitre_id": "chapitre_06",
+    "recto": "Changement de variable pour résoudre l'égalité des TMS ?",
+    "verso": "$TMS_A(x_A^1, x_A^2) = TMS_B(\\omega_1 - x_A^1, \\omega_2 - x_A^2)$, afin de n'avoir que deux inconnues.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_170",
+    "chapitre_id": "chapitre_06",
+    "recto": "Dernière étape de l'équation de la courbe des contrats ?",
+    "verso": "Manipuler algébriquement l'égalité des TMS pour isoler $x_A^2$ en fonction de $x_A^1$, donnant $x_A^2 = C(x_A^1)$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_171",
+    "chapitre_id": "chapitre_06",
+    "recto": "Position de la courbe des contrats (Substituts parfaits) ?",
+    "verso": "Si les TMS constants sont inégaux, la courbe se situe intégralement le long des bords de la boîte d'Edgeworth.",
+    "categorie": "exemple",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_172",
+    "chapitre_id": "chapitre_07",
+    "recto": "Formule vecteur de dotation totale de l'économie ?",
+    "verso": "$\\mathbf{\\omega} = (\\omega_1, ..., \\omega_L) \\in \\mathbb{R}^L_+$, sommant toutes les ressources physiques disponibles au départ.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_173",
+    "chapitre_id": "chapitre_07",
+    "recto": "Comment prouver qu'une allocation n'est pas Pareto-optimale ?",
+    "verso": "Démontrer qu'un petit transfert de biens mutuel permet d'augmenter strictement l'utilité d'un agent sans léser l'autre.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_174",
+    "chapitre_id": "chapitre_07",
+    "recto": "Méthode mathématique alternative des optima de Pareto ?",
+    "verso": "Maximiser une somme pondérée des utilités $\\sum \\mu_i U_i(\\mathbf{x}_i)$ sous contrainte stricte de ressources.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_175",
+    "chapitre_id": "chapitre_07",
+    "recto": "Que reflète la pente décroissante de la Frontière de Pareto ?",
+    "verso": "L'arbitrage sociétal inévitable : on ne peut augmenter l'utilité d'un agent qu'au détriment de celle d'un autre.",
+    "categorie": "définition",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_176",
+    "chapitre_id": "chapitre_07",
+    "recto": "Variables sur les axes de la Frontière de Pareto ?",
+    "verso": "Les axes représentent les niveaux d'utilité $U_A$ et $U_B$, et non plus les quantités physiques des biens.",
+    "categorie": "exemple",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_177",
+    "chapitre_id": "chapitre_08",
+    "recto": "Qu'est-ce que la normalisation de Walras ?",
+    "verso": "Fixer le prix d'un bien arbitrairement à 1 ($p_x = 1$) pour résoudre plus facilement le système de prix relatifs.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_178",
+    "chapitre_id": "chapitre_08",
+    "recto": "Méthode pour trouver la demande marshallienne ?",
+    "verso": "Égaliser le TMS au rapport des prix de marché et saturer totalement la contrainte budgétaire de l'agent.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_179",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule demande marshallienne avec utilité Leontief ?",
+    "verso": "$x_i(p) = y_i(p) = R_i / (1+p)$, la richesse est divisée car les biens sont acquis en proportions identiques.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_180",
+    "chapitre_id": "chapitre_08",
+    "recto": "Technique clé de la dérivation implicite ?",
+    "verso": "Dériver l'intégralité de l'équation d'équilibre par rapport au paramètre exogène sans chercher à isoler la variable endogène avant.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_181",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de l'Indice d'Aversion Absolue au risque (IA) ?",
+    "verso": "$IA = \\dfrac{-u''(w)}{u'(w)}$, quantifiant localement la concavité de l'utilité face au risque.",
+    "categorie": "formule",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_182",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule de l'Indice de Risque Relatif (IR) ?",
+    "verso": "$IR = w \times IA$, ajustant l'aversion absolue au niveau de richesse de l'individu.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_183",
+    "chapitre_id": "chapitre_08",
+    "recto": "Formule mathématique de l'Espérance d'Utilité (EU) ?",
+    "verso": "$EU = \\sum p_i u(w_i)$, pondérant l'utilité de chaque état de la nature par sa probabilité d'occurrence.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_184",
+    "chapitre_id": "chapitre_08",
+    "recto": "Calculer la prime de risque d'une loterie ?",
+    "verso": "Soustraire l'Équivalent Certain (EC) à l'Espérance mathématique pure du gain $E(X)$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_185",
+    "chapitre_id": "chapitre_08",
+    "recto": "Définition de l'inégalité de Jensen (risque) ?",
+    "verso": "L'utilité de l'espérance $u(E(X))$ est strictement supérieure à l'espérance de l'utilité $E(u(X))$ pour un agent averse au risque.",
+    "categorie": "définition",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_186",
+    "chapitre_id": "chapitre_08",
+    "recto": "Richesse de l'assuré si aucun sinistre ne survient ?",
+    "verso": "Sa richesse finale est simplement sa dotation moins la prime payée : $W_{sans} = W - \text{Prime}(R)$.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_187",
+    "chapitre_id": "chapitre_08",
+    "recto": "Objectif de l'optimisation de l'assurance ?",
+    "verso": "Maximiser l'Espérance d'Utilité globale par rapport au niveau de remboursement $R$ choisi : $\\max_R EU(R)$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_188",
+    "chapitre_id": "chapitre_08",
+    "recto": "Condition d'achat dans le modèle de demande probabiliste ?",
+    "verso": "Le consommateur rationnel décide d'acheter uniquement si sa valuation interne est supérieure ou égale au prix : $v \\ge p$.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_189",
+    "chapitre_id": "chapitre_08",
+    "recto": "Obtenir la demande globale avec une fonction de répartition ?",
+    "verso": "Agréger la population en multipliant la masse $M$ par la probabilité d'achat : $D(p) = M \times (1 - F(p))$.",
+    "categorie": "méthode",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_190",
+    "chapitre_id": "chapitre_08",
+    "recto": "Piège d'intégration du surplus des consommateurs ?",
+    "verso": "Confondre la borne inférieure de l'intégrale (qui est le prix du marché $p$) avec l'origine absolue 0.",
+    "categorie": "piège",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_191",
+    "chapitre_id": "chapitre_08",
+    "recto": "Calculer le surplus avec prix plafonné et rationnement ?",
+    "verso": "Intégrer de $p(p)$ à l'infini, puis additionner la rente des heureux élus : $(p(p)-p)O(p)$.",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_192",
+    "chapitre_id": "chapitre_08",
+    "recto": "Comment construire la demande avec deux populations distinctes ?",
+    "verso": "Effectuer une somme horizontale des demandes individuelles, formant une courbe globale brisée avec des coudes (kinks).",
+    "categorie": "méthode",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_193",
+    "chapitre_id": "chapitre_08",
+    "recto": "Arbitrage tarifaire d'un monopole face à l'hétérogénéité ?",
+    "verso": "Il doit choisir mathématiquement entre un prix élevé excluant les pauvres ou un prix mass-market sacrifiant ses marges.",
+    "categorie": "exemple",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_194",
+    "chapitre_id": "chapitre_08",
+    "recto": "Condition de viabilité de production à Cournot ?",
+    "verso": "La firme $i$ ne produit une quantité positive ($q_i > 0$) que si son coût $c_i$ est proche de la moyenne.",
+    "categorie": "définition",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "fc_195",
+    "chapitre_id": "chapitre_08",
+    "recto": "Équation algébrique de l'équilibre de marché Walrasien ?",
+    "verso": "Sommer les demandes individuelles et égaliser à la dotation totale : $x_A(p) + x_B(p) = \\omega_x$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "fc_196",
+    "chapitre_id": "chapitre_08",
+    "recto": "Richesse de l'assuré si un sinistre se réalise ?",
+    "verso": "$W_{avec} = W - \text{Sinistre} + R - \text{Prime}(R)$, incluant la perte et le remboursement.",
+    "categorie": "formule",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_197",
+    "chapitre_id": "chapitre_08",
+    "recto": "Quelle est la variable stratégique de l'oligopole Cournot ?",
+    "verso": "Chaque entreprise choisit simultanément la quantité $q_i$ qu'elle va produire, le prix s'ajustant mécaniquement ensuite.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_198",
+    "chapitre_id": "chapitre_08",
+    "recto": "Quelle est la variable stratégique de l'oligopole Bertrand ?",
+    "verso": "Chaque firme fixe son propre prix $p_i$, et les acheteurs se dirigent intégralement vers le vendeur le moins cher.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_199",
+    "chapitre_id": "chapitre_08",
+    "recto": "Définition de l'axiome de réflexivité des préférences ?",
+    "verso": "Pour tout panier de biens $\\mathbf{x}$, le consommateur considère systématiquement que $\\mathbf{x} \\succeq \\mathbf{x}$.",
+    "categorie": "définition",
+    "difficulte": "facile"
+  },
+  {
+    "id": "fc_200",
+    "chapitre_id": "chapitre_08",
+    "recto": "Prix maximal prêt à payer pour éviter un risque ?",
+    "verso": "La différence entre la richesse initiale totale $W$ et l'Équivalent Certain garanti $EC$.",
+    "categorie": "formule",
+    "difficulte": "moyen"
+  }
+]

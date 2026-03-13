@@ -1,0 +1,2382 @@
+[
+  {
+    "id": "qcm_001",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le modèle d'échange d'un bien entre un acheteur et un vendeur en information complète, quelle est la condition nécessaire et suffisante pour que l'échange ait lieu ?",
+    "options": [
+      "La valeur accordée par l'acheteur doit être égale au prix (v = p).",
+      "Le prix doit être exactement à mi-chemin entre le coût et la valeur (p = (v+c)/2).",
+      "La valeur accordée par l'acheteur doit être supérieure ou égale au coût du vendeur (v >= c).",
+      "Le coût du vendeur doit être strictement inférieur à zéro."
+    ],
+    "bonne_reponse": "La valeur accordée par l'acheteur doit être supérieure ou égale au coût du vendeur (v >= c).",
+    "explication": "L'échange a lieu si et seulement s'il est efficace, c'est-à-dire si la disposition à payer de l'acheteur (v) est au moins égale au coût d'opportunité du vendeur (c). Le prix ne fait que répartir le surplus.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_002",
+    "chapitre_id": "chapitre_01",
+    "question": "Comment calcule-t-on le Surplus Total (Welfare) généré par un échange ?",
+    "options": [
+      "W = v + p",
+      "W = p - c",
+      "W = v - c",
+      "W = (v - p) + (p + c)"
+    ],
+    "bonne_reponse": "W = v - c",
+    "explication": "Le surplus total (W) est la somme du surplus de l'acheteur (v - p) et du profit du vendeur (p - c). En additionnant les deux, le prix (p) s'annule, donnant W = v - c, ce qui mesure le gain global dans l'économie.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_003",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le jeu de l'Ultimatum, pourquoi l'unique équilibre de Nash parfait en sous-jeux prédit-il que le joueur 1 garde presque tout le surplus ?",
+    "options": [
+      "Parce que le joueur 2 a des préférences altruistes.",
+      "Parce que le joueur 1 anticipe qu'un joueur 2 parfaitement rationnel acceptera n'importe quel gain strictement positif plutôt que rien.",
+      "Parce que le joueur 2 peut formuler des menaces crédibles de rejeter l'offre.",
+      "Parce que l'équité est une hypothèse fondamentale de la théorie des jeux classique."
+    ],
+    "bonne_reponse": "Parce que le joueur 1 anticipe qu'un joueur 2 parfaitement rationnel acceptera n'importe quel gain strictement positif plutôt que rien.",
+    "explication": "La résolution par induction à rebours (backward induction) élimine les menaces non-crédibles du joueur 2. Le joueur 1 sachant que le joueur 2 préférera 1€ à 0€, il lui proposera le minimum possible et gardera le reste.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_004",
+    "chapitre_id": "chapitre_01",
+    "question": "Quel est l'objectif du programme de Nash dans le modèle de négociation ?",
+    "options": [
+      "Trouver le prix exact en maximisant le produit des gains nets d'utilité pondérés par le pouvoir de marché.",
+      "Minimiser le transfert monétaire entre les deux agents.",
+      "Égaliser les surplus de l'acheteur et du vendeur (équité parfaite).",
+      "Maximiser le coût d'opportunité du vendeur pour garantir sa participation."
+    ],
+    "bonne_reponse": "Trouver le prix exact en maximisant le produit des gains nets d'utilité pondérés par le pouvoir de marché.",
+    "explication": "Le modèle de Nash résout l'indétermination du prix en maximisant le produit (u(x) - u_0)^alpha * (v(x) - v_0)^(1-alpha). Cela prend en compte le pouvoir de négociation (alpha) et les options de sortie de chacun.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_005",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans un problème de Hold-up modélisé via la négociation de Nash, quelle est la conséquence principale ?",
+    "options": [
+      "Un surinvestissement de la part de l'agent qui investit avant la négociation.",
+      "Un sous-investissement car l'agent ne récupère qu'une fraction de la valeur marginale de son investissement lors du partage du surplus.",
+      "Une répartition toujours parfaitement équitable (50/50) du surplus généré.",
+      "L'impossibilité mathématique de trouver un accord."
+    ],
+    "bonne_reponse": "Un sous-investissement car l'agent ne récupère qu'une fraction de la valeur marginale de son investissement lors du partage du surplus.",
+    "explication": "L'investissement (coût irrécupérable ex-ante) augmente la taille du gâteau, mais lors de la négociation (ex-post), ce gâteau est partagé selon les pouvoirs de négociation. L'investisseur ne captant pas 100% des fruits de son investissement, il tend à sous-investir.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_006",
+    "chapitre_id": "chapitre_02",
+    "question": "En situation de A-compétition asymétrique (un vendeur, deux acheteuses avec v1 > v2), où le prix va-t-il se fixer ?",
+    "options": [
+      "Le prix sera exactement égal au coût de production du vendeur (p = c).",
+      "Le prix s'établira dans l'intervalle compris entre le coût (c) et la valuation de la seconde acheteuse (v2).",
+      "Le prix s'établira dans l'intervalle p ∈ [max(c, v2), v1].",
+      "Le prix sera égal à la moyenne des valuations ((v1+v2)/2)."
+    ],
+    "bonne_reponse": "Le prix s'établira dans l'intervalle p ∈ [max(c, v2), v1].",
+    "explication": "La concurrence entre acheteuses pousse le prix à la hausse. La seconde acheteuse surenchérit jusqu'à son prix d'arrêt (v2). Le prix final doit donc être au moins égal à v2 (ou au coût c si c > v2), et au maximum à v1.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_007",
+    "chapitre_id": "chapitre_02",
+    "question": "Que mesure l'Indice de Lerner dans le modèle du monopole ?",
+    "options": [
+      "La perte sèche générée par le marché concurrentiel.",
+      "Le pouvoir de marché, inversement proportionnel à l'élasticité de la demande.",
+      "Le surplus total (Welfare) des consommateurs.",
+      "La différence entre le coût marginal et le coût moyen de l'entreprise."
+    ],
+    "bonne_reponse": "Le pouvoir de marché, inversement proportionnel à l'élasticité de la demande.",
+    "explication": "L'indice de Lerner ((p-c)/p = 1/epsilon) montre que plus la demande est inélastique (rigide), plus le monopole peut imposer une marge importante. La marge est dictée par l'élasticité.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_008",
+    "chapitre_id": "chapitre_02",
+    "question": "D'après le théorème de l'enveloppe appliqué au surplus des consommateurs S(p), quelle est la valeur de S'(p) ?",
+    "options": [
+      "S'(p) = D(p)",
+      "S'(p) = -D(p)",
+      "S'(p) = (p-c)D'(p)",
+      "S'(p) = 0"
+    ],
+    "bonne_reponse": "S'(p) = -D(p)",
+    "explication": "La variation du surplus induite par une variation du prix est exactement égale à l'opposé de la quantité demandée. Si le prix augmente d'un euro, les consommateurs perdent un euro par unité achetée.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_009",
+    "chapitre_id": "chapitre_02",
+    "question": "Dans le modèle de monopole continu avec une fonction de répartition F(p), quelle est l'expression mathématique de la Condition du Premier Ordre (CPO) pour fixer le prix ?",
+    "options": [
+      "p = c + F(p)/f(p)",
+      "p = c - (1-F(p))/f(p)",
+      "p = c + (1-F(p))/f(p)",
+      "p = c * (1-F(p))"
+    ],
+    "bonne_reponse": "p = c + (1-F(p))/f(p)",
+    "explication": "Le monopole maximise Profit = (p-c)*N*(1-F(p)). En dérivant et en égalisant à zéro, on trouve que le prix de monopole est égal au coût marginal (c) plus une marge représentée par le terme (1-F(p))/f(p).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_010",
+    "chapitre_id": "chapitre_02",
+    "question": "Un monopole engendre-t-il obligatoirement une perte sèche (Dead-weight loss) pour la société ?",
+    "options": [
+      "Oui, car le prix de monopole est toujours strictement supérieur au coût marginal.",
+      "Oui, la perte sèche est inévitable dès qu'il y a un seul vendeur sur le marché.",
+      "Non, si le monopole baisse son prix pour servir tout le marché (solution en coin qm = qc), la perte sèche est nulle.",
+      "Non, le monopole maximise le surplus total s'il est soutenu par l'État."
+    ],
+    "bonne_reponse": "Non, si le monopole baisse son prix pour servir tout le marché (solution en coin qm = qc), la perte sèche est nulle.",
+    "explication": "La perte sèche n'existe que si les quantités échangées chutent (qm < qc). S'il est optimal pour le monopole de servir la totalité du marché (ex: coût c très faible), aucune transaction efficace n'est détruite. C'est juste un transfert de richesse massif vers le vendeur.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_011",
+    "chapitre_id": "chapitre_03",
+    "question": "En situation de V-compétition asymétrique (une acheteuse, deux vendeurs avec des coûts c1 < c2), comment est déterminé le prix d'équilibre ?",
+    "options": [
+      "L'acheteuse paie la moyenne des coûts : p = (c1+c2)/2.",
+      "Le prix est tiré vers le bas par la concurrence jusqu'au coût du premier perdant (c2), donc p = c2.",
+      "Le vendeur 1 accepte de vendre exactement à son coût c1, faisant un profit nul.",
+      "Le prix monte jusqu'à la valuation de l'acheteuse (p = v)."
+    ],
+    "bonne_reponse": "Le prix est tiré vers le bas par la concurrence jusqu'au coût du premier perdant (c2), donc p = c2.",
+    "explication": "Dans une enchère descendante entre vendeurs, le vendeur 2 abandonne quand le prix atteint c2. Le vendeur 1 remporte alors le marché en proposant c2 (ou marginalement moins), ce qui lui permet de conserver une rente (c2 - c1).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_012",
+    "chapitre_id": "chapitre_03",
+    "question": "Dans le modèle du monopsone, comment l'acheteuse unique détermine-t-il son prix d'achat optimal p^m ?",
+    "options": [
+      "Il fixe un prix égal à sa propre valuation v.",
+      "Il équilibre le gain marginal lié à la baisse du prix d'achat et la perte marginale liée à la réduction des volumes achetés.",
+      "Il fixe un prix supérieur à v pour attirer un maximum de vendeurs.",
+      "Il fixe toujours p^m = 0 pour maximiser son utilité absolue."
+    ],
+    "bonne_reponse": "Il équilibre le gain marginal lié à la baisse du prix d'achat et la perte marginale liée à la réduction des volumes achetés.",
+    "explication": "Baisser le prix permet au monopsone d'économiser sur chaque unité achetée, mais cela décourage les producteurs ayant des coûts plus élevés, réduisant l'offre. L'optimum se trouve au croisement de ces deux effets.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_013",
+    "chapitre_id": "chapitre_03",
+    "question": "Quelle est l'expression mathématique de l'offre continue O(p) dans le modèle du monopsone ?",
+    "options": [
+      "O(p) = N(1 - G(p))",
+      "O(p) = N * G(p)",
+      "O(p) = N / g(p)",
+      "O(p) = p - c"
+    ],
+    "bonne_reponse": "O(p) = N * G(p)",
+    "explication": "Contrairement à la demande, un vendeur vend si son coût c est inférieur ou égal au prix p. L'offre correspond donc à la fonction de répartition directe G(p), multipliée par la masse totale des vendeurs N.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_014",
+    "chapitre_id": "chapitre_03",
+    "question": "Graphiquement, à quoi correspond le surplus des producteurs ?",
+    "options": [
+      "À l'aire située sous la courbe de demande et au-dessus du prix.",
+      "À l'aire située entre la courbe d'offre et la ligne horizontale du prix de marché.",
+      "Au rectangle formé par la quantité totale multipliée par le prix.",
+      "À l'aire totale sous la courbe d'offre depuis l'origine jusqu'à la quantité d'équilibre."
+    ],
+    "bonne_reponse": "À l'aire située entre la courbe d'offre et la ligne horizontale du prix de marché.",
+    "explication": "Le surplus des producteurs est l'intégrale des différences (p-c) pour tous les types c <= p. Graphiquement, cela représente la zone au-dessus de la courbe d'offre (qui indique les coûts c) et en dessous du prix de vente p.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_015",
+    "chapitre_id": "chapitre_03",
+    "question": "Quelle condition est nécessaire et suffisante pour affirmer qu'un monopsone engendre une perte sèche (Dead-weight loss) ?",
+    "options": [
+      "Le prix d'équilibre du monopsone p^m doit être inférieur à la valuation v.",
+      "L'élasticité de l'offre doit être infinie.",
+      "La quantité échangée sous le monopsone (q^m) doit être strictement inférieure à la quantité concurrentielle (q^c).",
+      "Le monopsone doit rationner la demande."
+    ],
+    "bonne_reponse": "La quantité échangée sous le monopsone (q^m) doit être strictement inférieure à la quantité concurrentielle (q^c).",
+    "explication": "La perte sèche mesure les échanges mutuellement profitables (c < v) qui n'ont pas lieu. Si le monopsone parvient à acheter à tous les producteurs (solution en coin) malgré un prix faible, alors q^m = q^c et la perte sèche est nulle.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_016",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de concurrence à la Cournot, quelle est la variable d'action stratégique choisie par les firmes ?",
+    "options": [
+      "Le prix de vente.",
+      "La quantité produite.",
+      "L'investissement en marketing.",
+      "La différenciation du produit."
+    ],
+    "bonne_reponse": "La quantité produite.",
+    "explication": "Le modèle de Cournot est une concurrence par les quantités : chaque entreprise décide de son volume de production en anticipant l'effet de l'offre globale sur le prix de marché.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_017",
+    "chapitre_id": "chapitre_04",
+    "question": "Pourquoi le revenu marginal (MR) d'un monopole ou d'un oligopole est-il toujours strictement inférieur au prix (p) ?",
+    "options": [
+      "À cause des taxes gouvernementales.",
+      "Parce que les coûts marginaux augmentent avec la quantité.",
+      "Parce que pour vendre une unité supplémentaire, la firme doit baisser le prix sur toutes les unités précédentes (P'(q) < 0).",
+      "Parce que les consommateurs ne sont pas rationnels."
+    ],
+    "bonne_reponse": "Parce que pour vendre une unité supplémentaire, la firme doit baisser le prix sur toutes les unités précédentes (P'(q) < 0).",
+    "explication": "La formule du revenu marginal est MR(q) = P(q) + qP'(q). Puisque la demande est décroissante (P'(q) est négatif), le terme d'augmentation du volume est amputé par la dépréciation du prix sur les unités infra-marginales.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_018",
+    "chapitre_id": "chapitre_04",
+    "question": "Quelle est la méthode algébrique recommandée pour trouver la quantité totale (Q*) dans un oligopole de Cournot à n firmes asymétriques ?",
+    "options": [
+      "Exprimer q1 en fonction de q2, puis substituer en chaîne.",
+      "Sommer les n conditions du premier ordre (CPO) individuelles pour isoler Q.",
+      "Égaliser le prix au coût marginal moyen des n firmes.",
+      "Prendre la quantité de monopole et la diviser par n."
+    ],
+    "bonne_reponse": "Sommer les n conditions du premier ordre (CPO) individuelles pour isoler Q.",
+    "explication": "La \"Méthode de la Somme\" (nP(Q) + P'(Q)Q = n * coût moyen) permet de trouver la quantité agrégée Q* directement sans passer par la substitution complexe des fonctions de meilleure réponse multiples.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_019",
+    "chapitre_id": "chapitre_04",
+    "question": "Quel résultat décrit le 'Paradoxe de Bertrand' dans sa version stricte ?",
+    "options": [
+      "Un duopole avec des biens identiques et des coûts symétriques fixe un prix égal au coût marginal, générant des profits nuls.",
+      "Les firmes finissent toujours par s'entendre secrètement pour fixer le prix de monopole.",
+      "La concurrence en prix conduit inévitablement à la faillite de toutes les entreprises du marché.",
+      "Une firme avec un avantage de coût marginal détruit entièrement le marché."
+    ],
+    "bonne_reponse": "Un duopole avec des biens identiques et des coûts symétriques fixe un prix égal au coût marginal, générant des profits nuls.",
+    "explication": "C'est le paradoxe central : il suffit d'un seul concurrent (duopole) pour reproduire parfaitement l'issue de la concurrence parfaite (p=c), détruisant toute marge bénéficiaire par la guerre des prix.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_020",
+    "chapitre_id": "chapitre_04",
+    "question": "Comment le modèle de Bertrand résout-il la situation où les firmes proposent des biens de qualités différentes (v1 > v2) mais ont le même coût (c) ?",
+    "options": [
+      "Le marché est partagé à 50/50.",
+      "La firme 1 gagne tout le marché en fixant un prix qui compense exactement la différence de qualité : p1 = v1 - v2 + c.",
+      "Les deux firmes fixent p = c et font un profit nul.",
+      "La firme 2 gagne le marché car elle représente l'option low-cost."
+    ],
+    "bonne_reponse": "La firme 1 gagne tout le marché en fixant un prix qui compense exactement la différence de qualité : p1 = v1 - v2 + c.",
+    "explication": "La concurrence s'opère sur le 'surplus' (w = v - p) offert au consommateur. La firme 1 a un avantage de qualité. La firme 2 baissera son prix jusqu'à c, offrant un surplus max de v2-c. Pour gagner, la firme 1 fixe p1 tel que son offre (v1-p1) égale l'offre de la firme 2.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_021",
+    "chapitre_id": "chapitre_05",
+    "question": "Parmi les axiomes des préférences rationnelles (CRTM), que signifie l'axiome de Transitivité ?",
+    "options": [
+      "Le consommateur peut toujours dire s'il préfère A à B, ou B à A.",
+      "Si le consommateur préfère A à B, et B à C, alors il préfère A à C.",
+      "Plus le consommateur a d'un bien, plus il est heureux.",
+      "Un panier est toujours préféré à lui-même."
+    ],
+    "bonne_reponse": "Si le consommateur préfère A à B, et B à C, alors il préfère A à C.",
+    "explication": "La transitivité garantit la cohérence des choix du consommateur. Si l'axiome n'est pas respecté, le consommateur pourrait tourner en boucle dans ses décisions.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_022",
+    "chapitre_id": "chapitre_05",
+    "question": "Que représente graphiquement la convexité des préférences d'un consommateur ?",
+    "options": [
+      "Des courbes d'indifférence qui se croisent.",
+      "Le fait que le consommateur préfère les extrêmes aux mélanges.",
+      "Des courbes d'indifférence qui 'sourient' ou tournent le dos à l'origine (goût pour la diversité).",
+      "Des courbes d'indifférence strictement horizontales."
+    ],
+    "bonne_reponse": "Des courbes d'indifférence qui 'sourient' ou tournent le dos à l'origine (goût pour la diversité).",
+    "explication": "La convexité mathématique signifie que toute combinaison linéaire de deux paniers équivalents (un mélange) donne une utilité supérieure ou égale. Graphiquement, la courbe s'incurve vers l'origine.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_023",
+    "chapitre_id": "chapitre_05",
+    "question": "Si on applique la fonction logarithme népérien (ln) à une fonction d'utilité Cobb-Douglas U(x1, x2) = x1^a * x2^b, que se passe-t-il ?",
+    "options": [
+      "Les préférences du consommateur sont radicalement modifiées.",
+      "Le Taux Marginal de Substitution (TMS) est divisé par deux.",
+      "Cela ne change rien au classement des paniers ni au TMS, car c'est une transformation strictement croissante.",
+      "La fonction devient une fonction de compléments parfaits (Leontief)."
+    ],
+    "bonne_reponse": "Cela ne change rien au classement des paniers ni au TMS, car c'est une transformation strictement croissante.",
+    "explication": "L'utilité est ordinale. Appliquer une fonction strictement croissante comme le logarithme préserve l'ordre des préférences et simplifie considérablement les calculs des dérivées sans modifier les choix optimaux (le TMS est un invariant analytique).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_024",
+    "chapitre_id": "chapitre_05",
+    "question": "Quelle est l'erreur fondamentale à éviter lorsqu'on travaille avec une fonction d'utilité Leontief U(x,y) = min(a*x, b*y) ?",
+    "options": [
+      "Essayer de la transformer avec un logarithme.",
+      "Chercher à calculer le TMS par des dérivées partielles au niveau du 'coude'.",
+      "Supposer que les deux biens sont désirables.",
+      "Tracer des courbes d'indifférence en forme d'angle droit."
+    ],
+    "bonne_reponse": "Chercher à calculer le TMS par des dérivées partielles au niveau du 'coude'.",
+    "explication": "La fonction min() n'est pas différentiable à son 'coude' (là où les proportions sont optimales). Tenter de calculer des dérivées partielles ou d'utiliser un Lagrangien conduira à une impasse mathématique. Il faut raisonner logiquement sur l'égalité a*x = b*y.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_025",
+    "chapitre_id": "chapitre_05",
+    "question": "Comment s'exprime mathématiquement le Taux Marginal de Substitution du bien 1 par le bien 2 (TMS 1/2) ?",
+    "options": [
+      "TMS 1/2 = (dU/dx2) / (dU/dx1)",
+      "TMS 1/2 = x2 / x1",
+      "TMS 1/2 = (dU/dx1) / (dU/dx2)",
+      "TMS 1/2 = p1 / p2"
+    ],
+    "bonne_reponse": "TMS 1/2 = (dU/dx1) / (dU/dx2)",
+    "explication": "Le TMS 1/2 est le ratio des utilités marginales : l'utilité marginale du bien en abscisse (bien 1) divisée par l'utilité marginale du bien en ordonnée (bien 2). Il représente la valeur absolue de la pente de la courbe d'indifférence.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_026",
+    "chapitre_id": "chapitre_06",
+    "question": "Dans une Boîte d'Edgeworth représentant une économie de pur échange, à quoi correspondent les dimensions de la boîte ?",
+    "options": [
+      "Au budget total des deux agents.",
+      "Aux dotations totales (ω1, ω2) disponibles dans l'économie pour les deux biens.",
+      "Aux prix d'équilibre des marchés p1 et p2.",
+      "Au niveau d'utilité maximal atteignable par les deux agents."
+    ],
+    "bonne_reponse": "Aux dotations totales (ω1, ω2) disponibles dans l'économie pour les deux biens.",
+    "explication": "La largeur et la hauteur de la boîte représentent respectivement la somme des quantités du bien 1 possédées par les deux agents et la somme des quantités du bien 2. Cela matérialise la contrainte de rareté (faisabilité).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_027",
+    "chapitre_id": "chapitre_06",
+    "question": "Que représente géométriquement la Courbe des Contrats dans la Boîte d'Edgeworth ?",
+    "options": [
+      "La droite de budget commune aux deux agents.",
+      "L'ensemble des points où les dotations initiales sont strictement égales.",
+      "L'ensemble des allocations Pareto-optimales, où les courbes d'indifférence sont tangentes.",
+      "L'unique point d'équilibre général où l'offre égale la demande."
+    ],
+    "bonne_reponse": "L'ensemble des allocations Pareto-optimales, où les courbes d'indifférence sont tangentes.",
+    "explication": "La courbe des contrats relie tous les points d'efficacité où les échanges mutuellement profitables sont épuisés. Mathématiquement, pour des préférences régulières, cela correspond aux points de tangence entre les courbes d'indifférence des deux agents.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_028",
+    "chapitre_id": "chapitre_06",
+    "question": "Quelle est l'étape algébrique cruciale pour trouver l'équation de la courbe des contrats après avoir posé l'égalité TMS_A = TMS_B ?",
+    "options": [
+      "Dériver l'équation par rapport au prix p.",
+      "Remplacer les quantités de l'agent B (xB, yB) par les contraintes de faisabilité (ωx - xA, ωy - yA).",
+      "Égaliser les utilités U_A et U_B.",
+      "Passer l'équation au logarithme népérien."
+    ],
+    "bonne_reponse": "Remplacer les quantités de l'agent B (xB, yB) par les contraintes de faisabilité (ωx - xA, ωy - yA).",
+    "explication": "L'équation TMS_A(xA, yA) = TMS_B(xB, yB) a 4 inconnues. Il faut substituer les variables de l'agent B en utilisant les ressources totales pour n'avoir plus qu'une équation à 2 inconnues, isolant ainsi yA en fonction de xA.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_029",
+    "chapitre_id": "chapitre_06",
+    "question": "Comment formuler mathématiquement la recherche d'une allocation efficace via un Lagrangien ?",
+    "options": [
+      "On maximise l'utilité de l'agent A sous contrainte que l'agent B atteigne un niveau de revenu fixé.",
+      "On maximise le produit des utilités U_A * U_B.",
+      "On maximise l'utilité de l'agent A sous contrainte que l'agent B conserve un niveau d'utilité fixe cible.",
+      "On minimise le transfert entre A et B."
+    ],
+    "bonne_reponse": "On maximise l'utilité de l'agent A sous contrainte que l'agent B conserve un niveau d'utilité fixe cible.",
+    "explication": "En fixant l'utilité de B (U_B = u) et en maximisant l'utilité de A avec les ressources restantes, on s'assure qu'on ne peut plus améliorer la situation de A sans détériorer celle de B. Cela trace rigoureusement la courbe des contrats.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_030",
+    "chapitre_id": "chapitre_06",
+    "question": "Où se trouve la courbe des contrats si les deux agents considèrent les biens comme des substituts parfaits, mais ont des TMS constants différents (TMS_A > TMS_B) ?",
+    "options": [
+      "Au centre exact de la boîte.",
+      "Sur les bords extérieurs de la boîte d'Edgeworth.",
+      "Sur la grande diagonale reliant les deux origines.",
+      "Il n'y a pas de courbe des contrats, l'échange est impossible."
+    ],
+    "bonne_reponse": "Sur les bords extérieurs de la boîte d'Edgeworth.",
+    "explication": "Avec des fonctions linéaires, les dérivées sont constantes, l'égalité des TMS est impossible. Comme l'agent A valorise systématiquement plus le bien 1 que l'agent B, A récupérera tout le bien 1 jusqu'à saturation avant de s'intéresser au bien 2. La solution est un équilibre 'en coin' le long des bords de la boîte.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_031",
+    "chapitre_id": "chapitre_07",
+    "question": "Qu'est-ce qu'une allocation 'réalisable' dans une économie d'échange générale ?",
+    "options": [
+      "Une allocation où chaque agent a une dotation strictement positive.",
+      "Une allocation où les prix de marché sont à l'équilibre.",
+      "Une allocation où la somme des consommations de chaque bien par tous les agents n'excède pas la dotation initiale totale de ce bien.",
+      "Une allocation qui maximise le Welfare pondéré."
+    ],
+    "bonne_reponse": "Une allocation où la somme des consommations de chaque bien par tous les agents n'excède pas la dotation initiale totale de ce bien.",
+    "explication": "C'est la contrainte physique de base : on ne peut pas consommer ce qui n'existe pas. La faisabilité implique que somme(x_i) <= omega pour chaque bien.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_032",
+    "chapitre_id": "chapitre_07",
+    "question": "Comment définit-on précisément une allocation optimale au sens de Pareto ?",
+    "options": [
+      "Une situation où le surplus des consommateurs est égal au profit des producteurs.",
+      "Une allocation où tous les agents obtiennent exactement la même utilité.",
+      "Une allocation réalisable telle qu'il est impossible d'augmenter l'utilité d'un agent sans diminuer celle d'au moins un autre.",
+      "Une allocation où les prix de tous les biens sont fixés à leur coût marginal."
+    ],
+    "bonne_reponse": "Une allocation réalisable telle qu'il est impossible d'augmenter l'utilité d'un agent sans diminuer celle d'au moins un autre.",
+    "explication": "C'est le critère d'efficacité pure parétien. Si on peut améliorer un individu sans léser personne (amélioration au sens de Pareto), c'est que l'allocation actuelle gâche des opportunités d'échange et n'est donc pas optimale.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_033",
+    "chapitre_id": "chapitre_07",
+    "question": "L'allocation où l'agent A possède 100% des biens et l'agent B possède 0% est-elle Pareto-optimale (si l'utilité de A est strictement croissante) ?",
+    "options": [
+      "Non, car elle est profondément inéquitable.",
+      "Non, car l'agent B n'a pas atteint son seuil de survie.",
+      "Oui, car la seule façon de donner des biens à B serait de les enlever à A, ce qui baisserait l'utilité de A.",
+      "Oui, mais seulement si B a une fonction de Leontief."
+    ],
+    "bonne_reponse": "Oui, car la seule façon de donner des biens à B serait de les enlever à A, ce qui baisserait l'utilité de A.",
+    "explication": "L'optimum de Pareto ne juge absolument pas l'équité, mais uniquement l'absence de 'gaspillage'. Si A aime strictement les biens, lui en prendre pour les donner à B fera chuter son utilité. Il est donc impossible d'améliorer B sans détériorer A, rendant le point (dictateur) Pareto-optimal.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_034",
+    "chapitre_id": "chapitre_07",
+    "question": "Quelle est l'utilité de l'astuce mathématique consistant à maximiser la somme pondérée des utilités (Σ μ_i U_i) ?",
+    "options": [
+      "Elle permet de calculer le véritable bien-être social de l'économie.",
+      "Elle permet de caractériser facilement les optima de Pareto et de retrouver l'égalité des TMS.",
+      "Elle transforme des utilités ordinales en utilités cardinales.",
+      "Elle résout le problème des optima en présence de fonctions de Leontief."
+    ],
+    "bonne_reponse": "Elle permet de caractériser facilement les optima de Pareto et de retrouver l'égalité des TMS.",
+    "explication": "Maximiser une somme pondérée (avec des poids μ arbitraires) est une méthode lagrangienne élégante pour générer mathématiquement les points de la courbe des contrats (égalité des TMS), même si l'addition d'utilités ordinales n'a aucun sens social réel.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_035",
+    "chapitre_id": "chapitre_07",
+    "question": "Qu'est-ce que la Frontière de Pareto représente par rapport à la Courbe des Contrats ?",
+    "options": [
+      "C'est la même chose, mais calculée avec de la monnaie.",
+      "C'est la projection mathématique de la courbe des contrats dans l'espace abstrait des utilités (U_A vs U_B).",
+      "C'est l'ensemble des points d'équilibre où les prix de marché sont établis.",
+      "C'est la droite reliant les deux origines de la Boîte d'Edgeworth."
+    ],
+    "bonne_reponse": "C'est la projection mathématique de la courbe des contrats dans l'espace abstrait des utilités (U_A vs U_B).",
+    "explication": "Alors que la courbe des contrats se dessine dans l'espace physique des biens (pommes, bananes), la Frontière de Pareto traduit ces allocations physiques en niveaux de 'bonheur' pour visualiser directement l'arbitrage en termes d'utilité.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_036",
+    "chapitre_id": "chapitre_07",
+    "question": "Une caractéristique visuelle primordiale de la Frontière de Pareto est qu'elle est toujours :",
+    "options": [
+      "Strictement croissante, car les deux agents gagnent à l'échange.",
+      "Horizontale, prouvant l'invariance des utilités.",
+      "Strictement décroissante, illustrant l'arbitrage inévitable entre le bien-être d'un agent et celui d'un autre.",
+      "Convexe vers l'origine dans tous les cas."
+    ],
+    "bonne_reponse": "Strictement décroissante, illustrant l'arbitrage inévitable entre le bien-être d'un agent et celui d'un autre.",
+    "explication": "Par définition de l'optimum, sur la frontière, la seule manière d'augmenter l'utilité de l'agent 1 est de réduire l'utilité de l'agent 2. La pente de la courbe (la frontière) dans le plan (U_A, U_B) est donc obligatoirement négative.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_037",
+    "chapitre_id": "chapitre_01",
+    "question": "Que signifie la règle mnémotechnique du 'V-P-C' dans la négociation d'un bien ?",
+    "options": [
+      "Vente, Prix, Client : les trois éléments d'un marché.",
+      "Valeur >= Prix >= Coût : la condition pour qu'un échange ait lieu et soit mutuellement profitable.",
+      "Variation du Prix Concurrentiel.",
+      "Volume, Profit, Capital : les objectifs du vendeur."
+    ],
+    "bonne_reponse": "Valeur >= Prix >= Coût : la condition pour qu'un échange ait lieu et soit mutuellement profitable.",
+    "explication": "Pour qu'un échange ait lieu, l'acheteur doit valoriser le bien plus que le prix qu'il paie (V >= P), et le vendeur doit recevoir un prix supérieur à son coût d'opportunité (P >= C).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_038",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le modèle d'offre et de demande concurrentielles avec un seul acheteur et un seul vendeur, quelle est la forme des courbes d'offre et de demande ?",
+    "options": [
+      "Des droites continues, l'une croissante et l'autre décroissante.",
+      "Des courbes exponentielles.",
+      "Des fonctions 'en escalier' constantes par morceaux valant 0 ou 1.",
+      "Des fonctions sinusoïdales."
+    ],
+    "bonne_reponse": "Des fonctions 'en escalier' constantes par morceaux valant 0 ou 1.",
+    "explication": "Puisqu'il n'y a qu'une seule unité indivisible du bien, la demande vaut 1 si p <= v (et 0 sinon), et l'offre vaut 1 si p >= c (et 0 sinon). Ce sont donc des fonctions en escalier.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_039",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans l'évaluation du surplus d'un échange bilatéral, quelle est une erreur courante concernant le vendeur ?",
+    "options": [
+      "Penser qu'il maximise le surplus total.",
+      "Croire qu'il perd le prix 'p' lors de l'échange.",
+      "Oublier qu'il a une valuation 'v' pour le bien.",
+      "Penser qu'il détient toujours le pouvoir de négociation."
+    ],
+    "bonne_reponse": "Croire qu'il perd le prix 'p' lors de l'échange.",
+    "explication": "Le vendeur gagne le prix 'p' et 'perd' le bien, ce qui lui coûte son coût d'opportunité 'c'. Son profit est donc p - c. Il ne perd pas p.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_040",
+    "chapitre_id": "chapitre_01",
+    "question": "Pourquoi utilise-t-on souvent une transformation logarithmique pour résoudre le programme de Négociation de Nash ?",
+    "options": [
+      "Parce que l'utilité des agents est toujours logarithmique.",
+      "Pour éviter de dériver directement une fonction avec des puissances α et 1-α, ce qui est très complexe algébriquement.",
+      "Parce que le transfert monétaire 't' doit toujours être positif.",
+      "Pour garantir que le surplus total est égal à 1."
+    ],
+    "bonne_reponse": "Pour éviter de dériver directement une fonction avec des puissances α et 1-α, ce qui est très complexe algébriquement.",
+    "explication": "Maximiser une fonction f(t) équivaut à maximiser ln(f(t)). Le logarithme transforme le produit des utilités pondérées en une somme, rendant la dérivation par rapport au transfert 't' beaucoup plus simple.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_041",
+    "chapitre_id": "chapitre_02",
+    "question": "En situation de A-compétition avec deux acheteuses symétriques (v1 = v2 = v) et un vendeur (coût c), qui accapare la totalité du surplus généré par l'échange (si v >= c) ?",
+    "options": [
+      "Les acheteuses.",
+      "Le vendeur.",
+      "Le surplus est partagé équitablement.",
+      "L'État via les taxes."
+    ],
+    "bonne_reponse": "Le vendeur.",
+    "explication": "La concurrence féroce entre deux acheteuses ayant la même valuation pousse le prix jusqu'à p = v. L'acheteuse gagnante a un surplus nul (v - v = 0), et le vendeur obtient tout le surplus (v - c).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_042",
+    "chapitre_id": "chapitre_02",
+    "question": "Lorsqu'un monopole est confronté à un continuum de consommateurs dont les valuations sont réparties selon F(v), comment s'écrit la fonction de demande D(p) pour une population totale N ?",
+    "options": [
+      "D(p) = N * F(p)",
+      "D(p) = N * f(p)",
+      "D(p) = N * (1 - F(p))",
+      "D(p) = N / F(p)"
+    ],
+    "bonne_reponse": "D(p) = N * (1 - F(p))",
+    "explication": "La demande représente la masse des consommateurs prêts à acheter, c'est-à-dire ceux dont la valuation v est supérieure ou égale au prix p. Cela correspond à la probabilité (1 - F(p)) multipliée par la population N.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_043",
+    "chapitre_id": "chapitre_02",
+    "question": "Comment calcule-t-on géométriquement la Perte Sèche (Dead-weight loss) générée par un monopole dans un cas de demande linéaire ?",
+    "options": [
+      "C'est l'aire du rectangle de base qm et de hauteur pm.",
+      "C'est l'aire du triangle dont la base est (pm - c) et la hauteur est (qc - qm) divisée par 2.",
+      "C'est l'intégrale de la demande de 0 à l'infini.",
+      "C'est la différence entre le prix de monopole et le coût marginal."
+    ],
+    "bonne_reponse": "C'est l'aire du triangle dont la base est (pm - c) et la hauteur est (qc - qm) divisée par 2.",
+    "explication": "La perte sèche (Triangle de Harberger) représente les échanges non réalisés. Son aire est donnée par un triangle délimité par la courbe de demande, le coût marginal c, et les quantités qm et qc.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_044",
+    "chapitre_id": "chapitre_02",
+    "question": "D'après la formule du Welfare W(p) = S(p) + Π(p), à quel niveau de prix le bien-être social est-il maximisé ?",
+    "options": [
+      "p = v (la valuation maximale)",
+      "p = pm (le prix de monopole)",
+      "p = c (le coût marginal)",
+      "p = 0"
+    ],
+    "bonne_reponse": "p = c (le coût marginal)",
+    "explication": "La dérivée du Welfare W'(p) = (p-c)D'(p) s'annule lorsque p = c. C'est l'équilibre concurrentiel, qui maximise la taille globale du 'gâteau' (le surplus total).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_045",
+    "chapitre_id": "chapitre_03",
+    "question": "Dans le modèle de V-compétition asymétrique (une acheteuse, deux vendeurs avec c1 < c2), sous quelle condition l'échange est-il efficace ?",
+    "options": [
+      "v >= c2",
+      "v >= c1",
+      "c1 = c2",
+      "v <= c1"
+    ],
+    "bonne_reponse": "v >= c1",
+    "explication": "L'échange est efficace tant que la valuation de l'acheteuse (v) est supérieure ou égale au coût du vendeur le plus efficace (c1). L'existence du vendeur 2 ne modifie pas cette condition d'efficacité globale.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_046",
+    "chapitre_id": "chapitre_03",
+    "question": "Quelle affirmation est vraie concernant l'Indice de Lerner au monopsone ?",
+    "options": [
+      "Il mesure la capacité du monopsone à imposer un prix supérieur à sa valuation v.",
+      "Il est inversement proportionnel à l'élasticité de la demande.",
+      "La capacité à faire baisser le prix est inversement proportionnelle à la sensibilité (élasticité) des producteurs au prix.",
+      "Il est toujours égal à zéro."
+    ],
+    "bonne_reponse": "La capacité à faire baisser le prix est inversement proportionnelle à la sensibilité (élasticité) des producteurs au prix.",
+    "explication": "L'Indice de Lerner au monopsone (v-p)/p = 1/ε_O montre que moins l'offre est élastique (c'est-à-dire moins les vendeurs sont réactifs à une baisse de prix), plus le monopsone peut imposer une forte démarque par rapport à v.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_047",
+    "chapitre_id": "chapitre_03",
+    "question": "Selon le théorème de l'enveloppe, que représente la dérivée du surplus (profit) des producteurs S_p'(p) par rapport au prix p ?",
+    "options": [
+      "La fonction d'offre O(p).",
+      "L'opposé de la fonction de demande -D(p).",
+      "Le coût marginal c.",
+      "Zéro."
+    ],
+    "bonne_reponse": "La fonction d'offre O(p).",
+    "explication": "Le théorème de l'enveloppe stipule que S_p'(p) = O(p). Une hausse infinitésimale du prix augmente le profit des producteurs proportionnellement à la quantité totale qu'ils offrent sur le marché.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_048",
+    "chapitre_id": "chapitre_03",
+    "question": "Lors du calcul du Welfare en situation de monopsone, W'(p) = (v-p)O'(p). Que se passe-t-il si le monopsone fixe un prix p^m < v tel que TOUS les producteurs vendent quand même (car p^m = c_max) ?",
+    "options": [
+      "La perte sèche est immense.",
+      "La perte sèche est nulle car q^m = q^c.",
+      "Le Welfare est négatif.",
+      "Le surplus de l'acheteuse est nul."
+    ],
+    "bonne_reponse": "La perte sèche est nulle car q^m = q^c.",
+    "explication": "Si le prix imposé par le monopsone, bien que très bas, reste suffisant pour couvrir le coût du producteur le moins efficace (c_max), aucun volume n'est perdu (q^m = q^c). Il n'y a donc pas de destruction de valeur, juste un transfert massif de richesse vers l'acheteuse.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_049",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de Bertrand avec des coûts asymétriques (c1 < c2) et des biens homogènes, quel profit réalise la firme 2 (la moins efficace) à l'équilibre ?",
+    "options": [
+      "Un profit strictement positif égal à (c2 - c1)D(c2).",
+      "Un profit négatif (perte).",
+      "Un profit nul, car elle ne vend aucune unité.",
+      "La moitié du profit de la firme 1."
+    ],
+    "bonne_reponse": "Un profit nul, car elle ne vend aucune unité.",
+    "explication": "La firme 1 remporte tout le marché en fixant un prix légèrement inférieur ou égal à c2. La firme 2 ne peut pas s'aligner sans vendre à perte, elle ne vend donc rien et réalise un profit nul.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_050",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans un modèle de Cournot à n firmes, que se passe-t-il si le coût marginal c_i d'une firme est très largement supérieur au coût moyen des autres firmes ?",
+    "options": [
+      "Elle produit la même quantité que les autres, mais à un prix plus élevé.",
+      "Elle produit une part plus grande du marché.",
+      "La formule classique de Cournot lui attribue une quantité négative, ce qui signifie qu'elle est non-viable et exclue du marché (q_i = 0).",
+      "Elle force toutes les autres firmes à augmenter leurs prix."
+    ],
+    "bonne_reponse": "La formule classique de Cournot lui attribue une quantité négative, ce qui signifie qu'elle est non-viable et exclue du marché (q_i = 0).",
+    "explication": "La formule q_i^C = Q^C/n + (c_bar - c_i) / (-P'(Q^C)) montre que si c_i est trop grand par rapport à c_bar, le terme devient négatif. Économiquement, la firme ferme (q_i = 0) car le prix de marché est inférieur à son coût marginal.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_051",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans la maximisation du profit en quantité (monopole ou Cournot), on utilise la fonction inverse de demande P(q). Que représente cette fonction ?",
+    "options": [
+      "La quantité demandée en fonction du prix.",
+      "Le prix que le marché est prêt à payer pour absorber exactement une quantité q globale.",
+      "L'élasticité de la demande.",
+      "Le profit marginal par unité vendue."
+    ],
+    "bonne_reponse": "Le prix que le marché est prêt à payer pour absorber exactement une quantité q globale.",
+    "explication": "P(q) est l'inverse de D(p). Si une entreprise (ou l'ensemble des firmes) met une quantité q sur le marché, P(q) indique le prix d'équilibre qui s'établira pour que la demande absorbe exactement cette production.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_052",
+    "chapitre_id": "chapitre_04",
+    "question": "Quelle étape faut-il éviter lors de la résolution d'un équilibre de Cournot avec n > 2 firmes asymétriques ?",
+    "options": [
+      "Sommer toutes les Conditions du Premier Ordre (CPO).",
+      "Calculer la moyenne des coûts marginaux.",
+      "Essayer d'exprimer q1 en fonction de q2, puis q2 en fonction de q3 par substitution.",
+      "Vérifier que les quantités individuelles trouvées sont positives."
+    ],
+    "bonne_reponse": "Essayer d'exprimer q1 en fonction de q2, puis q2 en fonction de q3 par substitution.",
+    "explication": "La méthode de substitution devient un 'mur algébrique' ingérable dès qu'il y a plus de 2 firmes. Il faut impérativement utiliser la 'Méthode de la Somme' (additionner les n CPO pour trouver Q total).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_053",
+    "chapitre_id": "chapitre_05",
+    "question": "En microéconomie, quelle est la différence fondamentale entre utilité cardinale et utilité ordinale ?",
+    "options": [
+      "L'utilité cardinale n'est utilisée que pour les biens homogènes, l'ordinale pour les biens hétérogènes.",
+      "L'utilité ordinale permet de mesurer l'intensité du bonheur (ex: '2 fois plus heureux'), contrairement à la cardinale.",
+      "L'utilité ordinale sert uniquement à classer les paniers par ordre de préférence, les valeurs chiffrées n'ont pas de sens absolu, contrairement à l'utilité cardinale.",
+      "Il n'y a aucune différence mathématique."
+    ],
+    "bonne_reponse": "L'utilité ordinale sert uniquement à classer les paniers par ordre de préférence, les valeurs chiffrées n'ont pas de sens absolu, contrairement à l'utilité cardinale.",
+    "explication": "Toute la théorie du consommateur moderne repose sur l'utilité ordinale : dire U(A)=10 et U(B)=5 signifie juste que A est préféré à B. Dire qu'il est 'deux fois plus préféré' relève de l'utilité cardinale, concept rejeté car non mesurable.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_054",
+    "chapitre_id": "chapitre_05",
+    "question": "Que signifie graphiquement l'axiome de monotonie stricte pour les courbes d'indifférence ?",
+    "options": [
+      "Elles peuvent se croiser.",
+      "Elles sont convexes.",
+      "Elles sont décroissantes (une courbe qui 'remonte' impliquerait qu'un des biens est un 'mal').",
+      "Elles forment des angles droits."
+    ],
+    "bonne_reponse": "Elles sont décroissantes (une courbe qui 'remonte' impliquerait qu'un des biens est un 'mal').",
+    "explication": "L'axiome de monotonie ('plus c'est mieux') implique que si on augmente la quantité d'un bien 1, il faut diminuer la quantité du bien 2 pour rester sur le même niveau d'utilité (indifférence). La courbe est donc décroissante.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_055",
+    "chapitre_id": "chapitre_05",
+    "question": "Quel est le Taux Marginal de Substitution (TMS 1/2) pour une fonction d'utilité de compléments parfaits (Leontief) U(x1, x2) = min(αx1, βx2) au niveau du 'coude' ?",
+    "options": [
+      "α / β",
+      "β / α",
+      "1",
+      "Il n'est pas défini mathématiquement car la fonction n'est pas dérivable à cet endroit."
+    ],
+    "bonne_reponse": "Il n'est pas défini mathématiquement car la fonction n'est pas dérivable à cet endroit.",
+    "explication": "La fonction min() forme un angle droit et n'admet pas de tangente unique en son sommet (le coude). On ne peut donc pas y calculer de dérivées partielles ni définir de TMS.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_056",
+    "chapitre_id": "chapitre_05",
+    "question": "Que représente l'équation de substitution dx2 = - TMS_{1/2} dx1 ?",
+    "options": [
+      "La droite de contrainte budgétaire du consommateur.",
+      "La relation d'échange le long d'une courbe d'indifférence : la quantité de bien 2 qu'il faut ajouter pour compenser la perte d'une quantité infinitésimale de bien 1.",
+      "La fonction d'utilité inverse.",
+      "L'optimum de Pareto dans l'échange pur."
+    ],
+    "bonne_reponse": "La relation d'échange le long d'une courbe d'indifférence : la quantité de bien 2 qu'il faut ajouter pour compenser la perte d'une quantité infinitésimale de bien 1.",
+    "explication": "Le TMS mesure la pente de la courbe d'indifférence. Cette équation différentielle (issue du théorème des fonctions implicites) quantifie exactement le 'taux de change psychologique' local entre les deux biens.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_057",
+    "chapitre_id": "chapitre_06",
+    "question": "Dans une boîte d'Edgeworth, si une allocation se situe exactement sur l'origine d'Agnès (0,0)_A, que possède Bruno ?",
+    "options": [
+      "Rien du tout (0,0)_B.",
+      "L'intégralité de la dotation de l'économie (ω1, ω2)_B.",
+      "La moitié des ressources.",
+      "Un panier Pareto-optimal équitable."
+    ],
+    "bonne_reponse": "L'intégralité de la dotation de l'économie (ω1, ω2)_B.",
+    "explication": "Le point de vue de Bruno est inversé. Son origine (0,0)_B est en haut à droite. Le point (0,0)_A correspond au coin en bas à gauche de la boîte, ce qui équivaut, lu depuis le repère de Bruno, à posséder (ω1, ω2).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_058",
+    "chapitre_id": "chapitre_06",
+    "question": "Que représente la 'lentille d'échange' dans la boîte d'Edgeworth ?",
+    "options": [
+      "La zone située au-dessus de la courbe des contrats.",
+      "L'ensemble des allocations qui sont Pareto-optimales.",
+      "La zone délimitée par les courbes d'indifférence initiales des deux agents, contenant tous les échanges mutuellement profitables.",
+      "La perte sèche de l'économie."
+    ],
+    "bonne_reponse": "La zone délimitée par les courbes d'indifférence initiales des deux agents, contenant tous les échanges mutuellement profitables.",
+    "explication": "Tout point à l'intérieur de cette lentille procure une utilité strictement supérieure à l'allocation de départ pour les deux agents. L'échange s'arrêtera quelque part dans cette lentille, sur la courbe des contrats.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_059",
+    "chapitre_id": "chapitre_06",
+    "question": "Où se situe la Courbe des Contrats si l'un des agents a une fonction d'utilité Leontief U_B = min(x_B, y_B) et l'autre une Cobb-Douglas classique ?",
+    "options": [
+      "Sur les bords de la boîte d'Edgeworth.",
+      "Elle correspond exactement à la droite reliant les 'coudes' de l'agent Leontief (ici, la droite d'équation x_B = y_B).",
+      "Au point d'intersection des deux origines.",
+      "Elle n'existe pas."
+    ],
+    "bonne_reponse": "Elle correspond exactement à la droite reliant les 'coudes' de l'agent Leontief (ici, la droite d'équation x_B = y_B).",
+    "explication": "L'agent B refuse tout écart par rapport à la proportion x_B = y_B (tout excédent lui est inutile). L'agent A récupérera donc tous les excédents. Les optima de Pareto sont donc contraints d'être alignés sur ces coudes où l'agent B ne subit aucun gaspillage.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_060",
+    "chapitre_id": "chapitre_06",
+    "question": "Pourquoi une allocation réalisable mais non située sur la courbe des contrats n'est-elle pas optimale ?",
+    "options": [
+      "Parce qu'elle dépasse les ressources de l'économie.",
+      "Parce qu'à ce point, les Taux Marginaux de Substitution (TMS) sont différents, ce qui signifie que les agents valorisent différemment les biens et peuvent encore échanger avec un gain mutuel.",
+      "Parce qu'elle avantage injustement l'agent A.",
+      "Parce qu'elle implique l'intervention de l'État."
+    ],
+    "bonne_reponse": "Parce qu'à ce point, les Taux Marginaux de Substitution (TMS) sont différents, ce qui signifie que les agents valorisent différemment les biens et peuvent encore échanger avec un gain mutuel.",
+    "explication": "Si les TMS diffèrent (les courbes d'indifférence se croisent mais ne sont pas tangentes), les agents ont des 'taux de change' subjectifs différents. Il existe donc au moins une transaction qui les rendra tous les deux plus heureux.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_061",
+    "chapitre_id": "chapitre_07",
+    "question": "Dans le cadre de l'équilibre général, que garantit la 'Loi de Walras' concernant le vecteur de prix ?",
+    "options": [
+      "Que tous les prix doivent être égaux à 1.",
+      "Que le comportement des agents ne dépend que des prix relatifs, permettant de 'normaliser' un prix (ex: p_x = 1) et de ne chercher qu'un seul prix d'équilibre.",
+      "Que la somme des prix est égale à la somme des quantités.",
+      "Que l'offre est toujours supérieure à la demande."
+    ],
+    "bonne_reponse": "Que le comportement des agents ne dépend que des prix relatifs, permettant de 'normaliser' un prix (ex: p_x = 1) et de ne chercher qu'un seul prix d'équilibre.",
+    "explication": "La Loi de Walras stipule que si la contrainte budgétaire est saturée pour tous les agents, la valeur de la demande excédentaire globale est nulle. Conséquence : si n-1 marchés sont à l'équilibre, le nième l'est aussi. On peut donc exprimer tous les prix en fonction d'un 'numéraire' (prix = 1).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_062",
+    "chapitre_id": "chapitre_07",
+    "question": "Quel est le but d'un exercice de 'décentralisation' dans le modèle de pur échange ?",
+    "options": [
+      "Trouver le point central de la boîte d'Edgeworth.",
+      "Montrer que les marchés concurrentiels créent des monopoles.",
+      "Partir d'une allocation Pareto-optimale ciblée et trouver les prix d'équilibre et les transferts de dotations initiales permettant au marché d'atteindre ce point librement.",
+      "Supprimer la monnaie de l'économie."
+    ],
+    "bonne_reponse": "Partir d'une allocation Pareto-optimale ciblée et trouver les prix d'équilibre et les transferts de dotations initiales permettant au marché d'atteindre ce point librement.",
+    "explication": "C'est l'application du Second Théorème du Bien-Être : tout optimum de Pareto peut être atteint ('décentralisé') comme un équilibre de marché concurrentiel, moyennant une redistribution adéquate des dotations initiales.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_063",
+    "chapitre_id": "methodes",
+    "question": "En utilisant la méthode de la dérivée implicite sur une condition de premier ordre f'(x*) = w/p, quel est l'objectif principal ?",
+    "options": [
+      "Trouver la valeur numérique exacte de x*.",
+      "Étudier la statique comparative, c'est-à-dire comment la variable endogène x* réagit à une variation du paramètre exogène (w ou p), sans avoir à résoudre l'équation.",
+      "Prouver que la fonction f est convexe.",
+      "Appliquer le théorème de l'enveloppe sur le profit."
+    ],
+    "bonne_reponse": "Étudier la statique comparative, c'est-à-dire comment la variable endogène x* réagit à une variation du paramètre exogène (w ou p), sans avoir à résoudre l'équation.",
+    "explication": "Souvent, l'équation ne peut pas être résolue analytiquement (on ne peut pas isoler x*). Dériver l'égalité entière par rapport à p permet d'isoler la dérivée dx*/dp et de déterminer son signe (l'impact de p sur x*).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_064",
+    "chapitre_id": "methodes",
+    "question": "Dans le modèle de l'assurance avec risque, que représente l''Équivalent Certain' (EC) ?",
+    "options": [
+      "La somme des richesses des deux états de la nature.",
+      "Le montant garanti (sans risque) qui procure exactement le même niveau d'utilité espérée (EU) que la loterie risquée.",
+      "La prime d'assurance payée à l'assureur.",
+      "L'espérance mathématique du gain E(X)."
+    ],
+    "bonne_reponse": "Le montant garanti (sans risque) qui procure exactement le même niveau d'utilité espérée (EU) que la loterie risquée.",
+    "explication": "L'Equivalent Certain se calcule en résolvant u(EC) = EU. Pour un individu averse au risque, l'EC est toujours strictement inférieur à l'espérance de gain E(X). La différence E(X) - EC est la prime de risque.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_065",
+    "chapitre_id": "methodes",
+    "question": "Quelle erreur faut-il impérativement éviter lors du calcul de l'utilité espérée face à un risque X ?",
+    "options": [
+      "Utiliser les probabilités objectives de chaque état.",
+      "Calculer la moyenne des utilités pondérée par les probabilités : E(u(X)) = p1u(x1) + p2u(x2).",
+      "Calculer l'utilité de l'espérance de gain : u(E(X)).",
+      "Vérifier si l'agent est averse au risque."
+    ],
+    "bonne_reponse": "Calculer l'utilité de l'espérance de gain : u(E(X)).",
+    "explication": "L'utilité espérée est l'espérance des utilités E(u(X)), et NON l'utilité de l'espérance u(E(X)). C'est justement l'inégalité de Jensen E(u(X)) < u(E(X)) qui définit l'aversion au risque.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_066",
+    "chapitre_id": "methodes",
+    "question": "Lors du calcul du surplus des consommateurs dans un marché avec rationnement de la demande (le prix imposé p est inférieur au prix d'équilibre), comment faut-il ajuster l'intégrale ?",
+    "options": [
+      "Il n'y a rien à ajuster, on intègre toujours de p à l'infini.",
+      "On intègre de 0 à p.",
+      "On utilise un 'prix virtuel' p(p) correspondant au prix qui équilibre l'offre disponible, et on ajoute la rente de pénurie.",
+      "Le surplus devient négatif."
+    ],
+    "bonne_reponse": "On utilise un 'prix virtuel' p(p) correspondant au prix qui équilibre l'offre disponible, et on ajoute la rente de pénurie.",
+    "explication": "Si p est trop bas, la demande excède l'offre. Tous les consommateurs prêts à payer p ne pourront pas acheter. Seuls les consommateurs ayant une valuation très élevée (au-dessus du prix virtuel p(p)) seront servis (rationnement efficace). L'intégrale classique surestimerait le surplus.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_067",
+    "chapitre_id": "chapitre_01",
+    "question": "Comment se calcule mathématiquement le surplus de l'acheteur (U_A) lors de l'échange d'un bien ?",
+    "options": [
+      "U_A = p - c",
+      "U_A = v + p",
+      "U_A = v - p (si l'échange a lieu, 0 sinon)",
+      "U_A = v - c"
+    ],
+    "bonne_reponse": "U_A = v - p (si l'échange a lieu, 0 sinon)",
+    "explication": "Le surplus de l'acheteur représente la différence entre sa disposition à payer maximale (sa valuation 'v') et le prix qu'il a effectivement payé ('p'). S'il n'y a pas d'échange, son surplus est nul.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_068",
+    "chapitre_id": "chapitre_01",
+    "question": "Laquelle de ces confusions est un piège classique dans l'analyse de l'échange bilatéral ?",
+    "options": [
+      "Croire que le surplus total est égal à v - c.",
+      "Penser qu'un prix p = v est 'inefficace' alors qu'il est simplement inéquitable pour l'acheteur.",
+      "Affirmer que l'échange crée de la valeur si v >= c.",
+      "Considérer que le prix répartit le gâteau généré par l'échange."
+    ],
+    "bonne_reponse": "Penser qu'un prix p = v est 'inefficace' alors qu'il est simplement inéquitable pour l'acheteur.",
+    "explication": "L'efficacité concerne uniquement la réalisation d'un échange créateur de valeur (v >= c). Un prix p = v garantit que l'échange a lieu (donc il est efficace), mais l'acheteur obtient un surplus nul, ce qui soulève une question d'équité, pas d'efficacité.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_069",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le jeu de l'Ultimatum, pourquoi dit-on qu'il existe une multiplicité d'équilibres de Nash ordinaires ?",
+    "options": [
+      "Car le joueur 1 peut proposer n'importe quel prix et le joueur 2 est obligé d'accepter.",
+      "Parce que le joueur 2 peut formuler des menaces (même non-crédibles) de refuser toute offre inférieure à un certain seuil, forçant le joueur 1 à s'adapter s'il y croit.",
+      "Parce que le surplus total varie en fonction de l'offre.",
+      "Parce que le jeu se déroule en information incomplète."
+    ],
+    "bonne_reponse": "Parce que le joueur 2 peut formuler des menaces (même non-crédibles) de refuser toute offre inférieure à un certain seuil, forçant le joueur 1 à s'adapter s'il y croit.",
+    "explication": "Si le joueur 2 menace de refuser tout ce qui lui donne moins de 50, et que le joueur 1 joue la meilleure réponse face à cette stratégie en proposant 50, cela constitue un équilibre de Nash. Seul le concept de perfection en sous-jeux permet d'éliminer ces menaces absurdes.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_070",
+    "chapitre_id": "chapitre_01",
+    "question": "Que stipule la 'Règle de séparation' dans le modèle de négociation de Nash avec transfert monétaire ?",
+    "options": [
+      "Les agents doivent négocier séparément avec un médiateur.",
+      "L'acheteur et le vendeur partagent toujours le surplus à 50/50.",
+      "Les agents maximisent d'abord conjointement la taille du gâteau total (efficacité), puis utilisent le transfert pour répartir l'excédent selon leur pouvoir (équité).",
+      "Le transfert monétaire doit être séparé du bien physique."
+    ],
+    "bonne_reponse": "Les agents maximisent d'abord conjointement la taille du gâteau total (efficacité), puis utilisent le transfert pour répartir l'excédent selon leur pouvoir (équité).",
+    "explication": "Le modèle de Nash montre que les agents rationnels s'entendent toujours pour maximiser le surplus total W = u(x) + v(x). Le désaccord ne porte que sur le transfert 't' qui répartit la valeur nette générée (W - W0) selon le pouvoir alpha.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_071",
+    "chapitre_id": "chapitre_02",
+    "question": "En situation de A-compétition asymétrique (v1 > v2), quel sera le surplus de l'acheteuse gagnante (l'acheteuse 1) si l'on néglige la sous-cotation marginale epsilon ?",
+    "options": [
+      "Zéro, car la concurrence élimine tout surplus.",
+      "v1 - c",
+      "v1 - v2",
+      "v2 - c"
+    ],
+    "bonne_reponse": "v1 - v2",
+    "explication": "Le prix d'équilibre est poussé par la seconde acheteuse jusqu'à sa valuation maximale v2. L'acheteuse 1 remporte le bien au prix p = v2. Son surplus est donc sa propre valuation moins le prix payé, soit v1 - v2.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_072",
+    "chapitre_id": "chapitre_02",
+    "question": "Dans le modèle continu du monopole, que représente la fonction F(p) utilisée pour construire la demande ?",
+    "options": [
+      "Le coût fixe du monopole.",
+      "La fonction de répartition des valuations des consommateurs.",
+      "La fonction de profit du monopole.",
+      "La dérivée de l'élasticité-prix."
+    ],
+    "bonne_reponse": "La fonction de répartition des valuations des consommateurs.",
+    "explication": "F(p) indique la proportion de consommateurs ayant une valuation inférieure ou égale à p. Par conséquent, (1 - F(p)) donne la proportion de ceux qui sont prêts à acheter à un prix p ou supérieur, ce qui forme la demande.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_073",
+    "chapitre_id": "chapitre_02",
+    "question": "Selon l'Indice de Lerner ((p-c)/p = 1/ε), que se passe-t-il si l'élasticité-prix de la demande (ε) tend vers l'infini (demande parfaitement élastique) ?",
+    "options": [
+      "Le prix de monopole tend vers l'infini.",
+      "Le pouvoir de marché du monopole devient nul et le prix s'écrase vers le coût marginal c.",
+      "Le monopole accapare 100% du surplus des consommateurs.",
+      "La marge du monopole est maximisée."
+    ],
+    "bonne_reponse": "Le pouvoir de marché du monopole devient nul et le prix s'écrase vers le coût marginal c.",
+    "explication": "Si l'élasticité est infinie (les consommateurs sont extrêmement sensibles au prix), l'inverse 1/ε tend vers 0. L'équation devient (p-c)/p = 0, ce qui implique que p = c. Le monopole n'a plus aucun pouvoir de fixation des prix.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_074",
+    "chapitre_id": "chapitre_02",
+    "question": "Comment calcule-t-on le surplus agrégé des consommateurs S(p) selon le théorème de Jules Dupuit pour une demande continue D(v) ?",
+    "options": [
+      "En dérivant la fonction de demande par rapport au prix.",
+      "En calculant l'intégrale de la demande D(v) depuis le prix de marché p jusqu'à l'infini.",
+      "En multipliant le prix p par la quantité demandée D(p).",
+      "En intégrant la fonction de demande de 0 jusqu'au prix p."
+    ],
+    "bonne_reponse": "En calculant l'intégrale de la demande D(v) depuis le prix de marché p jusqu'à l'infini.",
+    "explication": "Le surplus est la somme des bénéfices (v - p) pour tous les consommateurs qui achètent (v >= p). Mathématiquement, cela correspond à l'aire sous la courbe de demande, à partir du prix p, soit l'intégrale de D(v) de p à +infini.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_075",
+    "chapitre_id": "chapitre_02",
+    "question": "Lorsqu'un exercice inclut des subventions ou des taxes gouvernementales, comment s'écrit la formule complète du Bien-Être Social (Welfare) ?",
+    "options": [
+      "W(p) = S(p) + Π(p)",
+      "W(p) = S(p) - Π(p)",
+      "W(p) = S(p) + Π(p) ± Gouvernement (recettes fiscales ou dépenses)",
+      "W(p) = Gouvernement - S(p)"
+    ],
+    "bonne_reponse": "W(p) = S(p) + Π(p) ± Gouvernement (recettes fiscales ou dépenses)",
+    "explication": "Le Welfare additionne sans jugement de valeur les gains de tous les acteurs de l'économie. Il faut donc sommer le surplus des consommateurs, les profits des producteurs, et le budget net de l'État (Taxes perçues - Subventions versées).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_076",
+    "chapitre_id": "chapitre_03",
+    "question": "En V-compétition symétrique (plusieurs vendeurs avec le même coût c, face à une seule acheteuse), quel est le prix d'équilibre ?",
+    "options": [
+      "p = v",
+      "p = c",
+      "p = (v+c)/2",
+      "p = 0"
+    ],
+    "bonne_reponse": "p = c",
+    "explication": "La rivalité parfaite entre vendeurs identiques dans une enchère descendante fait mécaniquement chuter le prix jusqu'à leur coût de production c. L'acheteuse accapare 100% du surplus.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_077",
+    "chapitre_id": "chapitre_03",
+    "question": "Que se passe-t-il si la valuation v du monopsone est tellement élevée qu'il décide de fixer un prix p^m égal au coût maximum c_max de la population des vendeurs ?",
+    "options": [
+      "La quantité achetée est nulle.",
+      "La perte sèche est maximale.",
+      "Le monopsone ne restreint pas sa demande (solution en coin), la perte sèche est donc nulle.",
+      "L'indice de Lerner devient négatif."
+    ],
+    "bonne_reponse": "Le monopsone ne restreint pas sa demande (solution en coin), la perte sèche est donc nulle.",
+    "explication": "Si le monopsone achète à tous les producteurs (p^m = c_max), alors q^m = q^c. Bien qu'il rackette les vendeurs en imposant un prix très inférieur à sa vraie valuation v, aucune transaction efficace n'est détruite. Il n'y a pas de Dead-weight loss.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_078",
+    "chapitre_id": "chapitre_03",
+    "question": "Quelle intégrale permet de calculer le surplus global (profits agrégés) des producteurs ?",
+    "options": [
+      "L'intégrale de p à l'infini de O(c) dc.",
+      "L'intégrale de 0 à p de O(c) dc.",
+      "L'intégrale de 0 à l'infini de D(p) dp.",
+      "L'intégrale de c à v de (v-p) dp."
+    ],
+    "bonne_reponse": "L'intégrale de 0 à p de O(c) dc.",
+    "explication": "Le surplus des producteurs est la somme des rentes (p - c) pour tous les vendeurs dont le coût c est inférieur au prix p. Cela correspond à l'intégrale de la fonction d'offre depuis le coût minimum (0) jusqu'au prix p.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_079",
+    "chapitre_id": "chapitre_03",
+    "question": "Pourquoi la fonction d'offre continue O(p) s'écrit-elle N * G(p) alors que la demande s'écrit N * (1 - F(p)) ?",
+    "options": [
+      "Parce que les producteurs sont irrationnels.",
+      "Parce qu'un producteur vend si son coût est INFERIEUR ou égal au prix, ce qui correspond directement à la fonction de répartition G(p).",
+      "Parce que le monopsone contrôle l'offre totale.",
+      "Parce que la dérivée de G(p) est négative."
+    ],
+    "bonne_reponse": "Parce qu'un producteur vend si son coût est INFERIEUR ou égal au prix, ce qui correspond directement à la fonction de répartition G(p).",
+    "explication": "La fonction de répartition donne la probabilité qu'une variable soit inférieure ou égale à un seuil. Pour l'offre, la condition de vente est c <= p (donc G(p)). Pour la demande, la condition d'achat est v >= p (donc l'inverse, 1 - F(p)).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_080",
+    "chapitre_id": "chapitre_04",
+    "question": "Quelle différence fondamentale existe-t-il entre un monopole et un duopole concernant le choix de la variable d'action (Prix ou Quantité) ?",
+    "options": [
+      "Pour le monopole, le choix Prix/Quantité est neutre mathématiquement, alors qu'en oligopole, le choix change radicalement les règles du jeu et l'issue du marché (Cournot vs Bertrand).",
+      "Le monopole fixe toujours les quantités, le duopole fixe toujours les prix.",
+      "Le duopole ne peut pas utiliser la fonction de demande inverse.",
+      "Il n'y a aucune différence, les deux variables donnent toujours le même profit."
+    ],
+    "bonne_reponse": "Pour le monopole, le choix Prix/Quantité est neutre mathématiquement, alors qu'en oligopole, le choix change radicalement les règles du jeu et l'issue du marché (Cournot vs Bertrand).",
+    "explication": "Un agent isolé face à une demande définit l'autre variable automatiquement. En oligopole, fixer sa quantité laisse le prix dépendre du concurrent (interaction stratégique, Cournot). Fixer son prix engage une guerre de sous-cotation (Bertrand).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_081",
+    "chapitre_id": "chapitre_04",
+    "question": "Quel économiste a modélisé la concurrence imparfaite par le choix des quantités produites ?",
+    "options": [
+      "Joseph Bertrand",
+      "Antoine Augustin Cournot",
+      "Vilfredo Pareto",
+      "John Nash"
+    ],
+    "bonne_reponse": "Antoine Augustin Cournot",
+    "explication": "Le modèle de Cournot décrit un oligopole où les entreprises rivalisent en choisissant simultanément les volumes (quantités) à mettre sur le marché, le prix s'ajustant ensuite globalement.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_082",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de Cournot, à quoi le profit d'équilibre d'une firme (Π_i^C) est-il proportionnel ?",
+    "options": [
+      "Au carré de sa part de marché ou de sa quantité produite.",
+      "À l'inverse de son coût marginal.",
+      "À la somme des quantités produites par tous les concurrents.",
+      "Au prix de marché divisé par n."
+    ],
+    "bonne_reponse": "Au carré de sa part de marché ou de sa quantité produite.",
+    "explication": "La formule du profit d'équilibre à Cournot est Π_i^C = -P'(Q^C) * (q_i^C)^2. Le profit d'une firme croît avec le carré de son avantage concurrentiel (sa quantité produite).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_083",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de Bertrand asymétrique (biens homogènes, c1 < c2), que doit faire la firme 1 pour maximiser son profit tout en éliminant la firme 2 ?",
+    "options": [
+      "Fixer un prix égal à son propre coût c1.",
+      "Fixer le prix de monopole.",
+      "Fixer un prix très légèrement inférieur (ou égal) au coût de la firme 2 (p1 = c2).",
+      "S'entendre avec la firme 2 pour partager le marché."
+    ],
+    "bonne_reponse": "Fixer un prix très légèrement inférieur (ou égal) au coût de la firme 2 (p1 = c2).",
+    "explication": "La firme 2 ne descendra jamais son prix en dessous de c2. Pour gagner tout le marché avec la plus forte marge possible, la firme 1 n'a pas besoin de descendre jusqu'à c1, elle s'arrête juste en dessous du prix plancher de son concurrent.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_084",
+    "chapitre_id": "chapitre_05",
+    "question": "Quelle forme visuelle ont les courbes d'indifférence pour une fonction d'utilité de compléments parfaits (type Leontief) ?",
+    "options": [
+      "Des droites parallèles.",
+      "Des courbes en forme de U (convexes douces).",
+      "Des angles droits (en forme de L).",
+      "Des cercles concentriques."
+    ],
+    "bonne_reponse": "Des angles droits (en forme de L).",
+    "explication": "Les biens parfaitement complémentaires (ex: chaussure droite et chaussure gauche) n'apportent de l'utilité que s'ils sont consommés dans des proportions fixes. Tout excédent d'un seul bien ne change pas l'utilité, créant des courbes en angle droit.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_085",
+    "chapitre_id": "chapitre_05",
+    "question": "Que traduit la convexité des préférences sur le Taux Marginal de Substitution (TMS) ?",
+    "options": [
+      "Le TMS est constant.",
+      "Le TMS est croissant le long de la courbe d'indifférence.",
+      "Le TMS est décroissant le long de la courbe d'indifférence.",
+      "Le TMS est nul."
+    ],
+    "bonne_reponse": "Le TMS est décroissant le long de la courbe d'indifférence.",
+    "explication": "La convexité (le goût pour les mélanges) implique que plus un consommateur possède d'un bien 1, moins il le valorise comparativement au bien 2. Sa disposition à céder du bien 2 pour obtenir du bien 1 (le TMS) diminue donc au fur et à mesure qu'il accumule du bien 1.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_086",
+    "chapitre_id": "chapitre_05",
+    "question": "Pourquoi est-il interdit d'additionner ou de multiplier les valeurs absolues des fonctions d'utilité de deux agents différents (ex: U_A = 100 et U_B = 2, donc A est 50 fois plus heureux) ?",
+    "options": [
+      "Parce que les fonctions d'utilité sont toujours négatives.",
+      "Parce que l'utilité microéconomique moderne est purement ordinale, elle ne sert qu'à classer les choix d'un individu et n'a aucune signification cardinale ou interpersonnelle.",
+      "Parce que cela violerait l'axiome de monotonie.",
+      "Parce qu'il faut d'abord utiliser un logarithme."
+    ],
+    "bonne_reponse": "Parce que l'utilité microéconomique moderne est purement ordinale, elle ne sert qu'à classer les choix d'un individu et n'a aucune signification cardinale ou interpersonnelle.",
+    "explication": "La valeur de U(x) n'est qu'un score arbitraire pour établir un ordre (A > B). On ne peut pas comparer l'intensité du bonheur entre deux personnes ni faire d'arithmétique sur ces scores.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_087",
+    "chapitre_id": "chapitre_06",
+    "question": "Dans la Boîte d'Edgeworth, quel point sert de 'statu quo' pour délimiter la lentille des échanges acceptables ?",
+    "options": [
+      "Le centre de la boîte.",
+      "L'origine de l'agent A.",
+      "Le point représentant la dotation initiale de l'économie.",
+      "Le point où les TMS sont nuls."
+    ],
+    "bonne_reponse": "Le point représentant la dotation initiale de l'économie.",
+    "explication": "L'allocation initiale définit le niveau de bien-être de départ de chaque agent. Aucun agent rationnel n'acceptera un échange qui le place sur une courbe d'indifférence inférieure à celle passant par cette dotation initiale.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_088",
+    "chapitre_id": "chapitre_06",
+    "question": "Comment lit-on la consommation de l'agent B dans la Boîte d'Edgeworth ?",
+    "options": [
+      "De bas en haut, et de gauche à droite.",
+      "À partir du point de dotation initiale.",
+      "À partir de l'origine de B située en haut à droite (lecture de haut en bas et de droite à gauche).",
+      "On ne la lit pas, on la déduit de la courbe des contrats."
+    ],
+    "bonne_reponse": "À partir de l'origine de B située en haut à droite (lecture de haut en bas et de droite à gauche).",
+    "explication": "Le repère de l'agent B est inversé (tourné à 180 degrés) et posé sur celui de l'agent A pour que les dimensions du rectangle correspondent aux ressources totales. L'axe des abscisses de B va donc vers la gauche, et celui des ordonnées vers le bas.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_089",
+    "chapitre_id": "chapitre_06",
+    "question": "Pour résoudre analytiquement un optimum de Pareto avec des fonctions d'utilités Cobb-Douglas, quelle condition faut-il poser ?",
+    "options": [
+      "U_A = U_B",
+      "TMS_A(x_A, y_A) = TMS_B(ω_x - x_A, ω_y - y_A)",
+      "x_A = x_B et y_A = y_B",
+      "Le Lagrangien doit être nul."
+    ],
+    "bonne_reponse": "TMS_A(x_A, y_A) = TMS_B(ω_x - x_A, ω_y - y_A)",
+    "explication": "La tangence des courbes d'indifférence exige l'égalité des TMS. Pour que l'équation soit résoluble, il faut impérativement intégrer la contrainte de faisabilité en remplaçant les variables de l'agent B par les dotations totales moins les variables de l'agent A.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_090",
+    "chapitre_id": "chapitre_07",
+    "question": "Laquelle de ces définitions correspond à la contrainte de faisabilité d'une allocation dans une économie d'échange pur ?",
+    "options": [
+      "La somme des utilités doit être maximale.",
+      "La somme des consommations de chaque agent pour un bien ne doit pas excéder la dotation totale disponible pour ce bien.",
+      "Les prix doivent être positifs.",
+      "Chaque agent doit avoir au moins une unité de chaque bien."
+    ],
+    "bonne_reponse": "La somme des consommations de chaque agent pour un bien ne doit pas excéder la dotation totale disponible pour ce bien.",
+    "explication": "C'est la règle physique incontournable : on ne peut pas répartir plus de biens qu'il n'en existe initialement dans l'économie. Somme(x_i) <= ω.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_091",
+    "chapitre_id": "chapitre_07",
+    "question": "L'efficacité au sens de Pareto est un concept qui garantit :",
+    "options": [
+      "L'équité parfaite de la répartition des richesses.",
+      "L'absence de gaspillage (toutes les opportunités d'échange mutuellement profitables sont épuisées).",
+      "L'intervention de l'État pour corriger les prix.",
+      "L'égalité des utilités de tous les agents."
+    ],
+    "bonne_reponse": "L'absence de gaspillage (toutes les opportunités d'échange mutuellement profitables sont épuisées).",
+    "explication": "Le critère de Pareto est purement un critère d'efficacité. Il s'assure que le 'gâteau' est exploité au maximum, mais il est totalement aveugle à la justice sociale ou à l'équité des parts découpées.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_092",
+    "chapitre_id": "chapitre_07",
+    "question": "Contrairement à la Courbe des contrats, que se passe-t-il pour la Frontière de Pareto si l'on applique une transformation strictement croissante (ex: le carré) aux fonctions d'utilité ?",
+    "options": [
+      "Rien ne change, la frontière est un invariant absolu.",
+      "La frontière devient une droite verticale.",
+      "La forme géométrique de la Frontière de Pareto change (ex: de convexe à linéaire), car ses axes représentent directement les utilités ordinales.",
+      "L'économie n'est plus Pareto-optimale."
+    ],
+    "bonne_reponse": "La forme géométrique de la Frontière de Pareto change (ex: de convexe à linéaire), car ses axes représentent directement les utilités ordinales.",
+    "explication": "La courbe des contrats (dans l'espace des biens) ne bouge pas, car le TMS est invariant. Mais la Frontière (dans l'espace des utilités U_A, U_B) va être déformée si on met les utilités au carré, prouvant que sa forme exacte n'a pas d'interprétation cardinale absolue.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_093",
+    "chapitre_id": "methodes",
+    "question": "En équilibre général, pourquoi peut-on 'normaliser' le prix d'un bien (ex: poser p_x = 1) ?",
+    "options": [
+      "Parce que le gouvernement fixe toujours le prix d'un bien de première nécessité.",
+      "Grâce à la Loi de Walras, qui prouve que le comportement des agents ne dépend que du rapport des prix (prix relatifs) et non des prix absolus.",
+      "Pour simplifier le Lagrangien de Pareto.",
+      "Parce que la monnaie n'existe pas dans la vraie vie."
+    ],
+    "bonne_reponse": "Grâce à la Loi de Walras, qui prouve que le comportement des agents ne dépend que du rapport des prix (prix relatifs) et non des prix absolus.",
+    "explication": "Les agents optimisent en fonction du Taux Marginal de Substitution égal au rapport p_x / p_y. Si on double tous les prix et les revenus, rien ne change. On peut donc fixer arbitrairement un prix à 1 (numéraire).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_094",
+    "chapitre_id": "methodes",
+    "question": "Quel est le principal avantage du Théorème de l'Enveloppe lors d'un exercice de statique comparative sur une fonction de Welfare maximisée ?",
+    "options": [
+      "Il permet d'ignorer la taxe gouvernementale.",
+      "Il permet de trouver directement x* sans résoudre de CPO.",
+      "Il permet de dériver la fonction objectif maximisée par rapport à un paramètre externe (ex: w) sans avoir à se soucier de la variation induite de la variable de choix optimale x*(w).",
+      "Il transforme un problème d'oligopole en monopole."
+    ],
+    "bonne_reponse": "Il permet de dériver la fonction objectif maximisée par rapport à un paramètre externe (ex: w) sans avoir à se soucier de la variation induite de la variable de choix optimale x*(w).",
+    "explication": "Le théorème de l'enveloppe stipule que la dérivée totale d'une fonction valeur à l'optimum par rapport à un paramètre se réduit à sa dérivée partielle. L'effet indirect via x*(w) s'annule car la fonction est au sommet (dérivée nulle par rapport à x).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_095",
+    "chapitre_id": "methodes",
+    "question": "Dans la résolution d'un équilibre de Cournot asymétrique avec la 'Méthode de la Somme', que remplace-t-on par nc_bar ?",
+    "options": [
+      "La quantité totale Q.",
+      "La somme des coûts marginaux individuels (Σ c_i).",
+      "Le profit agrégé.",
+      "Le prix d'équilibre P(Q)."
+    ],
+    "bonne_reponse": "La somme des coûts marginaux individuels (Σ c_i).",
+    "explication": "L'astuce d'agrégation consiste à additionner les n équations de CPO. Du côté droit de l'égalité, on obtient la somme des c_i. Sachant que la moyenne c_bar = (Σ c_i)/n, on remplace Σ c_i par nc_bar pour simplifier l'équation.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_096",
+    "chapitre_id": "methodes",
+    "question": "Lorsqu'on modélise l'incertain avec l'Espérance d'Utilité (EU), comment détermine-t-on l'Équivalent Certain (EC) ?",
+    "options": [
+      "En divisant la richesse par le coefficient d'aversion au risque.",
+      "En résolvant l'équation u(EC) = EU.",
+      "En prenant l'espérance mathématique du gain E(X).",
+      "En calculant l'utilité du pire état de la nature."
+    ],
+    "bonne_reponse": "En résolvant l'équation u(EC) = EU.",
+    "explication": "L'Équivalent Certain est la somme garantie (certaine) qui offre la même satisfaction psychologique (utilité) que la participation à la loterie risquée (EU).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_097",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans une simple négociation bilatérale, quel est l'impact du prix final sur la valeur globale du Surplus Total (W) ?",
+    "options": [
+      "Le prix augmente le surplus total s'il est proche de la valuation de l'acheteur.",
+      "Le prix diminue le surplus total s'il est trop élevé.",
+      "Le prix n'a absolument aucun impact sur la taille du surplus total, il ne détermine que sa répartition.",
+      "Le surplus total est toujours égal au prix multiplié par la quantité."
+    ],
+    "bonne_reponse": "Le prix n'a absolument aucun impact sur la taille du surplus total, il ne détermine que sa répartition.",
+    "explication": "Le surplus total vaut v - c. Le prix p s'annule dans l'addition des surplus (v-p + p-c). L'efficacité (la taille du gâteau) dépend uniquement de l'existence de l'échange, pas du prix.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_098",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le tracé de l'offre et la demande concurrentielles pour l'échange d'une unité indivisible, à quel endroit précis se trouve l'équilibre concurrentiel ?",
+    "options": [
+      "Au point exact où les courbes croisent l'axe des ordonnées.",
+      "Uniquement au prix p = c.",
+      "Sur tout le segment vertical hachuré à la quantité q=1, entre les prix c et v.",
+      "Au point où la quantité q=0.5."
+    ],
+    "bonne_reponse": "Sur tout le segment vertical hachuré à la quantité q=1, entre les prix c et v.",
+    "explication": "La courbe de demande est horizontale à v puis tombe à 0 pour q>1. L'offre est horizontale à c pour q>=1. Leur intersection se produit sur un segment vertical entier à q=1, validant l'échange mais maintenant l'indétermination du prix dans l'intervalle [c, v].",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_099",
+    "chapitre_id": "chapitre_04",
+    "question": "En concurrence à la Bertrand avec différenciation verticale (les firmes ont le même coût c, mais v1 > v2), quel principe permet à la firme 1 de remporter le marché ?",
+    "options": [
+      "Elle vend au coût marginal (p=c).",
+      "Elle fixe le même prix que la firme 2, mais les consommateurs choisissent la qualité.",
+      "Elle offre au consommateur un 'surplus' (v1 - p1) supérieur ou égal au surplus maximal que peut offrir la firme 2 (v2 - c).",
+      "Elle s'entend avec la firme 2 pour diviser la production."
+    ],
+    "bonne_reponse": "Elle offre au consommateur un 'surplus' (v1 - p1) supérieur ou égal au surplus maximal que peut offrir la firme 2 (v2 - c).",
+    "explication": "Le consommateur n'achète pas le produit le moins cher ni le meilleur, il achète celui qui lui donne le plus grand surplus net. La firme 2 ne pouvant pas baisser son prix sous c, elle offre au mieux v2-c. La firme 1 doit juste égaler ou battre légèrement cette offre.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_100",
+    "chapitre_id": "chapitre_05",
+    "question": "Dans l'axiomatique des préférences, comment définit-on formellement la relation de préférence stricte (x ≻ y) à partir de la relation d'ordre globale (x ≽ y) ?",
+    "options": [
+      "x ≻ y si et seulement si x ≽ y et y ≽ x.",
+      "x ≻ y si et seulement si x ≽ y et il est faux que y ≽ x.",
+      "x ≻ y si et seulement si U(x) = U(y).",
+      "x ≻ y si la quantité de chaque bien dans x est supérieure au double de celle dans y."
+    ],
+    "bonne_reponse": "x ≻ y si et seulement si x ≽ y et il est faux que y ≽ x.",
+    "explication": "La préférence stricte signifie que le consommateur préfère ou est indifférent à x par rapport à y, MAIS qu'il n'est pas indifférent ou ne préfère pas y par rapport à x. C'est l'asymétrie de l'indifférence.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_101",
+    "chapitre_id": "chapitre_01",
+    "question": "Comment calcule-t-on le profit du vendeur (U_V) si l'échange bilatéral a lieu ?",
+    "options": [
+      "U_V = v - p",
+      "U_V = p - c",
+      "U_V = v - c",
+      "U_V = c - p"
+    ],
+    "bonne_reponse": "U_V = p - c",
+    "explication": "Le profit du vendeur est la différence entre le prix reçu (p) et son coût d'opportunité ou coût de production (c). S'il n'y a pas d'échange, son profit est nul.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_102",
+    "chapitre_id": "chapitre_01",
+    "question": "En théorie de la négociation bilatérale, pourquoi dire qu'un prix p = c est 'inefficace' est une erreur ?",
+    "options": [
+      "Parce qu'à p = c, l'échange n'a pas lieu du tout.",
+      "Parce que l'efficacité ne dépend que de la condition v >= c. Le prix p = c garantit l'échange (donc l'efficacité), mais est très inéquitable pour le vendeur (qui a un surplus nul).",
+      "Parce que le prix doit toujours être strictement supérieur au coût.",
+      "Parce que le surplus de l'acheteur devient négatif."
+    ],
+    "bonne_reponse": "Parce que l'efficacité ne dépend que de la condition v >= c. Le prix p = c garantit l'échange (donc l'efficacité), mais est très inéquitable pour le vendeur (qui a un surplus nul).",
+    "explication": "C'est un piège classique : confondre l'efficacité (la transaction créatrice de valeur a-t-elle lieu ?) et l'équité (comment le gâteau est-il réparti ?). Si v >= c, n'importe quel prix dans [c, v] est efficace.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_103",
+    "chapitre_id": "chapitre_01",
+    "question": "Quelle est la définition du paiement pour les agents en cas de 'statu quo' (rejet de l'offre) dans le Jeu de l'Ultimatum ?",
+    "options": [
+      "(50, 50)",
+      "(x, 100-x)",
+      "(0, 0)",
+      "(100, 0)"
+    ],
+    "bonne_reponse": "(0, 0)",
+    "explication": "Dans le jeu de l'ultimatum, si le joueur 2 refuse l'offre x faite par le joueur 1, l'accord n'est pas conclu et aucun des deux joueurs ne gagne quoi que ce soit. Le statu quo est (0, 0).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_104",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le modèle de Nash avec transfert (W_0 étant la somme des utilités de statu quo et W le gâteau total maximisé), quelle est l'utilité finale de l'agent A (Anne) qui a un pouvoir de négociation α ?",
+    "options": [
+      "U_A = α * W",
+      "U_A = u_0 + α(W - W_0)",
+      "U_A = W - W_0",
+      "U_A = u_0 + W / α"
+    ],
+    "bonne_reponse": "U_A = u_0 + α(W - W_0)",
+    "explication": "La règle de séparation implique que l'agent récupère son utilité de statu quo (son filet de sécurité u_0) PLUS une fraction α de l'excédent net généré par l'accord (W - W_0).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_105",
+    "chapitre_id": "chapitre_02",
+    "question": "Quelle métaphore illustre le mieux l'effet de la A-compétition sur un marché ?",
+    "options": [
+      "Une enchère descendante où les vendeurs baissent leur prix.",
+      "Une enchère ascendante où les acheteurs surenchérissent les uns sur les autres.",
+      "Un monopole fixant son prix face à une demande inélastique.",
+      "Un troc direct entre deux individus."
+    ],
+    "bonne_reponse": "Une enchère ascendante où les acheteurs surenchérissent les uns sur les autres.",
+    "explication": "Dans la A-compétition, il y a plus d'acheteurs que de vendeurs. Les acheteurs entrent en concurrence et proposent des prix de plus en plus élevés pour obtenir le bien, jusqu'à ce que tous abandonnent sauf un.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_106",
+    "chapitre_id": "chapitre_02",
+    "question": "Lorsqu'un monopole est face à une demande D(p), quelle erreur classique faut-il éviter en posant la fonction de profit Π(p) ?",
+    "options": [
+      "Soustraire le surplus des consommateurs.",
+      "Diviser la quantité par le prix.",
+      "Oublier de soustraire le coût unitaire c, en maximisant juste le revenu pD(p) au lieu de (p-c)D(p).",
+      "Prendre la dérivée seconde de la demande."
+    ],
+    "bonne_reponse": "Oublier de soustraire le coût unitaire c, en maximisant juste le revenu pD(p) au lieu de (p-c)D(p).",
+    "explication": "Le profit n'est pas le chiffre d'affaires. Il est crucial d'intégrer le coût unitaire c dans le programme de maximisation (p-c)D(p) avant de dériver.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_107",
+    "chapitre_id": "chapitre_02",
+    "question": "Dans quel cas un monopole trouve-t-il optimal de servir TOUT le marché (solution en coin p^m = v_min), générant ainsi une perte sèche nulle ?",
+    "options": [
+      "Lorsque la demande est parfaitement élastique.",
+      "Lorsque le coût marginal de production c est suffisamment faible pour rendre rentable la vente même aux consommateurs ayant la plus basse valuation possible.",
+      "Lorsque le monopole est régulé par l'État.",
+      "Lorsque les consommateurs n'ont aucune disposition à payer."
+    ],
+    "bonne_reponse": "Lorsque le coût marginal de production c est suffisamment faible pour rendre rentable la vente même aux consommateurs ayant la plus basse valuation possible.",
+    "explication": "La FOC ne donne qu'un optimum intérieur. Si baisser le prix jusqu'à v_min permet de gagner plus sur les volumes que ce qui est perdu sur la marge (car c est très bas), le monopole servira tout le monde, éliminant la perte sèche.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_108",
+    "chapitre_id": "chapitre_02",
+    "question": "Quelle formule de dérivée confirme que le Surplus des consommateurs baisse proportionnellement au volume acheté lorsqu'on augmente le prix ?",
+    "options": [
+      "S'(p) = D'(p)",
+      "S'(p) = p * D(p)",
+      "S'(p) = -D(p)",
+      "S'(p) = v - p"
+    ],
+    "bonne_reponse": "S'(p) = -D(p)",
+    "explication": "C'est l'application directe du théorème de l'enveloppe sur la fonction de surplus. Une hausse de prix d'un centime fait perdre un centime par unité achetée, d'où une baisse totale égale à la quantité demandée -D(p).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_109",
+    "chapitre_id": "chapitre_03",
+    "question": "En V-compétition, que se passe-t-il dans le cas symétrique où deux vendeurs ont exactement le même coût (c1 = c2 = c) ?",
+    "options": [
+      "Le prix d'équilibre est égal à v (valuation de l'acheteuse).",
+      "Le prix d'équilibre s'établit exactement à p = c, et l'acheteuse accapare 100% du surplus total.",
+      "L'acheteuse rationne sa demande.",
+      "Il n'y a pas d'équilibre de Nash pur."
+    ],
+    "bonne_reponse": "Le prix d'équilibre s'établit exactement à p = c, et l'acheteuse accapare 100% du surplus total.",
+    "explication": "La rivalité entre les deux vendeurs les pousse à se sous-coter mutuellement jusqu'à atteindre leur coût de production c. Ils ne font aucun profit, et l'acheteuse gagne toute la différence (v - c).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_110",
+    "chapitre_id": "chapitre_03",
+    "question": "Dans l'analyse du Welfare pour un monopsone, W(p) = S_p(p) + U_A(p). À quel point le Welfare atteint-il son maximum global ?",
+    "options": [
+      "À l'équilibre concurrentiel, c'est-à-dire lorsque p = v.",
+      "Au prix de monopsone p^m.",
+      "Lorsque le surplus des producteurs est nul.",
+      "Lorsque le prix est égal au coût maximum c_max."
+    ],
+    "bonne_reponse": "À l'équilibre concurrentiel, c'est-à-dire lorsque p = v.",
+    "explication": "La dérivée du Welfare W'(p) = (v-p)O'(p) s'annule uniquement si p = v. Le surplus total est maximisé quand le prix payé reflète exactement la valeur réelle du bien pour l'acheteuse.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_111",
+    "chapitre_id": "chapitre_03",
+    "question": "Que signifie la Condition de Perte Sèche (DWL > 0) dans le modèle du monopsone ?",
+    "options": [
+      "Que le monopsone achète à tout le monde.",
+      "Qu'il y a inefficacité sociale si et seulement si la quantité achetée par le monopsone (q^m) est strictement inférieure à la quantité concurrentielle (q^c).",
+      "Que l'élasticité de l'offre est nulle.",
+      "Que les vendeurs ont des coûts identiques."
+    ],
+    "bonne_reponse": "Qu'il y a inefficacité sociale si et seulement si la quantité achetée par le monopsone (q^m) est strictement inférieure à la quantité concurrentielle (q^c).",
+    "explication": "La perte sèche n'intervient que si des échanges mutuellement bénéfiques sont détruits. Si le monopsone restreint les volumes achetés (q^m < q^c) pour faire baisser les prix, il crée du gaspillage.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_112",
+    "chapitre_id": "chapitre_03",
+    "question": "Laquelle de ces formules représente l'Indice de Lerner appliqué à un monopsone ?",
+    "options": [
+      "(p - c) / p = 1 / ε_D",
+      "(v - p) / p = 1 / ε_O",
+      "S_p'(p) = O(p)",
+      "p = v - G(p)/g(p)"
+    ],
+    "bonne_reponse": "(v - p) / p = 1 / ε_O",
+    "explication": "C'est l'équivalent de la marge, mais côté acheteur. Le pouvoir de marché (v-p)/p dépend de l'inverse de l'élasticité de l'offre (ε_O). Plus l'offre est rigide, plus l'acheteuse peut tordre le prix vers le bas.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_113",
+    "chapitre_id": "chapitre_04",
+    "question": "Quelle équation décrit le Revenu Marginal MR(q) pour un monopole ou un oligopole maximisant en quantité ?",
+    "options": [
+      "MR(q) = P(q) - c",
+      "MR(q) = P'(q)",
+      "MR(q) = P(q) + qP'(q)",
+      "MR(q) = q / P(q)"
+    ],
+    "bonne_reponse": "MR(q) = P(q) + qP'(q)",
+    "explication": "Le revenu est R(q) = q * P(q). En appliquant la règle de dérivation d'un produit (uv)' = u'v + uv', on obtient P(q) + qP'(q).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_114",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de Cournot asymétrique avec n firmes, comment interprète-t-on la quantité individuelle produite q_i^C ?",
+    "options": [
+      "Toutes les firmes produisent exactement Q/n.",
+      "La production est la moyenne du marché, corrigée par l'avantage de coût de la firme par rapport à la moyenne : (c_bar - c_i) / -P'(Q).",
+      "La firme ayant le coût le plus faible produit tout.",
+      "Chaque firme produit une quantité aléatoire."
+    ],
+    "bonne_reponse": "La production est la moyenne du marché, corrigée par l'avantage de coût de la firme par rapport à la moyenne : (c_bar - c_i) / -P'(Q).",
+    "explication": "La formule montre que si une firme a un coût c_i inférieur à la moyenne c_bar, le terme correctif est positif : elle produira plus que la moyenne des firmes du marché.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_115",
+    "chapitre_id": "chapitre_04",
+    "question": "Dans le modèle de Bertrand avec des biens différenciés et des préférences hétérogènes (demande lissée), comment trouve-t-on l'équilibre ?",
+    "options": [
+      "En fixant p1 = p2 = c.",
+      "En cherchant l'intersection des fonctions de meilleure réponse continues p1(p2) et p2*(p1).",
+      "En sommant les quantités comme à Cournot.",
+      "En égalisant les prix aux valuations maximales v1 et v2."
+    ],
+    "bonne_reponse": "En cherchant l'intersection des fonctions de meilleure réponse continues p1(p2) et p2*(p1).",
+    "explication": "Contrairement au modèle de base avec des sauts discontinus, la différenciation lisse la demande. On peut alors dériver les profits pour obtenir des CPO, et résoudre le système croisé des deux équations de meilleure réponse pour trouver l'équilibre de Nash.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_116",
+    "chapitre_id": "chapitre_04",
+    "question": "Si deux firmes à la Cournot ont des coûts identiques c1 = c2 = c, quelle sera leur production relative à l'équilibre ?",
+    "options": [
+      "L'une produit tout, l'autre rien.",
+      "Elles produiront la même quantité q1 = q2.",
+      "q1 = 2 * q2.",
+      "La production totale sera égale à celle d'un monopole."
+    ],
+    "bonne_reponse": "Elles produiront la même quantité q1 = q2.",
+    "explication": "Le modèle de Cournot est symétrique si les coûts sont symétriques. Si c1 = c2, l'équation individuelle de production donnera des parts de marché strictement égales (50/50).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_117",
+    "chapitre_id": "chapitre_05",
+    "question": "À quelle famille appartient la fonction d'utilité U(x) = x1^α * x2^β ?",
+    "options": [
+      "Substituts parfaits (Linéaire)",
+      "Compléments parfaits (Leontief)",
+      "Cobb-Douglas",
+      "Fonction de demande inverse"
+    ],
+    "bonne_reponse": "Cobb-Douglas",
+    "explication": "C'est la forme canonique de la fonction Cobb-Douglas. Elle implique que le consommateur veut toujours un mélange des deux biens et que les courbes d'indifférence sont régulières, convexes et asymptotes aux axes.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_118",
+    "chapitre_id": "chapitre_05",
+    "question": "Pourquoi la théorie du consommateur insiste-t-elle sur le fait que U(x) et V(x) = exp(U(x)) représentent exactement les mêmes préférences ?",
+    "options": [
+      "Parce que l'exponentielle est la seule fonction autorisée en économie.",
+      "Parce que la valeur absolue de l'utilité compte pour le bien-être social.",
+      "Parce que l'utilité est ordinale : toute transformation strictement croissante (comme l'exponentielle) conserve l'ordre de classement des paniers.",
+      "Parce que cela permet d'éliminer le Taux Marginal de Substitution."
+    ],
+    "bonne_reponse": "Parce que l'utilité est ordinale : toute transformation strictement croissante (comme l'exponentielle) conserve l'ordre de classement des paniers.",
+    "explication": "L'ordre des préférences est le seul élément objectif du comportement du consommateur. Si x est préféré à y, U(x) > U(y), et donc exp(U(x)) > exp(U(y)). Le choix final restera identique.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_119",
+    "chapitre_id": "chapitre_05",
+    "question": "Quel est le résultat de l'axiome de Continuité sur les préférences (et que violent les préférences lexicographiques) ?",
+    "options": [
+      "Il permet d'assurer que le consommateur préfère toujours plus à moins.",
+      "Il permet de représenter les préférences par une fonction d'utilité mathématique continue U(.).",
+      "Il garantit que les courbes d'indifférence ne se croisent pas.",
+      "Il prouve la transitivité des choix."
+    ],
+    "bonne_reponse": "Il permet de représenter les préférences par une fonction d'utilité mathématique continue U(.).",
+    "explication": "L'axiome de continuité assure qu'il n'y a pas de 'sauts' dans les préférences. S'il est violé (ex: dictionnaire / lexicographique, où 1.00001 de bien 1 bat n'importe quelle quantité de bien 2), on ne peut pas dessiner de courbe d'indifférence classique.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_120",
+    "chapitre_id": "chapitre_05",
+    "question": "Que vaut le Taux Marginal de Substitution (TMS 1/2) pour une fonction d'utilité linéaire U(x1, x2) = 3x1 + 2x2 ?",
+    "options": [
+      "3 / 2",
+      "2 / 3",
+      "(3x1) / (2x2)",
+      "0"
+    ],
+    "bonne_reponse": "3 / 2",
+    "explication": "La dérivée partielle par rapport à x1 est 3. La dérivée partielle par rapport à x2 est 2. Le TMS est donc (dU/dx1)/(dU/dx2) = 3/2. Il est constant.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_121",
+    "chapitre_id": "chapitre_06",
+    "question": "Dans une Boîte d'Edgeworth, que représente la 'dotation totale de l'économie' (ω) ?",
+    "options": [
+      "Le vecteur somme des dotations initiales d'Agnès et Bruno : (ωA1 + ωB1, ωA2 + ωB2).",
+      "Le vecteur prix p1, p2.",
+      "La somme des utilités initiales de l'économie.",
+      "Le panier optimal sur la courbe des contrats."
+    ],
+    "bonne_reponse": "Le vecteur somme des dotations initiales d'Agnès et Bruno : (ωA1 + ωB1, ωA2 + ωB2).",
+    "explication": "La taille de la boîte est déterminée par la rareté absolue de l'économie, c'est-à-dire l'addition de tout le bien 1 disponible et de tout le bien 2 disponible avant tout échange.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_122",
+    "chapitre_id": "chapitre_06",
+    "question": "Pourquoi faut-il hachurer la 'lentille d'échange' dans un exercice d'Edgeworth ?",
+    "options": [
+      "Pour marquer les zones impossibles à atteindre.",
+      "Pour identifier visuellement toutes les allocations où les DEUX agents obtiennent une utilité supérieure ou égale à leur dotation initiale.",
+      "Pour calculer le surplus global du marché.",
+      "Pour cacher les courbes d'indifférence de Bruno."
+    ],
+    "bonne_reponse": "Pour identifier visuellement toutes les allocations où les DEUX agents obtiennent une utilité supérieure ou égale à leur dotation initiale.",
+    "explication": "Un échange volontaire exige que chaque participant y gagne. La lentille est l'intersection des aires supérieures aux courbes d'indifférence passant par la dotation initiale de chacun.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_123",
+    "chapitre_id": "chapitre_06",
+    "question": "Quelle est l'erreur fréquente lorsqu'on pose l'égalité TMS_A = TMS_B pour trouver la courbe des contrats ?",
+    "options": [
+      "Dériver par rapport à lambda.",
+      "Poser TMS_A(x_A, y_A) = TMS_B(x_B, y_B) et s'arrêter là, gardant 4 variables dans l'équation.",
+      "Inverser l'ordre des biens dans la division.",
+      "Oublier de multiplier par le vecteur de prix."
+    ],
+    "bonne_reponse": "Poser TMS_A(x_A, y_A) = TMS_B(x_B, y_B) et s'arrêter là, gardant 4 variables dans l'équation.",
+    "explication": "Pour qu'une équation définisse une courbe dans le plan de l'agent A (x_A, y_A), il faut impérativement substituer x_B par (ω_x - x_A) et y_B par (ω_y - y_A). Sinon, le système est insoluble.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_124",
+    "chapitre_id": "chapitre_06",
+    "question": "Si l'on résout le Lagrangien de Pareto (Maximiser U_A sous contrainte U_B = u) pour des solutions intérieures et différentiables, quel résultat analytique retrouve-t-on exactement ?",
+    "options": [
+      "Le prix d'équilibre de Walras.",
+      "La fonction de demande de l'agent A.",
+      "La condition d'égalité des Taux Marginaux de Substitution (TMS_A = TMS_B).",
+      "L'utilité marginale décroissante."
+    ],
+    "bonne_reponse": "La condition d'égalité des Taux Marginaux de Substitution (TMS_A = TMS_B).",
+    "explication": "La résolution mathématique du Lagrangien pour l'efficacité parétienne redémontre formellement que l'optimum s'atteint à la tangence des courbes d'indifférence (égalité des TMS).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_125",
+    "chapitre_id": "chapitre_07",
+    "question": "Dans une économie d'échange avec I consommateurs et L biens, qu'est-ce qu'une 'allocation' ?",
+    "options": [
+      "Un unique vecteur de prix pour tous les biens.",
+      "La liste de toutes les dotations initiales uniquement.",
+      "Une matrice X représentant les paniers de biens affectés à chaque consommateur à un instant donné.",
+      "La somme totale des biens de l'économie."
+    ],
+    "bonne_reponse": "Une matrice X représentant les paniers de biens affectés à chaque consommateur à un instant donné.",
+    "explication": "Une allocation est un 'plan de table' complet : elle spécifie précisément le vecteur de consommation (x1, x2... xL) attribué à chaque individu de la société.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_126",
+    "chapitre_id": "chapitre_07",
+    "question": "Parmi les affirmations suivantes sur un Optimum de Pareto, laquelle est VRAIE ?",
+    "options": [
+      "Il garantit qu'aucun individu ne possède plus de 50% des richesses.",
+      "Il assure que tous les individus ont une utilité supérieure à 0.",
+      "Il est possible qu'une allocation où un seul individu possède tout soit Pareto-optimale.",
+      "Il est toujours atteint au centre de la boîte d'Edgeworth."
+    ],
+    "bonne_reponse": "Il est possible qu'une allocation où un seul individu possède tout soit Pareto-optimale.",
+    "explication": "L'optimum de Pareto ne considère pas l'équité. Si un individu qui possède tout a des préférences strictement monotones, on ne peut pas lui prendre des biens (pour les donner à un autre) sans baisser son utilité. Cette situation extrême est donc un Optimum de Pareto.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_127",
+    "chapitre_id": "chapitre_07",
+    "question": "Que représente l'axe des abscisses et l'axe des ordonnées sur le graphique de la Frontière de Pareto ?",
+    "options": [
+      "La quantité du bien 1 et la quantité du bien 2.",
+      "Les prix relatifs p1/p2.",
+      "Les niveaux d'utilité U_A (Agnès) et U_B (Bruno).",
+      "Le Taux Marginal de Substitution."
+    ],
+    "bonne_reponse": "Les niveaux d'utilité U_A (Agnès) et U_B (Bruno).",
+    "explication": "Contrairement à la Boîte d'Edgeworth qui trace des quantités physiques de biens, la Frontière de Pareto se projette dans l'espace des utilités pour montrer l'arbitrage direct entre le 'bonheur' des deux agents.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_128",
+    "chapitre_id": "chapitre_07",
+    "question": "Pourquoi maximise-t-on parfois la somme pondérée des utilités (Σ μ_i U_i) dans les exercices sur l'optimum de Pareto ?",
+    "options": [
+      "Pour calculer le véritable bien-être de la société.",
+      "C'est une astuce mathématique qui permet de retrouver l'égalité des TMS et de générer l'équation de la courbe des contrats.",
+      "Parce que les utilités cardinales s'additionnent toujours.",
+      "Pour vérifier si l'économie est en déficit."
+    ],
+    "bonne_reponse": "C'est une astuce mathématique qui permet de retrouver l'égalité des TMS et de générer l'équation de la courbe des contrats.",
+    "explication": "Bien que l'addition d'utilités ordinales n'ait pas de sens philosophique (on ne peut pas sommer des utilités interpersonnelles), cette méthode pondérée fonctionne comme un Lagrangien pour balayer toute la frontière des optima de Pareto en faisant varier les poids μ.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_129",
+    "chapitre_id": "methodes",
+    "question": "Dans la résolution de l'Équilibre Walrasien, quelle est l'étape qui permet de simplifier drastiquement la recherche des prix d'équilibre ?",
+    "options": [
+      "Maximiser les utilités sans tenir compte du budget.",
+      "Utiliser la Loi de Walras pour 'normaliser' un prix (ex: p_x = 1), car seul le prix relatif compte.",
+      "Égaliser la demande de l'agent A à la demande de l'agent B.",
+      "Calculer la dérivée implicite des prix."
+    ],
+    "bonne_reponse": "Utiliser la Loi de Walras pour 'normaliser' un prix (ex: p_x = 1), car seul le prix relatif compte.",
+    "explication": "Puisque les choix dépendent du ratio des prix, on peut arbitrairement fixer p_x = 1. De plus, la Loi de Walras garantit que si le marché du bien X est à l'équilibre, celui du bien Y l'est aussi. On ne résout donc qu'une seule équation pour trouver 'p_y'.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_130",
+    "chapitre_id": "methodes",
+    "question": "Quel est le risque de vouloir dériver directement les fonctions de meilleure réponse (q1 en fonction de q2) dans un duopole de Cournot ?",
+    "options": [
+      "C'est la méthode idéale pour n=2, mais cela devient un mur algébrique ingérable (substitution en chaîne) dès qu'il y a n > 2 firmes asymétriques.",
+      "Cela donne un prix négatif.",
+      "Cela viole les hypothèses de la théorie des jeux.",
+      "Cela transforme l'oligopole en concurrence parfaite."
+    ],
+    "bonne_reponse": "C'est la méthode idéale pour n=2, mais cela devient un mur algébrique ingérable (substitution en chaîne) dès qu'il y a n > 2 firmes asymétriques.",
+    "explication": "Si on a 5 firmes, résoudre le système de 5 équations de meilleure réponse par substitution est extrêmement lourd. La 'Méthode de la Somme' des CPO permet de contourner cette difficulté élégamment.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_131",
+    "chapitre_id": "methodes",
+    "question": "Comment calcule-t-on l'Indice d'Aversion Absolue pour le Risque (IA) ?",
+    "options": [
+      "IA = E(X) / EC",
+      "IA = u'(w) / u''(w)",
+      "IA = - u''(w) / u'(w)",
+      "IA = E(u(X)) - u(E(X))"
+    ],
+    "bonne_reponse": "IA = - u''(w) / u'(w)",
+    "explication": "C'est l'indice d'Arrow-Pratt. Il mesure la courbure de la fonction d'utilité locale. La dérivée seconde (négative si averse au risque) est divisée par la dérivée première (positive) et on prend l'opposé pour avoir un indice positif.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_132",
+    "chapitre_id": "methodes",
+    "question": "Dans le modèle de distribution des valuations F(v), si le marché n'est pas à l'équilibre et que le prix imposé p est trop bas (pénurie), comment ajuste-t-on le calcul du surplus des consommateurs ?",
+    "options": [
+      "On intègre jusqu'à l'infini sans rien changer.",
+      "On ajoute la recette fiscale de l'État.",
+      "On remplace la borne p par un 'prix virtuel' p(p) qui équilibre l'offre disponible, et on ajoute la rente de rationnement (p(p)-p)O(p).",
+      "On calcule l'aire d'un triangle de Harberger."
+    ],
+    "bonne_reponse": "On remplace la borne p par un 'prix virtuel' p(p) qui équilibre l'offre disponible, et on ajoute la rente de rationnement (p(p)-p)O(p).",
+    "explication": "Sous l'hypothèse de rationnement efficace, seuls ceux qui valorisent le plus le bien (v > p(p)) réussissent à l'acheter. Le surplus est l'intégrale de la demande au-dessus de ce prix virtuel, plus l'économie réalisée (la différence entre le prix payé p et le prix virtuel p(p)) pour ces chanceux.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_133",
+    "chapitre_id": "methodes",
+    "question": "En utilisant la dérivation implicite pour faire de la statique comparative sur l'équation f'(x) = w/p, que cherche-t-on à isoler après avoir dérivé par rapport à w ?",
+    "options": [
+      "La valeur de x.",
+      "La valeur de p.",
+      "La dérivée de la variable endogène par rapport au paramètre exogène, notée dx*/dw.",
+      "Le profit marginal."
+    ],
+    "bonne_reponse": "La dérivée de la variable endogène par rapport au paramètre exogène, notée dx*/dw.",
+    "explication": "L'équation implicite est f'(x*(w)) = w/p. En dérivant par rapport à w (règle des chaînes), on fait apparaître f''(x*) * (dx*/dw) = 1/p. On isole ensuite dx*/dw pour trouver son signe sans avoir besoin de connaître la forme explicite de x*(w).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_134",
+    "chapitre_id": "methodes",
+    "question": "Dans un modèle de Bertrand avec des biens différenciés, que faut-il faire pour trouver l'équilibre ?",
+    "options": [
+      "Appliquer la règle de la sous-cotation marginale epsilon.",
+      "Fixer p = coût marginal moyen.",
+      "Construire les fonctions de demande D1 et D2, dériver les profits pour obtenir les fonctions de meilleure réponse, et résoudre le système croisé.",
+      "Additionner les prix des deux firmes."
+    ],
+    "bonne_reponse": "Construire les fonctions de demande D1 et D2, dériver les profits pour obtenir les fonctions de meilleure réponse, et résoudre le système croisé.",
+    "explication": "La différenciation 'lisse' la demande (plus de saut discontinu à 0). Le problème redevient un jeu de choix continu standard où l'équilibre de Nash se trouve à l'intersection des fonctions de réaction p1*(p2) et p2*(p1).",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_135",
+    "chapitre_id": "methodes",
+    "question": "Dans la résolution d'un optimum de Pareto avec la Boîte d'Edgeworth, que faire si l'un des agents possède une fonction d'utilité linéaire (substituts parfaits) et l'autre une Cobb-Douglas ?",
+    "options": [
+      "L'égalité des TMS est impossible, le problème n'a pas de solution.",
+      "Poser l'égalité des TMS comme d'habitude et vérifier si la solution tombe en dehors de la boîte (équilibre en coin).",
+      "La courbe des contrats est nécessairement la diagonale de la boîte.",
+      "Prendre la dérivée seconde du Lagrangien."
+    ],
+    "bonne_reponse": "Poser l'égalité des TMS comme d'habitude et vérifier si la solution tombe en dehors de la boîte (équilibre en coin).",
+    "explication": "L'agent linéaire a un TMS constant (k). L'équation devient TMS_CobbDouglas = k. On résout pour trouver une relation linéaire y = a*x. Si cette droite sort de la boîte, les optima complémentaires se trouvent sur les bords de la boîte (contraintes de faisabilité saturées).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_136",
+    "chapitre_id": "chapitre_01",
+    "question": "Que se passe-t-il dans une négociation bilatérale si la valuation de l'acheteur (v) est strictement inférieure au coût d'opportunité du vendeur (c) ?",
+    "options": [
+      "Le prix s'établit à la moyenne entre v et c.",
+      "L'échange a lieu mais génère un surplus total négatif.",
+      "L'échange n'a pas lieu car il n'est pas efficace (v < c).",
+      "L'État doit intervenir pour subventionner la transaction."
+    ],
+    "bonne_reponse": "L'échange n'a pas lieu car il n'est pas efficace (v < c).",
+    "explication": "La condition fondamentale d'efficacité de l'échange est v >= c. Si cette condition n'est pas remplie, il n'existe aucun prix p tel que l'acheteur et le vendeur soient tous les deux gagnants. L'échange volontaire est impossible.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_137",
+    "chapitre_id": "chapitre_01",
+    "question": "Pourquoi la courbe de demande d'un agent unique pour un bien indivisible prend-elle la forme d'un 'escalier' ?",
+    "options": [
+      "Parce que la quantité demandée augmente proportionnellement à la baisse du prix.",
+      "Parce que l'agent ne peut acheter qu'une seule unité (quantité = 1) si le prix est inférieur ou égal à sa valuation v, et rien (quantité = 0) sinon.",
+      "Parce que le marché est en concurrence parfaite.",
+      "Parce que l'agent hésite entre plusieurs niveaux de prix."
+    ],
+    "bonne_reponse": "Parce que l'agent ne peut acheter qu'une seule unité (quantité = 1) si le prix est inférieur ou égal à sa valuation v, et rien (quantité = 0) sinon.",
+    "explication": "Dans ce modèle élémentaire, le bien est indivisible. L'agent achète 1 unité si p <= v, et 0 sinon. Cela crée une fonction constante par morceaux valant 1 puis tombant à 0, formant graphiquement un palier ou un escalier.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_138",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le jeu de l'Ultimatum, comment le concept d''Équilibre parfait en sous-jeux' élimine-t-il les menaces du joueur 2 ?",
+    "options": [
+      "Il suppose que le joueur 2 a des valeurs morales supérieures.",
+      "Il utilise l'induction à rebours (backward induction) pour démontrer qu'une fois face à l'offre finale, un joueur rationnel acceptera tout montant strictement positif, rendant sa menace initiale non-crédible.",
+      "Il impose que le surplus soit toujours divisé par deux.",
+      "Il interdit la communication entre les joueurs."
+    ],
+    "bonne_reponse": "Il utilise l'induction à rebours (backward induction) pour démontrer qu'une fois face à l'offre finale, un joueur rationnel acceptera tout montant strictement positif, rendant sa menace initiale non-crédible.",
+    "explication": "L'induction à rebours consiste à analyser le jeu en partant de la fin. Au dernier stade, le joueur 2 choisit entre x et 0. S'il est rationnel, il prendra x > 0. Sa menace de refuser des petites offres n'est donc pas crédible ex-post.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_139",
+    "chapitre_id": "chapitre_02",
+    "question": "Dans une situation d'enchère (A-compétition) où les acheteurs sont parfaitement identiques (v1 = v2 = v), quel est le résultat de la surenchère ?",
+    "options": [
+      "Le bien n'est pas vendu.",
+      "Les acheteurs s'entendent et paient le prix minimum c.",
+      "Le prix monte jusqu'à v, laissant un surplus nul à l'acheteur gagnant et transférant 100% de la valeur au vendeur.",
+      "Le prix s'arrête à la moyenne des valuations."
+    ],
+    "bonne_reponse": "Le prix monte jusqu'à v, laissant un surplus nul à l'acheteur gagnant et transférant 100% de la valeur au vendeur.",
+    "explication": "La concurrence parfaite du côté de la demande élimine toute rente pour les acheteurs. Ils surenchérissent jusqu'à leur disposition maximale à payer (v), offrant la totalité du surplus généré (v - c) au vendeur.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_140",
+    "chapitre_id": "chapitre_02",
+    "question": "Dans quel cas la Condition du Premier Ordre (CPO) d'un monopole (p = c + Marge) peut-elle échouer à décrire l'équilibre réel ?",
+    "options": [
+      "Lorsque la fonction de répartition F(p) est continue.",
+      "Lorsqu'il s'agit d'une solution en coin : si le coût c est très bas, le monopole peut avoir intérêt à baisser le prix jusqu'à v_min pour servir tout le marché.",
+      "Lorsque le monopole vend des biens homogènes.",
+      "Lorsque la demande est décroissante."
+    ],
+    "bonne_reponse": "Lorsqu'il s'agit d'une solution en coin : si le coût c est très bas, le monopole peut avoir intérêt à baisser le prix jusqu'à v_min pour servir tout le marché.",
+    "explication": "La CPO trouve l'optimum 'intérieur'. Mais si la fonction de demande est bornée (un prix minimum v_min existe dans la population) et que c est négligeable, le monopole fera plus de profit en vendant à tout le monde au prix v_min qu'en appliquant la marge de la FOC.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_141",
+    "chapitre_id": "chapitre_02",
+    "question": "À quoi correspond le terme (1 - F(p))/f(p) dans l'équation de tarification du monopole continu ?",
+    "options": [
+      "À la perte sèche imposée à la société.",
+      "Au coût marginal de l'entreprise.",
+      "À la marge (mark-up) que le monopole ajoute au-dessus de son coût marginal c.",
+      "Au surplus exact des consommateurs."
+    ],
+    "bonne_reponse": "À la marge (mark-up) que le monopole ajoute au-dessus de son coût marginal c.",
+    "explication": "Le prix de monopole s'écrit p = c + (1-F(p))/f(p). Ce second terme, lié au taux de hasard inverse de la distribution des valuations, représente mathématiquement la rente de monopole (la marge) extraite grâce à son pouvoir de marché.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_142",
+    "chapitre_id": "chapitre_03",
+    "question": "Dans une V-compétition asymétrique (plusieurs vendeurs, c1 < c2 < c3) face à une acheteuse, à quel niveau le prix s'arrête-t-il de chuter ?",
+    "options": [
+      "Il chute jusqu'au coût marginal du vendeur le plus efficace : c1.",
+      "Il s'arrête exactement au coût du premier perdant, c'est-à-dire le deuxième vendeur le plus efficace : c2.",
+      "Il ne chute pas, il reste au niveau de la valuation v de l'acheteuse.",
+      "Il s'arrête à la moyenne des trois coûts."
+    ],
+    "bonne_reponse": "Il s'arrête exactement au coût du premier perdant, c'est-à-dire le deuxième vendeur le plus efficace : c2.",
+    "explication": "L'enchère inversée s'arrête dès qu'il ne reste plus qu'un seul vendeur prêt à proposer le bien. Le vendeur 2 abandonne à c2. Le vendeur 1 remporte donc le marché en proposant un prix de c2 (ou marginalement en dessous), ce qui lui permet de conserver la rente (c2 - c1).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_143",
+    "chapitre_id": "chapitre_03",
+    "question": "Comment le pouvoir de marché d'un monopsone influence-t-il le prix d'achat par rapport à l'équilibre concurrentiel ?",
+    "options": [
+      "Il augmente le prix d'achat au-dessus de la valuation v.",
+      "Il maintient le prix d'achat égal à la valuation v, mais réduit les quantités.",
+      "Il tire le prix d'achat vers le bas, imposant un prix p^m inférieur à sa véritable valuation v.",
+      "Il n'a aucune influence sur le prix, seulement sur les coûts fixes."
+    ],
+    "bonne_reponse": "Il tire le prix d'achat vers le bas, imposant un prix p^m inférieur à sa véritable valuation v.",
+    "explication": "Le monopsone utilise sa position de force (seul acheteur) pour faire baisser les prix en dessous de l'équilibre concurrentiel (qui serait p=v). La formule est p = v - Marge.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_144",
+    "chapitre_id": "chapitre_03",
+    "question": "Dans le modèle du monopsone, si G(p) est la fonction de répartition des coûts des producteurs, que représente mathématiquement l'offre O(p) pour une masse N de producteurs ?",
+    "options": [
+      "O(p) = N * (1 - G(p))",
+      "O(p) = N / G(p)",
+      "O(p) = N * G(p)",
+      "O(p) = N * g(p)"
+    ],
+    "bonne_reponse": "O(p) = N * G(p)",
+    "explication": "Un producteur est prêt à vendre si son coût de production c est inférieur ou égal au prix de marché p. La probabilité qu'un coût soit inférieur à p est donnée par la fonction de répartition G(p). En multipliant par la population N, on obtient l'offre totale.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_145",
+    "chapitre_id": "chapitre_04",
+    "question": "Pourquoi la forme d'un monopole (prix vs quantité) est-elle considérée comme neutre, contrairement à un duopole ?",
+    "options": [
+      "Parce que le monopole ne subit aucune taxe.",
+      "Parce qu'un agent isolé fait face à la même courbe de demande : fixer la quantité détermine le prix, et fixer le prix détermine la quantité de manière univoque.",
+      "Parce que le monopole maximise toujours son chiffre d'affaires plutôt que son profit.",
+      "Parce que le coût marginal d'un monopole est nul."
+    ],
+    "bonne_reponse": "Parce qu'un agent isolé fait face à la même courbe de demande : fixer la quantité détermine le prix, et fixer le prix détermine la quantité de manière univoque.",
+    "explication": "Dans un marché avec une seule entreprise, l'équivalence est parfaite via la fonction de demande D(p) ou inverse P(q). En oligopole, fixer sa quantité laisse le prix dépendre de ce que le concurrent produit (Cournot), ce qui change complètement l'interaction stratégique (Bertrand).",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_146",
+    "chapitre_id": "chapitre_04",
+    "question": "Que signifie le terme qP'(q) dans la formule du revenu marginal MR(q) = P(q) + qP'(q) ?",
+    "options": [
+      "Le coût marginal de l'unité supplémentaire produite.",
+      "La hausse de profit générée par l'élasticité.",
+      "La perte de revenus sur toutes les unités précédentes (infra-marginales) due à la baisse du prix nécessaire pour vendre une unité de plus.",
+      "La taxe unitaire imposée par le gouvernement."
+    ],
+    "bonne_reponse": "La perte de revenus sur toutes les unités précédentes (infra-marginales) due à la baisse du prix nécessaire pour vendre une unité de plus.",
+    "explication": "Pour vendre plus, la firme doit baisser son prix (P'(q) < 0). Cette baisse de prix ne s'applique pas qu'à la nouvelle unité, elle s'applique aux 'q' unités qu'elle vendait déjà. Ce terme négatif tire le revenu marginal sous le prix.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_147",
+    "chapitre_id": "chapitre_04",
+    "question": "Parmi les conditions suivantes, laquelle est absolument requise pour que le Paradoxe de Bertrand (p=c et profits nuls) se réalise parfaitement ?",
+    "options": [
+      "Les firmes doivent avoir des biens différenciés.",
+      "Les firmes doivent avoir des coûts asymétriques (c1 < c2).",
+      "Il doit y avoir au moins trois firmes sur le marché.",
+      "Les firmes doivent vendre des biens parfaitement homogènes (identiques) et avoir des coûts strictement symétriques (c1 = c2 = c)."
+    ],
+    "bonne_reponse": "Les firmes doivent vendre des biens parfaitement homogènes (identiques) et avoir des coûts strictement symétriques (c1 = c2 = c).",
+    "explication": "Le paradoxe de Bertrand repose sur une sous-cotation mutuelle jusqu'au plancher. Si les biens diffèrent, les firmes conservent un pouvoir de marché (préférence de marque). Si les coûts diffèrent, la firme la plus efficace fait un profit en s'arrêtant au coût de l'autre.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_148",
+    "chapitre_id": "chapitre_05",
+    "question": "Quel axiome des préférences interdit logiquement qu'une courbe d'indifférence puisse en croiser une autre ?",
+    "options": [
+      "L'axiome de Complétude.",
+      "L'axiome de Transitivité (conjugué à la Monotonie).",
+      "L'axiome de Convexité.",
+      "L'axiome de Continuité."
+    ],
+    "bonne_reponse": "L'axiome de Transitivité (conjugué à la Monotonie).",
+    "explication": "Si la courbe A croise la courbe B au point X, cela signifie que X est indifférent à un point Y sur A, et X est indifférent à un point Z sur B. Par transitivité, Y devrait être indifférent à Z. Mais si l'un contient plus de biens que l'autre, cela viole la monotonie.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_149",
+    "chapitre_id": "chapitre_05",
+    "question": "Que se passe-t-il si l'on applique une transformation croissante stricte (comme la fonction carrée) à une fonction d'utilité U(x) ?",
+    "options": [
+      "Le Taux Marginal de Substitution (TMS) est modifié.",
+      "L'ordre des préférences est inversé.",
+      "Le Taux Marginal de Substitution (TMS) reste strictement invariant et la carte des courbes d'indifférence est identique.",
+      "Les biens deviennent des compléments parfaits."
+    ],
+    "bonne_reponse": "Le Taux Marginal de Substitution (TMS) reste strictement invariant et la carte des courbes d'indifférence est identique.",
+    "explication": "L'utilité est ordinale. Une transformation comme U^2 ou ln(U) change les étiquettes chiffrées des courbes d'indifférence, mais ne change ni leur forme, ni leur pente (le TMS), ni l'ordre de classement des paniers.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_150",
+    "chapitre_id": "chapitre_05",
+    "question": "La fonction d'utilité U(x,y) = min(αx, βy) représente des compléments parfaits. Pourquoi ne peut-on pas utiliser un Lagrangien pour trouver l'optimum du consommateur avec cette fonction ?",
+    "options": [
+      "Parce que le Lagrangien ne fonctionne qu'avec plus de 3 biens.",
+      "Parce que la fonction 'min' n'est pas différentiable (pas de dérivée) au niveau de son 'coude' où l'optimum se trouve généralement.",
+      "Parce que le TMS est toujours infini.",
+      "Parce que la contrainte budgétaire n'est pas linéaire."
+    ],
+    "bonne_reponse": "Parce que la fonction 'min' n'est pas différentiable (pas de dérivée) au niveau de son 'coude' où l'optimum se trouve généralement.",
+    "explication": "Le Lagrangien repose sur l'annulation des dérivées premières. Or, à l'angle droit (le coude) de la fonction Leontief, la dérivée n'est pas définie mathématiquement. Il faut utiliser une résolution par substitution logique (αx = βy).",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_151",
+    "chapitre_id": "chapitre_06",
+    "question": "Où se situe l'origine de l'agent Bruno (0,0)_B dans la représentation standard de la Boîte d'Edgeworth ?",
+    "options": [
+      "Au centre exact de la boîte.",
+      "Dans le coin en bas à gauche, superposée à l'origine d'Agnès.",
+      "Dans le coin en haut à droite, inversée à 180 degrés.",
+      "Sur l'axe des abscisses."
+    ],
+    "bonne_reponse": "Dans le coin en haut à droite, inversée à 180 degrés.",
+    "explication": "Pour lire simultanément l'allocation des deux agents, le repère de Bruno est tourné et placé en haut à droite. Ses quantités consommées se lisent donc de haut en bas et de droite à gauche.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_152",
+    "chapitre_id": "chapitre_06",
+    "question": "Dans la Boîte d'Edgeworth, si une allocation proposée se situe à l'extérieur de la 'lentille d'échange' formée par les courbes d'indifférence initiales, que peut-on affirmer ?",
+    "options": [
+      "L'allocation est Pareto-optimale.",
+      "L'allocation viole les contraintes de rareté de l'économie.",
+      "Au moins un des deux agents refusera cet échange car il diminue son utilité par rapport à sa dotation de départ.",
+      "Les deux agents y gagnent strictement."
+    ],
+    "bonne_reponse": "Au moins un des deux agents refusera cet échange car il diminue son utilité par rapport à sa dotation de départ.",
+    "explication": "La lentille d'échange contient uniquement les allocations qui améliorent ou maintiennent la situation des DEUX agents simultanément. Un point à l'extérieur signifie qu'au moins un agent est placé sur une courbe d'indifférence inférieure à son statu quo.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_153",
+    "chapitre_id": "chapitre_06",
+    "question": "Lors du calcul analytique de la Courbe des contrats par l'égalité des TMS (TMS_A = TMS_B), quelle substitution est obligatoire pour obtenir l'équation finale ?",
+    "options": [
+      "Remplacer les TMS par les prix relatifs.",
+      "Remplacer les quantités de l'agent B (x_B, y_B) par les dotations totales moins les quantités de A (ω_1 - x_A, ω_2 - y_A).",
+      "Substituer la fonction d'utilité de A par celle de B.",
+      "Passer au logarithme."
+    ],
+    "bonne_reponse": "Remplacer les quantités de l'agent B (x_B, y_B) par les dotations totales moins les quantités de A (ω_1 - x_A, ω_2 - y_A).",
+    "explication": "L'égalité brute TMS_A(x_A, y_A) = TMS_B(x_B, y_B) contient 4 inconnues. Pour tracer une courbe dans le plan de l'agent A, il faut utiliser la contrainte de faisabilité (absence de gaspillage) pour exprimer ce que consomme B en fonction de ce que consomme A.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_154",
+    "chapitre_id": "chapitre_07",
+    "question": "Quelle est la caractéristique principale d'un Optimum de Pareto ?",
+    "options": [
+      "Il maximise le revenu fiscal de l'État.",
+      "Il répartit les biens de manière parfaitement égale entre tous les agents.",
+      "Il est impossible d'y améliorer la situation d'un agent sans détériorer celle d'un autre.",
+      "Il offre à chaque agent exactement sa dotation initiale."
+    ],
+    "bonne_reponse": "Il est impossible d'y améliorer la situation d'un agent sans détériorer celle d'un autre.",
+    "explication": "C'est la définition même de l'efficacité parétienne : l'absence de gaspillage. Toutes les transactions mutuellement bénéfiques (où l'un gagne sans que l'autre ne perde) ont déjà été réalisées.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_155",
+    "chapitre_id": "chapitre_07",
+    "question": "Dans une économie d'échange pur, que stipule la contrainte mathématique de 'faisabilité' (ou allocation réalisable) ?",
+    "options": [
+      "La somme des utilités doit être positive.",
+      "La somme des quantités d'un bien consommées par tous les agents (Σ x_i) ne doit pas dépasser la dotation initiale totale de ce bien (ω).",
+      "Le prix d'un bien doit toujours égaler son coût marginal.",
+      "Le TMS de tous les agents doit être identique."
+    ],
+    "bonne_reponse": "La somme des quantités d'un bien consommées par tous les agents (Σ x_i) ne doit pas dépasser la dotation initiale totale de ce bien (ω).",
+    "explication": "C'est la règle de conservation physique de l'économie : on ne peut pas consommer ou répartir plus de biens qu'il n'y en a de disponibles initialement sur le marché.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_156",
+    "chapitre_id": "chapitre_07",
+    "question": "Que représente la 'Frontière de Pareto' dans un graphique ?",
+    "options": [
+      "La projection de la courbe des contrats dans l'espace abstrait des utilités (U_A en abscisse, U_B en ordonnée).",
+      "L'ensemble des prix d'équilibre possibles.",
+      "La droite de budget agrégée des deux consommateurs.",
+      "La limite physique de la Boîte d'Edgeworth."
+    ],
+    "bonne_reponse": "La projection de la courbe des contrats dans l'espace abstrait des utilités (U_A en abscisse, U_B en ordonnée).",
+    "explication": "Alors que la courbe des contrats s'exprime en quantités physiques (x, y), la Frontière de Pareto traduit ces mêmes allocations optimales en niveaux de bien-être (utilités) pour illustrer directement l'arbitrage entre le bonheur de A et celui de B.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_157",
+    "chapitre_id": "methodes",
+    "question": "Quelle est l'utilité de la 'Loi de Walras' lors du calcul de l'Équilibre Concurrentiel (ou Walrasien) ?",
+    "options": [
+      "Elle permet de calculer le surplus de l'acheteur.",
+      "Elle justifie de fixer un prix arbitrairement à 1 (normalisation, ex: p_x = 1), car seul le prix relatif modifie les choix des agents.",
+      "Elle annule la nécessité de vérifier la contrainte de budget.",
+      "Elle garantit que la courbe des contrats est linéaire."
+    ],
+    "bonne_reponse": "Elle justifie de fixer un prix arbitrairement à 1 (normalisation, ex: p_x = 1), car seul le prix relatif modifie les choix des agents.",
+    "explication": "Le comportement des agents ne dépend que du rapport p_x/p_y (qui s'égalise au TMS). La loi de Walras permet de simplifier le système d'équations en posant le prix d'un bien 'numéraire' à 1, réduisant le nombre d'inconnues à trouver.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_158",
+    "chapitre_id": "methodes",
+    "question": "Quelle astuce algébrique est incontournable pour résoudre un modèle de Cournot avec n firmes asymétriques (sans utiliser la substitution) ?",
+    "options": [
+      "Diviser la quantité totale par n-1.",
+      "Sommer les n Conditions du Premier Ordre (CPO) pour faire apparaître la quantité agrégée Q et la somme des coûts marginaux Σ c_i.",
+      "Prendre la dérivée seconde de la fonction de demande.",
+      "Supposer que toutes les firmes ont le même coût c_bar."
+    ],
+    "bonne_reponse": "Sommer les n Conditions du Premier Ordre (CPO) pour faire apparaître la quantité agrégée Q et la somme des coûts marginaux Σ c_i.",
+    "explication": "L'astuce de l'agrégation (la 'Méthode de la Somme') contourne le système complexe d'équations de meilleures réponses. En sommant les CPO, on obtient directement une seule équation avec une seule inconnue (Q total) en fonction du coût marginal moyen.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_159",
+    "chapitre_id": "methodes",
+    "question": "Quel est le principal raccourci offert par le Théorème de l'Enveloppe en statique comparative ?",
+    "options": [
+      "Il évite de calculer l'intégrale du surplus.",
+      "Il permet d'ignorer complètement la fonction de demande.",
+      "Il permet d'étudier la variation d'une fonction valeur maximisée par rapport à un paramètre externe sans avoir à se soucier de l'ajustement de la variable endogène optimale.",
+      "Il transforme les oligopoles asymétriques en modèles de monopole."
+    ],
+    "bonne_reponse": "Il permet d'étudier la variation d'une fonction valeur maximisée par rapport à un paramètre externe sans avoir à se soucier de l'ajustement de la variable endogène optimale.",
+    "explication": "Puisque la fonction est à son maximum par rapport à la variable de choix (dérivée première nulle), l'effet indirect induit par la ré-optimisation de ce choix suite à un petit choc est négligeable (de premier ordre). On ne dérive donc que l'effet direct du paramètre.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_160",
+    "chapitre_id": "methodes",
+    "question": "Dans le modèle de l'assurance et du risque, quelle confusion traduit une incompréhension de la notion d'Espérance d'Utilité (EU) ?",
+    "options": [
+      "Calculer l'utilité de l'espérance de gain u(E(X)) au lieu de la moyenne des utilités de chaque état E(u(X)).",
+      "Soustraire la prime de l'Équivalent Certain.",
+      "Calculer la dérivée seconde de l'utilité.",
+      "Utiliser l'indice d'Arrow-Pratt."
+    ],
+    "bonne_reponse": "Calculer l'utilité de l'espérance de gain u(E(X)) au lieu de la moyenne des utilités de chaque état E(u(X)).",
+    "explication": "C'est l'erreur la plus courante. L'utilité espérée de la loterie est la somme pondérée par les probabilités des niveaux d'utilité obtenus dans chaque état : p1u(x1) + p2u(x2). Évaluer l'utilité sur le gain moyen u(p1x1 + p2x2) annule l'analyse du risque.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_161",
+    "chapitre_id": "chapitre_01",
+    "question": "Dans le problème de 'Hold-up' vu via la négociation de Nash, pourquoi y a-t-il un problème de sous-investissement ?",
+    "options": [
+      "Parce que l'investissement ex-ante est un coût irrécupérable dont l'agent ne captera qu'une fraction de la valeur générée (selon son pouvoir de négociation α) lors du partage ex-post.",
+      "Parce que les agents n'ont pas accès au crédit bancaire.",
+      "Parce que l'investissement réduit la taille globale du gâteau (W).",
+      "Parce que l'agent adverse détient le monopole de l'investissement."
+    ],
+    "bonne_reponse": "Parce que l'investissement ex-ante est un coût irrécupérable dont l'agent ne captera qu'une fraction de la valeur générée (selon son pouvoir de négociation α) lors du partage ex-post.",
+    "explication": "Celui qui investit paie 100% du coût avant la négociation. Mais la valeur ajoutée par cet investissement est mise sur la table de négociation et partagée. Ne récupérant pas l'intégralité du fruit de son effort, l'agent sera désincité à investir au niveau optimal pour la société.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_162",
+    "chapitre_id": "chapitre_02",
+    "question": "La dérivée du surplus des consommateurs S(p) par rapport au prix est S'(p) = -D(p). Qu'est-ce que cela signifie économiquement ?",
+    "options": [
+      "Que le surplus est toujours négatif.",
+      "Que la variation du bien-être des consommateurs suite à une petite hausse de prix est l'exact opposé du volume total d'unités qu'ils achètent.",
+      "Que le monopole fixe son prix où la demande est nulle.",
+      "Que les consommateurs gagnent de l'argent quand le prix monte."
+    ],
+    "bonne_reponse": "Que la variation du bien-être des consommateurs suite à une petite hausse de prix est l'exact opposé du volume total d'unités qu'ils achètent.",
+    "explication": "C'est une application du théorème de l'enveloppe. Si le prix d'un bien augmente de 1€, la perte immédiate de surplus pour les acheteurs est de 1€ par unité qu'ils avaient l'habitude de consommer.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_163",
+    "chapitre_id": "chapitre_03",
+    "question": "La dérivée du surplus des producteurs S_p(p) par rapport au prix est S_p'(p) = O(p). Que cela implique-t-il ?",
+    "options": [
+      "Une hausse du prix de marché augmente directement les profits agrégés des vendeurs d'un montant proportionnel à la quantité offerte.",
+      "Une hausse du prix détruit toujours de la valeur.",
+      "L'offre diminue quand le prix augmente.",
+      "Le monopsone contrôle totalement les producteurs."
+    ],
+    "bonne_reponse": "Une hausse du prix de marché augmente directement les profits agrégés des vendeurs d'un montant proportionnel à la quantité offerte.",
+    "explication": "C'est l'image miroir du surplus du consommateur. Si le prix de vente du marché monte de 1€, chaque unité vendue rapporte 1€ de marge supplémentaire aux producteurs actifs.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_164",
+    "chapitre_id": "chapitre_04",
+    "question": "Lors d'une résolution de Cournot, on trouve une quantité individuelle q_i négative pour une firme. Que doit-on en conclure économiquement ?",
+    "options": [
+      "La firme importe le bien au lieu de le produire.",
+      "La firme a un coût marginal c_i trop élevé pour être viable sur ce marché face à ces concurrents ; elle doit être exclue du calcul (q_i = 0).",
+      "C'est une erreur de signe mathématique dans la dérivée du revenu marginal.",
+      "La firme opère en concurrence parfaite."
+    ],
+    "bonne_reponse": "La firme a un coût marginal c_i trop élevé pour être viable sur ce marché face à ces concurrents ; elle doit être exclue du calcul (q_i = 0).",
+    "explication": "Les formules de Cournot s'appliquent sous réserve que les solutions soient intérieures (quantités positives). Si la formule donne un q_i négatif, c'est que le prix de marché d'équilibre est inférieur au coût marginal de cette firme. Elle ne produira rien.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_165",
+    "chapitre_id": "chapitre_05",
+    "question": "L'axiome de 'Monotonie' des préférences implique que :",
+    "options": [
+      "Les goûts du consommateur changent avec le temps.",
+      "Un panier contenant au moins autant de tous les biens et strictement plus d'au moins un bien est toujours strictement préféré (plus c'est mieux).",
+      "Le consommateur préfère un mélange modéré aux extrêmes.",
+      "Les courbes d'indifférence forment des droites."
+    ],
+    "bonne_reponse": "Un panier contenant au moins autant de tous les biens et strictement plus d'au moins un bien est toujours strictement préféré (plus c'est mieux).",
+    "explication": "C'est l'hypothèse de non-satiété globale. Les biens sont 'désirables' (ce ne sont pas des maux comme la pollution). Avoir plus d'un bien sans perdre de l'autre augmente strictement l'utilité.",
+    "difficulte": "facile"
+  },
+  {
+    "id": "qcm_166",
+    "chapitre_id": "chapitre_06",
+    "question": "Où se situe généralement la courbe des contrats si Agnès et Bruno considèrent tous les deux les biens 1 et 2 comme des substituts parfaits (utilités linéaires), mais qu'Agnès valorise systématiquement plus le bien 1 que Bruno ?",
+    "options": [
+      "Exactement sur la diagonale reliant les deux origines.",
+      "Sur les bords extérieurs de la boîte d'Edgeworth, car c'est un équilibre en coin (solution non intérieure).",
+      "Au centre exact de la lentille d'échange.",
+      "Sur un cercle inscrit dans la boîte d'Edgeworth."
+    ],
+    "bonne_reponse": "Sur les bords extérieurs de la boîte d'Edgeworth, car c'est un équilibre en coin (solution non intérieure).",
+    "explication": "Les utilités linéaires ont des TMS constants. L'égalité TMS_A = TMS_B est impossible. Puisque Agnès aime proportionnellement plus le bien 1, l'efficacité exige qu'elle reçoive tout le bien 1 disponible avant de commencer à prendre du bien 2. Cela repousse les allocations optimales sur les parois de la boîte.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_167",
+    "chapitre_id": "chapitre_07",
+    "question": "Dans la résolution analytique de l'optimum de Pareto, quel est le risque d'interpréter littéralement la maximisation de la 'somme pondérée' des utilités (Σ μ_i U_i) ?",
+    "options": [
+      "C'est une erreur philosophique, car on ne peut pas sommer ni comparer des utilités ordinales entre différents individus. L'expression n'est qu'un artifice mathématique (un Lagrangien déguisé).",
+      "Cela donne un résultat erroné pour la courbe des contrats.",
+      "Cela viole la contrainte de faisabilité.",
+      "Cela favorise systématiquement l'agent ayant le plus petit poids μ."
+    ],
+    "bonne_reponse": "C'est une erreur philosophique, car on ne peut pas sommer ni comparer des utilités ordinales entre différents individus. L'expression n'est qu'un artifice mathématique (un Lagrangien déguisé).",
+    "explication": "La théorie microéconomique moderne rejette la comparaison interpersonnelle des utilités. Additionner le 'bonheur' de A et de B n'a aucun sens physique. Cependant, le programme d'optimisation mathématique de cette somme génère formellement les mêmes points que la définition de Pareto.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_168",
+    "chapitre_id": "methodes",
+    "question": "En économie publique, que signifie 'décentraliser' une allocation Pareto-optimale ?",
+    "options": [
+      "Forcer l'État à distribuer physiquement les biens de manière égale.",
+      "Partir du point optimal ciblé, trouver le prix d'équilibre associé (p = 1/TMS), puis ajuster les dotations initiales pour que le libre jeu du marché y conduise naturellement.",
+      "Détruire un monopole pour créer un oligopole.",
+      "Fermer les marchés centraux pour privilégier le troc local."
+    ],
+    "bonne_reponse": "Partir du point optimal ciblé, trouver le prix d'équilibre associé (p = 1/TMS), puis ajuster les dotations initiales pour que le libre jeu du marché y conduise naturellement.",
+    "explication": "C'est le Second Théorème de l'Économie du Bien-Être. L'État n'a pas besoin de dicter les quantités consommées (ce qui est lourd et inefficace). Il lui suffit de redistribuer la richesse initiale (lump-sum transfers) puis de laisser le mécanisme des prix faire le reste.",
+    "difficulte": "moyen"
+  },
+  {
+    "id": "qcm_169",
+    "chapitre_id": "methodes",
+    "question": "Dans le cas d'une concurrence de Bertrand avec des biens de qualités différentes (différenciation verticale, v1 > v2), quelle firme remporte systématiquement le marché (en supposant c1 = c2) ?",
+    "options": [
+      "La firme qui fixe le prix le plus bas.",
+      "La firme 2, car elle offre une qualité plus standard.",
+      "La firme qui offre au consommateur le 'surplus social potentiel' (v - c) le plus élevé, ici la firme 1.",
+      "Le marché est divisé à parts égales car les biens sont substituables."
+    ],
+    "bonne_reponse": "La firme qui offre au consommateur le 'surplus social potentiel' (v - c) le plus élevé, ici la firme 1.",
+    "explication": "La concurrence porte sur le surplus net (w = v - p) offert à l'acheteur. La firme 2 peut au mieux offrir (v2 - c) en vendant à prix coûtant. La firme 1, ayant une plus grande marge de manœuvre (v1 > v2), peut facilement offrir un surplus légèrement supérieur et rafler toute la demande.",
+    "difficulte": "difficile"
+  },
+  {
+    "id": "qcm_170",
+    "chapitre_id": "chapitre_03",
+    "question": "Quel terme désigne un marché caractérisé par une multitude de vendeurs face à un seul acheteur ayant un pouvoir de fixation du prix ?",
+    "options": [
+      "Un monopole.",
+      "Un oligopole.",
+      "Un monopsone.",
+      "Un marché de V-compétition parfaite."
+    ],
+    "bonne_reponse": "Un monopsone.",
+    "explication": "Un monopsone est le symétrique exact du monopole du côté de la demande. L'acheteur unique fait face à une fonction d'offre agrégée et utilise son pouvoir de marché pour tirer le prix d'achat vers le bas.",
+    "difficulte": "facile"
+  }
+]
