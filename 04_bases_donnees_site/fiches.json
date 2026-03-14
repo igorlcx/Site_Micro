@@ -1,0 +1,429 @@
+[
+  {
+    "id": "fiche_01",
+    "chapitre_id": "chapitre_01",
+    "titre": "Négociation bilatérale",
+    "intuition": "Imagine que tu veux acheter une voiture d'occasion. Toi (Anne) tu la valorises à 10 000 € (c'est $v$), le vendeur (Vincent) l'a payée 6 000 € (c'est $c$). Le gâteau à partager vaut $W = v - c = 4\\,000$ €. Le prix $p$ ne fait que décider qui garde quelle part du gâteau — mais peu importe $p$, le gâteau total reste le même tant que l'échange a lieu ($v \\ge c$).",
+    "moyen_mnemo": "V-P-C : la Valeur doit être au-dessus du Prix, lui-même au-dessus du Coût ($v \\ge p \\ge c$). Si l'ordre est respecté, tout le monde est gagnant.",
+    "resume_condense": [
+      "Surplus acheteur : $U_A = v - p$, profit vendeur : $U_V = p - c$, welfare : $W = v - c$.",
+      "Condition d'échange : $v \\ge c$ (indépendant de $p$).",
+      "Ultimatum Game : solution parfaite en sous-jeux = $x^* = 100$, l'offreur garde tout.",
+      "Nash Bargaining : $\\max_{x} (u_1(x) - d_1)^\\alpha (u_2(x) - d_2)^{1-\\alpha}$.",
+      "Méthode Nash : (1) maximiser le gâteau $W$, (2) distribuer selon les pouvoirs $\\alpha$.",
+      "Le prix $p$ répartit le surplus mais ne crée ni ne détruit de valeur."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de calculer le surplus de chaque agent et le welfare d'un échange",
+        "etapes": [
+          "1. Identifier $v$ (valuation de l'acheteur) et $c$ (coût du vendeur).",
+          "2. Vérifier la condition d'échange : $v \\ge c$.",
+          "3. Calculer $U_A = v - p$, $U_V = p - c$, $W = v - c$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de résoudre un Ultimatum Game",
+        "etapes": [
+          "1. Identifier le joueur offreur (J1) et le joueur récepteur (J2).",
+          "2. Raisonner par induction à rebours (backward induction) : J2 accepte tout gain $\\ge 0$.",
+          "3. En déduire que J1 propose le minimum (0 ou $\\epsilon$) et garde $x^* = 100$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de résoudre un programme de Nash Bargaining",
+        "etapes": [
+          "1. Écrire le programme : $\\max_{x,t} (u(x) - t - u_0)^\\alpha (v(x) + t - v_0)^{1-\\alpha}$.",
+          "2. Passer au logarithme, puis dériver par rapport au transfert $t$ pour obtenir la règle de partage.",
+          "3. Dériver par rapport à $x$ pour trouver la variable économique optimale qui maximise $W$.",
+          "4. Réinjecter pour calculer les gains finaux de chaque agent."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "surplus acheteur",
+      "profit vendeur",
+      "welfare",
+      "condition d'échange",
+      "Ultimatum Game",
+      "Nash Bargaining",
+      "backward induction",
+      "pouvoir de négociation"
+    ],
+    "exercices_lies": ["ex_001", "ex_002"]
+  },
+  {
+    "id": "fiche_02",
+    "chapitre_id": "chapitre_02",
+    "titre": "A-compétition et monopole",
+    "intuition": "Imagine une salle des ventes où plusieurs acheteurs enchérissent pour un tableau. Plus ils sont nombreux à vouloir le tableau, plus le vendeur peut en tirer un bon prix. Au cas limite où deux acheteurs veulent le tableau à tout prix, le vendeur l'emporte à la valuation du deuxième ($p = v_2$). Si le vendeur est seul en face de nombreux acheteurs (monopole), il peut fixer le prix pour maximiser son profit — mais il sacrifie l'efficacité.",
+    "moyen_mnemo": "A-compétition = les Acheteurs se font concurrence. Cas symétrique : vendeur prend tout ($p = v$). Asymétrique : prix = valuation du 2ème acheteur. Monopole : CPO donne $p = c + \\frac{1-F(p)}{f(p)}$.",
+    "resume_condense": [
+      "Cas symétrique ($v_1 = v_2 = v$) : prix $p = v$, vendeur accapare tout le surplus.",
+      "Cas asymétrique ($v_1 > v_2$) : prix $p \\in [\\max(c, v_2),\\, v_1]$.",
+      "Monopole : $\\Pi(p) = (p - c) \\times N(1 - F(p))$, CPO : $p = c + \\frac{1-F(p)}{f(p)}$.",
+      "Indice de Lerner : $\\frac{p-c}{p} = \\frac{1}{\\epsilon}$ (pouvoir de marché).",
+      "Surplus consommateurs : $S(p) = \\int_p^\\infty D(v)\\,dv$, théorème enveloppe : $S'(p) = -D(p)$.",
+      "Welfare : $W(p) = S(p) + \\Pi(p)$, $W'(p) = (p-c)D'(p)$, maximum en $p = c$."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de trouver le prix d'équilibre en A-compétition asymétrique",
+        "etapes": [
+          "1. Classer les acheteurs par valuation décroissante : $v_1 > v_2$.",
+          "2. Le vendeur sert l'acheteur à la valuation la plus haute.",
+          "3. Le prix d'équilibre se fixe à $p = \\max(c, v_2)$ (le plus offrant parmi les perdants)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de trouver le prix de monopole continu",
+        "etapes": [
+          "1. Écrire le profit : $\\Pi(p) = (p-c) \\times N(1-F(p))$.",
+          "2. Dériver par rapport à $p$ et égaliser à zéro (CPO).",
+          "3. Résoudre : $p^* = c + \\frac{1-F(p^*)}{f(p^*)}$.",
+          "4. Vérifier si la solution est intérieure ou en coin ($p^* = \\bar{v}$)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de calculer le welfare et la perte sèche",
+        "etapes": [
+          "1. Calculer $S(p) = \\int_p^\\infty D(v)\\,dv$ et $\\Pi(p) = (p-c)D(p)$.",
+          "2. Sommer : $W(p) = S(p) + \\Pi(p)$.",
+          "3. La perte sèche $DWL = W(c) - W(p^*)$ existe seulement si $q^m < q^c$."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "A-compétition",
+      "indice de Lerner",
+      "surplus consommateurs",
+      "perte sèche",
+      "monopole",
+      "élasticité-prix",
+      "welfare",
+      "théorème enveloppe"
+    ],
+    "exercices_lies": ["ex_003", "ex_004"]
+  },
+  {
+    "id": "fiche_03",
+    "chapitre_id": "chapitre_03",
+    "titre": "V-compétition et monopsone",
+    "intuition": "C'est le miroir de la A-compétition : cette fois ce sont les vendeurs qui se font concurrence pour une seule acheteuse. Imagine un acheteur unique (la grande surface) face à de nombreux fournisseurs. Il peut les mettre en concurrence et faire baisser les prix. Le cas extrême est le monopsone : l'acheteuse unique fixe le prix le plus bas possible, tant que les vendeurs acceptent encore de vendre.",
+    "moyen_mnemo": "V-compétition = les Vendeurs se font concurrence. Cas symétrique : acheteuse prend tout ($p = c$). Asymétrique : prix = coût du 2ème vendeur $c_2$, vendeur 1 garde la rente $c_2 - c_1$.",
+    "resume_condense": [
+      "Cas symétrique ($c_1 = c_2 = c$) : prix $p = c$, acheteuse accapare tout le surplus.",
+      "Cas asymétrique ($c_1 < c_2$) : prix $p \\in [c_1,\\, \\min(c_2, v)]$, vendeur 1 garde rente $c_2 - c_1$.",
+      "Monopsone : $U(p) = (v-p) \\times NG(p)$, CPO : $p = v - \\frac{G(p)}{g(p)}$.",
+      "Indice de Lerner monopsone : $\\frac{v-p}{p} = \\frac{1}{\\varepsilon_O}$.",
+      "Surplus producteurs : $S_p(p) = \\int_0^p O(c)\\,dc$, $S_p'(p) = O(p)$.",
+      "Welfare : $W(p) = S_p(p) + U_A(p)$, maximum en $p = v$ (prix concurrentiel)."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de trouver le prix d'équilibre en V-compétition asymétrique",
+        "etapes": [
+          "1. Classer les vendeurs par coût croissant : $c_1 < c_2$.",
+          "2. L'acheteuse choisit le vendeur au coût le plus bas (vendeur 1).",
+          "3. Le prix d'équilibre se fixe à $p = \\min(c_2, v)$ (coût du perdant, plafonné par $v$)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de trouver le prix du monopsone",
+        "etapes": [
+          "1. Écrire l'utilité : $U(p) = (v-p) \\times NG(p)$ où $G(p)$ est la CDF des coûts.",
+          "2. Dériver par rapport à $p$ et égaliser à zéro (CPO).",
+          "3. Résoudre : $p^* = v - \\frac{G(p^*)}{g(p^*)}$.",
+          "4. Vérifier si la solution est intérieure ou en coin ($p^* = c_{max}$)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de calculer le surplus des producteurs",
+        "etapes": [
+          "1. Identifier la fonction d'offre $O(p) = NG(p)$.",
+          "2. Intégrer : $S_p(p) = \\int_0^p O(c)\\,dc$.",
+          "3. Vérifier avec le théorème enveloppe : $S_p'(p) = O(p)$."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "V-compétition",
+      "monopsone",
+      "surplus producteurs",
+      "indice de Lerner monopsone",
+      "rente informationnelle",
+      "perte sèche",
+      "fonction d'offre",
+      "welfare"
+    ],
+    "exercices_lies": ["ex_005", "ex_006"]
+  },
+  {
+    "id": "fiche_04",
+    "chapitre_id": "chapitre_04",
+    "titre": "Concurrence imparfaite (Cournot et Bertrand)",
+    "intuition": "Dans un oligopole, les firmes ne sont ni seules (monopole) ni atomisées (concurrence parfaite) — elles sont quelques-unes et leurs décisions s'influencent mutuellement. Cournot joue sur les quantités (chacun choisit combien produire), Bertrand joue sur les prix (une guerre des prix qui ramène tout le monde à $p = c$). La différenciation par la qualité change les règles du jeu en ajoutant une dimension verticale.",
+    "moyen_mnemo": "Cournot : additionne les CPO pour trouver $Q^*$. Bertrand symétrique : $p = c$ (paradoxe). Asymétrique : le meilleur fixe $p_1 = c_2$ et empoche $(c_2 - c_1)D(c_2)$.",
+    "resume_condense": [
+      "Monopole en quantité : $MR(q) = P(q) + qP'(q) = c$.",
+      "Cournot CPO individuelle : $P(Q) + P'(Q)q_i = c_i$.",
+      "Cournot agrégé : $nP(Q) + P'(Q)Q = n\\bar{c}$ où $\\bar{c} = \\frac{\\sum c_i}{n}$.",
+      "Bertrand symétrique : $p_1 = p_2 = c$, profits nuls (paradoxe de Bertrand).",
+      "Bertrand asymétrique : $p_1 = c_2$, profit $\\Pi_1 = (c_2 - c_1)D(c_2)$.",
+      "Différenciation qualité : $w_i = v_i - c_i$, gagnant = $\\max(w_i)$, prix $p_1 = v_1 - w_2$."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de résoudre un duopole ou oligopole de Cournot",
+        "etapes": [
+          "1. Écrire le profit de la firme $i$ : $\\Pi_i = (P(Q) - c_i)q_i$.",
+          "2. Dériver par rapport à $q_i$ pour obtenir la CPO individuelle : $P(Q) + P'(Q)q_i = c_i$.",
+          "3. Sommer les $n$ CPO pour obtenir : $nP(Q) + P'(Q)Q = n\\bar{c}$.",
+          "4. Résoudre cette équation en $Q^*$, puis calculer les $q_i^*$ individuels et le prix $P^*$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de résoudre un duopole de Bertrand avec différenciation qualité",
+        "etapes": [
+          "1. Calculer le surplus de chaque firme : $w_i = v_i - c_i$.",
+          "2. La firme avec le plus grand $w$ gagne le marché.",
+          "3. Le prix d'équilibre satisfait : $v_1 - p_1^* = w_2$, donc $p_1^* = v_1 - w_2$.",
+          "4. Le profit du gagnant est $\\Pi_1 = (w_1 - w_2)D(p_1^*)$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de calculer le revenu marginal d'un monopole",
+        "etapes": [
+          "1. Identifier la demande inverse $P(q)$.",
+          "2. Calculer $MR(q) = P(q) + qP'(q)$.",
+          "3. Égaliser au coût marginal $c$ : $MR(q^*) = c$."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "revenu marginal",
+      "Cournot",
+      "Bertrand",
+      "paradoxe de Bertrand",
+      "fonction de meilleure réponse",
+      "différenciation qualité",
+      "pouvoir de marché",
+      "perte sèche"
+    ],
+    "exercices_lies": ["ex_007", "ex_008"]
+  },
+  {
+    "id": "fiche_05",
+    "chapitre_id": "chapitre_05",
+    "titre": "Préférences du consommateur",
+    "intuition": "Les préférences décrivent comment un agent classe les paniers de biens — non pas en leur donnant une valeur absolue (cardinale), mais juste en les rangeant (ordinale). Imagine que tu dois choisir entre pizzas et sushis : peu importe les 'points de bonheur' exacts, tu sais juste si tu préfères l'un à l'autre. Le TMS mesure ton taux de substitution à la marge : combien de sushis serais-tu prêt à sacrifier pour une pizza de plus ?",
+    "moyen_mnemo": "CRTM = les 4 axiomes : Complète, Réflexive, Transitive, Monotone. TMS = ratio des utilités marginales = pente de la courbe d'indifférence (en valeur absolue).",
+    "resume_condense": [
+      "Axiomes : Complète, Réflexive, Transitive, Monotone (CRTM).",
+      "Linéaire (substituts parfaits) : $U = \\sum \\alpha_\\ell x_\\ell$, TMS constant.",
+      "Leontief (compléments parfaits) : $U = \\min_\\ell\\{\\alpha_\\ell x_\\ell\\}$, TMS indéfini au coude.",
+      "Cobb-Douglas : $U = \\prod x_\\ell^{\\alpha_\\ell}$, TMS décroissant.",
+      "TMS général : $TMS_{\\ell/k} = \\frac{\\partial U / \\partial x_\\ell}{\\partial U / \\partial x_k}$.",
+      "TMS Cobb-Douglas : $TMS_{1/2} = \\frac{\\alpha_1}{\\alpha_2} \\cdot \\frac{x_2}{x_1}$."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de calculer le TMS d'une fonction d'utilité",
+        "etapes": [
+          "1. Identifier la fonction $U(x_1, x_2)$.",
+          "2. Calculer les dérivées partielles : $\\partial U / \\partial x_1$ et $\\partial U / \\partial x_2$.",
+          "3. Former le ratio : $TMS_{1/2} = \\frac{\\partial U / \\partial x_1}{\\partial U / \\partial x_2}$.",
+          "4. Pour Leontief : raisonner sur l'égalité $\\alpha_1 x_1 = \\alpha_2 x_2$ (pas de dérivée au coude)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de prouver que deux fonctions d'utilité représentent les mêmes préférences",
+        "etapes": [
+          "1. Trouver la fonction $f$ telle que $V(x) = f(U(x))$.",
+          "2. Calculer $f'$ et vérifier que $f' > 0$ (transformation strictement croissante).",
+          "3. Conclure que les préférences sont identiques car le classement ordinal est conservé."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de vérifier les axiomes de préférence",
+        "etapes": [
+          "1. Complétude : pour tout couple $(A, B)$, l'agent peut les comparer.",
+          "2. Réflexivité : $A \\succcurlyeq A$ toujours.",
+          "3. Transitivité : $A \\succcurlyeq B$ et $B \\succcurlyeq C$ implique $A \\succcurlyeq C$.",
+          "4. Monotonie : plus d'un bien (à l'autre constant) améliore strictement le bien-être."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "axiomes CRTM",
+      "utilité ordinale",
+      "courbe d'indifférence",
+      "taux marginal de substitution",
+      "Cobb-Douglas",
+      "Leontief",
+      "substituts parfaits",
+      "compléments parfaits"
+    ],
+    "exercices_lies": ["ex_009", "ex_010"]
+  },
+  {
+    "id": "fiche_06",
+    "chapitre_id": "chapitre_06",
+    "titre": "Échange et Boîte d'Edgeworth",
+    "intuition": "Imagine que deux amis (Anne et Bruno) se partagent deux ressources (pommes et bananes). La boîte d'Edgeworth superpose leurs visions en retournant le repère de Bruno à 180°. Chaque point à l'intérieur de la boîte décrit une façon de se répartir les ressources. La courbe des contrats relie tous les points où il n'y a plus d'échange mutuellement profitable possible — les courbes d'indifférence des deux amis se touchent exactement.",
+    "moyen_mnemo": "Courbe des contrats = égalité des TMS. Clé : substituer $x_B = \\omega - x_A$ pour tout exprimer en fonction de $x_A$ seulement. Ne pas oublier que Bruno lit la boîte à l'envers !",
+    "resume_condense": [
+      "Dotations totales : $\\omega = \\omega_A + \\omega_B$.",
+      "Faisabilité : $x_B^1 = \\omega_1 - x_A^1$, $x_B^2 = \\omega_2 - x_A^2$.",
+      "Courbe des contrats : $TMS_A(x_A^1, x_A^2) = TMS_B(\\omega_1 - x_A^1,\\, \\omega_2 - x_A^2)$.",
+      "Lagrangien : $\\max U_A$ sous contrainte $U_B(\\omega - x) = \\bar{u}$.",
+      "Substituts parfaits (TMS constants) : courbe des contrats sur les bords de la boîte.",
+      "Leontief : courbe des contrats sur la diagonale des coudes."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de trouver l'équation de la courbe des contrats",
+        "etapes": [
+          "1. Calculer $TMS_A(x_A^1, x_A^2)$ et $TMS_B(x_B^1, x_B^2)$.",
+          "2. Substituer les consommations de B : $x_B^1 = \\omega_1 - x_A^1$, $x_B^2 = \\omega_2 - x_A^2$.",
+          "3. Égaliser les deux TMS et isoler $x_A^2$ en fonction de $x_A^1$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de trouver une allocation efficace via le Lagrangien",
+        "etapes": [
+          "1. Écrire : $\\max_{x_A^1, x_A^2} U_A(x_A^1, x_A^2)$.",
+          "2. Sous contrainte : $U_B(\\omega_1 - x_A^1,\\, \\omega_2 - x_A^2) = \\bar{u}$.",
+          "3. Poser le Lagrangien, dériver par rapport à $x_A^1$ et $x_A^2$.",
+          "4. Le ratio des CPO redonne l'égalité des TMS."
+        ]
+      },
+      {
+        "situation": "Quand on te demande d'analyser la courbe des contrats pour Leontief ou substituts parfaits",
+        "etapes": [
+          "1. Substituts parfaits (TMS constants) : si $TMS_A \\neq TMS_B$, la courbe est sur les bords de la boîte.",
+          "2. Leontief : aligner les 'coudes' — trouver les points où $\\alpha_1 x_A^1 = \\alpha_2 x_A^2$ et idem pour B.",
+          "3. Décrire la courbe des contrats géométriquement sans calculer de dérivées."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "boîte d'Edgeworth",
+      "courbe des contrats",
+      "dotations initiales",
+      "faisabilité",
+      "taux marginal de substitution",
+      "Lagrangien",
+      "allocation efficace",
+      "échange bilatéral"
+    ],
+    "exercices_lies": ["ex_011", "ex_012"]
+  },
+  {
+    "id": "fiche_07",
+    "chapitre_id": "chapitre_07",
+    "titre": "Optimum de Pareto et théorèmes du bien-être",
+    "intuition": "Un optimum de Pareto, c'est une situation où il n'y a plus aucun 'gaspillage' — impossible d'améliorer le sort de quelqu'un sans nuire à quelqu'un d'autre. Attention : une allocation où un dictateur possède tout est Pareto-optimale ! Pareto parle d'efficacité, jamais d'équité. Le 1er théorème du bien-être dit que le marché libre (équilibre walrasien) atteint spontanément cet optimum.",
+    "moyen_mnemo": "Pareto ≠ équité. Caractérisation : égalité des TMS pour tous les agents et tous les couples de biens. Frontière de Pareto = projection de la courbe des contrats dans l'espace (utilité A, utilité B), toujours décroissante.",
+    "resume_condense": [
+      "Définition : allocation $x^*$ telle qu'aucune allocation réalisable n'améliore un agent sans en nuire à un autre.",
+      "Caractérisation : $TMS_{i,\\ell/k} = TMS_{j,\\ell/k}$ pour tout couple d'agents $(i,j)$ et de biens $(\\ell, k)$.",
+      "Frontière de Pareto : projection strictement décroissante de la courbe des contrats dans l'espace des utilités.",
+      "1er théorème du bien-être : tout équilibre walrasien est un optimum de Pareto.",
+      "2ème théorème : tout optimum de Pareto peut être décentralisé par un équilibre walrasien (avec transferts).",
+      "Somme pondérée : $\\max \\sum \\mu_i U_i$ caractérise les optima de Pareto (astuce mathématique)."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de vérifier si une allocation est Pareto-optimale",
+        "etapes": [
+          "1. Vérifier la faisabilité : $\\sum_i x_{i\\ell} \\le \\omega_\\ell$ pour chaque bien $\\ell$.",
+          "2. Calculer les TMS de chaque agent.",
+          "3. Vérifier l'égalité des TMS : si $TMS_A \\neq TMS_B$, l'allocation n'est pas optimale.",
+          "4. S'assurer qu'il n'existe pas d'amélioration au sens de Pareto (aucun échange mutuellement bénéfique possible)."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de tracer la frontière de Pareto",
+        "etapes": [
+          "1. Trouver l'équation de la courbe des contrats dans l'espace des biens.",
+          "2. Pour chaque allocation sur la courbe des contrats, calculer $U_A$ et $U_B$.",
+          "3. Reporter les paires $(U_A, U_B)$ dans le plan des utilités.",
+          "4. La frontière doit être strictement décroissante."
+        ]
+      },
+      {
+        "situation": "Quand on te demande d'utiliser la somme pondérée des utilités",
+        "etapes": [
+          "1. Poser le programme : $\\max_{x} \\mu_A U_A(x_A) + \\mu_B U_B(x_B)$ sous contrainte de faisabilité.",
+          "2. Les CPO donnent l'égalité des TMS pondérés, ce qui caractérise les optima de Pareto.",
+          "3. Faire varier $\\mu_A / \\mu_B$ pour tracer toute la frontière."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "optimum de Pareto",
+      "frontière de Pareto",
+      "équilibre walrasien",
+      "1er théorème du bien-être",
+      "2ème théorème du bien-être",
+      "taux marginal de substitution",
+      "allocation réalisable",
+      "somme pondérée des utilités"
+    ],
+    "exercices_lies": ["ex_013", "ex_014"]
+  },
+  {
+    "id": "fiche_08",
+    "chapitre_id": "chapitre_08",
+    "titre": "Méthodes transversales",
+    "intuition": "Ce chapitre regroupe des outils mathématiques qui reviennent dans tous les modèles. La dérivation implicite permet de faire de la statique comparative sans jamais avoir à isoler la variable endogène. Le théorème de l'enveloppe dit que quand on est déjà à l'optimum, un petit changement de paramètre n'affecte la valeur optimale que directement (pas via l'ajustement de la variable de choix). L'utilité espérée permet de modéliser les décisions sous risque.",
+    "moyen_mnemo": "Enveloppe : dérivée de la valeur = dérivée directe de l'objectif en $x^*$ (pas besoin de dériver $x^*$). Dérivation implicite : $\\frac{dx^*}{d\\tau} = -\\frac{F_\\tau}{F_x}$. Aversion risque : $IA = \\frac{-u''}{u'}$.",
+    "resume_condense": [
+      "Dérivation implicite : pour $F(x,\\tau)=0$, $\\frac{dx^*}{d\\tau} = -\\frac{\\partial F/\\partial\\tau}{\\partial F/\\partial x}$.",
+      "Théorème enveloppe : $M(w) = \\max_x f(x) - wx$, $M'(w) = -x^*$.",
+      "Welfare pondéré : $W(\\tau) = \\alpha S(\\tau) + \\Pi(\\tau) - T(\\tau)$.",
+      "Utilité espérée : $EU = \\sum p_i u(w_i)$.",
+      "Indice d'aversion absolue au risque : $IA = \\frac{-u''(w)}{u'(w)}$.",
+      "Applications : statique comparative sur le prix de monopole, analyse de risque, politiques de Welfare."
+    ],
+    "methodes": [
+      {
+        "situation": "Quand on te demande de faire de la statique comparative (comment $x^*$ change avec un paramètre $\\tau$)",
+        "etapes": [
+          "1. Écrire la CPO sous forme $F(x^*, \\tau) = 0$.",
+          "2. Appliquer la dérivation implicite : $\\frac{dx^*}{d\\tau} = -\\frac{\\partial F/\\partial\\tau}{\\partial F/\\partial x}$.",
+          "3. Analyser le signe du résultat pour conclure sur la direction du changement."
+        ]
+      },
+      {
+        "situation": "Quand on te demande de calculer l'effet d'un changement de paramètre sur la valeur optimale",
+        "etapes": [
+          "1. Identifier la fonction valeur $M(w)$ et le paramètre $w$.",
+          "2. Appliquer le théorème enveloppe : $M'(w) = \\frac{\\partial f(x^*, w)}{\\partial w}$.",
+          "3. Évaluer la dérivée directe sans calculer $\\frac{dx^*}{dw}$."
+        ]
+      },
+      {
+        "situation": "Quand on te demande d'analyser un choix sous risque",
+        "etapes": [
+          "1. Calculer l'espérance d'utilité : $EU = \\sum p_i u(w_i)$.",
+          "2. Trouver l'équivalent certain $EC$ tel que $u(EC) = EU$.",
+          "3. Calculer la prime de risque : $PR = E[w] - EC$.",
+          "4. Caractériser l'aversion au risque : $IA = \\frac{-u''(w)}{u'(w)}$."
+        ]
+      }
+    ],
+    "concepts_cles": [
+      "dérivation implicite",
+      "théorème enveloppe",
+      "statique comparative",
+      "utilité espérée",
+      "aversion au risque",
+      "équivalent certain",
+      "welfare pondéré",
+      "indice d'Arrow-Pratt"
+    ],
+    "exercices_lies": ["ex_015", "ex_016"]
+  }
+]

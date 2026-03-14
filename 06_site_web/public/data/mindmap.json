@@ -1,0 +1,475 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "label": "Microéconomie",
+      "type": "root",
+      "position": { "x": 0, "y": 0 },
+      "couleur": "#f59e0b"
+    },
+    {
+      "id": "ch01",
+      "label": "Chap.1 — Négociation",
+      "type": "chapitre",
+      "position": { "x": -700, "y": -400 },
+      "couleur": "#3b82f6"
+    },
+    {
+      "id": "ch02",
+      "label": "Chap.2 — A-compétition",
+      "type": "chapitre",
+      "position": { "x": -200, "y": -600 },
+      "couleur": "#8b5cf6"
+    },
+    {
+      "id": "ch03",
+      "label": "Chap.3 — V-compétition",
+      "type": "chapitre",
+      "position": { "x": 400, "y": -600 },
+      "couleur": "#10b981"
+    },
+    {
+      "id": "ch04",
+      "label": "Chap.4 — Concurrence imparfaite",
+      "type": "chapitre",
+      "position": { "x": 800, "y": -200 },
+      "couleur": "#f97316"
+    },
+    {
+      "id": "ch05",
+      "label": "Chap.5 — Préférences",
+      "type": "chapitre",
+      "position": { "x": 700, "y": 350 },
+      "couleur": "#06b6d4"
+    },
+    {
+      "id": "ch06",
+      "label": "Chap.6 — Échange",
+      "type": "chapitre",
+      "position": { "x": 100, "y": 600 },
+      "couleur": "#ef4444"
+    },
+    {
+      "id": "ch07",
+      "label": "Chap.7 — Optimum de Pareto",
+      "type": "chapitre",
+      "position": { "x": -500, "y": 500 },
+      "couleur": "#fbbf24"
+    },
+    {
+      "id": "ch01_echange",
+      "label": "Échange bilatéral",
+      "type": "concept",
+      "position": { "x": -1000, "y": -200 },
+      "couleur": "#3b82f6"
+    },
+    {
+      "id": "ch01_welfare",
+      "label": "Welfare $W = v - c$",
+      "type": "formule",
+      "formule": "W = v - c",
+      "position": { "x": -1050, "y": -400 },
+      "couleur": "#60a5fa"
+    },
+    {
+      "id": "ch01_surplus_A",
+      "label": "Surplus acheteur $U_A = v - p$",
+      "type": "formule",
+      "formule": "U_A = v - p",
+      "position": { "x": -950, "y": -580 },
+      "couleur": "#60a5fa"
+    },
+    {
+      "id": "ch01_surplus_V",
+      "label": "Profit vendeur $U_V = p - c$",
+      "type": "formule",
+      "formule": "U_V = p - c",
+      "position": { "x": -750, "y": -650 },
+      "couleur": "#60a5fa"
+    },
+    {
+      "id": "ch01_ultimatum",
+      "label": "Jeu de l'Ultimatum",
+      "type": "concept",
+      "position": { "x": -600, "y": -200 },
+      "couleur": "#3b82f6"
+    },
+    {
+      "id": "ch01_nash_bargaining",
+      "label": "Nash Bargaining",
+      "type": "concept",
+      "position": { "x": -500, "y": -150 },
+      "couleur": "#3b82f6"
+    },
+    {
+      "id": "ch01_nash_formula",
+      "label": "$\\max (u_1-d_1)^\\alpha(u_2-d_2)^{1-\\alpha}$",
+      "type": "formule",
+      "formule": "\\max_{x} (u_1(x) - d_1)^\\alpha (u_2(x) - d_2)^{1-\\alpha}",
+      "position": { "x": -380, "y": -80 },
+      "couleur": "#60a5fa"
+    },
+    {
+      "id": "ch02_acomp",
+      "label": "Plus de demande que d'offre",
+      "type": "concept",
+      "position": { "x": -300, "y": -750 },
+      "couleur": "#8b5cf6"
+    },
+    {
+      "id": "ch02_monopole",
+      "label": "Modèle du Monopole",
+      "type": "concept",
+      "position": { "x": -100, "y": -800 },
+      "couleur": "#8b5cf6"
+    },
+    {
+      "id": "ch02_profit_monopole",
+      "label": "$\\Pi(p) = (p-c)N(1-F(p))$",
+      "type": "formule",
+      "formule": "\\Pi(p) = (p-c) \\times N(1-F(p))",
+      "position": { "x": -50, "y": -950 },
+      "couleur": "#a78bfa"
+    },
+    {
+      "id": "ch02_lerner",
+      "label": "Indice de Lerner $\\frac{p-c}{p} = \\frac{1}{\\epsilon}$",
+      "type": "formule",
+      "formule": "\\frac{p-c}{p} = \\frac{1}{\\epsilon}",
+      "position": { "x": 150, "y": -850 },
+      "couleur": "#a78bfa"
+    },
+    {
+      "id": "ch02_surplus_conso",
+      "label": "Surplus conso $\\int_p^\\infty D(v)dv$",
+      "type": "formule",
+      "formule": "S(p) = \\int_p^\\infty D(v) dv",
+      "position": { "x": -400, "y": -900 },
+      "couleur": "#a78bfa"
+    },
+    {
+      "id": "ch02_enveloppe",
+      "label": "Enveloppe $S'(p) = -D(p)$",
+      "type": "formule",
+      "formule": "S'(p) = -D(p)",
+      "position": { "x": -550, "y": -800 },
+      "couleur": "#a78bfa"
+    },
+    {
+      "id": "ch02_dwl",
+      "label": "Perte sèche (DWL)",
+      "type": "concept",
+      "position": { "x": 50, "y": -700 },
+      "couleur": "#8b5cf6"
+    },
+    {
+      "id": "ch03_vcomp",
+      "label": "Plus d'offre que de demande",
+      "type": "concept",
+      "position": { "x": 300, "y": -750 },
+      "couleur": "#10b981"
+    },
+    {
+      "id": "ch03_monopsone",
+      "label": "Modèle du Monopsone",
+      "type": "concept",
+      "position": { "x": 550, "y": -750 },
+      "couleur": "#10b981"
+    },
+    {
+      "id": "ch03_monopsone_cpo",
+      "label": "$p = v - \\frac{G(p)}{g(p)}$",
+      "type": "formule",
+      "formule": "p^m = v - \\frac{G(p)}{g(p)}",
+      "position": { "x": 700, "y": -850 },
+      "couleur": "#34d399"
+    },
+    {
+      "id": "ch03_surplus_prod",
+      "label": "Surplus producteurs $\\int_0^p O(c)dc$",
+      "type": "formule",
+      "formule": "S_p(p) = \\int_0^p O(c) dc",
+      "position": { "x": 200, "y": -850 },
+      "couleur": "#34d399"
+    },
+    {
+      "id": "ch03_lerner_mono",
+      "label": "Lerner monopsone $\\frac{v-p}{p} = \\frac{1}{\\varepsilon_O}$",
+      "type": "formule",
+      "formule": "\\frac{v-p}{p} = \\frac{1}{\\varepsilon_O}",
+      "position": { "x": 850, "y": -650 },
+      "couleur": "#34d399"
+    },
+    {
+      "id": "ch04_choix",
+      "label": "Prix vs Quantités",
+      "type": "concept",
+      "position": { "x": 1000, "y": -350 },
+      "couleur": "#f97316"
+    },
+    {
+      "id": "ch04_revenu_marginal",
+      "label": "Revenu Marginal $MR = P(q) + qP'(q)$",
+      "type": "formule",
+      "formule": "MR(q) = P(q) + qP'(q)",
+      "position": { "x": 1150, "y": -200 },
+      "couleur": "#fb923c"
+    },
+    {
+      "id": "ch04_cournot",
+      "label": "Oligopole de Cournot",
+      "type": "concept",
+      "position": { "x": 1050, "y": 0 },
+      "couleur": "#f97316"
+    },
+    {
+      "id": "ch04_cournot_agg",
+      "label": "$nP(Q) + P'(Q)Q = n\\bar{c}$",
+      "type": "formule",
+      "formule": "nP(Q) + P'(Q)Q = n\\bar{c}",
+      "position": { "x": 1200, "y": 100 },
+      "couleur": "#fb923c"
+    },
+    {
+      "id": "ch04_bertrand",
+      "label": "Oligopole de Bertrand",
+      "type": "concept",
+      "position": { "x": 900, "y": 100 },
+      "couleur": "#f97316"
+    },
+    {
+      "id": "ch04_bertrand_sym",
+      "label": "Bertrand symétrique: $p = c$",
+      "type": "formule",
+      "formule": "p_1 = p_2 = c \\Rightarrow \\Pi = 0",
+      "position": { "x": 1000, "y": 220 },
+      "couleur": "#fb923c"
+    },
+    {
+      "id": "ch04_bertrand_asym",
+      "label": "Bertrand asymétrique: $p_1 = c_2$",
+      "type": "formule",
+      "formule": "p_1 = c_2,\\; \\Pi_1 = (c_2 - c_1)D(c_2)",
+      "position": { "x": 800, "y": 250 },
+      "couleur": "#fb923c"
+    },
+    {
+      "id": "ch05_preferences",
+      "label": "Axiomes de préférence (CRTM)",
+      "type": "concept",
+      "position": { "x": 900, "y": 450 },
+      "couleur": "#06b6d4"
+    },
+    {
+      "id": "ch05_utilite",
+      "label": "Fonctions d'utilité",
+      "type": "concept",
+      "position": { "x": 750, "y": 600 },
+      "couleur": "#06b6d4"
+    },
+    {
+      "id": "ch05_leontief",
+      "label": "Leontief $\\min(\\alpha x, y)$",
+      "type": "formule",
+      "formule": "U(x) = \\min(\\alpha_1 x_1, \\alpha_2 x_2)",
+      "position": { "x": 950, "y": 650 },
+      "couleur": "#22d3ee"
+    },
+    {
+      "id": "ch05_cobb_douglas",
+      "label": "Cobb-Douglas $x_1^{\\alpha} x_2^{1-\\alpha}$",
+      "type": "formule",
+      "formule": "U(x) = x_1^{\\alpha_1} x_2^{\\alpha_2}",
+      "position": { "x": 600, "y": 730 },
+      "couleur": "#22d3ee"
+    },
+    {
+      "id": "ch05_tms",
+      "label": "TMS $= \\frac{\\partial U/\\partial x_1}{\\partial U/\\partial x_2}$",
+      "type": "formule",
+      "formule": "TMS_{1/2} = \\frac{\\partial U / \\partial x_1}{\\partial U / \\partial x_2}",
+      "position": { "x": 750, "y": 500 },
+      "couleur": "#22d3ee"
+    },
+    {
+      "id": "ch05_tms_cd",
+      "label": "TMS Cobb-Douglas $\\frac{\\alpha_1}{\\alpha_2}\\frac{x_2}{x_1}$",
+      "type": "formule",
+      "formule": "TMS_{1/2} = \\frac{\\alpha_1}{\\alpha_2} \\cdot \\frac{x_2}{x_1}",
+      "position": { "x": 600, "y": 550 },
+      "couleur": "#22d3ee"
+    },
+    {
+      "id": "ch06_edgeworth",
+      "label": "Boîte d'Edgeworth",
+      "type": "concept",
+      "position": { "x": 250, "y": 750 },
+      "couleur": "#ef4444"
+    },
+    {
+      "id": "ch06_faisabilite",
+      "label": "Faisabilité $x_B = \\omega - x_A$",
+      "type": "formule",
+      "formule": "x_B^1 = \\omega_1 - x_A^1,\\; x_B^2 = \\omega_2 - x_A^2",
+      "position": { "x": 400, "y": 850 },
+      "couleur": "#f87171"
+    },
+    {
+      "id": "ch06_contrats",
+      "label": "Courbe des contrats",
+      "type": "concept",
+      "position": { "x": 100, "y": 800 },
+      "couleur": "#ef4444"
+    },
+    {
+      "id": "ch06_tms_egal",
+      "label": "$TMS_A = TMS_B$ sur la courbe des contrats",
+      "type": "formule",
+      "formule": "TMS_A(x_A) = TMS_B(\\omega - x_A)",
+      "position": { "x": -50, "y": 850 },
+      "couleur": "#f87171"
+    },
+    {
+      "id": "ch07_pareto_def",
+      "label": "Optimum de Pareto",
+      "type": "concept",
+      "position": { "x": -600, "y": 650 },
+      "couleur": "#fbbf24"
+    },
+    {
+      "id": "ch07_pareto_car",
+      "label": "Caractérisation: $TMS_i = TMS_j \\; \\forall i,j$",
+      "type": "formule",
+      "formule": "TMS_{i,\\ell/k} = TMS_{j,\\ell/k} \\text{ pour tout } i,j",
+      "position": { "x": -700, "y": 780 },
+      "couleur": "#fcd34d"
+    },
+    {
+      "id": "ch07_frontiere",
+      "label": "Frontière de Pareto",
+      "type": "concept",
+      "position": { "x": -450, "y": 700 },
+      "couleur": "#fbbf24"
+    },
+    {
+      "id": "ch07_1er_theoreme",
+      "label": "1er théorème du bien-être",
+      "type": "concept",
+      "position": { "x": -650, "y": 450 },
+      "couleur": "#fbbf24"
+    },
+    {
+      "id": "ch07_2eme_theoreme",
+      "label": "2ème théorème du bien-être",
+      "type": "concept",
+      "position": { "x": -800, "y": 550 },
+      "couleur": "#fbbf24"
+    },
+    {
+      "id": "methodes_implicite",
+      "label": "Dérivation implicite",
+      "type": "concept",
+      "position": { "x": -900, "y": 150 },
+      "couleur": "#94a3b8"
+    },
+    {
+      "id": "methodes_enveloppe",
+      "label": "Théorème de l'enveloppe",
+      "type": "concept",
+      "position": { "x": -950, "y": 0 },
+      "couleur": "#94a3b8"
+    },
+    {
+      "id": "methodes_enveloppe_formula",
+      "label": "$M'(w) = -x^*(w)$",
+      "type": "formule",
+      "formule": "M(w) = \\max_x f(x) - wx,\\quad M'(w) = -x^*(w)",
+      "position": { "x": -1100, "y": 50 },
+      "couleur": "#cbd5e1"
+    },
+    {
+      "id": "welfare_global",
+      "label": "Welfare $W = S + \\Pi$",
+      "type": "concept",
+      "position": { "x": 0, "y": -300 },
+      "couleur": "#f59e0b"
+    },
+    {
+      "id": "welfare_deriv",
+      "label": "$W'(p) = (p-c)D'(p)$",
+      "type": "formule",
+      "formule": "W'(p) = (p-c)D'(p)",
+      "position": { "x": 150, "y": -200 },
+      "couleur": "#fcd34d"
+    },
+    {
+      "id": "efficacite",
+      "label": "Efficacité vs Équité",
+      "type": "concept",
+      "position": { "x": -200, "y": -200 },
+      "couleur": "#f59e0b"
+    }
+  ],
+  "edges": [
+    { "id": "e-root-ch01", "source": "root", "target": "ch01" },
+    { "id": "e-root-ch02", "source": "root", "target": "ch02" },
+    { "id": "e-root-ch03", "source": "root", "target": "ch03" },
+    { "id": "e-root-ch04", "source": "root", "target": "ch04" },
+    { "id": "e-root-ch05", "source": "root", "target": "ch05" },
+    { "id": "e-root-ch06", "source": "root", "target": "ch06" },
+    { "id": "e-root-ch07", "source": "root", "target": "ch07" },
+    { "id": "e-root-welfare", "source": "root", "target": "welfare_global" },
+    { "id": "e-root-efficacite", "source": "root", "target": "efficacite" },
+    { "id": "e-ch01-echange", "source": "ch01", "target": "ch01_echange" },
+    { "id": "e-ch01-welfare", "source": "ch01_echange", "target": "ch01_welfare" },
+    { "id": "e-ch01-surplus-a", "source": "ch01_echange", "target": "ch01_surplus_A" },
+    { "id": "e-ch01-surplus-v", "source": "ch01_echange", "target": "ch01_surplus_V" },
+    { "id": "e-ch01-ultimatum", "source": "ch01", "target": "ch01_ultimatum" },
+    { "id": "e-ch01-nash", "source": "ch01", "target": "ch01_nash_bargaining" },
+    { "id": "e-ch01-nash-formula", "source": "ch01_nash_bargaining", "target": "ch01_nash_formula" },
+    { "id": "e-ch02-acomp", "source": "ch02", "target": "ch02_acomp" },
+    { "id": "e-ch02-monopole", "source": "ch02", "target": "ch02_monopole" },
+    { "id": "e-ch02-profit", "source": "ch02_monopole", "target": "ch02_profit_monopole" },
+    { "id": "e-ch02-lerner", "source": "ch02_monopole", "target": "ch02_lerner" },
+    { "id": "e-ch02-surplus", "source": "ch02", "target": "ch02_surplus_conso" },
+    { "id": "e-ch02-enveloppe", "source": "ch02_surplus_conso", "target": "ch02_enveloppe" },
+    { "id": "e-ch02-dwl", "source": "ch02_monopole", "target": "ch02_dwl" },
+    { "id": "e-ch03-vcomp", "source": "ch03", "target": "ch03_vcomp" },
+    { "id": "e-ch03-monopsone", "source": "ch03", "target": "ch03_monopsone" },
+    { "id": "e-ch03-cpo", "source": "ch03_monopsone", "target": "ch03_monopsone_cpo" },
+    { "id": "e-ch03-surplus", "source": "ch03", "target": "ch03_surplus_prod" },
+    { "id": "e-ch03-lerner", "source": "ch03_monopsone", "target": "ch03_lerner_mono" },
+    { "id": "e-ch04-choix", "source": "ch04", "target": "ch04_choix" },
+    { "id": "e-ch04-mr", "source": "ch04_choix", "target": "ch04_revenu_marginal" },
+    { "id": "e-ch04-cournot", "source": "ch04", "target": "ch04_cournot" },
+    { "id": "e-ch04-cournot-agg", "source": "ch04_cournot", "target": "ch04_cournot_agg" },
+    { "id": "e-ch04-bertrand", "source": "ch04", "target": "ch04_bertrand" },
+    { "id": "e-ch04-bert-sym", "source": "ch04_bertrand", "target": "ch04_bertrand_sym" },
+    { "id": "e-ch04-bert-asym", "source": "ch04_bertrand", "target": "ch04_bertrand_asym" },
+    { "id": "e-ch05-pref", "source": "ch05", "target": "ch05_preferences" },
+    { "id": "e-ch05-utilite", "source": "ch05", "target": "ch05_utilite" },
+    { "id": "e-ch05-leontief", "source": "ch05_utilite", "target": "ch05_leontief" },
+    { "id": "e-ch05-cd", "source": "ch05_utilite", "target": "ch05_cobb_douglas" },
+    { "id": "e-ch05-tms", "source": "ch05", "target": "ch05_tms" },
+    { "id": "e-ch05-tms-cd", "source": "ch05_tms", "target": "ch05_tms_cd" },
+    { "id": "e-ch06-edgeworth", "source": "ch06", "target": "ch06_edgeworth" },
+    { "id": "e-ch06-faisab", "source": "ch06_edgeworth", "target": "ch06_faisabilite" },
+    { "id": "e-ch06-contrats", "source": "ch06", "target": "ch06_contrats" },
+    { "id": "e-ch06-tms", "source": "ch06_contrats", "target": "ch06_tms_egal" },
+    { "id": "e-ch07-pareto", "source": "ch07", "target": "ch07_pareto_def" },
+    { "id": "e-ch07-car", "source": "ch07_pareto_def", "target": "ch07_pareto_car" },
+    { "id": "e-ch07-frontiere", "source": "ch07", "target": "ch07_frontiere" },
+    { "id": "e-ch07-1er", "source": "ch07", "target": "ch07_1er_theoreme" },
+    { "id": "e-ch07-2eme", "source": "ch07", "target": "ch07_2eme_theoreme" },
+    { "id": "e-root-implicite", "source": "root", "target": "methodes_implicite" },
+    { "id": "e-root-enveloppe", "source": "root", "target": "methodes_enveloppe" },
+    { "id": "e-env-formula", "source": "methodes_enveloppe", "target": "methodes_enveloppe_formula" },
+    { "id": "e-welfare-deriv", "source": "welfare_global", "target": "welfare_deriv" },
+    { "id": "e-ch02-welfare", "source": "ch02", "target": "welfare_global" },
+    { "id": "e-ch03-welfare", "source": "ch03", "target": "welfare_global" },
+    { "id": "e-ch06-ch07", "source": "ch06", "target": "ch07" },
+    { "id": "e-ch05-ch06", "source": "ch05", "target": "ch06" },
+    { "id": "e-ch01-efficacite", "source": "ch01", "target": "efficacite" },
+    { "id": "e-welfare-efficacite", "source": "welfare_global", "target": "efficacite" }
+  ]
+}

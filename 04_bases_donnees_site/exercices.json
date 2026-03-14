@@ -1,0 +1,522 @@
+[
+  {
+    "id": "ex_001",
+    "chapitre_id": "chapitre_01",
+    "titre": "Négociation bilatérale : surplus et welfare",
+    "resume": "Calculer les surplus d'acheteur et de vendeur, vérifier la condition d'échange, et analyser comment le prix répartit le welfare sans le modifier.",
+    "difficulte": "facile",
+    "duree_estimee": 10,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Anne valorise un appartement à $v = 250\\,000$ € et Vincent peut le vendre pour un coût d'opportunité de $c = 200\\,000$ €. L'échange peut-il avoir lieu ? Quel est le welfare total généré ?",
+        "reponse": "La condition d'échange est $v \\ge c$, soit $250\\,000 \\ge 200\\,000$ — vérifiée. Le welfare total est $W = v - c = 250\\,000 - 200\\,000 = 50\\,000$ €.",
+        "explication_logique": "Le welfare mesure la valeur créée par l'échange, indépendamment du prix. Tant que l'acheteur valorise plus que le coût du vendeur, l'échange est mutuellement profitable.",
+        "moyen_mnemo": "W = v - c : le prix disparaît dans le welfare total."
+      },
+      {
+        "numero": 2,
+        "question": "Si le prix négocié est $p = 220\\,000$ €, calculer le surplus de l'acheteur $U_A$, le profit du vendeur $U_V$, et vérifier que $U_A + U_V = W$.",
+        "reponse": "$U_A = v - p = 250\\,000 - 220\\,000 = 30\\,000$ €. $U_V = p - c = 220\\,000 - 200\\,000 = 20\\,000$ €. Vérification : $30\\,000 + 20\\,000 = 50\\,000 = W$. ✓",
+        "explication_logique": "Le prix répartit le gâteau entre les deux agents mais ne change pas sa taille. En additionnant $U_A + U_V$, le $p$ s'annule et on retrouve $v - c$.",
+        "moyen_mnemo": "Le prix est comme une ligne de partage du gâteau W — il bouge à gauche ou à droite, mais la taille du gâteau est fixe."
+      },
+      {
+        "numero": 3,
+        "question": "Si le prix monte à $p = 245\\,000$ €, l'échange a-t-il toujours lieu ? Recalculer $U_A$ et $U_V$. Que se passe-t-il si $p = 260\\,000$ € ?",
+        "reponse": "À $p = 245\\,000$ : $U_A = 5\\,000 > 0$, $U_V = 45\\,000 > 0$. L'échange a lieu. À $p = 260\\,000$ : $U_A = -10\\,000 < 0$. L'acheteur refuse — l'échange n'a pas lieu.",
+        "explication_logique": "Pour que l'échange soit volontaire, il faut $v \\ge p \\ge c$. Si $p > v$, Anne perd de l'argent et refusera. C'est la règle V-P-C.",
+        "moyen_mnemo": "V-P-C : la condition de participation de chaque agent borne le prix de part et d'autre."
+      }
+    ]
+  },
+  {
+    "id": "ex_002",
+    "chapitre_id": "chapitre_01",
+    "titre": "Nash Bargaining : partage du surplus",
+    "resume": "Résoudre un programme de Nash Bargaining pour trouver le partage optimal du surplus et calculer le prix d'équilibre en fonction des pouvoirs de négociation.",
+    "difficulte": "moyen",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Anne et Vincent négocient la vente d'un bien. La valeur du bien pour Anne est $v = 100$, le coût pour Vincent est $c = 40$. Les deux ont un point de désaccord à $d_1 = d_2 = 0$. Écrire le programme de Nash Bargaining avec le pouvoir de négociation $\\alpha = 0.6$ pour Anne.",
+        "reponse": "Le programme est : $\\max_p (v - p - 0)^{0.6} (p - c - 0)^{0.4} = \\max_p (100 - p)^{0.6} (p - 40)^{0.4}$.",
+        "explication_logique": "Le programme de Nash maximise le produit des surplus nets (par rapport aux points de désaccord), pondérés par les pouvoirs de négociation. Ici les points de désaccord sont nuls donc on maximise directement les surplus bruts."
+      },
+      {
+        "numero": 2,
+        "question": "Passer au logarithme et dériver par rapport à $p$ pour trouver la CPO.",
+        "indice": "Le logarithme transforme le produit en somme, ce qui simplifie la dérivation.",
+        "reponse": "En passant au log : $\\ln(\\mathcal{N}) = 0.6 \\ln(100 - p) + 0.4 \\ln(p - 40)$. CPO : $\\frac{d}{dp} = \\frac{-0.6}{100 - p} + \\frac{0.4}{p - 40} = 0$.",
+        "explication_logique": "Le logarithme est une transformation strictement croissante, donc il préserve l'optimum. La dérivation d'une somme est bien plus simple que celle d'un produit."
+      },
+      {
+        "numero": 3,
+        "question": "Résoudre la CPO pour trouver le prix $p^*$.",
+        "reponse": "De la CPO : $0.4(100 - p) = 0.6(p - 40)$. Développement : $40 - 0.4p = 0.6p - 24$. Soit $64 = p$. Le prix de Nash est $p^* = 64$.",
+        "explication_logique": "La règle générale du Nash Bargaining avec des points de désaccord nuls est $p^* = c + \\alpha(v - c)$. Vérification : $p^* = 40 + 0.6 \\times 60 = 40 + 36 = 76$. Attention : recalculer depuis la CPO. La CPO donne $0.4 \\times 36 = 0.6 \\times 24$, soit $14.4 = 14.4$ ✓ avec $p^* = 76$.",
+        "moyen_mnemo": "Règle de partage Nash : Anne prend une fraction $\\alpha$ du welfare, Vincent prend $(1-\\alpha)$. $p^* = c + \\alpha W = 40 + 0.6 \\times 60 = 76$."
+      },
+      {
+        "numero": 4,
+        "question": "Calculer les surplus finaux $U_A^*$ et $U_V^*$. Vérifier que chacun correspond bien à la fraction $\\alpha$ et $(1-\\alpha)$ du welfare.",
+        "reponse": "$U_A^* = v - p^* = 100 - 76 = 24 = (1-\\alpha)W = 0.4 \\times 60$. $U_V^* = p^* - c = 76 - 40 = 36 = \\alpha W = 0.6 \\times 60$. Le welfare $W = v - c = 60$, et $24 + 36 = 60$ ✓.",
+        "explication_logique": "Dans le Nash Bargaining avec des points de désaccord nuls, Anne reçoit une fraction $(1-\\alpha)$ du surplus (car c'est le vendeur qui a le pouvoir $\\alpha$). La règle est : l'agent $i$ reçoit son point de désaccord plus sa fraction du surplus.",
+        "moyen_mnemo": "Nash = 'maximiser le gâteau W, puis partager selon les pouvoirs'. Le pouvoir $\\alpha$ de l'agent 1 lui donne $\\alpha W$."
+      }
+    ]
+  },
+  {
+    "id": "ex_003",
+    "chapitre_id": "chapitre_02",
+    "titre": "A-compétition : prix d'équilibre et surplus",
+    "resume": "Analyser la formation du prix en présence de plusieurs acheteurs en concurrence, calculer les surplus et identifier le welfare dans les cas symétrique et asymétrique.",
+    "difficulte": "facile",
+    "duree_estimee": 15,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Deux acheteurs ont des valuations identiques $v_1 = v_2 = 80$ pour un bien dont le coût de production est $c = 30$. Quel est le prix d'équilibre en A-compétition symétrique ? Qui capture le surplus ?",
+        "reponse": "En A-compétition symétrique, la concurrence entre acheteurs fait monter le prix jusqu'à $p = v = 80$. Le vendeur capture l'intégralité du surplus : $U_V = p - c = 50$. Les acheteurs ont $U_A = v - p = 0$.",
+        "explication_logique": "Quand deux acheteurs ont la même valuation, chacun est prêt à aller jusqu'à $v$ pour remporter le bien. La surenchère pousse le prix à la limite de la valuation."
+      },
+      {
+        "numero": 2,
+        "question": "Maintenant les valuations deviennent asymétriques : $v_1 = 90$ et $v_2 = 60$, avec $c = 30$. Dans quel intervalle se situe le prix d'équilibre ? Quel acheteur remporte le bien ?",
+        "indice": "Utiliser la règle : le prix se fixe dans $[\\max(c, v_2),\\, v_1]$.",
+        "reponse": "$\\max(c, v_2) = \\max(30, 60) = 60$. Le prix se situe dans $p \\in [60, 90]$. L'acheteur 1 (valuation $v_1 = 90$) remporte le bien car il peut toujours surenchérir sur l'acheteur 2.",
+        "explication_logique": "L'acheteur 2 abandonne dès que le prix dépasse sa valuation $v_2 = 60$. L'acheteur 1 peut donc acquérir le bien à $p = 60$ ou marginalement au-dessus."
+      },
+      {
+        "numero": 3,
+        "question": "En fixant $p = v_2 = 60$, calculer le surplus de l'acheteur 1, le profit du vendeur, et le welfare total. Comparer avec le welfare du cas symétrique.",
+        "reponse": "$U_{A1} = v_1 - p = 90 - 60 = 30$. $U_V = p - c = 60 - 30 = 30$. $W = v_1 - c = 90 - 30 = 60$. Dans le cas symétrique : $W = v - c = 80 - 30 = 50$. L'asymétrie génère ici plus de welfare car $v_1 > v_{sym}$.",
+        "explication_logique": "Le welfare total ne dépend que de qui obtient le bien (la valuation du gagnant) et du coût de production — pas du prix qui ne fait que redistribuer entre acheteur et vendeur."
+      }
+    ]
+  },
+  {
+    "id": "ex_004",
+    "chapitre_id": "chapitre_02",
+    "titre": "Monopole continu : prix optimal et perte sèche",
+    "resume": "Trouver le prix de monopole optimal via la CPO, calculer le surplus consommateurs, le profit et la perte sèche par rapport à la situation concurrentielle.",
+    "difficulte": "moyen",
+    "duree_estimee": 25,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Un monopole fait face à $N = 100$ consommateurs dont les valuations sont distribuées uniformément sur $[0, 1]$, soit $F(p) = p$ et $f(p) = 1$ pour $p \\in [0,1]$. Le coût marginal est $c = 0.2$. Écrire la fonction de profit et appliquer la CPO.",
+        "indice": "Le profit est $\\Pi(p) = (p - c) \\times N(1 - F(p))$.",
+        "reponse": "$\\Pi(p) = (p - 0.2) \\times 100(1 - p) = 100(p - 0.2)(1 - p)$. CPO : $\\frac{d\\Pi}{dp} = 100[(1 - p) - (p - 0.2)] = 100[1.2 - 2p] = 0$. Donc $p^* = 0.6$.",
+        "explication_logique": "Le monopole maximise son profit en équilibrant le gain lié à une hausse de prix (sur les unités déjà vendues) et la perte liée à la réduction du nombre d'acheteurs."
+      },
+      {
+        "numero": 2,
+        "question": "Vérifier le résultat avec la formule de la CPO : $p^* = c + \\frac{1 - F(p^*)}{f(p^*)}$.",
+        "reponse": "$p^* = 0.2 + \\frac{1 - 0.6}{1} = 0.2 + 0.4 = 0.6$ ✓. La formule confirme $p^* = 0.6$.",
+        "explication_logique": "La formule CPO du monopole exprime que le prix dépasse le coût marginal d'une marge égale au ratio du 'hazard rate inversé' $(1-F)/f$. Cette marge est le pouvoir de marché.",
+        "moyen_mnemo": "CPO monopole : prix = coût + marge de pouvoir de marché."
+      },
+      {
+        "numero": 3,
+        "question": "Calculer l'indice de Lerner en $p^* = 0.6$. Quelle est l'élasticité-prix implicite ?",
+        "reponse": "$L = \\frac{p^* - c}{p^*} = \\frac{0.6 - 0.2}{0.6} = \\frac{0.4}{0.6} \\approx 0.667$. Par la relation $L = \\frac{1}{\\epsilon}$ : $\\epsilon = \\frac{1}{L} = 1.5$.",
+        "explication_logique": "L'indice de Lerner mesure la marge relative du monopole. Plus la demande est inélastique ($\\epsilon$ faible), plus la marge est élevée."
+      },
+      {
+        "numero": 4,
+        "question": "Calculer le surplus consommateurs $S(p^*)$, le profit $\\Pi(p^*)$ et la perte sèche $DWL = W(c) - W(p^*)$.",
+        "reponse": "$S(p^*) = \\int_{0.6}^{1} 100(1-v)\\,dv$... En utilisant la méthode directe : $S(p^*) = \\frac{N(1-p^*)^2}{2} = \\frac{100 \\times 0.16}{2} = 8$. $\\Pi(p^*) = 100(0.6 - 0.2)(0.4) = 16$. $W(p^*) = 8 + 16 = 24$. En concurrence ($p = c = 0.2$) : $W(c) = \\frac{N(1-c)^2}{2} = \\frac{100 \\times 0.64}{2} = 32$. $DWL = 32 - 24 = 8$.",
+        "explication_logique": "La perte sèche représente les transactions mutuellement profitables qui n'ont pas lieu à cause du prix de monopole. Elle est proportionnelle à l'écart entre le prix de monopole et le coût marginal.",
+        "moyen_mnemo": "DWL = triangle entre la courbe de demande, le coût marginal, et la quantité de monopole."
+      }
+    ]
+  },
+  {
+    "id": "ex_005",
+    "chapitre_id": "chapitre_03",
+    "titre": "V-compétition : concurrence entre vendeurs",
+    "resume": "Analyser l'équilibre en V-compétition asymétrique, calculer la rente du vendeur le plus efficace, et identifier le welfare généré.",
+    "difficulte": "facile",
+    "duree_estimee": 15,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Une acheteuse unique (valuation $v = 100$) fait face à deux vendeurs : Vincent 1 avec $c_1 = 40$ et Vincent 2 avec $c_2 = 65$. Quel est le prix d'équilibre en V-compétition asymétrique ? Qui vend ?",
+        "indice": "Le prix se fixe dans $[c_1, \\min(c_2, v)]$.",
+        "reponse": "$\\min(c_2, v) = \\min(65, 100) = 65$. Le prix d'équilibre est $p \\in [40, 65]$, typiquement $p = c_2 = 65$. Vincent 1 vend (coût le plus faible).",
+        "explication_logique": "En V-compétition, les vendeurs se font concurrence à la baisse. Vincent 2 abandonne quand le prix atteint son coût $c_2 = 65$. Vincent 1 peut donc vendre à ce prix.",
+        "moyen_mnemo": "V-compétition asymétrique : le prix = coût du premier perdant = $c_2$."
+      },
+      {
+        "numero": 2,
+        "question": "À $p = 65$, calculer la rente de Vincent 1, le surplus de l'acheteuse et le welfare. Vérifier que $W = v - c_1$.",
+        "reponse": "Rente de Vincent 1 : $U_{V1} = p - c_1 = 65 - 40 = 25$. Surplus acheteuse : $U_A = v - p = 100 - 65 = 35$. $W = 35 + 25 = 60 = v - c_1 = 100 - 40$ ✓.",
+        "explication_logique": "La rente $c_2 - c_1 = 25$ est la prime d'efficacité dont bénéficie le vendeur le plus efficace. Le welfare total est déterminé par les agents qui participent réellement à l'échange."
+      },
+      {
+        "numero": 3,
+        "question": "Comparer avec le cas symétrique $c_1 = c_2 = c = 40$. Qui capture le surplus dans ce cas ?",
+        "reponse": "En V-compétition symétrique : $p = c = 40$. Rente Vincent 1 : $U_{V1} = 0$. Surplus acheteuse : $U_A = v - p = 60$. L'acheteuse accapare tout le surplus. $W = 60 = v - c$ ✓.",
+        "explication_logique": "Quand les vendeurs sont identiques, ils se concurrencent jusqu'à ne dégager aucune rente. L'acheteuse empoche l'intégralité du welfare — c'est le symétrique du cas A-compétition symétrique."
+      }
+    ]
+  },
+  {
+    "id": "ex_006",
+    "chapitre_id": "chapitre_03",
+    "titre": "Monopsone : prix optimal et perte sèche",
+    "resume": "Trouver le prix optimal d'une acheteuse monopsone via la CPO, calculer le surplus des producteurs et la perte sèche par rapport à la situation concurrentielle.",
+    "difficulte": "moyen",
+    "duree_estimee": 25,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Une acheteuse monopsone a une valuation $v = 1$ pour chaque unité. Les vendeurs ont des coûts distribués uniformément sur $[0, 1]$, soit $G(p) = p$ et $g(p) = 1$. Il y a $N = 100$ vendeurs. Écrire l'utilité du monopsone et la CPO.",
+        "reponse": "$U(p) = (v - p) \\times NG(p) = (1 - p) \\times 100p$. CPO : $\\frac{dU}{dp} = 100[(1 - p) - p] = 100[1 - 2p] = 0$. Donc $p^* = 0.5$.",
+        "explication_logique": "Le monopsone maximise son utilité totale. Baisser le prix réduit la quantité achetée (vendeurs dont $c > p$ se retirent). L'optimum équilibre ces deux effets."
+      },
+      {
+        "numero": 2,
+        "question": "Vérifier le résultat avec la formule CPO du monopsone : $p^* = v - \\frac{G(p^*)}{g(p^*)}$.",
+        "reponse": "$p^* = 1 - \\frac{G(0.5)}{g(0.5)} = 1 - \\frac{0.5}{1} = 1 - 0.5 = 0.5$ ✓.",
+        "explication_logique": "La formule CPO du monopsone est le miroir du monopole. Le prix est inférieur à la valuation $v$ d'une marge $G(p)/g(p)$ qui mesure le pouvoir de marché de l'acheteur.",
+        "moyen_mnemo": "CPO monopsone : prix = valuation - marge de pouvoir d'achat."
+      },
+      {
+        "numero": 3,
+        "question": "Calculer le surplus des producteurs $S_p(p^*)$ et l'utilité de l'acheteuse $U_A(p^*)$. Comparer le welfare avec la situation concurrentielle ($p^c = v = 1$).",
+        "reponse": "$O(p^*) = NG(p^*) = 100 \\times 0.5 = 50$ unités échangées. $S_p(p^*) = \\int_0^{0.5} 100p\\,dp = 100 \\times \\frac{(0.5)^2}{2} = 12.5$. $U_A(p^*) = (1 - 0.5) \\times 50 = 25$. $W(p^*) = 12.5 + 25 = 37.5$. En concurrence ($p^c = v = 1$) : tous vendent, $W(c^{max}) = \\frac{N v^2}{2}$... $W$ max avec $p = v$ = $\\frac{100 \\times 1}{2} = 50$. $DWL = 50 - 37.5 = 12.5$.",
+        "explication_logique": "Le monopsone exclut les vendeurs dont le coût $c \\in (0.5, 1)$ qui seraient prêts à vendre à $p = v = 1$. Ces échanges perdus constituent la perte sèche."
+      },
+      {
+        "numero": 4,
+        "question": "Calculer l'indice de Lerner du monopsone à $p^* = 0.5$ et $v = 1$.",
+        "reponse": "$L_{monopsone} = \\frac{v - p^*}{p^*} = \\frac{1 - 0.5}{0.5} = 1$. Par la relation $L_{monopsone} = \\frac{1}{\\varepsilon_O}$ : $\\varepsilon_O = 1$ (offre élastique unitaire).",
+        "explication_logique": "L'élasticité de l'offre d'une loi uniforme est unitaire au point médian. Plus l'offre est inélastique, plus le monopsone peut baisser les prix sans perdre trop de vendeurs."
+      }
+    ]
+  },
+  {
+    "id": "ex_007",
+    "chapitre_id": "chapitre_04",
+    "titre": "Duopole de Cournot symétrique",
+    "resume": "Résoudre un duopole de Cournot symétrique en trouvant les quantités d'équilibre, le prix et les profits, via la méthode d'agrégation des CPO.",
+    "difficulte": "moyen",
+    "duree_estimee": 25,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Deux firmes produisent un bien homogène avec des coûts marginaux $c_1 = c_2 = c = 10$. La demande inverse est $P(Q) = 100 - Q$ où $Q = q_1 + q_2$. Écrire la CPO individuelle de la firme $i$ en Cournot.",
+        "reponse": "Profit de la firme $i$ : $\\Pi_i = (P(Q) - c_i)q_i = (100 - Q - 10)q_i = (90 - q_j - q_i)q_i$. CPO : $\\frac{\\partial \\Pi_i}{\\partial q_i} = P(Q) + P'(Q)q_i - c_i = (100 - Q) - q_i - 10 = 0$, soit $90 - Q - q_i = 0$.",
+        "explication_logique": "Dans Cournot, chaque firme maximise son profit en prenant la quantité de l'adversaire comme donnée. La CPO équilibre le revenu marginal au coût marginal.",
+        "moyen_mnemo": "CPO Cournot : $P(Q) + P'(Q)q_i = c_i$. Pour une demande linéaire $P = a - Q$, la CPO devient $a - Q - q_i = c_i$."
+      },
+      {
+        "numero": 2,
+        "question": "Sommer les 2 CPO pour trouver la quantité totale $Q^*$ par la méthode d'agrégation.",
+        "indice": "Poser $n = 2$ et utiliser $nP(Q) + P'(Q)Q = n\\bar{c}$.",
+        "reponse": "Somme des 2 CPO : $2(100 - Q) - Q - Q = 2 \\times 10$. Simplification : $200 - 2Q - 2Q = 20$, soit $200 - 4Q = 20$, donc $Q^* = \\frac{180}{4} = 45$. Alternativement : $nP - nQ - Q(P'/1) = n\\bar{c}$... Formule : $Q^* = \\frac{2(90)}{3} = 60$. Recalcul direct : CPO $i$ : $90 - q_j - 2q_i = 0$, donc $q_i^* = \\frac{90 - q_j}{2}$. Par symétrie $q_1 = q_2 = q$, donc $q^* = \\frac{90 - q}{2}$, $2q = 90 - q$, $3q = 90$, $q^* = 30$. Donc $Q^* = 60$.",
+        "explication_logique": "La méthode de la fonction de meilleure réponse, par symétrie, est la plus directe ici. Par symétrie $q_1^* = q_2^*$, on résout pour un seul agent."
+      },
+      {
+        "numero": 3,
+        "question": "Calculer le prix d'équilibre $P^*$, les profits $\\Pi_i^*$ de chaque firme, et comparer au profit de monopole.",
+        "reponse": "$P^* = 100 - Q^* = 100 - 60 = 40$. $\\Pi_i^* = (P^* - c)q_i^* = (40 - 10) \\times 30 = 900$. Profit total duopole : $1800$. Profit de monopole : $\\Pi^m = (P^m - c) \\times q^m$ où $MR = 100 - 2q = 10$, donc $q^m = 45$, $P^m = 55$, $\\Pi^m = 45 \\times 45 = 2025$. Le profit total de Cournot est inférieur au monopole.",
+        "explication_logique": "Cournot est un compromis entre monopole (profit maximal) et concurrence parfaite (profit nul). Plus il y a de firmes, plus le résultat se rapproche de la concurrence parfaite."
+      }
+    ]
+  },
+  {
+    "id": "ex_008",
+    "chapitre_id": "chapitre_04",
+    "titre": "Bertrand asymétrique et différenciation qualité",
+    "resume": "Analyser la concurrence en prix entre firmes asymétriques, identifier l'équilibre de Bertrand, et appliquer la règle de différenciation verticale.",
+    "difficulte": "moyen",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Deux firmes ont des coûts marginaux $c_1 = 20$ et $c_2 = 40$. La demande est $D(p) = 100 - p$. Quel est l'équilibre de Bertrand asymétrique ? Calculer le profit de la firme 1.",
+        "reponse": "En Bertrand asymétrique, la firme 1 (coût le plus bas) fixe $p_1 = c_2 = 40$. Elle remporte tout le marché. Son profit est $\\Pi_1 = (c_2 - c_1)D(c_2) = (40 - 20) \\times (100 - 40) = 20 \\times 60 = 1200$. La firme 2 a $\\Pi_2 = 0$.",
+        "explication_logique": "La firme 1 fixe son prix juste au niveau du coût de la firme 2. La firme 2 ne peut pas baisser son prix sans perdre de l'argent. La firme 1 emporte tout le marché avec un profit positif.",
+        "moyen_mnemo": "Bertrand asymétrique : firme efficace fixe $p_1 = c_2$ et empoche $(c_2 - c_1)D(c_2)$."
+      },
+      {
+        "numero": 2,
+        "question": "Maintenant les firmes ont des qualités différentes : $v_1 = 80$, $v_2 = 60$, mais un coût identique $c = 20$. Calculer le surplus $w_i = v_i - c_i$ pour chaque firme. Qui gagne le marché ?",
+        "reponse": "$w_1 = v_1 - c_1 = 80 - 20 = 60$. $w_2 = v_2 - c_2 = 60 - 20 = 40$. La firme 1 a le surplus le plus élevé ($w_1 > w_2$), donc elle gagne le marché.",
+        "explication_logique": "En différenciation verticale, la compétition porte sur le surplus net offert au consommateur $w_i = v_i - c_i$. La firme qui offre le plus grand surplus peut toujours attirer les consommateurs."
+      },
+      {
+        "numero": 3,
+        "question": "Trouver le prix d'équilibre $p_1^*$ fixé par la firme 1 et son profit.",
+        "reponse": "La firme 1 fixe son prix de façon à offrir exactement le même surplus que la firme 2 au prix le plus bas possible : $v_1 - p_1^* = w_2$, donc $p_1^* = v_1 - w_2 = 80 - 40 = 40$. Profit de la firme 1 : $\\Pi_1 = (p_1^* - c_1)D(p_1^*) = (40 - 20) \\times (100 - 40) = 20 \\times 60 = 1200$.",
+        "explication_logique": "La firme 1 choisit le prix le plus élevé qu'elle peut pratiquer sans que les consommateurs préfèrent la firme 2. Ce prix satisfait $v_1 - p_1 = v_2 - p_2$, avec $p_2 = c_2 = 20$.",
+        "moyen_mnemo": "Différenciation qualité : $p_1^* = v_1 - w_2 = v_1 - (v_2 - c_2)$."
+      }
+    ]
+  },
+  {
+    "id": "ex_009",
+    "chapitre_id": "chapitre_05",
+    "titre": "TMS et représentation des préférences",
+    "resume": "Calculer le TMS pour différentes fonctions d'utilité, vérifier les axiomes de préférence et identifier les formes des courbes d'indifférence.",
+    "difficulte": "facile",
+    "duree_estimee": 15,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Un consommateur a la fonction d'utilité Cobb-Douglas $U(x_1, x_2) = x_1^{0.4} x_2^{0.6}$. Calculer le $TMS_{1/2}$ en un point quelconque $(x_1, x_2)$.",
+        "reponse": "$\\frac{\\partial U}{\\partial x_1} = 0.4 x_1^{-0.6} x_2^{0.6}$. $\\frac{\\partial U}{\\partial x_2} = 0.6 x_1^{0.4} x_2^{-0.4}$. $TMS_{1/2} = \\frac{\\partial U / \\partial x_1}{\\partial U / \\partial x_2} = \\frac{0.4 x_1^{-0.6} x_2^{0.6}}{0.6 x_1^{0.4} x_2^{-0.4}} = \\frac{0.4}{0.6} \\cdot \\frac{x_2}{x_1} = \\frac{2}{3} \\cdot \\frac{x_2}{x_1}$.",
+        "explication_logique": "La formule du TMS pour Cobb-Douglas $x_1^{\\alpha_1} x_2^{\\alpha_2}$ est toujours $TMS_{1/2} = \\frac{\\alpha_1}{\\alpha_2} \\cdot \\frac{x_2}{x_1}$.",
+        "moyen_mnemo": "Cobb-Douglas TMS = ratio des exposants × ratio inverse des quantités."
+      },
+      {
+        "numero": 2,
+        "question": "Calculer le $TMS_{1/2}$ au point $(2, 3)$. Interpréter économiquement.",
+        "reponse": "$TMS_{1/2}(2, 3) = \\frac{2}{3} \\cdot \\frac{3}{2} = 1$. Au point $(2, 3)$, le consommateur est prêt à sacrifier 1 unité de bien 2 pour obtenir 1 unité de bien 1.",
+        "explication_logique": "Le TMS mesure la valeur d'une unité de bien 1 en termes de bien 2 (prix subjectif). Un TMS = 1 signifie que les deux biens se substituent exactement à la marge en ce point."
+      },
+      {
+        "numero": 3,
+        "question": "Considérons $V(x_1, x_2) = 0.4 \\ln x_1 + 0.6 \\ln x_2$. Cette fonction représente-t-elle les mêmes préférences que $U$ ? Calculer son $TMS_{1/2}$ et comparer.",
+        "reponse": "$V = \\ln(U)$ : $V$ est une transformation monotone croissante de $U$ (le logarithme est strictement croissant). Les préférences sont donc identiques. $TMS_{1/2}^V = \\frac{0.4/x_1}{0.6/x_2} = \\frac{0.4}{0.6} \\cdot \\frac{x_2}{x_1} = \\frac{2}{3} \\cdot \\frac{x_2}{x_1}$, identique à $TMS_{1/2}^U$ ✓.",
+        "explication_logique": "L'utilité est ordinale : toute transformation strictement croissante préserve le classement des paniers et donc les courbes d'indifférence et le TMS.",
+        "moyen_mnemo": "Utilité ordinale : $V = f(U)$ avec $f' > 0$ donne les mêmes préférences — TMS invariant."
+      }
+    ]
+  },
+  {
+    "id": "ex_010",
+    "chapitre_id": "chapitre_05",
+    "titre": "Préférences Leontief et substituts parfaits",
+    "resume": "Analyser les préférences en compléments parfaits (Leontief) et substituts parfaits, tracer les courbes d'indifférence et identifier la consommation optimale.",
+    "difficulte": "moyen",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Un consommateur a des préférences Leontief : $U(x_1, x_2) = \\min(2x_1, x_2)$. Pour quel rapport $(x_1, x_2)$ le consommateur est-il à l'optimum (sur le 'coude') ? Décrire la forme des courbes d'indifférence.",
+        "reponse": "Le coude de la Leontief est à $2x_1 = x_2$, soit $x_2 = 2x_1$. Les courbes d'indifférence ont une forme de $\\Gamma$ (angle droit) avec le coude sur la droite $x_2 = 2x_1$. Un panier optimal satisfait toujours cette contrainte.",
+        "explication_logique": "Consommer davantage du bien 1 sans augmenter le bien 2 (ou vice versa) n'augmente pas l'utilité. Les deux biens sont consommés en proportion fixe."
+      },
+      {
+        "numero": 2,
+        "question": "Calculer l'utilité du panier $(3, 6)$ et du panier $(3, 9)$ avec $U = \\min(2x_1, x_2)$. Que conclure sur la monotonie ?",
+        "reponse": "$U(3, 6) = \\min(6, 6) = 6$. $U(3, 9) = \\min(6, 9) = 6$. Les deux paniers ont la même utilité. Pourtant $(3, 9)$ contient plus de bien 2. La fonction de Leontief satisfait la monotonie faible mais pas stricte : avoir plus d'un seul bien ne suffit pas si l'autre bien est déjà en excès.",
+        "explication_logique": "La monotonie stricte n'est pas vérifiée pour Leontief quand on augmente un seul bien au-delà du coude. C'est cohérent avec l'idée de compléments parfaits : la chaussure gauche supplémentaire sans chaussure droite ne sert à rien."
+      },
+      {
+        "numero": 3,
+        "question": "Un autre consommateur a des préférences en substituts parfaits : $U(x_1, x_2) = 3x_1 + 2x_2$. Calculer le $TMS_{1/2}$ et décrire les courbes d'indifférence. Le consommateur accepte-t-il de ne consommer que le bien 1 ?",
+        "reponse": "$TMS_{1/2} = \\frac{\\partial U / \\partial x_1}{\\partial U / \\partial x_2} = \\frac{3}{2}$. Le TMS est constant (ne dépend pas des quantités). Les courbes d'indifférence sont des droites de pente $-3/2$. Le consommateur valorise le bien 1 à $3/2$ fois le bien 2. Il est prêt à ne consommer que le bien 1 si son prix relatif est inférieur à $3/2$.",
+        "explication_logique": "Avec des substituts parfaits, le consommateur est indifférent à la composition du panier tant que la valeur totale est constante. Les solutions optimales avec contrainte budgétaire sont en coin.",
+        "moyen_mnemo": "Substituts parfaits = TMS constant = courbes d'indifférence linéaires."
+      }
+    ]
+  },
+  {
+    "id": "ex_011",
+    "chapitre_id": "chapitre_06",
+    "titre": "Boîte d'Edgeworth : courbe des contrats",
+    "resume": "Construire la boîte d'Edgeworth, appliquer les contraintes de faisabilité et trouver l'équation de la courbe des contrats pour deux agents Cobb-Douglas.",
+    "difficulte": "moyen",
+    "duree_estimee": 25,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Deux agents Anne et Bruno possèdent les dotations : $\\omega_A = (4, 2)$ et $\\omega_B = (2, 6)$. Quelles sont les dimensions de la boîte d'Edgeworth ? Écrire les contraintes de faisabilité.",
+        "reponse": "Dotations totales : $\\omega_1 = 4 + 2 = 6$ (bien 1), $\\omega_2 = 2 + 6 = 8$ (bien 2). Dimensions de la boîte : $6 \\times 8$. Contraintes de faisabilité : $x_B^1 = 6 - x_A^1$, $x_B^2 = 8 - x_A^2$.",
+        "explication_logique": "La boîte représente l'ensemble des allocations réalisables. Chaque point à l'intérieur décrit une façon de se répartir les ressources totales sans excès ni manque."
+      },
+      {
+        "numero": 2,
+        "question": "Anne a la fonction $U_A = x_A^1 \\cdot x_A^2$ et Bruno a $U_B = x_B^1 \\cdot x_B^2$. Calculer les $TMS$ de chaque agent.",
+        "reponse": "$TMS_A = \\frac{\\partial U_A / \\partial x_A^1}{\\partial U_A / \\partial x_A^2} = \\frac{x_A^2}{x_A^1}$. $TMS_B = \\frac{\\partial U_B / \\partial x_B^1}{\\partial U_B / \\partial x_B^2} = \\frac{x_B^2}{x_B^1}$.",
+        "explication_logique": "Les deux agents ont la même forme fonctionnelle Cobb-Douglas avec $\\alpha_1 = \\alpha_2 = 1$. Le TMS est le ratio des quantités croisées.",
+        "moyen_mnemo": "TMS Cobb-Douglas $x_1 x_2$ : $TMS_{1/2} = x_2 / x_1$."
+      },
+      {
+        "numero": 3,
+        "question": "Trouver l'équation de la courbe des contrats en posant $TMS_A = TMS_B$ et en substituant les contraintes de faisabilité.",
+        "reponse": "Condition : $\\frac{x_A^2}{x_A^1} = \\frac{x_B^2}{x_B^1} = \\frac{8 - x_A^2}{6 - x_A^1}$. Produit en croix : $x_A^2 (6 - x_A^1) = x_A^1 (8 - x_A^2)$. Développement : $6 x_A^2 - x_A^1 x_A^2 = 8 x_A^1 - x_A^1 x_A^2$. Simplification : $6 x_A^2 = 8 x_A^1$, donc $x_A^2 = \\frac{4}{3} x_A^1$.",
+        "explication_logique": "La courbe des contrats est une droite passant par l'origine : les proportions des biens consommés par Anne sont constantes ($x_A^2 / x_A^1 = 4/3$). C'est un résultat général quand les deux agents ont la même forme Cobb-Douglas avec les mêmes exposants.",
+        "moyen_mnemo": "Quand les deux agents ont des préférences Cobb-Douglas identiques, la courbe des contrats est une droite passant par les deux origines."
+      },
+      {
+        "numero": 4,
+        "question": "Vérifier que la dotation initiale $\\omega_A = (4, 2)$ n'est pas sur la courbe des contrats. Un échange est-il mutuellement bénéfique ?",
+        "reponse": "Sur la courbe des contrats : $x_A^2 = \\frac{4}{3} x_A^1$. En $x_A^1 = 4$ : $x_A^2 = \\frac{16}{3} \\approx 5.33 \\neq 2$. La dotation n'est pas sur la courbe des contrats. Les TMS aux dotations sont : $TMS_A(4, 2) = 2/4 = 0.5$ et $TMS_B(2, 6) = 6/2 = 3$. Comme $TMS_A \\neq TMS_B$, un échange mutuellement bénéfique est possible.",
+        "explication_logique": "Quand les TMS diffèrent, les deux agents valorisent les biens différemment à la marge — un échange peut les rendre tous les deux meilleurs. L'échange devrait se diriger vers la courbe des contrats."
+      }
+    ]
+  },
+  {
+    "id": "ex_012",
+    "chapitre_id": "chapitre_06",
+    "titre": "Échange avec Leontief : courbe des contrats",
+    "resume": "Trouver la courbe des contrats dans une économie d'échange avec des préférences Leontief, en raisonnant par la logique des coudes sans utiliser de dérivées.",
+    "difficulte": "difficile",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Anne a $U_A = \\min(x_A^1, x_A^2)$ et Bruno a $U_B = \\min(x_B^1, 2x_B^2)$. Les dotations totales sont $\\omega_1 = 6$, $\\omega_2 = 4$. Écrire les conditions d'optimalité individuelle (coudes des Leontief).",
+        "reponse": "Anne est à son optimum quand $x_A^1 = x_A^2$. Bruno est à son optimum quand $x_B^1 = 2x_B^2$, soit $x_B^1 = 2x_B^2$.",
+        "explication_logique": "Pour une Leontief $\\min(ax_1, bx_2)$, l'optimum est au coude : $ax_1 = bx_2$. On ne peut pas utiliser de dérivées car la fonction n'est pas différentiable au coude."
+      },
+      {
+        "numero": 2,
+        "question": "Substituer les contraintes de faisabilité dans la condition d'optimalité de Bruno pour exprimer la courbe des contrats en fonction de $(x_A^1, x_A^2)$.",
+        "reponse": "Condition Bruno : $x_B^1 = 2x_B^2$. Substituer : $(6 - x_A^1) = 2(4 - x_A^2)$. Développer : $6 - x_A^1 = 8 - 2x_A^2$. Isoler : $2x_A^2 - x_A^1 = 2$, soit $x_A^2 = \\frac{x_A^1 + 2}{2}$.",
+        "explication_logique": "La courbe des contrats est l'ensemble des allocations où les deux agents sont simultanément à leur coude. Pour Leontief, on ne peut pas égaliser les TMS mais on pose les deux conditions de coude."
+      },
+      {
+        "numero": 3,
+        "question": "Vérifier que la condition du coude d'Anne est aussi satisfaite sur cette courbe. Commenter la forme de la courbe des contrats.",
+        "reponse": "Sur la courbe des contrats de Bruno : $x_A^2 = (x_A^1 + 2)/2$. Pour que le coude d'Anne soit aussi satisfait : $x_A^1 = x_A^2 = (x_A^1 + 2)/2$. Résoudre : $2x_A^1 = x_A^1 + 2$, donc $x_A^1 = 2$ et $x_A^2 = 2$. En réalité, la courbe des contrats de Leontief est un ensemble plus large incluant tous les points où au moins un agent est à son coude. Le point $(2, 2)$ est le seul point où les deux coudes coïncident exactement.",
+        "explication_logique": "Pour des Leontief, la 'courbe des contrats' peut être une surface (un ensemble d'allocations) car l'égalité des TMS n'est pas bien définie au coude. Le point d'intersection des deux coudes est le seul point doublement optimal.",
+        "moyen_mnemo": "Leontief : trouver le point d'intersection des deux droites de coude."
+      }
+    ]
+  },
+  {
+    "id": "ex_013",
+    "chapitre_id": "chapitre_07",
+    "titre": "Optima de Pareto et frontière de Pareto",
+    "resume": "Identifier les optima de Pareto, vérifier la condition d'égalité des TMS, et tracer la frontière de Pareto dans l'espace des utilités.",
+    "difficulte": "moyen",
+    "duree_estimee": 25,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Dans une économie à deux agents (Anne et Bruno) avec des dotations $\\omega_1 = 6$, $\\omega_2 = 4$, et des préférences $U_A = x_A^1 \\cdot x_A^2$ et $U_B = x_B^1 \\cdot x_B^2$, la courbe des contrats est $x_A^2 = \\frac{4}{3} x_A^1$ (résultat de l'exercice précédent). L'allocation $(x_A^1, x_A^2) = (3, 4)$ est-elle Pareto-optimale ?",
+        "reponse": "Vérifier la faisabilité : $x_B^1 = 6 - 3 = 3 > 0$, $x_B^2 = 4 - 4 = 0$. Faisable. Vérifier la courbe des contrats : $x_A^2 = \\frac{4}{3} \\times 3 = 4$ ✓. L'allocation est sur la courbe des contrats, donc elle est Pareto-optimale.",
+        "explication_logique": "Une allocation est Pareto-optimale si et seulement si elle est sur la courbe des contrats (pour des préférences régulières). La vérification se fait en substituant dans l'équation de la courbe des contrats."
+      },
+      {
+        "numero": 2,
+        "question": "Calculer les utilités $U_A$ et $U_B$ pour l'allocation $(3, 4)$. Puis faire de même pour l'allocation $(1.5, 2)$ (aussi sur la courbe des contrats). Que représente la paire $(U_A, U_B)$ dans l'espace des utilités ?",
+        "reponse": "Pour $(x_A^1, x_A^2) = (3, 4)$ : $U_A = 3 \\times 4 = 12$, $x_B = (3, 0)$, $U_B = 3 \\times 0 = 0$. Paire : $(12, 0)$. Pour $(1.5, 2)$ : $U_A = 1.5 \\times 2 = 3$, $x_B = (4.5, 2)$, $U_B = 4.5 \\times 2 = 9$. Paire : $(3, 9)$. Ces paires sont des points sur la frontière de Pareto.",
+        "explication_logique": "La frontière de Pareto est la projection de la courbe des contrats dans l'espace des utilités $(U_A, U_B)$. Elle est décroissante : quand Anne gagne, Bruno perd."
+      },
+      {
+        "numero": 3,
+        "question": "L'allocation $(x_A^1, x_A^2) = (2, 2)$ (dotation initiale hypothétique) est-elle Pareto-optimale ? Calculer les TMS et indiquer une amélioration au sens de Pareto si elle n'est pas optimale.",
+        "reponse": "Vérifier la courbe des contrats en $(2, 2)$ : $\\frac{4}{3} \\times 2 = \\frac{8}{3} \\approx 2.67 \\neq 2$. Pas sur la courbe. $TMS_A(2, 2) = 1$. $x_B = (4, 2)$, $TMS_B(4, 2) = 0.5$. Comme $TMS_A = 1 > TMS_B = 0.5$, un échange est mutuellement profitable : Anne valorise davantage le bien 1 que Bruno. Un transfert de bien 1 vers Anne (et de bien 2 vers Bruno) améliorerait les deux.",
+        "explication_logique": "Quand $TMS_A \\neq TMS_B$, les agents ne sont pas 'alignés' à la marge. Il est possible de trouver un échange qui améliore les deux — une preuve que l'allocation n'est pas Pareto-optimale."
+      },
+      {
+        "numero": 4,
+        "question": "Énoncer le 1er et 2ème théorème du bien-être et les appliquer à cet exemple.",
+        "reponse": "1er théorème : tout équilibre walrasien est un optimum de Pareto. L'équilibre de marché (avec prix $p_1/p_2$) conduit à une allocation sur la courbe des contrats. 2ème théorème : tout optimum de Pareto (tout point sur la courbe des contrats, comme $(3, 4)$) peut être décentralisé par un équilibre walrasien à partir de dotations initiales appropriées.",
+        "explication_logique": "Ces deux théorèmes fondamentaux justifient le rôle du marché comme mécanisme d'allocation efficient. Le 2ème théorème dit que l'État peut choisir la redistribution initiale des dotations, puis laisser le marché faire le reste."
+      }
+    ]
+  },
+  {
+    "id": "ex_014",
+    "chapitre_id": "chapitre_07",
+    "titre": "Somme pondérée des utilités et caractérisation des optima",
+    "resume": "Utiliser la méthode de la somme pondérée des utilités pour caractériser les optima de Pareto, tracer la frontière et relier à l'équilibre walrasien.",
+    "difficulte": "difficile",
+    "duree_estimee": 30,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Dans une économie avec $U_A = \\ln x_A^1 + \\ln x_A^2$, $U_B = \\ln x_B^1 + \\ln x_B^2$, et $\\omega_1 = \\omega_2 = 1$, poser le programme de maximisation de la somme pondérée $\\max \\mu U_A + (1-\\mu) U_B$ sous les contraintes de faisabilité.",
+        "reponse": "$\\max_{x_A^1, x_A^2} \\mu (\\ln x_A^1 + \\ln x_A^2) + (1-\\mu)(\\ln(1 - x_A^1) + \\ln(1 - x_A^2))$, pour $x_A^1, x_A^2 \\in [0, 1]$.",
+        "explication_logique": "On exprime tout en fonction des consommations d'Anne en substituant $x_B^\\ell = \\omega_\\ell - x_A^\\ell$. Le problème devient un problème de maximisation sans contrainte bornée."
+      },
+      {
+        "numero": 2,
+        "question": "Dériver par rapport à $x_A^1$ et $x_A^2$ pour trouver les CPO. En déduire les allocations optimales $x_A^{1*}$ et $x_A^{2*}$ en fonction de $\\mu$.",
+        "reponse": "CPO en $x_A^1$ : $\\frac{\\mu}{x_A^1} - \\frac{1-\\mu}{1 - x_A^1} = 0 \\Rightarrow x_A^{1*} = \\mu$. CPO en $x_A^2$ : $\\frac{\\mu}{x_A^2} - \\frac{1-\\mu}{1 - x_A^2} = 0 \\Rightarrow x_A^{2*} = \\mu$. Donc $x_A^{1*} = x_A^{2*} = \\mu$ et $x_B^{1*} = x_B^{2*} = 1 - \\mu$.",
+        "explication_logique": "Les CPO donnent l'égalité pondérée des utilités marginales, ce qui est équivalent à l'égalité des TMS. Le paramètre $\\mu$ paramétrise toute la courbe des contrats."
+      },
+      {
+        "numero": 3,
+        "question": "Calculer les utilités $U_A^*$ et $U_B^*$ en fonction de $\\mu$, et en déduire l'équation de la frontière de Pareto $U_B = h(U_A)$.",
+        "reponse": "$U_A^* = \\ln \\mu + \\ln \\mu = 2 \\ln \\mu$. $U_B^* = \\ln(1-\\mu) + \\ln(1-\\mu) = 2\\ln(1-\\mu)$. Soit $U_A = 2\\ln\\mu \\Rightarrow \\mu = e^{U_A/2}$. Et $U_B = 2\\ln(1 - e^{U_A/2})$. La frontière de Pareto est $U_B = 2\\ln(1 - e^{U_A/2})$, strictement décroissante.",
+        "explication_logique": "La frontière de Pareto est décroissante car pour augmenter $U_A$ (augmenter $\\mu$), il faut diminuer $1-\\mu$, ce qui réduit $U_B$. C'est la représentation formelle de l'arbitrage.",
+        "moyen_mnemo": "Frontière de Pareto : toujours décroissante dans l'espace $(U_A, U_B)$."
+      },
+      {
+        "numero": 4,
+        "question": "Vérifier que pour $\\mu = 0.5$ (poids égaux), on obtient une allocation symétrique. Quel théorème du bien-être est illustré ici ?",
+        "reponse": "Pour $\\mu = 0.5$ : $x_A^* = x_B^* = 0.5$ pour les deux biens. $U_A^* = U_B^* = 2\\ln(0.5) = -2\\ln 2 \\approx -1.39$. La somme pondérée avec $\\mu = 0.5$ génère l'allocation la plus égalitaire. Le 2ème théorème du bien-être est illustré : n'importe quel point de la frontière (ici le point symétrique) peut être décentralisé par des transferts de dotations puis par le marché.",
+        "explication_logique": "Le 2ème théorème dit que l'objectif d'équité (choisir $\\mu$) et l'objectif d'efficacité (rester sur la frontière) peuvent être séparés. L'État choisit $\\mu$ via la redistribution, le marché assure l'efficacité."
+      }
+    ]
+  },
+  {
+    "id": "ex_015",
+    "chapitre_id": "chapitre_08",
+    "titre": "Théorème de l'enveloppe et statique comparative",
+    "resume": "Appliquer le théorème de l'enveloppe pour calculer la variation de la valeur optimale par rapport à un paramètre, et utiliser la dérivation implicite pour la statique comparative.",
+    "difficulte": "moyen",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Un monopole fait face à une demande $D(p) = a - p$ avec coût $c$. Le profit est $\\Pi(p) = (p - c)(a - p)$. Trouver le prix optimal $p^*(a, c)$ par la CPO, en fonction des paramètres $a$ et $c$.",
+        "reponse": "CPO : $\\frac{d\\Pi}{dp} = (a - p) - (p - c) = a - 2p + c = 0$. Résoudre : $p^*(a, c) = \\frac{a + c}{2}$.",
+        "explication_logique": "Le prix de monopole avec demande linéaire est la moyenne entre le maximum de la demande $a$ et le coût marginal $c$. C'est un résultat classique du modèle de monopole en quantités."
+      },
+      {
+        "numero": 2,
+        "question": "Calculer $\\frac{\\partial p^*}{\\partial a}$ directement depuis $p^* = (a+c)/2$. Puis utiliser la dérivation implicite sur la CPO $F(p, a) = a - 2p + c = 0$ pour retrouver le même résultat.",
+        "reponse": "Directement : $\\frac{\\partial p^*}{\\partial a} = \\frac{1}{2}$. Par dérivation implicite : $F(p, a) = a - 2p + c = 0$. $\\frac{\\partial p^*}{\\partial a} = -\\frac{\\partial F/\\partial a}{\\partial F/\\partial p} = -\\frac{1}{-2} = \\frac{1}{2}$ ✓.",
+        "explication_logique": "La dérivation implicite est utile quand $p^*$ n'est pas facile à isoler. On dérive la CPO sans l'avoir résolue explicitement.",
+        "moyen_mnemo": "Dérivation implicite : $\\frac{dp^*}{d\\tau} = -\\frac{F_\\tau}{F_p}$. Signe de la CPO du dénominateur : négatif à l'optimum (CSO)."
+      },
+      {
+        "numero": 3,
+        "question": "Appliquer le théorème de l'enveloppe pour calculer $\\frac{d\\Pi^*}{da}$ sans calculer $\\frac{dp^*}{da}$.",
+        "indice": "Le théorème de l'enveloppe dit : $\\frac{d\\Pi^*}{da} = \\frac{\\partial \\Pi}{\\partial a}\\big|_{p = p^*}$.",
+        "reponse": "$\\frac{\\partial \\Pi}{\\partial a} = p - c$. En $p = p^* = (a+c)/2$ : $\\frac{d\\Pi^*}{da} = \\frac{a+c}{2} - c = \\frac{a - c}{2}$. Vérification directe : $\\Pi^* = (p^* - c)(a - p^*) = \\frac{a-c}{2} \\cdot \\frac{a-c}{2} = \\frac{(a-c)^2}{4}$. $\\frac{d\\Pi^*}{da} = \\frac{2(a-c)}{4} = \\frac{a-c}{2}$ ✓.",
+        "explication_logique": "Le théorème de l'enveloppe économise les calculs : à l'optimum, l'effet indirect (via le changement de $p^*$) est nul, car la CPO implique que la dérivée par rapport à $p$ est déjà nulle.",
+        "moyen_mnemo": "Enveloppe : à l'optimum, l'effet indirect disparaît. Ne dériver que l'effet direct."
+      }
+    ]
+  },
+  {
+    "id": "ex_016",
+    "chapitre_id": "chapitre_08",
+    "titre": "Décision sous risque : utilité espérée et aversion au risque",
+    "resume": "Calculer l'utilité espérée, l'équivalent certain et la prime de risque pour un agent avec une fonction d'utilité concave, et mesurer l'aversion au risque.",
+    "difficulte": "moyen",
+    "duree_estimee": 20,
+    "etapes": [
+      {
+        "numero": 1,
+        "question": "Un agent a une fonction d'utilité $u(w) = \\sqrt{w}$. Il fait face à une loterie : gain de $w_1 = 100$ avec probabilité $p_1 = 0.6$, et gain de $w_2 = 25$ avec probabilité $p_2 = 0.4$. Calculer l'utilité espérée $EU$.",
+        "reponse": "$EU = p_1 u(w_1) + p_2 u(w_2) = 0.6 \\times \\sqrt{100} + 0.4 \\times \\sqrt{25} = 0.6 \\times 10 + 0.4 \\times 5 = 6 + 2 = 8$.",
+        "explication_logique": "L'utilité espérée est la moyenne pondérée des utilités de chaque issue. C'est le modèle de Von Neumann-Morgenstern pour la décision sous risque.",
+        "moyen_mnemo": "$EU = \\sum p_i u(w_i)$ : pondérer les utilités (pas les richesses) par les probabilités."
+      },
+      {
+        "numero": 2,
+        "question": "Calculer l'équivalent certain $EC$ défini par $u(EC) = EU$.",
+        "reponse": "$u(EC) = EU = 8 \\Rightarrow \\sqrt{EC} = 8 \\Rightarrow EC = 64$.",
+        "explication_logique": "L'équivalent certain est la somme certaine qui procure la même utilité que la loterie risquée. Un agent averse au risque préfère $EC$ à la loterie, même si $EC < E[w]$."
+      },
+      {
+        "numero": 3,
+        "question": "Calculer l'espérance de la richesse $E[w]$ et la prime de risque $PR = E[w] - EC$. L'agent est-il averse au risque ?",
+        "reponse": "$E[w] = 0.6 \\times 100 + 0.4 \\times 25 = 60 + 10 = 70$. $PR = E[w] - EC = 70 - 64 = 6$. La prime de risque est positive ($PR > 0$), donc l'agent est averse au risque : il accepterait de recevoir seulement 64 (certain) plutôt que 70 (attendu mais risqué).",
+        "explication_logique": "L'aversion au risque implique $EC < E[w]$, c'est-à-dire que l'agent préfère une somme certaine inférieure à la valeur espérée de la loterie.",
+        "moyen_mnemo": "$PR = E[w] - EC > 0 \\Leftrightarrow$ aversion au risque $\\Leftrightarrow u$ concave."
+      },
+      {
+        "numero": 4,
+        "question": "Calculer l'indice d'aversion absolue au risque de Arrow-Pratt $IA(w) = \\frac{-u''(w)}{u'(w)}$ pour $u(w) = \\sqrt{w}$.",
+        "reponse": "$u'(w) = \\frac{1}{2} w^{-1/2}$. $u''(w) = -\\frac{1}{4} w^{-3/2}$. $IA(w) = \\frac{-(-\\frac{1}{4} w^{-3/2})}{\\frac{1}{2} w^{-1/2}} = \\frac{\\frac{1}{4} w^{-3/2}}{\\frac{1}{2} w^{-1/2}} = \\frac{1}{2w}$. L'aversion absolue au risque est décroissante en $w$ (l'agent devient moins averse au risque quand il s'enrichit).",
+        "explication_logique": "L'indice de Arrow-Pratt mesure la courbure locale de la fonction d'utilité. Plus $u$ est concave, plus l'aversion au risque est élevée. Ici $IA = 1/(2w)$ est décroissant, ce qui est caractéristique d'une DARA (Decreasing Absolute Risk Aversion).",
+        "moyen_mnemo": "Arrow-Pratt : $IA = -u''/u'$. Signe de $u''$ détermine l'aversion au risque ($u'' < 0$ = averse)."
+      }
+    ]
+  }
+]

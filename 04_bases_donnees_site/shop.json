@@ -1,0 +1,92 @@
+[
+  {
+    "id": "pirate_base",
+    "nom": "Pirate de base",
+    "description": "Le fidèle compagnon de ta révision. Sobre, déterminé, prêt à conquérir la microéconomie.",
+    "prix": 0,
+    "categorie": "fond",
+    "rarete": "commun",
+    "svg_preview": "/avatars/pirate_base.svg",
+    "svg_equipped": "/avatars/pirate_base.svg"
+  },
+  {
+    "id": "bandana_rouge",
+    "nom": "Bandana rouge",
+    "description": "L'emblème du marin rebelle. Rouge comme les rentes du monopole.",
+    "prix": 150,
+    "categorie": "chapeau",
+    "rarete": "commun",
+    "svg_preview": "/avatars/bandana_rouge.svg",
+    "svg_equipped": "/avatars/bandana_rouge.svg"
+  },
+  {
+    "id": "chapeau_tricorne",
+    "nom": "Tricorne classique",
+    "description": "Le chapeau du vrai pirate des mers. Porter ce tricorne, c'est afficher sa maîtrise des marchés.",
+    "prix": 200,
+    "categorie": "chapeau",
+    "rarete": "commun",
+    "svg_preview": "/avatars/chapeau_tricorne.svg",
+    "svg_equipped": "/avatars/chapeau_tricorne.svg"
+  },
+  {
+    "id": "lunette_navigateur",
+    "nom": "Longue-vue du navigateur",
+    "description": "Pour voir les équilibres de Nash que les autres n'aperçoivent pas.",
+    "prix": 300,
+    "categorie": "accessoire",
+    "rarete": "rare",
+    "svg_preview": "/avatars/lunette_navigateur.svg",
+    "svg_equipped": "/avatars/lunette_navigateur.svg"
+  },
+  {
+    "id": "veste_galonnee",
+    "nom": "Veste galonnée",
+    "description": "Les galons dorés d'un officier de la flotte. Chaque galon = un chapitre maîtrisé.",
+    "prix": 400,
+    "categorie": "veste",
+    "rarete": "rare",
+    "svg_preview": "/avatars/veste_galonnee.svg",
+    "svg_equipped": "/avatars/veste_galonnee.svg"
+  },
+  {
+    "id": "chapeau_capitaine",
+    "nom": "Chapeau de Capitaine",
+    "description": "L'autorité incarnée. Réservé aux esprits qui maîtrisent l'indice de Lerner et l'équilibre de Cournot.",
+    "prix": 500,
+    "categorie": "chapeau",
+    "rarete": "rare",
+    "svg_preview": "/avatars/chapeau_capitaine.svg",
+    "svg_equipped": "/avatars/chapeau_capitaine.svg"
+  },
+  {
+    "id": "perroquet",
+    "nom": "Perroquet économiste",
+    "description": "Il répète toutes tes formules préférées. Il connaît l'intégrale de Dupuit par cœur.",
+    "prix": 600,
+    "categorie": "accessoire",
+    "rarete": "épique",
+    "svg_preview": "/avatars/perroquet.svg",
+    "svg_equipped": "/avatars/perroquet.svg"
+  },
+  {
+    "id": "manteau_capitaine",
+    "nom": "Manteau de capitaine",
+    "description": "Le long manteau de velours noir des grands capitaines. Porter cette tenue, c'est dominer tous les marchés.",
+    "prix": 800,
+    "categorie": "veste",
+    "rarete": "épique",
+    "svg_preview": "/avatars/manteau_capitaine.svg",
+    "svg_equipped": "/avatars/manteau_capitaine.svg"
+  },
+  {
+    "id": "carte_tresor",
+    "nom": "Carte au trésor de la micro",
+    "description": "La carte légendaire qui révèle tous les équilibres cachés de la microéconomie. Légendaire, comme ton score.",
+    "prix": 1000,
+    "categorie": "accessoire",
+    "rarete": "légendaire",
+    "svg_preview": "/avatars/carte_tresor.svg",
+    "svg_equipped": "/avatars/carte_tresor.svg"
+  }
+]

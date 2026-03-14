@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="30" y="55" width="40" height="35" rx="4" fill="#1e3a5f"/>
+  <rect x="30" y="60" width="40" height="5" fill="#2d5a8e" opacity="0.5"/>
+  <rect x="30" y="70" width="40" height="5" fill="#2d5a8e" opacity="0.5"/>
+  <rect x="30" y="80" width="40" height="5" fill="#2d5a8e" opacity="0.5"/>
+  <circle cx="50" cy="38" r="18" fill="#f4c28b"/>
+  <circle cx="43" cy="36" r="2.5" fill="#2c1810"/>
+  <circle cx="57" cy="36" r="2.5" fill="#2c1810"/>
+  <circle cx="44" cy="35" r="0.8" fill="white"/>
+  <circle cx="58" cy="35" r="0.8" fill="white"/>
+  <path d="M43 44 Q50 49 57 44" stroke="#2c1810" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M35 50 Q50 58 65 50 Q60 55 50 57 Q40 55 35 50z" fill="#4a3728"/>
+  <rect x="15" y="58" width="16" height="8" rx="4" fill="#1e3a5f"/>
+  <rect x="69" y="58" width="16" height="8" rx="4" fill="#1e3a5f"/>
+  <rect x="44" y="85" width="12" height="5" rx="1" fill="#f59e0b"/>
+  <rect x="33" y="88" width="14" height="10" rx="2" fill="#1a1a2e"/>
+  <rect x="53" y="88" width="14" height="10" rx="2" fill="#1a1a2e"/>
+  <rect x="31" y="95" width="16" height="5" rx="2" fill="#3d2b1f"/>
+  <rect x="51" y="95" width="16" height="5" rx="2" fill="#3d2b1f"/>
+  <!-- Parrot body on shoulder -->
+  <ellipse cx="78" cy="45" rx="8" ry="10" fill="#16a34a"/>
+  <!-- Parrot head -->
+  <circle cx="78" cy="34" r="7" fill="#15803d"/>
+  <!-- Parrot beak -->
+  <path d="M83 34 L87 36 L83 38 Z" fill="#f59e0b"/>
+  <!-- Parrot eye -->
+  <circle cx="80" cy="33" r="2" fill="#fef08a"/>
+  <circle cx="80.5" cy="33" r="1" fill="#1a1a2e"/>
+  <!-- Parrot wing -->
+  <path d="M70 45 Q65 50 68 58 Q74 52 78 55" fill="#22c55e"/>
+  <!-- Parrot tail -->
+  <path d="M76 55 L72 68 L78 62 L80 70 L82 60 L86 66 L82 55" fill="#16a34a"/>
+  <!-- Parrot feet on shoulder -->
+  <line x1="74" y1="55" x2="72" y2="60" stroke="#92400e" stroke-width="1.5"/>
+  <line x1="78" y1="56" x2="78" y2="61" stroke="#92400e" stroke-width="1.5"/>
+</svg>
