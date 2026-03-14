@@ -1,151 +1,171 @@
 /**
  * @file cours/page.tsx
- * @description PDF viewer for full course document with page navigation and zoom
- * @dependencies react-pdf (dynamic, ssr:false), useLocalStorage, STORAGE_KEYS
+ * @description PDF viewer via iframe natif — navigation, liens TDM, zoom et plein écran inclus
+ * @dependencies framer-motion, useLocalStorage
  */
 'use client';
-import { useState, useCallback } from 'react';
-import dynamic from 'next/dynamic';
+import { useCallback, useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useLocalStorage } from '@/hooks/useLocalStorage';
-import { STORAGE_KEYS } from '@/lib/constants';
-import { Skeleton } from '@/components/ui/skeleton';
-import { BookOpen, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, AlertCircle } from 'lucide-react';
+import { BookOpen, FileText, GraduationCap, Maximize2, Minimize2, ExternalLink } from 'lucide-react';
 
-// react-pdf uses DOMMatrix and other browser-only APIs — must be client-only
-const PDFViewer = dynamic(() => import('@/components/cours/PDFViewer'), {
-  ssr: false,
-  loading: () => (
-    <div className="space-y-4 p-8 w-full max-w-2xl mx-auto">
-      <Skeleton className="h-8 w-3/4 rounded" />
-      <Skeleton className="h-[600px] w-full rounded-lg" />
-    </div>
-  ),
-});
+const DOCUMENTS = [
+  {
+    id: 'micro_complet',
+    label: 'Cours structuré',
+    description: 'Version annotée et structurée',
+    file: '/cours/cours_micro_complet.pdf',
+    Icon: FileText,
+    color: 'var(--accent-purple)',
+    colorRaw: '#8b5cf6',
+  },
+  {
+    id: 'cours_prof',
+    label: 'Cours du professeur',
+    description: 'Document original du prof',
+    file: '/cours/cours_prof.pdf',
+    Icon: GraduationCap,
+    color: 'var(--accent-blue)',
+    colorRaw: '#3b82f6',
+  },
+] as const;
 
-const pageVariants = {
-  initial: { opacity: 0, y: 8 },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' as const } },
-};
+type DocumentId = typeof DOCUMENTS[number]['id'];
 
 export default function CoursPage() {
-  const [savedPage, setSavedPage] = useLocalStorage<number>(STORAGE_KEYS.COURS_POSITION, 1);
-  const [pageNumber, setPageNumber] = useState<number>(savedPage);
-  const [numPages, setNumPages] = useState<number>(0);
-  const [scale, setScale] = useState<number>(1.0);
-  const [error, setError] = useState<string | null>(null);
+  const [activeDocId, setActiveDocId] = useLocalStorage<DocumentId>('micro_quest_cours_doc', 'micro_complet');
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleLoadSuccess = useCallback((total: number) => {
-    setNumPages(total);
-    setError(null);
+  const activeDoc = DOCUMENTS.find(d => d.id === activeDocId) ?? DOCUMENTS[0];
+
+  // Écoute les changements d'état plein écran (touche Échap, etc.)
+  useEffect(() => {
+    const onFsChange = () => setIsFullscreen(!!document.fullscreenElement);
+    document.addEventListener('fullscreenchange', onFsChange);
+    return () => document.removeEventListener('fullscreenchange', onFsChange);
   }, []);
 
-  const handleError = useCallback((msg: string) => {
-    setError(msg);
+  const handleSelectDoc = useCallback((id: DocumentId) => {
+    setActiveDocId(id);
+  }, [setActiveDocId]);
+
+  const toggleFullscreen = useCallback(async () => {
+    if (!document.fullscreenElement) {
+      await containerRef.current?.requestFullscreen();
+    } else {
+      await document.exitFullscreen();
+    }
   }, []);
 
-  const goToPrev = useCallback(() => {
-    setPageNumber(p => {
-      const next = Math.max(1, p - 1);
-      setSavedPage(next);
-      return next;
-    });
-  }, [setSavedPage]);
-
-  const goToNext = useCallback(() => {
-    setPageNumber(p => {
-      const next = Math.min(numPages || p, p + 1);
-      setSavedPage(next);
-      return next;
-    });
-  }, [numPages, setSavedPage]);
-
-  const zoomOut = useCallback(() => setScale(s => Math.max(0.5, parseFloat((s - 0.1).toFixed(1)))), []);
-  const zoomIn  = useCallback(() => setScale(s => Math.min(2.0, parseFloat((s + 0.1).toFixed(1)))), []);
+  const openInNewTab = useCallback(() => {
+    window.open(activeDoc.file, '_blank');
+  }, [activeDoc.file]);
 
   return (
     <motion.div
-      variants={pageVariants}
-      initial="initial"
-      animate="animate"
-      className="px-6 py-6 max-w-[1200px] mx-auto"
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.3, ease: 'easeOut' } }}
+      style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '20px 24px 16px' }}
     >
-      {/* Header */}
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl flex items-center justify-center"
-          style={{ background: 'rgba(139,92,246,0.15)', color: 'var(--accent-purple)' }}>
-          <BookOpen size={20} />
-        </div>
-        <div>
-          <h1 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>Cours complet</h1>
-          <p className="text-sm" style={{ color: 'var(--text-muted)' }}>Microéconomie — cours PDF</p>
-        </div>
-      </div>
+      {/* ── Barre supérieure ─────────────────────────────────────────────── */}
+      <div className="flex items-center gap-4 mb-3 flex-wrap">
 
-      {/* Controls */}
-      <div className="flex items-center justify-between gap-4 rounded-xl border px-4 py-3 mb-4"
-        style={{ background: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}>
-        <div className="flex items-center gap-2">
-          <motion.button whileTap={{ scale: 0.97 }} onClick={goToPrev} disabled={pageNumber <= 1}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium border disabled:opacity-40 disabled:cursor-not-allowed"
-            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)' }}>
-            <ChevronLeft size={16} /> Préc.
-          </motion.button>
-          <span className="text-sm tabular-nums px-2" style={{ color: 'var(--text-muted)' }}>
-            {pageNumber} / {numPages || '…'}
-          </span>
-          <motion.button whileTap={{ scale: 0.97 }} onClick={goToNext} disabled={pageNumber >= numPages}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm font-medium border disabled:opacity-40 disabled:cursor-not-allowed"
-            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)' }}>
-            Suiv. <ChevronRight size={16} />
-          </motion.button>
-        </div>
-        <div className="flex items-center gap-2">
-          <motion.button whileTap={{ scale: 0.97 }} onClick={zoomOut} disabled={scale <= 0.5}
-            className="w-8 h-8 flex items-center justify-center rounded-lg border disabled:opacity-40"
-            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)' }}>
-            <ZoomOut size={16} />
-          </motion.button>
-          <span className="text-sm tabular-nums w-12 text-center" style={{ color: 'var(--text-muted)' }}>
-            {Math.round(scale * 100)}%
-          </span>
-          <motion.button whileTap={{ scale: 0.97 }} onClick={zoomIn} disabled={scale >= 2.0}
-            className="w-8 h-8 flex items-center justify-center rounded-lg border disabled:opacity-40"
-            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)' }}>
-            <ZoomIn size={16} />
-          </motion.button>
-        </div>
-      </div>
-
-      {/* PDF or error */}
-      {error ? (
-        <div className="rounded-xl border p-8 flex flex-col items-center gap-4 text-center"
-          style={{ background: 'var(--bg-card)', borderColor: 'rgba(239,68,68,0.3)' }}>
-          <AlertCircle size={40} style={{ color: 'var(--accent-red)' }} />
+        {/* Titre */}
+        <div className="flex items-center gap-2.5 mr-2">
+          <div className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+            style={{ background: 'rgba(139,92,246,0.15)', color: 'var(--accent-purple)' }}>
+            <BookOpen size={18} />
+          </div>
           <div>
-            <p className="font-semibold mb-1" style={{ color: 'var(--text-primary)' }}>Impossible de charger le PDF</p>
-            <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
-              Vérifiez que{' '}
-              <code className="px-1 py-0.5 rounded text-xs" style={{ background: 'var(--bg-secondary)' }}>
-                /cours/cours_micro_complet.pdf
-              </code>{' '}
-              est accessible.
-            </p>
+            <h1 className="text-base font-bold leading-tight" style={{ color: 'var(--text-primary)' }}>
+              Cours complet
+            </h1>
+            <p className="text-xs" style={{ color: 'var(--text-muted)' }}>Microéconomie</p>
           </div>
         </div>
-      ) : (
-        <div className="rounded-xl border overflow-auto"
-          style={{ background: 'var(--bg-card)', borderColor: 'var(--border-subtle)' }}>
-          <div className="flex justify-center p-4">
-            <PDFViewer
-              pageNumber={pageNumber}
-              scale={scale}
-              onLoadSuccess={handleLoadSuccess}
-              onError={handleError}
-            />
-          </div>
+
+        {/* Sélecteur de document */}
+        <div className="flex gap-2 flex-1">
+          {DOCUMENTS.map(doc => {
+            const isActive = doc.id === activeDocId;
+            return (
+              <motion.button
+                key={doc.id}
+                whileTap={{ scale: 0.97 }}
+                onClick={() => handleSelectDoc(doc.id)}
+                className="flex items-center gap-2 px-3 py-2 rounded-lg border text-left transition-all"
+                style={{
+                  background: isActive ? `${doc.colorRaw}18` : 'var(--bg-card)',
+                  borderColor: isActive ? doc.color : 'var(--border-subtle)',
+                  minWidth: 160,
+                }}
+              >
+                <doc.Icon size={15} style={{ color: isActive ? doc.color : 'var(--text-muted)', flexShrink: 0 }} />
+                <div>
+                  <p className="text-xs font-semibold leading-tight" style={{ color: isActive ? doc.color : 'var(--text-primary)' }}>
+                    {doc.label}
+                  </p>
+                  <p className="text-xs leading-tight" style={{ color: 'var(--text-muted)' }}>
+                    {doc.description}
+                  </p>
+                </div>
+              </motion.button>
+            );
+          })}
         </div>
-      )}
+
+        {/* Actions */}
+        <div className="flex items-center gap-2 ml-auto">
+          <motion.button
+            whileTap={{ scale: 0.97 }}
+            onClick={openInNewTab}
+            title="Ouvrir dans un nouvel onglet"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg border text-xs font-medium"
+            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)', background: 'var(--bg-card)' }}
+          >
+            <ExternalLink size={14} />
+            Nouvel onglet
+          </motion.button>
+          <motion.button
+            whileTap={{ scale: 0.97 }}
+            onClick={toggleFullscreen}
+            title={isFullscreen ? 'Quitter le plein écran' : 'Plein écran'}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg border text-xs font-medium"
+            style={{ borderColor: 'var(--border-default)', color: 'var(--text-secondary)', background: 'var(--bg-card)' }}
+          >
+            {isFullscreen ? <Minimize2 size={14} /> : <Maximize2 size={14} />}
+            {isFullscreen ? 'Réduire' : 'Plein écran'}
+          </motion.button>
+        </div>
+      </div>
+
+      {/* ── Hint ─────────────────────────────────────────────────────────── */}
+      <p className="text-xs mb-2" style={{ color: 'var(--text-muted)' }}>
+        Navigation, zoom, recherche et liens de la table des matières sont gérés directement par le viewer intégré.
+      </p>
+
+      {/* ── iframe PDF natif ──────────────────────────────────────────────── */}
+      <div
+        ref={containerRef}
+        style={{
+          flex: 1,
+          minHeight: 0,
+          borderRadius: 12,
+          overflow: 'hidden',
+          border: '1px solid var(--border-subtle)',
+          background: '#525659', // couleur de fond PDF.js
+        }}
+      >
+        <iframe
+          key={activeDoc.file} // force le rechargement quand on change de doc
+          src={activeDoc.file}
+          title={activeDoc.label}
+          style={{ width: '100%', height: '100%', border: 'none', display: 'block' }}
+          // Plein écran autorisé dans l'iframe
+          allowFullScreen
+        />
+      </div>
     </motion.div>
   );
 }

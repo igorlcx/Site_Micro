@@ -8,11 +8,10 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useDataLoader } from '@/hooks/useDataLoader';
 import { usePlayerData } from '@/hooks/usePlayerData';
-import { useGoldReward } from '@/hooks/useGoldReward';
 import { RARETE_STYLES } from '@/lib/constants';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { SkinItem } from '@/types';
-import { ShoppingBag, Coins, X, CheckCircle } from 'lucide-react';
+import { ShoppingBag, Coins, X, CheckCircle, PartyPopper } from 'lucide-react';
 
 const pageVariants = {
   initial: { opacity: 0, y: 8 },
@@ -85,8 +84,8 @@ function ConfirmModal({ item, onConfirm, onCancel }: ConfirmModalProps) {
 export default function ShopPage() {
   const { data: skins, loading, error } = useDataLoader<SkinItem[]>('shop.json');
   const { playerData, buySkin, equipSkin } = usePlayerData();
-  const { reward } = useGoldReward();
   const [confirmItem, setConfirmItem] = useState<SkinItem | null>(null);
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
   const { pieces, skins_debloquees, skin_actuel } = playerData;
 
@@ -96,9 +95,12 @@ export default function ShopPage() {
 
   function handleConfirm() {
     if (!confirmItem) return;
+    // On n'appelle PAS reward() ici : reward() crée une seconde instance de
+    // usePlayerData qui lirait un prev périmé et écraserait l'achat en localStorage.
     buySkin(confirmItem.id, confirmItem.prix);
-    reward(0, `${confirmItem.nom} acheté !`);
+    setSuccessMsg(`${confirmItem.nom} débloqué et équipé !`);
     setConfirmItem(null);
+    setTimeout(() => setSuccessMsg(null), 3000);
   }
 
   function handleEquip(skinId: string) {
@@ -309,6 +311,22 @@ export default function ShopPage() {
           })}
         </motion.div>
       )}
+
+      {/* Toast succès achat */}
+      <AnimatePresence>
+        {successMsg && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            className="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3 rounded-xl border"
+            style={{ background: 'var(--bg-card)', borderColor: 'rgba(16,185,129,0.4)', color: 'var(--accent-green)' }}
+          >
+            <PartyPopper size={18} />
+            <span className="text-sm font-semibold">{successMsg}</span>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Confirm modal */}
       <AnimatePresence>

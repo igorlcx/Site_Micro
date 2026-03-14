@@ -18,10 +18,10 @@ export function SidebarItem({ item, isActive }: SidebarItemProps) {
       <motion.div
         whileTap={{ scale: 0.98 }}
         className={cn(
-          'relative flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all duration-150 cursor-pointer',
+          'relative flex items-center gap-3 py-2.5 rounded-lg text-sm transition-all duration-150 cursor-pointer',
           isActive
-            ? 'font-medium'
-            : 'font-normal hover:bg-white/5'
+            ? 'font-medium pl-5 pr-3'
+            : 'font-normal hover:bg-white/5 px-3'
         )}
         style={
           isActive

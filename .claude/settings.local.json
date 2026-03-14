@@ -22,7 +22,12 @@
       "Bash(cd /c/Users/dizzy/Site_Micro/06_site_web && npx tsc --noEmit 2>&1)",
       "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -60)",
       "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -40)",
-      "Bash(taskkill /F /PID 39768 2>/dev/null; taskkill /F /IM node.exe /FI \"WINDOWTITLE eq next*\" 2>/dev/null; npx kill-port 3000 3001 2>/dev/null; echo \"done\")"
+      "Bash(taskkill /F /PID 39768 2>/dev/null; taskkill /F /IM node.exe /FI \"WINDOWTITLE eq next*\" 2>/dev/null; npx kill-port 3000 3001 2>/dev/null; echo \"done\")",
+      "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -25)",
+      "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -30)",
+      "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -20)",
+      "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -10)",
+      "Bash(cd C:/Users/dizzy/Site_Micro/06_site_web && npm run build 2>&1 | tail -12)"
     ]
   }
 }

@@ -4,7 +4,7 @@
  * @dependencies @xyflow/react, useDataLoader, MathRenderer
  */
 'use client';
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   ReactFlow,
@@ -13,14 +13,35 @@ import {
   MiniMap,
   useNodesState,
   useEdgesState,
+  Handle,
+  Position,
 } from '@xyflow/react';
-import type { Node, Edge, NodeMouseHandler } from '@xyflow/react';
+import type { Node, Edge, NodeMouseHandler, NodeProps } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { useDataLoader } from '@/hooks/useDataLoader';
 import { MathRenderer } from '@/components/ui/MathRenderer';
 import { Skeleton } from '@/components/ui/skeleton';
 import type { MindmapData, MindmapNode } from '@/types';
 import { Network, X } from 'lucide-react';
+
+// Custom node qui utilise MathRenderer pour rendre les formules LaTeX dans les nœuds
+const MathNode = memo(function MathNode({ data, selected }: NodeProps) {
+  const d = data as { label: string; formule?: string; type: string; couleur?: string };
+  return (
+    <>
+      <Handle type="target" position={Position.Left} style={{ opacity: 0 }} />
+      <div style={{ outline: selected ? '2px solid rgba(255,255,255,0.3)' : 'none', borderRadius: 'inherit' }}>
+        {d.formule
+          ? <MathRenderer text={`$${d.formule}$`} />
+          : <span>{d.label}</span>
+        }
+      </div>
+      <Handle type="source" position={Position.Right} style={{ opacity: 0 }} />
+    </>
+  );
+});
+
+const nodeTypes = { mathNode: MathNode };
 
 const pageVariants = {
   initial: { opacity: 0, y: 8 },
@@ -69,6 +90,7 @@ const NODE_TYPE_STYLES: Record<string, { background: string; color: string; font
 function convertNodes(mindmapNodes: MindmapNode[]): Node[] {
   return mindmapNodes.map(n => ({
     id: n.id,
+    type: 'mathNode',          // utilise le custom node avec MathRenderer
     position: n.position,
     data: {
       label: n.label,
@@ -188,6 +210,7 @@ export default function MindmapPage() {
               onNodesChange={onNodesChange}
               onEdgesChange={onEdgesChange}
               onNodeClick={onNodeClick}
+              nodeTypes={nodeTypes}
               fitView
               fitViewOptions={{ padding: 0.2 }}
               style={{ background: '#0d0d1a' }}
@@ -255,8 +278,8 @@ export default function MindmapPage() {
                     <p className="text-xs font-medium mb-2" style={{ color: 'var(--accent-blue)' }}>
                       Formule
                     </p>
-                    <div className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                      <MathRenderer text={selectedNode.formule} />
+                    <div className="text-sm overflow-x-auto" style={{ color: 'var(--text-secondary)' }}>
+                      <MathRenderer text={`$${selectedNode.formule}$`} displayMode={true} />
                     </div>
                   </div>
                 )}

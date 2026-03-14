@@ -12,16 +12,17 @@ import { Skeleton } from '@/components/ui/skeleton';
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
 
 interface PDFViewerProps {
+  file: string;
   pageNumber: number;
   scale: number;
   onLoadSuccess: (numPages: number) => void;
   onError: (message: string) => void;
 }
 
-export default function PDFViewer({ pageNumber, scale, onLoadSuccess, onError }: PDFViewerProps) {
+export default function PDFViewer({ file, pageNumber, scale, onLoadSuccess, onError }: PDFViewerProps) {
   return (
     <Document
-      file="/cours/cours_micro_complet.pdf"
+      file={file}
       onLoadSuccess={({ numPages }) => onLoadSuccess(numPages)}
       onLoadError={(err) => onError(err.message)}
       loading={
